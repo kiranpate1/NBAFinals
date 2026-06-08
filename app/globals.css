@@ -1,26 +1,202 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&display=swap"); */
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #f6f4f5;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --stroke: #3c414a;
+  --okc: #007ac1;
+  --sas: #061922;
+  --make: #142df0;
+  --miss: #ff3700;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+* {
+  text-rendering: geometricPrecision;
+  box-sizing: border-box;
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+html {
+  background: var(--background);
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  /* color: var(--foreground);
+  font-family: var(--font-sans), sans-serif; */
+}
+
+h1,
+h2,
+h3,
+p,
+small {
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-bebas-neue, "Bebas Neue", system-ui, sans-serif);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 115%;
+}
+
+h1 {
+  font-size: 148px;
+  line-height: 0.5;
+}
+
+h2 {
+  font-size: 96px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+@media (max-width: 1023px) {
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .scoreboard {
+    bottom: 24px !important;
+  }
+}
+
+h3.gameclock {
+  font-family: var(--font-mono, "Geist Mono"), monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+h4 {
+  font-family: var(--font-mono, "Geist Mono"), monospace;
+  font-size: 18px;
+  letter-spacing: -0.05em;
+}
+
+p {
+  font-family: var(--font-sans, "Geist Sans"), sans-serif;
+  font-size: 14px;
+}
+p.smaller {
+  font-size: 12px;
+}
+
+small {
+  display: block;
+  font-family: var(--font-mono, "Geist Mono"), monospace;
+  font-size: 10px;
+  line-height: 100%;
+}
+
+.stickygrid small {
+  color: var(--stroke);
+  opacity: 0.5;
+}
+
+.normalgrid small {
+  color: var(--stroke);
+  opacity: 1;
+}
+
+.maincourt * {
+  opacity: 0.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.splashcourt * {
+  stroke: #b1b1b1;
+  vector-effect: non-scaling-stroke;
+}
+
+.sas_courts svg {
+  width: 108.5%;
+  transform: translateY(-9%);
+}
+
+.okc_courts svg {
+  width: 108.5%;
+  transform: translateY(-9%);
+}
+
+.sas_courts svg g,
+.okc_courts svg g {
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: all 0.12s ease;
+}
+
+.court g path {
+  stroke-width: 2px;
+  fill: rgba(255, 255, 255, 0.75);
+}
+
+#loader {
+  background: var(--background);
+  animation: fadeOut 0.5s ease-in-out 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    background: transparent;
+  }
+}
+
+#loader svg circle {
+  opacity: 1;
+  stroke-dasharray: 375px;
+  stroke-dashoffset: 375px;
+  stroke: var(--sas);
+  animation: dash 1.5s ease-in-out forwards;
+}
+
+@keyframes dash {
+  0% {
+    opacity: 1;
+    stroke-dashoffset: 375px;
+    stroke: var(--sas);
+  }
+  80% {
+    opacity: 1;
+    stroke-dashoffset: 0px;
+    stroke: var(--okc);
+  }
+  100% {
+    opacity: 0;
+    stroke-dashoffset: 0px;
+    stroke: var(--okc);
+  }
+}
+
+.splashcourt path {
+  stroke-dasharray: 1500px;
+  stroke-dashoffset: 1500px;
+  animation: draw 2s ease-out 1s forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0px;
+  }
 }

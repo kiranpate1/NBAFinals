@@ -1,0 +1,191 @@
+export const games = [
+  {
+    game: 1,
+    awayTeam: "SAS",
+    homeTeam: "OKC",
+    arena: "Chesapeake Energy Arena, OKC",
+    date: "May 18th, 2026 @ 7:30 PM",
+    courtImageUrl: "/okc-court.png",
+    ot: 2,
+    spread: 10,
+    info: {
+      headline: {
+        print: "SAS LEADS 1-0",
+        text: "Spurs outlast Thunder in double overtime thriller",
+        imageUrl: "/g1.png",
+      },
+      okcPlayer: {
+        name: "Alex Caruso",
+        description: "31 PTS, 8-14 3PT, 58% FG",
+        imageUrl: "/ac.png",
+      },
+      sasPlayer: {
+        name: "Victor Wembanyama",
+        description: "41 PTS, 24 REB, 56% FG",
+        imageUrl: "/wemby.png",
+      },
+    },
+  },
+  {
+    game: 2,
+    awayTeam: "SAS",
+    homeTeam: "OKC",
+    arena: "Chesapeake Energy Arena, OKC",
+    date: "May 20th, 2026 @ 7:30 PM",
+    courtImageUrl: "/okc-court.png",
+    ot: 0,
+    spread: 15,
+    info: {
+      headline: {
+        print: "SERIES TIED 1-1",
+        text: "Thunder bounce back with dominant win in Game 2",
+        imageUrl: "/g2.png",
+      },
+      okcPlayer: {
+        name: "Shai Gilgeous-Alexander",
+        description: "30 PTS, 9 AST, 50% FG",
+        imageUrl: "/sga.png",
+      },
+      sasPlayer: {
+        name: "Stephon Castle",
+        description: "25 PTS, 8 AST, 59% FG",
+        imageUrl: "/castle.png",
+      },
+    },
+  },
+  {
+    game: 3,
+    awayTeam: "OKC",
+    homeTeam: "SAS",
+    arena: "Frost Bank Center, San Antonio",
+    date: "May 22nd, 2026 @ 7:30 PM",
+    courtImageUrl: "/sas-fiesta.png",
+    ot: 0,
+    spread: 20,
+    info: {
+      headline: {
+        print: "OKC LEADS 2-1",
+        text: "Thunder take control of series with gutsy win in San Antonio",
+        imageUrl: "/g3.png",
+      },
+      okcPlayer: {
+        name: "Jared McCain",
+        description: "24 PTS, 10-21 FG",
+        imageUrl: "/jmac.png",
+      },
+      sasPlayer: {
+        name: "Victor Wembanyama",
+        description: "26 PTS, 50% FG",
+        imageUrl: "/wemby.png",
+      },
+    },
+  },
+  {
+    game: 4,
+    awayTeam: "OKC",
+    homeTeam: "SAS",
+    arena: "Frost Bank Center, San Antonio",
+    date: "May 24th, 2026 @ 7:00 PM",
+    courtImageUrl: "/sas-court.png",
+    ot: 0,
+    spread: 25,
+    info: {
+      headline: {
+        print: "SERIES TIED 2-2",
+        text: "Spurs tie series with commanding victory",
+        imageUrl: "/g4.png",
+      },
+      okcPlayer: {
+        name: "Shai Gilgeous-Alexander",
+        description: "19 PTS, 7 AST",
+        imageUrl: "/sga.png",
+      },
+      sasPlayer: {
+        name: "Victor Wembanyama",
+        description: "33 PTS, 8 REB, 50% FG",
+        imageUrl: "/wemby.png",
+      },
+    },
+  },
+  {
+    game: 5,
+    awayTeam: "SAS",
+    homeTeam: "OKC",
+    arena: "Chesapeake Energy Arena, OKC",
+    date: "May 26th, 2026 @ 7:30 PM",
+    courtImageUrl: "/okc-court.png",
+    ot: 0,
+    spread: 20,
+    info: {
+      headline: {
+        print: "OKC LEADS 3-2",
+        text: "Thunder 1 win away from NBA Finals",
+        imageUrl: "/g5.png",
+      },
+      okcPlayer: {
+        name: "Shai Gilgeous-Alexander",
+        description: "32 PTS, 9 AST",
+        imageUrl: "/sga.png",
+      },
+      sasPlayer: {
+        name: "Stephon Castle",
+        description: "24 PTS, 6 AST, 64% FG",
+        imageUrl: "/castle.png",
+      },
+    },
+  },
+  {
+    game: 6,
+    awayTeam: "OKC",
+    homeTeam: "SAS",
+    arena: "Frost Bank Center, San Antonio",
+    date: "May 28th, 2026 @ 7:30 PM",
+    courtImageUrl: "/sas-court.png",
+    ot: 0,
+    spread: 30,
+    info: {
+      headline: {
+        print: "SERIES TIED 3-3",
+        text: "Spurs demolish Thunder to force Game 7",
+        imageUrl: "/g6.png",
+      },
+      okcPlayer: {
+        name: "Shai Gilgeous-Alexander",
+        description: "15 PTS",
+        imageUrl: "/sga.png",
+      },
+      sasPlayer: {
+        name: "Victor Wembanyama",
+        description: "28 PTS, 10 REB, 3 BLK",
+        imageUrl: "/wemby.png",
+      },
+    },
+  },
+  {
+    game: 7,
+    awayTeam: "SAS",
+    homeTeam: "OKC",
+    arena: "Chesapeake Energy Arena, OKC",
+    date: "May 30th, 2026 @ 7:30 PM",
+    courtImageUrl: "/okc-court.png",
+    ot: 0,
+    spread: 15,
+    info: {
+      headline: {
+        print: "SAS WINS 4-3",
+        text: "Spurs clinch the series with a thrilling Game 7 victory",
+        imageUrl: "/g7.png",
+      },
+      okcPlayer: {
+        name: "Shai Gilgeous-Alexander",
+        description: "35 PTS, 9 AST, 57% FG",
+        imageUrl: "/sga.png",
+      },
+      sasPlayer: {
+        name: "Victor Wembanyama",
+        description: "22 PTS, 7 REB",
+        imageUrl: "/wemby.png",
+      },
+    },
+  },
+];
