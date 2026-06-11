@@ -5,1049 +5,759 @@ export default function Game2_SAS() {
       viewBox="0,0,540,570"
       preserveAspectRatio="xMidYMid meet"
     >
-      {/* <g className="title" transform="translate(5, 21)">
-        <text font-family="Roboto">SAS vs OKC on 05/20/2026</text>
-      </g>
-      <g className="footer" transform="translate(10, 560)">
-        <text font-family="Roboto">
-          <tspan>FG%: </tspan>
-          <tspan font-weight="800">48.8%</tspan>
-          <tspan> (41/84)</tspan>
-        </text>
-      </g>
-      <g>
-        <g className="legend" transform="translate(520, 560)">
-          <text text-anchor="end" font-family="Roboto">
-            Miss
-          </text>
-          <path
-            transform="translate(-44, -6)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-            
-          ></path>
-          <text
-            transform="translate(-80, 0)"
-            text-anchor="end"
-            font-family="Roboto"
-          >
-            Made
-          </text>
-          <path
-            transform="translate(-130, -6)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-            
-          ></path>
-        </g>
-      </g> */}
       <g className="court" transform="translate(20, 50)">
-        {/* <g className="markings">
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M470,0v140"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M30,0v140"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M330,0v190"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M170,0v190"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M310,0v190"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M190,0v190"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M330,190H170"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M280,40h-60"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M250,40v2.5"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M290,40v10"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M210,40v10"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M250,42.5c4.1,0,7.5,3.4,7.5,7.5s-3.4,7.5-7.5,7.5s-7.5-3.4-7.5-7.5S245.9,42.5,250,42.5z"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M0,0v470h190c0-33.1,26.9-60,60-60s60,26.9,60,60h190V0H0z"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M250,410c-33.1,0-60,26.9-60,60h40c0-11,9-20,20-20s20,9,20,20h40C310,436.9,283.1,410,250,410z"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M250,450c-11,0-20,9-20,20h40C270,459,261,450,250,450z"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M310,190c0,33.1-26.9,60-60,60s-60-26.9-60-60c0,33.1,26.9,60,60,60S310,223.1,310,190z"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            style="stroke-dasharray:5,10"
-            d="M310,190c0-33.1-26.9-60-60-60s-60,26.9-60,60c0-33.1,26.9-60,60-60S310,156.9,310,190z"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M290,50c0,22.1-17.9,40-40,40s-40-17.9-40-40c0,22.1,17.9,40,40,40S290,72.1,290,50z"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M469.8,139.9c-49.7,121.4-188.3,179.6-309.7,129.9c-59-24.1-105.8-70.9-129.9-129.9 c49.7,121.4,188.3,179.6,309.7,129.9C398.9,245.7,445.7,198.9,469.8,139.9z"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M140,0v5"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M359.9,0v5"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M470,281.6h30"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M0,286.7h30"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M170,69.8h-10"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M170,79.9h-10"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M170,109.9h-10"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M170,140h-10"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M340,69.8h-10"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M340,79.9h-10"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M340,109.9h-10"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M0,140h30"
-          ></path>
-          <path
-            className="mark"
-            fill="none"
-            stroke="#3C414A"
-            d="M470,139.9h30"
-          ></path>
-        </g> */}
         <g className="shot">
-          <title>MISS Vassell 27' 3PT Jump Shot Q1 - 11:43</title>
+          <title>
+            Vassell 25' 3PT Jump Shot (3 PTS) (Castle 1 AST) Q1 - 11:36
+          </title>
           <path
-            transform="translate(358, 301)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
+            transform="translate(214, 297)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
-          <title>MISS Vassell 25' 3PT Jump Shot Q1 - 11:05</title>
+          <title>MISS Fox 7' Running Pull-Up Jump Shot Q1 - 10:28</title>
           <path
-            transform="translate(21.000000000000014, 142)"
+            transform="translate(228, 118.99999999999999)"
             d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--miss)"
           ></path>
         </g>
         <g className="shot">
           <title>
-            Vassell 3PT Pullup Jump Shot (3 PTS) (Harper 1 AST) Q1 - 10:12
+            Champagnie 25' 3PT Jump Shot (5 PTS) (Vassell 1 AST) Q1 - 09:59
           </title>
           <path
-            transform="translate(483, 21)"
+            transform="translate(46.99999999999999, 195.99999999999997)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
           <title>
-            Wembanyama 26' 3PT Jump Shot (3 PTS) (Harper 2 AST) Q1 - 09:46
+            Castle 4' Driving Floating Bank Jump Shot (2 PTS) Q1 - 09:34
           </title>
           <path
-            transform="translate(380, 276)"
+            transform="translate(292, 65)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
-          <title>Harper 3' Driving Layup (2 PTS) Q1 - 09:09</title>
+          <title>Champagnie 3PT Fadeaway Bank Shot (8 PTS) Q1 - 09:00</title>
           <path
-            transform="translate(244, 77)"
+            transform="translate(16.999999999999993, 42)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
-          <title>MISS Vassell 11' Pullup Jump Shot Q1 - 08:36</title>
+          <title>MISS Castle 25' 3PT Jump Shot Q1 - 08:25</title>
           <path
-            transform="translate(363, 34)"
+            transform="translate(407, 247.00000000000003)"
             d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--miss)"
           ></path>
         </g>
         <g className="shot">
-          <title>MISS Vassell 27' 3PT Jump Shot Q1 - 07:56</title>
+          <title>MISS Castle 6' Running Layup Q1 - 08:06</title>
           <path
-            transform="translate(344, 299)"
+            transform="translate(306, 36)"
             d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Johnson 26' 3PT Jump Shot Q1 - 06:20</title>
-          <path
-            transform="translate(45, 214)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Castle 4' Jump Shot Q1 - 06:15</title>
-          <path
-            transform="translate(225, 83)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--miss)"
           ></path>
         </g>
         <g className="shot">
           <title>
-            Kornet 1' Cutting Dunk Shot (2 PTS) (Castle 1 AST) Q1 - 05:50
+            Wembanyama Cutting Dunk Shot (2 PTS) (Johnson 1 AST) Q1 - 07:42
           </title>
           <path
-            transform="translate(244, 59.99999999999999)"
+            transform="translate(248, 47)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
-          <title>Castle 15' Pullup Jump Shot (6 PTS) Q1 - 05:17</title>
+          <title>MISS Castle 2' Running Reverse Layup Q1 - 07:20</title>
           <path
-            transform="translate(300, 189)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Johnson 2' Driving Hook Shot Q1 - 04:28</title>
-          <path
-            transform="translate(268, 57.00000000000001)"
+            transform="translate(233, 40)"
             d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--miss)"
           ></path>
         </g>
         <g className="shot">
           <title>
-            Castle 11' Driving Floating Jump Shot (8 PTS) Q1 - 04:03
+            Harper 1' Driving Finger Roll Layup (2 PTS) (Champagnie 1 AST) Q1 -
+            06:56
           </title>
           <path
-            transform="translate(254, 156)"
+            transform="translate(237.99999999999997, 50)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
-          <title>MISS Champagnie 27' 3PT Jump Shot Q1 - 03:25</title>
+          <title>MISS Wembanyama 25' 3PT Jump Shot Q1 - 06:20</title>
           <path
-            transform="translate(41.99999999999999, 215)"
+            transform="translate(348, 277)"
             d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--miss)"
           ></path>
         </g>
         <g className="shot">
           <title>
-            Johnson 24' 3PT Jump Shot (3 PTS) (Champagnie 1 AST) Q1 - 03:07
+            Harper 1' Driving Dunk (4 PTS) (Castle 2 AST) Q1 - 05:27
           </title>
           <path
-            transform="translate(13.000000000000007, 23.000000000000004)"
+            transform="translate(251, 39)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
-          <title>MISS Johnson 3' Driving Layup Q1 - 02:40</title>
+          <title>MISS Harper 25' 3PT Jump Shot Q1 - 05:00</title>
           <path
-            transform="translate(228, 67)"
+            transform="translate(157, 287)"
             d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--miss)"
           ></path>
         </g>
         <g className="shot">
-          <title>MISS Johnson Tip Layup Shot Q1 - 02:37</title>
+          <title>MISS Vassell 25' 3PT Jump Shot Q1 - 04:05</title>
+          <path
+            transform="translate(409, 249.00000000000003)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>Fox 8' Pullup Jump Shot (2 PTS) Q1 - 03:32</title>
+          <path
+            transform="translate(327, 51.99999999999999)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>
+            Vassell 2' Driving Finger Roll Layup (5 PTS) (Harper 1 AST) Q1 -
+            03:06
+          </title>
+          <path
+            transform="translate(267, 48.99999999999999)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>
+            Fox 25' 3PT Jump Shot (5 PTS) (Vassell 2 AST) Q1 - 02:38
+          </title>
+          <path
+            transform="translate(102, 252)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>Fox 2' Driving Finger Roll Layup (7 PTS) Q1 - 02:18</title>
+          <path
+            transform="translate(233, 46.00000000000001)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>
+            Fox 2' Running Alley Oop Layup Shot (9 PTS) (Vassell 3 AST) Q1 -
+            01:45
+          </title>
+          <path
+            transform="translate(235, 40)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>
+            Wembanyama 3' Driving Layup (5 PTS) (Fox 1 AST) Q1 - 00:12
+          </title>
+          <path
+            transform="translate(223, 43.99999999999999)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>Castle 3PT Jump Shot (5 PTS) (Harper 2 AST) Q2 - 11:32</title>
+          <path
+            transform="translate(479, 21)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Champagnie 25' 3PT Jump Shot Q2 - 10:52</title>
+          <path
+            transform="translate(358, 272)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Castle 6' Driving Layup Q2 - 10:41</title>
+          <path
+            transform="translate(254, 108.00000000000001)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>
+            MISS Wembanyama 24' 3PT Running Pull-Up Jump Shot Q2 - 10:28
+          </title>
+          <path
+            transform="translate(65, 210)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Harper 1' Driving Layup Q2 - 09:33</title>
+          <path
+            transform="translate(255, 50)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Castle 11' Pullup Jump Shot Q2 - 08:46</title>
+          <path
+            transform="translate(224.00000000000003, 160)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>Fox 1' Driving Floating Jump Shot (11 PTS) Q2 - 08:01</title>
+          <path
+            transform="translate(246.00000000000003, 58)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Fox 10' Step Back Jump Shot Q2 - 07:22</title>
+          <path
+            transform="translate(208.00000000000003, 138)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>
+            Harper 3' Driving Reverse Layup (6 PTS) (Fox 2 AST) Q2 - 06:49
+          </title>
+          <path
+            transform="translate(225, 40.99999999999999)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Fox 1' Driving Layup Q2 - 06:13</title>
+          <path
+            transform="translate(248, 61)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Vassell 24' 3PT Running Jump Shot Q2 - 05:56</title>
+          <path
+            transform="translate(16.000000000000014, 75)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Harper 1' Running Finger Roll Layup Q2 - 05:42</title>
+          <path
+            transform="translate(237.99999999999997, 50)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Harper 3PT Jump Shot Q2 - 05:21</title>
+          <path
+            transform="translate(475, 34)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Champagnie 24' 3PT Jump Shot Q2 - 04:56</title>
+          <path
+            transform="translate(386, 252)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Johnson 26' 3PT Jump Shot Q2 - 03:49</title>
+          <path
+            transform="translate(127, 275)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Harper 2' Driving Floating Jump Shot Q2 - 03:20</title>
+          <path
+            transform="translate(271, 55)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>
+            Vassell 26' 3PT Jump Shot (10 PTS) (Wembanyama 1 AST) Q2 - 03:15
+          </title>
+          <path
+            transform="translate(93.00000000000001, 251.00000000000003)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Vassell 3' Driving Layup Q2 - 02:45</title>
+          <path
+            transform="translate(228, 62)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Vassell 25' 3PT Jump Shot Q2 - 02:14</title>
+          <path
+            transform="translate(406, 239)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Champagnie 24' 3PT Jump Shot Q2 - 01:47</title>
+          <path
+            transform="translate(6.999999999999993, 40)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Fox 9' Pullup Jump Shot Q2 - 00:00</title>
+          <path
+            transform="translate(246.00000000000003, 140)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>Wembanyama 17' Pullup Jump Shot (9 PTS) Q3 - 10:46</title>
+          <path
+            transform="translate(255, 223)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Champagnie 6' Driving Layup Q3 - 10:19</title>
+          <path
+            transform="translate(295, 87)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Castle 4' Running Layup Q3 - 10:00</title>
+          <path
+            transform="translate(214, 50)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Wembanyama 27' 3PT Jump Shot Q3 - 09:30</title>
+          <path
+            transform="translate(430, 256)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>
+            Fox 7' Running Pull-Up Jump Shot (14 PTS) (Wembanyama 2 AST) Q3 -
+            08:56
+          </title>
+          <path
+            transform="translate(256, 118.99999999999999)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>Wembanyama 2' Dunk (11 PTS) (Castle 3 AST) Q3 - 07:30</title>
+          <path
+            transform="translate(248, 70)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Vassell 3PT Jump Shot Q3 - 06:50</title>
+          <path
+            transform="translate(21.000000000000014, 43.99999999999999)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Wembanyama Tip Layup Shot Q3 - 06:49</title>
           <path
             transform="translate(250, 50)"
             d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--miss)"
           ></path>
         </g>
         <g className="shot">
-          <title>Kornet 2' Putback Layup (4 PTS) Q1 - 02:35</title>
-          <path
-            transform="translate(259, 67)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Harper 16' Step Back Jump Shot Q1 - 01:59</title>
-          <path
-            transform="translate(409, 81.99999999999999)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>
-            McLaughlin 27' 3PT Step Back Jump Shot (3 PTS) (Champagnie 2 AST) Q1
-            - 01:02
-          </title>
-          <path
-            transform="translate(428, 254)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Johnson 1' Driving Layup Q1 - 00:42</title>
-          <path
-            transform="translate(252, 59.99999999999999)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>
-            Champagnie 27' 3PT Jump Shot (5 PTS) (Harper 3 AST) Q1 - 00:29
-          </title>
-          <path
-            transform="translate(360, 301)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>
-            MISS Wembanyama 7' Driving Floating Bank Jump Shot Q2 - 10:20
-          </title>
-          <path
-            transform="translate(312, 83)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>Wembanyama Tip Layup Shot (5 PTS) Q2 - 10:19</title>
+          <title>Wembanyama Tip Layup Shot (13 PTS) Q3 - 06:48</title>
           <path
             transform="translate(250, 50)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
-          <title>Harper 2' Driving Finger Roll Layup (4 PTS) Q2 - 09:58</title>
+          <title>MISS Harper 25' 3PT Jump Shot Q3 - 05:48</title>
           <path
-            transform="translate(255, 66)"
+            transform="translate(26.999999999999993, 158)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>Johnson 1' Putback Layup (2 PTS) Q3 - 05:45</title>
+          <path
+            transform="translate(256, 59.99999999999999)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
           <title>
-            Castle 1' Running Layup (10 PTS) (Wembanyama 1 AST) Q2 - 09:05
+            Castle 26' 3PT Jump Shot (10 PTS) (Johnson 2 AST) Q3 - 05:10
           </title>
           <path
-            transform="translate(240, 58)"
+            transform="translate(100, 261)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
           <title>
-            Castle 2' Driving Dunk (12 PTS) (Wembanyama 2 AST) Q2 - 08:15
+            MISS Wembanyama 1' Running Alley Oop Dunk Shot Q3 - 04:41
           </title>
           <path
-            transform="translate(237.99999999999997, 70)"
+            transform="translate(240, 61)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>Wembanyama 26' 3PT Pullup Jump Shot (17 PTS) Q3 - 03:45</title>
+          <path
+            transform="translate(388.00000000000006, 275)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
-          <title>Harper 1' Driving Finger Roll Layup (6 PTS) Q2 - 07:27</title>
+          <title>Castle 2' Driving Finger Roll Layup (12 PTS) Q3 - 03:19</title>
           <path
-            transform="translate(257, 63)"
+            transform="translate(266, 61)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
-          <title>MISS Champagnie 25' 3PT Running Jump Shot Q2 - 07:05</title>
+          <title>MISS Castle 26' 3PT Pullup Jump Shot Q3 - 02:49</title>
           <path
-            transform="translate(60, 218.99999999999997)"
+            transform="translate(413, 253.00000000000003)"
             d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--miss)"
           ></path>
         </g>
         <g className="shot">
-          <title>MISS Harper 4' Running Finger Roll Layup Q2 - 06:09</title>
+          <title>MISS Castle 7' Driving Floating Jump Shot Q3 - 02:03</title>
           <path
-            transform="translate(233, 83)"
+            transform="translate(248, 120.99999999999999)"
             d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--miss)"
           ></path>
         </g>
         <g className="shot">
-          <title>MISS Vassell 29' 3PT Jump Shot Q2 - 05:45</title>
+          <title>MISS Johnson 26' 3PT Jump Shot Q3 - 00:56</title>
           <path
-            transform="translate(76.00000000000001, 283)"
+            transform="translate(125, 275)"
             d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Castle 27' 3PT Jump Shot Q2 - 05:38</title>
-          <path
-            transform="translate(342, 302)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--miss)"
           ></path>
         </g>
         <g className="shot">
           <title>
-            Castle 2' Driving Floating Bank Jump Shot (14 PTS) Q2 - 04:39
+            Wembanyama 14' Pullup Jump Shot (19 PTS) (Fox 3 AST) Q3 - 00:20
           </title>
           <path
-            transform="translate(259, 67)"
+            transform="translate(218.99999999999997, 190)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
-          <title>Castle 16' Step Back Jump Shot (16 PTS) Q2 - 04:17</title>
+          <title>MISS Johnson 3' Driving Layup Q4 - 11:34</title>
           <path
-            transform="translate(278, 205)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Champagnie 3PT Jump Shot Q2 - 03:54</title>
-          <path
-            transform="translate(475, 39)"
+            transform="translate(226.99999999999997, 63)"
             d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Harper 18' Step Back Jump Shot Q2 - 03:30</title>
-          <path
-            transform="translate(376, 172.99999999999997)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Castle 2' Running Layup Q2 - 01:46</title>
-          <path
-            transform="translate(234, 68)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Wembanyama 27' 3PT Jump Shot Q2 - 01:21</title>
-          <path
-            transform="translate(228, 315)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Barnes 24' 3PT Jump Shot Q2 - 00:50</title>
-          <path
-            transform="translate(486.99999999999994, 28)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Harper 16' Pullup Jump Shot Q2 - 00:15</title>
-          <path
-            transform="translate(333, 182)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--miss)"
           ></path>
         </g>
         <g className="shot">
           <title>
-            Wembanyama 12' Turnaround Fadeaway (9 PTS) (Castle 2 AST) Q3 - 11:21
+            Wembanyama 27' 3PT Jump Shot (22 PTS) (Castle 4 AST) Q4 - 10:44
           </title>
           <path
-            transform="translate(194.00000000000003, 156)"
+            transform="translate(306, 316)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>Harper 1' Driving Layup (10 PTS) Q3 - 10:51</title>
-          <path
-            transform="translate(237, 54.00000000000001)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Champagnie 26' 3PT Jump Shot Q3 - 10:05</title>
-          <path
-            transform="translate(374, 279)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>Wembanyama 25' 3PT Pullup Jump Shot (12 PTS) Q3 - 09:57</title>
-          <path
-            transform="translate(104.00000000000001, 250)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
           <title>
-            Vassell 3PT Jump Shot (8 PTS) (Wembanyama 3 AST) Q3 - 09:12
+            Castle 2' Cutting Dunk Shot (14 PTS) (Vassell 4 AST) Q4 - 10:11
           </title>
           <path
-            transform="translate(21.999999999999993, 48.99999999999999)"
+            transform="translate(245, 70)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
-          <title>Harper Driving Finger Roll Layup (12 PTS) Q3 - 08:42</title>
+          <title>Harper 1' Running Finger Roll Layup (8 PTS) Q4 - 09:11</title>
           <path
-            transform="translate(248, 51.00000000000001)"
+            transform="translate(257, 58.99999999999999)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Wembanyama 3' Alley Oop Layup Q4 - 08:40</title>
+          <path
+            transform="translate(223, 69)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Castle 17' Pullup Jump Shot Q4 - 06:58</title>
+          <path
+            transform="translate(319, 206)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>MISS Wembanyama 3' Driving Layup Q4 - 06:25</title>
+          <path
+            transform="translate(225, 61)"
+            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--miss)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>Fox 25' 3PT Step Back Jump Shot (18 PTS) Q4 - 05:27</title>
+          <path
+            transform="translate(217, 300)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>Fox 2' Driving Layup (20 PTS) Q4 - 04:48</title>
+          <path
+            transform="translate(237, 61)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
+            stroke="var(--make)"
+          ></path>
+        </g>
+        <g className="shot">
+          <title>Wembanyama 2' Finger Roll Layup (24 PTS) Q4 - 04:17</title>
+          <path
+            transform="translate(237, 61)"
+            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
           <title>
-            Wembanyama 27' 3PT Pullup Jump Shot (15 PTS) (Castle 3 AST) Q3 -
-            08:11
+            Vassell 26' 3PT Jump Shot (14 PTS) (Fox 4 AST) Q4 - 03:55
           </title>
           <path
-            transform="translate(262, 317)"
+            transform="translate(352, 285)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
           <title>
-            Vassell 24' 3PT Jump Shot (11 PTS) (Wembanyama 4 AST) Q3 - 07:40
+            Harper 6' Driving Floating Jump Shot (13 PTS) Q4 - 02:59
           </title>
           <path
-            transform="translate(16.999999999999993, 17.999999999999996)"
+            transform="translate(256, 107)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
           <title>
-            MISS Wembanyama 6' Driving Floating Jump Shot Q3 - 07:04
+            Wembanyama 1' Alley Oop Dunk (26 PTS) (Fox 5 AST) Q4 - 02:27
           </title>
           <path
-            transform="translate(304, 64)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>Wembanyama Tip Dunk Shot (17 PTS) Q3 - 07:02</title>
-          <path
-            transform="translate(250, 50)"
+            transform="translate(251, 61)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
-          <title>MISS Castle 3PT Jump Shot Q3 - 06:30</title>
+          <title>MISS Wembanyama 24' 3PT Step Back Jump Shot Q4 - 01:37</title>
           <path
-            transform="translate(484, 51.00000000000001)"
+            transform="translate(15, 66)"
             d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>Castle 2' Driving Layup (18 PTS) Q3 - 06:00</title>
-          <path
-            transform="translate(266, 43.99999999999999)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Harper 3' Driving Layup Q3 - 05:25</title>
-          <path
-            transform="translate(218, 61)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Castle 26' 3PT Step Back Jump Shot Q3 - 04:28</title>
-          <path
-            transform="translate(163, 290)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Johnson 1' Driving Layup Q3 - 04:08</title>
-          <path
-            transform="translate(257, 48)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Johnson 1' Putback Layup Q3 - 04:06</title>
-          <path
-            transform="translate(241, 46.00000000000001)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>Johnson Tip Layup Shot (5 PTS) Q3 - 04:05</title>
-          <path
-            transform="translate(250, 50)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>Vassell 14' Pullup Jump Shot (13 PTS) Q3 - 03:39</title>
-          <path
-            transform="translate(281, 188)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>
-            McLaughlin 24' 3PT Jump Shot (6 PTS) (Wembanyama 5 AST) Q3 - 02:08
-          </title>
-          <path
-            transform="translate(480, 125)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>
-            Champagnie 3' Driving Floating Jump Shot (7 PTS) (Vassell 1 AST) Q3
-            - 01:33
-          </title>
-          <path
-            transform="translate(278, 58)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>
-            Vassell 28' 3PT Running Jump Shot (16 PTS) (McLaughlin 1 AST) Q3 -
-            00:55
-          </title>
-          <path
-            transform="translate(357, 311)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS McLaughlin 23' Pullup Jump Shot Q3 - 00:00</title>
-          <path
-            transform="translate(145, 249.00000000000003)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--miss)"
           ></path>
         </g>
         <g className="shot">
           <title>
-            Castle 1' Reverse Layup (20 PTS) (Wembanyama 6 AST) Q4 - 11:44
+            Harper 2' Running Layup (15 PTS) (Vassell 5 AST) Q4 - 01:25
           </title>
           <path
-            transform="translate(237, 48)"
+            transform="translate(263, 64)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Wembanyama 3PT Jump Shot Q4 - 11:19</title>
-          <path
-            transform="translate(21.999999999999993, 105)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>Castle 2' Driving Layup (22 PTS) Q4 - 10:38</title>
-          <path
-            transform="translate(268, 45)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Wembanyama 3' Driving Layup Q4 - 09:36</title>
-          <path
-            transform="translate(276, 35)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>Wembanyama Tip Layup Shot (19 PTS) Q4 - 09:34</title>
-          <path
-            transform="translate(250, 50)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>Barnes 3PT Jump Shot (5 PTS) (Castle 4 AST) Q4 - 09:06</title>
-          <path
-            transform="translate(21.999999999999993, 35)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Wembanyama 25' 3PT Jump Shot Q4 - 08:10</title>
-          <path
-            transform="translate(205, 296)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Johnson 3PT Jump Shot Q4 - 07:43</title>
-          <path
-            transform="translate(21.999999999999993, 23.000000000000004)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Wembanyama 27' 3PT Jump Shot Q4 - 06:39</title>
-          <path
-            transform="translate(306, 314)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>
-            Vassell 25' 3PT Jump Shot (19 PTS) (Castle 5 AST) Q4 - 06:30
-          </title>
-          <path
-            transform="translate(479, 151)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
           <title>
-            Castle 26' 3PT Running Jump Shot (25 PTS) (Johnson 1 AST) Q4 - 06:12
+            Wembanyama 1' Cutting Finger Roll Layup Shot (28 PTS) (Harper 3 AST)
+            Q4 - 00:57
           </title>
           <path
-            transform="translate(466, 203)"
+            transform="translate(250, 63)"
             d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--make)"
           ></path>
         </g>
         <g className="shot">
-          <title>MISS Castle 27' 3PT Pullup Jump Shot Q4 - 05:17</title>
+          <title>MISS Wembanyama 17' Pullup Jump Shot Q4 - 00:30</title>
           <path
-            transform="translate(379, 289)"
+            transform="translate(94, 116)"
             d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--miss)"
           ></path>
         </g>
         <g className="shot">
-          <title>Johnson Putback Layup (7 PTS) Q4 - 05:14</title>
+          <title>MISS Wembanyama 20' Jump Shot Q4 - 00:02</title>
           <path
-            transform="translate(248, 46.00000000000001)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Champagnie 26' 3PT Jump Bank Shot Q4 - 04:40</title>
-          <path
-            transform="translate(145, 289)"
+            transform="translate(382, 201)"
             d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>
-            Johnson 3PT Jump Shot (10 PTS) (Castle 6 AST) Q4 - 03:45
-          </title>
-          <path
-            transform="translate(21.999999999999993, 9.000000000000004)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Champagnie 3PT Jump Shot Q4 - 03:06</title>
-          <path
-            transform="translate(20, 17)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>
-            MISS Wembanyama 14' Running Pull-Up Jump Shot Q4 - 02:31
-          </title>
-          <path
-            transform="translate(341, 150)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>
-            Vassell 26' 3PT Pullup Jump Shot (22 PTS) (Castle 7 AST) Q4 - 01:56
-          </title>
-          <path
-            transform="translate(78.00000000000001, 239)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>
-            Wembanyama 1' Driving Layup (21 PTS) (Castle 8 AST) Q4 - 01:25
-          </title>
-          <path
-            transform="translate(245, 55)"
-            d="M -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--make)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Vassell 3PT Jump Shot Q4 - 01:06</title>
-          <path
-            transform="translate(23.000000000000007, 33)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Castle 3PT Jump Shot Q4 - 00:32</title>
-          <path
-            transform="translate(478, 97.99999999999999)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
-            stroke="var(--miss)"
-          ></path>
-        </g>
-        <g className="shot">
-          <title>MISS Vassell 27' 3PT Jump Shot Q4 - 00:16</title>
-          <path
-            transform="translate(430, 247.00000000000003)"
-            d="M -5,-5 L 5,5 M 5,-5 L -5,5"
-            fill="rgba(255,255,255, 0.1)"
+            fill="var(255,255,255, 0.1)"
             stroke="var(--miss)"
           ></path>
         </g>

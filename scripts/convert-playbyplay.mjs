@@ -4,10 +4,11 @@ import readline from "node:readline";
 
 const INPUT_ARG = process.argv[2];
 const OUTPUT_ARG = process.argv[3];
+const PLAYERS_TS_ARG = process.argv[4];
 
 if (!INPUT_ARG) {
   console.error(
-    "Usage: node scripts/convert-playbyplay.mjs <inputRawFile> [outputCsvFile]",
+    "Usage: node scripts/convert-playbyplay.mjs <inputRawFile> [outputCsvFile] [playersTsFile]",
   );
   process.exit(1);
 }
@@ -19,6 +20,10 @@ const outputPath = OUTPUT_ARG
       path.dirname(inputPath),
       `${path.basename(inputPath, path.extname(inputPath))}.compiled.csv`,
     );
+
+const playersTsPath = PLAYERS_TS_ARG
+  ? path.resolve(process.cwd(), PLAYERS_TS_ARG)
+  : path.resolve(process.cwd(), "app/info/players.ts");
 
 const header = [
   "time",
@@ -38,35 +43,6 @@ const header = [
   "fouls",
 ];
 
-const spursTokens = new Set([
-  "Wembanyama",
-  "Harper",
-  "Castle",
-  "Vassell",
-  "Champagnie",
-  "Johnson",
-  "Bryant",
-  "Barnes",
-  "Kornet",
-]);
-
-const thunderTokens = new Set([
-  "Gilgeous-Alexander",
-  "Jalen",
-  "Jal.",
-  "Holmgren",
-  "Dort",
-  "Hartenstein",
-  "Caruso",
-  "McCain",
-  "Jaylin",
-  "Jay.",
-  "Wallace",
-  "Mitchell",
-  "Wiggins",
-  "Joe",
-]);
-
 const stripNameSuffix = (name) =>
   name
     .replace(/\b(?:Jr\.?|Sr\.?|I{2,4})$/i, "")
@@ -75,6 +51,73 @@ const stripNameSuffix = (name) =>
     .trim();
 
 const canonicalName = (name) => stripNameSuffix(name).toLowerCase();
+
+const buildNameAliases = (name) => {
+  const cleanName = stripNameSuffix(name);
+  if (!cleanName) return [];
+
+  const aliases = new Set([cleanName]);
+  const parts = cleanName.split(/\s+/).filter(Boolean);
+
+  if (parts.length >= 2) {
+    const first = parts[0];
+    const last = parts[parts.length - 1];
+    aliases.add(last);
+    aliases.add(`${first[0]}. ${last}`);
+  }
+
+  return [...aliases];
+};
+
+const extractPlayersByExport = (source, exportName) => {
+  const blockMatch = source.match(
+    new RegExp(`export\\s+const\\s+${exportName}\\s*=\\s*\\[(.*?)\\];`, "s"),
+  );
+  if (!blockMatch) return [];
+
+  const names = [];
+  const nameRegex = /name\s*:\s*"([^"]+)"/g;
+  let match = nameRegex.exec(blockMatch[1]);
+  while (match) {
+    names.push(match[1]);
+    match = nameRegex.exec(blockMatch[1]);
+  }
+
+  return names;
+};
+
+const loadPlayersTs = (filePath) => {
+  if (!fs.existsSync(filePath)) {
+    throw new Error(`Players TS file not found at ${filePath}`);
+  }
+
+  const playerTeamMap = new Map();
+  const knownTeams = new Set();
+
+  const source = fs.readFileSync(filePath, "utf8");
+  const rosterConfig = [
+    { exportName: "spursPlayers", team: "SPURS" },
+    { exportName: "knicksPlayers", team: "KNICKS" },
+  ];
+
+  for (const { exportName, team } of rosterConfig) {
+    const names = extractPlayersByExport(source, exportName);
+    if (names.length === 0) continue;
+
+    knownTeams.add(team);
+    for (const name of names) {
+      for (const alias of buildNameAliases(name)) {
+        playerTeamMap.set(canonicalName(alias), team);
+      }
+    }
+  }
+
+  if (knownTeams.size === 0) {
+    throw new Error(`Could not parse any team rosters from ${filePath}`);
+  }
+
+  return { playerTeamMap, knownTeams };
+};
 
 const isTime = (line) => /^\d{1,2}:\d{2}$/.test(line);
 const isScore = (line) => /^\d+\s*-\s*\d+$/.test(line);
@@ -138,7 +181,12 @@ const inferPlayer = (playText) => {
     return subShortMatch ? stripNameSuffix(subShortMatch[1]) : "Unknown";
   }
 
-  const cleaned = playText.replace(/^MISS\s+/, "").replace(/^Spurs\s+/, "");
+  const cleaned = playText.replace(/^MISS\s+/, "");
+
+  const statEventMatch = cleaned.match(
+    /^([A-Za-z'.\-]+)\s+(REBOUND|STEAL|BLOCK|Turnover|FOUL)\b/i,
+  );
+  if (statEventMatch) return stripNameSuffix(statEventMatch[1]);
 
   const initialsMatch = cleaned.match(
     /^([A-Z]\.\s+[A-Za-z'\-]+(?:\s+[A-Za-z'\-]+)?)/,
@@ -154,9 +202,13 @@ const inferPlayer = (playText) => {
   return singleMatch ? stripNameSuffix(singleMatch[1]) : "Unknown";
 };
 
-const inferDirectTeam = (playText) => {
-  if (/^THUNDER\b/.test(playText)) return "THUNDER";
-  if (/^SPURS\b/i.test(playText) || /^Spurs\b/.test(playText)) return "SPURS";
+const inferDirectTeam = (playText, knownTeams) => {
+  for (const team of knownTeams) {
+    const escaped = team.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const teamRegex = new RegExp(`^${escaped}\\b`, "i");
+    if (teamRegex.test(playText)) return team;
+  }
+
   return null;
 };
 
@@ -204,6 +256,7 @@ const makeRow = ({
   quarter,
   playText,
   playerTeamMap,
+  knownTeams,
   lastResolvedTeam,
 }) => {
   const player = inferPlayer(playText);
@@ -235,16 +288,15 @@ const makeRow = ({
     return playerTeamMap.get(canonicalName(name)) ?? null;
   };
 
-  let team = inferDirectTeam(playText);
-
-  if (!team && spursTokens.has(player)) team = "SPURS";
-  if (!team && thunderTokens.has(player)) team = "THUNDER";
+  let team = inferDirectTeam(playText, knownTeams);
   if (!team) team = lookupKnownTeam(player);
 
   if (!team) team = lookupKnownTeam(assistName);
   if (!team) team = lookupKnownTeam(subIncomingName);
   if (!team) team = lookupKnownTeam(subOutgoingName);
-  if (!team) team = lookupKnownTeam(jumpBallTipTo);
+  if (!team && !/^Jump Ball\b/i.test(playText)) {
+    team = lookupKnownTeam(jumpBallTipTo);
+  }
   if (!team) team = inferTeamFromKnownNames(playText, playerTeamMap);
 
   if (!team && /Instant Replay/i.test(playText)) {
@@ -266,7 +318,6 @@ const makeRow = ({
   register(assistName);
   register(subIncomingName);
   register(subOutgoingName);
-  register(jumpBallTipTo);
 
   return {
     csvLine: header.map((column) => toCsvField(row[column])).join(","),
@@ -284,14 +335,7 @@ const convert = async () => {
   let pendingPlay = null;
   let rowCount = 0;
   let lastResolvedTeam = null;
-  const playerTeamMap = new Map();
-
-  for (const token of spursTokens) {
-    playerTeamMap.set(canonicalName(token), "SPURS");
-  }
-  for (const token of thunderTokens) {
-    playerTeamMap.set(canonicalName(token), "THUNDER");
-  }
+  const { playerTeamMap, knownTeams } = loadPlayersTs(playersTsPath);
 
   output.write(`${header.join(",")}\n`);
 
@@ -331,6 +375,7 @@ const convert = async () => {
           quarter,
           playText: pendingPlay,
           playerTeamMap,
+          knownTeams,
           lastResolvedTeam,
         });
         output.write(`${csvLine}\n`);
@@ -349,6 +394,7 @@ const convert = async () => {
         quarter,
         playText: line,
         playerTeamMap,
+        knownTeams,
         lastResolvedTeam,
       });
       output.write(`${csvLine}\n`);

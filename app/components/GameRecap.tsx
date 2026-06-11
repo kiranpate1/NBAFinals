@@ -21,7 +21,7 @@ export default function GameRecap({ isInsideSticky, height, game }: props) {
       <div className="w-full h-full flex justify-center lg:[grid-area:1/2/2/3]">
         <div className="w-full h-full max-w-[900px] grid grid-cols-6 grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 gap-2 p-2">
           <div className="[grid-area:2/1/2/4] lg:[grid-area:1/1/1/2]">
-            <PlayerCard info={gameInfo.okcPlayer} />
+            <PlayerCard info={gameInfo.nykPlayer} />
           </div>
           <div className="[grid-area:1/2/1/6] lg:[grid-area:1/2/1/3] flex justify-center">
             <div className="w-full max-w-[150px] lg:max-w-none h-full border border-(--stroke) rounded-xs flex flex-col items-stretch gap-1 overflow-hidden">

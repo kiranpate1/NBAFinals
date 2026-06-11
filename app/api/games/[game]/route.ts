@@ -5,7 +5,7 @@ import { NextResponse } from "next/server";
 type PlayEntry = {
   time: string;
   quarter: string;
-  team: "OKC" | "SAS";
+  team: "NYK" | "SAS";
   player: string;
   play: string;
   result: "made" | "miss" | "other";
@@ -53,7 +53,7 @@ const parseCsvLine = (line: string): string[] => {
 
 const toDisplayPlayer = (player: string) => {
   if (!player) return "Unknown";
-  if (player === "THUNDER") return "Team Thunder";
+  if (player === "KNICKS") return "Team Thunder";
   if (player === "SPURS") return "Team Spurs";
   return player;
 };
@@ -113,7 +113,7 @@ export async function GET(
       const assistRaw = row[7];
 
       const team =
-        teamRaw === "THUNDER" ? "OKC" : teamRaw === "SPURS" ? "SAS" : null;
+        teamRaw === "KNICKS" ? "NYK" : teamRaw === "SPURS" ? "SAS" : null;
       if (!team) continue;
 
       plays.push({

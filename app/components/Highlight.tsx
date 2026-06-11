@@ -1,6 +1,6 @@
 type props = {
   info: {
-    team: "OKC" | "SAS";
+    team: "NYK" | "SAS";
     player: {
       name: string;
       position: string;

@@ -4,15 +4,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f6f4f5;
+  --background: #e9e9f5;
   --foreground: #171717;
-  --stroke: #3c414a;
-  --okc: #007ac1;
+  --stroke: #0f131d;
+  --nyk: #f58426;
   --sas: #061922;
   --make: #142df0;
   --miss: #ff3700;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-mono-sans: var(--font-geist-mono-sans);
 }
 
 * {
@@ -105,7 +106,7 @@ p.smaller {
 
 small {
   display: block;
-  font-family: var(--font-mono, "Geist Mono"), monospace;
+  /* font-family: var(--font-mono, "Geist Mono"), monospace; */
   font-size: 10px;
   line-height: 100%;
 }
@@ -135,13 +136,13 @@ small {
   transform: translateY(-9%);
 }
 
-.okc_courts svg {
+.nyk_courts svg {
   width: 108.5%;
   transform: translateY(-9%);
 }
 
 .sas_courts svg g,
-.okc_courts svg g {
+.nyk_courts svg g {
   transform-origin: center;
   transform-box: fill-box;
   transition: all 0.12s ease;
@@ -180,12 +181,12 @@ small {
   80% {
     opacity: 1;
     stroke-dashoffset: 0px;
-    stroke: var(--okc);
+    stroke: var(--nyk);
   }
   100% {
     opacity: 0;
     stroke-dashoffset: 0px;
-    stroke: var(--okc);
+    stroke: var(--nyk);
   }
 }
 
