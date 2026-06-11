@@ -1,0 +1,509 @@
+time,quarter,team,player,play,distance,result,assist,points,rebounds,assists,steals,blocks,turnovers,fouls
+12:00,1,KNICKS,Towns,Jump Ball Towns vs. Wembanyama: Tip to Fox,NA,Jump Ball Towns vs. Wembanyama: Tip to Fox,NA,0,0,0,0,0,0,0
+11:42,1,KNICKS,Towns,Towns S.FOUL (P1.T1) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+11:42,1,SPURS,Fox Free Throw,Fox Free Throw 1 of 2 (1 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+11:42,1,SPURS,Fox Free Throw,Fox Free Throw 2 of 2 (2 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+11:21,1,KNICKS,Towns,Towns 7' Driving Floating Jump Shot (2 PTS) (Hart 1 AST),7,Driving Floating Jump Shot,Hart,2,0,1,0,0,0,0
+11:09,1,SPURS,Vassell,Vassell 26' 3PT Jump Shot (3 PTS) (Castle 1 AST),26,3PT Jump Shot,Castle,3,0,1,0,0,0,0
+10:58,1,KNICKS,Towns OFF,Towns OFF.Foul (P2) (Z.Zarba),NA,FOUL,NA,0,0,0,0,0,0,1
+10:58,1,KNICKS,Towns Offensive Foul Turnover,Towns Offensive Foul Turnover (P1.T1),NA,TURNOVER,NA,0,0,0,0,0,1,1
+10:58,1,SPURS,Spurs Timeout,Spurs Timeout: Regular (Reg.1 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+10:58,1,SPURS,Instant Replay,Instant Replay1st Period (8:46 PM EST),NA,Instant Replay1st Period (8:46 PM EST),NA,0,0,0,0,0,0,0
+10:58,1,KNICKS,Robinson,SUB: Robinson FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+10:42,1,SPURS,Wembanyama,Wembanyama 5' Turnaround Jump Shot (2 PTS),5,Turnaround Jump Shot,NA,2,0,0,0,0,0,0
+10:32,1,KNICKS,Robinson,MISS Robinson 2' Alley Oop Layup,2,Alley Oop Layup,NA,0,0,0,0,0,0,0
+10:30,1,SPURS,Wembanyama,Wembanyama REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:26,1,SPURS,Castle,MISS Castle 25' 3PT Running Jump Shot,25,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+10:23,1,KNICKS,Hart,Hart REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:15,1,KNICKS,Anunoby,MISS Anunoby 13' Step Back Jump Shot,13,Step Back Jump Shot,NA,0,0,0,0,0,0,0
+10:13,1,SPURS,Castle,Castle REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:06,1,SPURS,Fox,MISS Fox 4' Running Pull-Up Jump Shot,4,Running Pull-Up Jump Shot,NA,0,0,0,0,0,0,0
+10:04,1,KNICKS,Hart,Hart REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:52,1,KNICKS,Brunson,MISS Brunson 18' Step Back Jump Shot,18,Step Back Jump Shot,NA,0,0,0,0,0,0,0
+09:48,1,SPURS,Spurs,Spurs Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+09:34,1,SPURS,Vassell,Vassell 3PT Jump Shot (6 PTS) (Wembanyama 1 AST),NA,3PT Jump Shot,Wembanyama,3,0,1,0,0,0,0
+09:20,1,KNICKS,Hart Bad Pass Turnover,Hart Bad Pass Turnover (P1.T2),NA,TURNOVER,NA,0,0,0,0,0,1,0
+09:20,1,SPURS,Champagnie,Champagnie STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+09:17,1,SPURS,Champagnie Running Dunk,Champagnie Running Dunk (2 PTS),NA,Running Dunk,NA,2,0,0,0,0,0,0
+09:16,1,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 1 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+09:02,1,KNICKS,Brunson,MISS Brunson 4' Driving Hook Shot,4,Driving Hook Shot,NA,0,0,0,0,0,0,0
+09:01,1,KNICKS,Robinson,Robinson REBOUND (Off:1 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:01,1,KNICKS,Robinson Tip Layup Shot,MISS Robinson Tip Layup Shot,NA,Tip Layup Shot,NA,0,0,0,0,0,0,0
+08:59,1,KNICKS,Robinson,Robinson REBOUND (Off:2 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:59,1,KNICKS,Robinson,MISS Robinson 2' Putback Layup,2,Putback Layup,NA,0,0,0,0,0,0,0
+08:56,1,KNICKS,Robinson,Robinson REBOUND (Off:3 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:52,1,KNICKS,Anunoby,Anunoby 3PT Jump Shot (3 PTS) (Brunson 1 AST),NA,3PT Jump Shot,Brunson,3,0,1,0,0,0,0
+08:33,1,SPURS,Wembanyama,Wembanyama 2' Driving Finger Roll Layup (4 PTS),2,Driving Finger Roll Layup,NA,2,0,0,0,0,0,0
+08:26,1,SPURS,Fox,Fox S.FOUL (P1.T1) (J.Williams),NA,FOUL,NA,0,0,0,0,0,0,1
+08:26,1,KNICKS,Anunoby Free Throw,Anunoby Free Throw 1 of 2 (4 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+08:26,1,KNICKS,Anunoby Free Throw,Anunoby Free Throw 2 of 2 (5 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+08:08,1,SPURS,Castle,MISS Castle 8' Fadeaway Jumper,8,Fadeaway Jumper,NA,0,0,0,0,0,0,0
+08:05,1,KNICKS,Robinson,Robinson REBOUND (Off:3 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:02,1,KNICKS,Hart,Hart 1' Running Layup (2 PTS) (Brunson 2 AST),1,Running Layup,Brunson,2,0,1,0,0,0,0
+08:02,1,SPURS,Champagnie,Champagnie S.FOUL (P1.T2) (Z.Zarba),NA,FOUL,NA,0,0,0,0,0,0,1
+08:02,1,SPURS,Harper,SUB: Harper FOR Fox,NA,SUB,NA,0,0,0,0,0,0,0
+08:02,1,KNICKS,Hart Free Throw,Hart Free Throw 1 of 1 (3 PTS),NA,Free Throw 1 of 1,NA,1,0,0,0,0,0,0
+07:51,1,KNICKS,Hart,Hart P.FOUL (P1.T2) (Z.Zarba),NA,FOUL,NA,0,0,0,0,0,0,1
+07:37,1,SPURS,Castle,Castle 13' Fadeaway Jumper (2 PTS) (Champagnie 1 AST),13,Fadeaway Jumper,Champagnie,2,0,1,0,0,0,0
+07:16,1,KNICKS,Bridges,MISS Bridges 10' Turnaround Fadeaway Shot,10,Turnaround Fadeaway Shot,NA,0,0,0,0,0,0,0
+07:14,1,SPURS,Castle,Castle REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:59,1,SPURS,Castle,Castle 26' 3PT Jump Shot (5 PTS) (Vassell 1 AST),26,3PT Jump Shot,Vassell,3,0,1,0,0,0,0
+06:29,1,KNICKS,Anunoby,MISS Anunoby 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+06:27,1,SPURS,Champagnie,Champagnie REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:21,1,SPURS,Vassell,Vassell 25' 3PT Running Jump Shot (9 PTS) (Harper 1 AST),25,3PT Running Jump Shot,Harper,3,0,1,0,0,0,0
+06:05,1,SPURS,Castle,Castle S.FOUL (P1.T3) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+06:05,1,KNICKS,Brunson Free Throw,Brunson Free Throw 1 of 2 (1 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+06:05,1,KNICKS,Shamet,SUB: Shamet FOR Anunoby,NA,SUB,NA,0,0,0,0,0,0,0
+06:05,1,KNICKS,Hukporti,SUB: Hukporti FOR Robinson,NA,SUB,NA,0,0,0,0,0,0,0
+06:05,1,SPURS,Fox,SUB: Fox FOR Castle,NA,SUB,NA,0,0,0,0,0,0,0
+06:05,1,SPURS,Johnson,SUB: Johnson FOR Champagnie,NA,SUB,NA,0,0,0,0,0,0,0
+06:05,1,KNICKS,Brunson Free Throw,Brunson Free Throw 2 of 2 (2 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+05:51,1,SPURS,Wembanyama,Wembanyama 25' 3PT Jump Shot (7 PTS) (Harper 2 AST),25,3PT Jump Shot,Harper,3,0,1,0,0,0,0
+05:27,1,KNICKS,Bridges,Bridges 20' Step Back Jump Shot (2 PTS),20,Step Back Jump Shot,NA,2,0,0,0,0,0,0
+05:15,1,SPURS,Wembanyama,MISS Wembanyama 25' 3PT Pullup Jump Shot,25,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+05:13,1,KNICKS,Bridges,Bridges REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:01,1,KNICKS,Brunson,MISS Brunson 8' Pullup Jump Shot,8,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+05:01,1,SPURS,Wembanyama,Wembanyama BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+04:58,1,SPURS,Wembanyama,Wembanyama REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:53,1,SPURS,Johnson,Johnson 2' Running Layup (2 PTS) (Fox 1 AST),2,Running Layup,Fox,2,0,1,0,0,0,0
+04:40,1,KNICKS,Bridges,Bridges 3PT Jump Shot (5 PTS) (Brunson 3 AST),NA,3PT Jump Shot,Brunson,3,0,1,0,0,0,0
+04:23,1,KNICKS,Hukporti,Hukporti P.FOUL (P1.T3) (Z.Zarba),NA,FOUL,NA,0,0,0,0,0,0,1
+04:23,1,SPURS,Kornet,SUB: Kornet FOR Wembanyama,NA,SUB,NA,0,0,0,0,0,0,0
+04:23,1,KNICKS,Robinson,SUB: Robinson FOR Hart,NA,SUB,NA,0,0,0,0,0,0,0
+04:23,1,KNICKS,Anunoby,SUB: Anunoby FOR Brunson,NA,SUB,NA,0,0,0,0,0,0,0
+04:23,1,KNICKS,Alvarado,SUB: Alvarado FOR Hukporti,NA,SUB,NA,0,0,0,0,0,0,0
+04:15,1,SPURS,Fox,Fox 25' 3PT Pullup Jump Shot (5 PTS) (Vassell 2 AST),25,3PT Pullup Jump Shot,Vassell,3,0,1,0,0,0,0
+03:59,1,SPURS,Johnson,Johnson S.FOUL (P1.T4) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+03:59,1,KNICKS,Robinson Free Throw,MISS Robinson Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+03:59,1,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+03:59,1,KNICKS,Robinson Free Throw,MISS Robinson Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+03:57,1,SPURS,Harper,Harper REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:44,1,SPURS,Harper,MISS Harper 4' Driving Layup,4,Driving Layup,NA,0,0,0,0,0,0,0
+03:44,1,KNICKS,Robinson,Robinson BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+03:42,1,KNICKS,Shamet,Shamet REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:33,1,KNICKS,Alvarado Bad Pass Turnover,Alvarado Bad Pass Turnover (P1.T3),NA,TURNOVER,NA,0,0,0,0,0,1,0
+03:33,1,SPURS,Kornet,Kornet STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+03:32,1,KNICKS,Towns,SUB: Towns FOR Robinson,NA,SUB,NA,0,0,0,0,0,0,0
+03:32,1,SPURS,Wembanyama,SUB: Wembanyama FOR Kornet,NA,SUB,NA,0,0,0,0,0,0,0
+03:32,1,KNICKS,Alvarado,Alvarado L.B.FOUL (P1.T4) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+03:19,1,SPURS,Wembanyama,MISS Wembanyama 5' Driving Layup,5,Driving Layup,NA,0,0,0,0,0,0,0
+03:17,1,SPURS,Wembanyama,Wembanyama REBOUND (Off:1 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:17,1,SPURS,Wembanyama Tip Dunk Shot,Wembanyama Tip Dunk Shot (9 PTS),NA,Tip Dunk Shot,NA,2,0,0,0,0,0,0
+02:53,1,SPURS,Vassell,Vassell S.FOUL (P1.PN) (Z.Zarba),NA,FOUL,NA,0,0,0,0,0,0,1
+02:53,1,KNICKS,Anunoby Free Throw,Anunoby Free Throw 1 of 2 (6 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+02:53,1,SPURS,Castle,SUB: Castle FOR Fox,NA,SUB,NA,0,0,0,0,0,0,0
+02:53,1,KNICKS,Anunoby Free Throw,Anunoby Free Throw 2 of 2 (7 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+02:29,1,SPURS,Harper,Harper 16' Pullup Jump Shot (2 PTS),16,Pullup Jump Shot,NA,2,0,0,0,0,0,0
+02:15,1,SPURS,Spurs,Spurs T.Foul (Def. 3 Sec Johnson ) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+02:15,1,KNICKS,Towns Free Throw Technical,Towns Free Throw Technical (3 PTS),NA,Free Throw Technical,NA,1,0,0,0,0,0,0
+02:15,1,KNICKS,McBride,SUB: McBride FOR Bridges,NA,SUB,NA,0,0,0,0,0,0,0
+02:15,1,KNICKS,Brunson,SUB: Brunson FOR Alvarado,NA,SUB,NA,0,0,0,0,0,0,0
+02:05,1,KNICKS,McBride,MISS McBride 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+02:02,1,SPURS,Vassell,Vassell REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:50,1,KNICKS,KNICKS,KNICKS T.Foul (Def. 3 Sec Shamet ) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+01:50,1,SPURS,Vassell Free Throw Technical,Vassell Free Throw Technical (10 PTS),NA,Free Throw Technical,NA,1,0,0,0,0,0,0
+01:50,1,KNICKS,Robinson,SUB: Robinson FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+01:50,1,SPURS,Champagnie,SUB: Champagnie FOR Vassell,NA,SUB,NA,0,0,0,0,0,0,0
+01:50,1,SPURS,Fox,SUB: Fox FOR Johnson,NA,SUB,NA,0,0,0,0,0,0,0
+01:39,1,SPURS,Fox,MISS Fox 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+01:37,1,KNICKS,Shamet,Shamet REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:17,1,KNICKS,Shamet,MISS Shamet 13' Pullup Jump Shot,13,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+01:14,1,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+01:04,1,KNICKS,McBride,MISS McBride 27' 3PT Jump Shot,27,3PT Jump Shot,NA,0,0,0,0,0,0,0
+01:02,1,SPURS,Spurs,Spurs Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+01:02,1,SPURS,Vassell,SUB: Vassell FOR Harper,NA,SUB,NA,0,0,0,0,0,0,0
+00:46,1,SPURS,Wembanyama,Wembanyama 4' Turnaround Bank Hook Shot (11 PTS),4,Turnaround Bank Hook Shot,NA,2,0,0,0,0,0,0
+00:42,1,KNICKS,Robinson FLAGRANT,Robinson FLAGRANT.FOUL.TYPE1 (P1.PN) (J.Williams),NA,FOUL,NA,0,0,0,0,0,0,1
+00:42,1,KNICKS,Robinson Offensive Foul Turnover,Robinson Offensive Foul Turnover (P1.T4),NA,TURNOVER,NA,0,0,0,0,0,1,1
+00:42,1,KNICKS,Sochan,SUB: Sochan FOR Robinson,NA,SUB,NA,0,0,0,0,0,0,0
+00:42,1,SPURS,Instant Replay,Instant Replay1st Period (9:16 PM EST),NA,Instant Replay1st Period (9:16 PM EST),NA,0,0,0,0,0,0,0
+00:42,1,SPURS,Wembanyama Free Throw Flagrant,Wembanyama Free Throw Flagrant 1 of 2 (12 PTS),NA,Free Throw Flagrant 1 of 2,NA,1,0,0,0,0,0,0
+00:42,1,SPURS,Wembanyama Free Throw Flagrant,Wembanyama Free Throw Flagrant 2 of 2 (13 PTS),NA,Free Throw Flagrant 2 of 2,NA,1,0,0,0,0,0,0
+00:28,1,SPURS,Vassell,Vassell 16' Jump Shot (12 PTS) (Castle 2 AST),16,Jump Shot,Castle,2,0,1,0,0,0,0
+00:20,1,SPURS,Castle,Castle P.FOUL (P2.PN) (J.Williams),NA,FOUL,NA,0,0,0,0,0,0,1
+00:20,1,KNICKS,Brunson Free Throw,Brunson Free Throw 1 of 2 (3 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+00:20,1,SPURS,Harper,SUB: Harper FOR Castle,NA,SUB,NA,0,0,0,0,0,0,0
+00:20,1,KNICKS,Brunson Free Throw,Brunson Free Throw 2 of 2 (4 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+00:04,1,SPURS,Fox,MISS Fox 25' 3PT Step Back Jump Shot,25,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+00:02,1,KNICKS,Anunoby,Anunoby REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:36,2,KNICKS,Anunoby,Anunoby 3PT Jump Shot (10 PTS) (Shamet 1 AST),NA,3PT Jump Shot,Shamet,3,0,1,0,0,0,0
+11:21,2,SPURS,Fox,Fox 3PT Jump Shot (8 PTS) (Champagnie 2 AST),NA,3PT Jump Shot,Champagnie,3,0,1,0,0,0,0
+11:06,2,KNICKS,Towns Bad Pass Turnover,Towns Bad Pass Turnover (P2.T5),NA,TURNOVER,NA,0,0,0,0,0,1,0
+11:06,2,SPURS,Fox,Fox STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+10:45,2,SPURS,Fox,Fox 3PT Step Back Jump Shot (11 PTS),NA,3PT Step Back Jump Shot,NA,3,0,0,0,0,0,0
+10:45,2,KNICKS,Alvarado,Alvarado L.B.FOUL (P2.T1) (J.Williams),NA,FOUL,NA,0,0,0,0,0,0,1
+10:45,2,KNICKS,Brunson,SUB: Brunson FOR Alvarado,NA,SUB,NA,0,0,0,0,0,0,0
+10:45,2,SPURS,Instant Replay,Instant Replay2nd Period (9:27 PM EST),NA,Instant Replay2nd Period (9:27 PM EST),NA,0,0,0,0,0,0,0
+10:45,2,SPURS,Wembanyama Free Throw,Wembanyama Free Throw 1 of 1 (14 PTS),NA,Free Throw 1 of 1,NA,1,0,0,0,0,0,0
+10:35,2,SPURS,Harper,Harper P.FOUL (P1.T1) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+10:29,2,KNICKS,Brunson,MISS Brunson 10' Step Back Jump Shot,10,Step Back Jump Shot,NA,0,0,0,0,0,0,0
+10:26,2,KNICKS,Towns,Towns REBOUND (Off:1 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:25,2,KNICKS,Towns,Towns 2' Putback Layup (5 PTS),2,Putback Layup,NA,2,0,0,0,0,0,0
+10:25,2,SPURS,Bryant,Bryant S.FOUL (P1.T2) (Z.Zarba),NA,FOUL,NA,0,0,0,0,0,0,1
+10:25,2,KNICKS,Towns Free Throw,Towns Free Throw 1 of 1 (6 PTS),NA,Free Throw 1 of 1,NA,1,0,0,0,0,0,0
+10:06,2,SPURS,Champagnie,MISS Champagnie 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+10:03,2,KNICKS,Towns,Towns REBOUND (Off:1 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:58,2,KNICKS,Brunson,Brunson 1' Running Layup (6 PTS),1,Running Layup,NA,2,0,0,0,0,0,0
+09:42,2,SPURS,Harper,Harper 3PT Jump Shot (5 PTS) (Fox 2 AST),NA,3PT Jump Shot,Fox,3,0,1,0,0,0,0
+09:25,2,KNICKS,McBride,MISS McBride 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+09:22,2,SPURS,Wembanyama,Wembanyama REBOUND (Off:1 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:16,2,SPURS,Bryant,Bryant 3PT Jump Shot (3 PTS) (Harper 3 AST),NA,3PT Jump Shot,Harper,3,0,1,0,0,0,0
+08:56,2,KNICKS,Brunson,Brunson 13' Driving Floating Jump Shot (8 PTS),13,Driving Floating Jump Shot,NA,2,0,0,0,0,0,0
+08:43,2,SPURS,Champagnie,Champagnie 25' 3PT Jump Shot (5 PTS) (Fox 3 AST),25,3PT Jump Shot,Fox,3,0,1,0,0,0,0
+08:26,2,SPURS,Harper,Harper P.FOUL (P2.T3) (J.Williams),NA,FOUL,NA,0,0,0,0,0,0,1
+08:26,2,KNICKS,Bridges,SUB: Bridges FOR McBride,NA,SUB,NA,0,0,0,0,0,0,0
+08:26,2,KNICKS,Hart,SUB: Hart FOR Anunoby,NA,SUB,NA,0,0,0,0,0,0,0
+08:26,2,SPURS,Kornet,SUB: Kornet FOR Wembanyama,NA,SUB,NA,0,0,0,0,0,0,0
+08:26,2,SPURS,Castle,SUB: Castle FOR Fox,NA,SUB,NA,0,0,0,0,0,0,0
+08:26,2,KNICKS,Clarkson,SUB: Clarkson FOR Shamet,NA,SUB,NA,0,0,0,0,0,0,0
+08:26,2,SPURS,Vassell,SUB: Vassell FOR Harper,NA,SUB,NA,0,0,0,0,0,0,0
+08:21,2,KNICKS,Clarkson,MISS Clarkson 3PT Pullup Jump Shot,NA,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+08:18,2,SPURS,Bryant,Bryant REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:06,2,SPURS,Champagnie,MISS Champagnie 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+08:03,2,KNICKS,Hart,Hart REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:59,2,KNICKS,Clarkson,Clarkson 1' Running Layup (2 PTS) (Hart 2 AST),1,Running Layup,Hart,2,0,1,0,0,0,0
+07:53,2,SPURS,Bryant,Bryant 1' Alley Oop Dunk (5 PTS) (Castle 3 AST),1,Alley Oop Dunk,Castle,2,0,1,0,0,0,0
+07:34,2,KNICKS,Bridges,MISS Bridges 17' Pullup Jump Shot,17,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+07:31,2,SPURS,Spurs,Spurs Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+07:31,2,KNICKS,Towns,Towns L.B.FOUL (P3.T2) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+07:21,2,SPURS,Champagnie,MISS Champagnie 25' 3PT Pullup Jump Shot,25,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+07:19,2,KNICKS,Clarkson,Clarkson REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:18,2,KNICKS,Clarkson Lost Ball Turnover,Clarkson Lost Ball Turnover (P1.T6),NA,TURNOVER,NA,0,0,0,0,0,1,0
+07:18,2,SPURS,Bryant,Bryant STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+07:16,2,SPURS,Bryant,MISS Bryant 3' Driving Layup,3,Driving Layup,NA,0,0,0,0,0,0,0
+07:14,2,KNICKS,Towns,Towns REBOUND (Off:1 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:00,2,SPURS,Kornet,Kornet P.FOUL (P1.T4) (Z.Zarba),NA,FOUL,NA,0,0,0,0,0,0,1
+07:00,2,KNICKS,Robinson,SUB: Robinson FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+07:00,2,SPURS,Harper,SUB: Harper FOR Bryant,NA,SUB,NA,0,0,0,0,0,0,0
+06:56,2,SPURS,Kornet Personal Take Foul,Kornet Personal Take Foul (P2.PN) (J.Williams),NA,FOUL,NA,0,0,0,0,0,0,1
+06:56,2,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 2 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+06:56,2,SPURS,Instant Replay,Instant Replay2nd Period (9:42 PM EST),NA,Instant Replay2nd Period (9:42 PM EST),NA,0,0,0,0,0,0,0
+06:56,2,KNICKS,Robinson Free Throw,MISS Robinson Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+06:56,2,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+06:56,2,KNICKS,Robinson Free Throw,MISS Robinson Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+06:55,2,SPURS,Castle,Castle REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:54,2,KNICKS,Clarkson Personal Take Foul,Clarkson Personal Take Foul (P1.T3) (Z.Zarba),NA,FOUL,NA,0,0,0,0,0,0,1
+06:54,2,KNICKS,Hukporti,SUB: Hukporti FOR Robinson,NA,SUB,NA,0,0,0,0,0,0,0
+06:44,2,KNICKS,Clarkson,Clarkson P.FOUL (P2.T4) (J.Williams),NA,FOUL,NA,0,0,0,0,0,0,1
+06:44,2,KNICKS,Anunoby,SUB: Anunoby FOR Clarkson,NA,SUB,NA,0,0,0,0,0,0,0
+06:38,2,SPURS,Castle Bad Pass Turnover,Castle Bad Pass Turnover (P1.T1),NA,TURNOVER,NA,0,0,0,0,0,1,0
+06:38,2,KNICKS,Brunson,Brunson STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+06:35,2,KNICKS,Brunson,Brunson 1' Running Finger Roll Layup (10 PTS),1,Running Finger Roll Layup,NA,2,0,0,0,0,0,0
+06:16,2,SPURS,Castle,MISS Castle 1' Driving Layup,1,Driving Layup,NA,0,0,0,0,0,0,0
+06:16,2,KNICKS,Hukporti,Hukporti BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+06:14,2,KNICKS,Brunson,Brunson REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:11,2,KNICKS,Brunson,Brunson 1' Running Finger Roll Layup (12 PTS),1,Running Finger Roll Layup,NA,2,0,0,0,0,0,0
+06:10,2,SPURS,Spurs Timeout,Spurs Timeout: Regular (Reg.2 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+06:10,2,SPURS,Johnson,SUB: Johnson FOR Champagnie,NA,SUB,NA,0,0,0,0,0,0,0
+06:10,2,SPURS,Fox,SUB: Fox FOR Kornet,NA,SUB,NA,0,0,0,0,0,0,0
+06:10,2,SPURS,Wembanyama,SUB: Wembanyama FOR Castle,NA,SUB,NA,0,0,0,0,0,0,0
+05:53,2,KNICKS,Anunoby,Jump Ball Anunoby vs. Wembanyama: Tip to Johnson,NA,Jump Ball Anunoby vs. Wembanyama: Tip to Johnson,NA,0,0,0,0,0,0,0
+05:46,2,SPURS,Vassell,Vassell 3PT Jump Shot (15 PTS) (Johnson 1 AST),NA,3PT Jump Shot,Johnson,3,0,1,0,0,0,0
+05:28,2,KNICKS,Brunson,MISS Brunson 10' Driving Floating Jump Shot,10,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+05:26,2,SPURS,Harper,Harper REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:21,2,SPURS,Wembanyama,MISS Wembanyama 26' 3PT Running Jump Shot,26,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+05:18,2,KNICKS,Hart,Hart REBOUND (Off:0 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:09,2,SPURS,Fox,Fox S.FOUL (P2.PN) (Z.Zarba),NA,FOUL,NA,0,0,0,0,0,0,1
+05:09,2,KNICKS,Anunoby Free Throw,Anunoby Free Throw 1 of 2 (11 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+05:09,2,KNICKS,Sochan,SUB: Sochan FOR Hukporti,NA,SUB,NA,0,0,0,0,0,0,0
+05:09,2,KNICKS,Anunoby Free Throw,Anunoby Free Throw 2 of 2 (12 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+04:59,2,SPURS,Fox,Fox 8' Turnaround Jump Shot (13 PTS),8,Turnaround Jump Shot,NA,2,0,0,0,0,0,0
+04:32,2,KNICKS,Sochan,MISS Sochan 14' Turnaround Fadeaway Shot,14,Turnaround Fadeaway Shot,NA,0,0,0,0,0,0,0
+04:31,2,KNICKS,Hart,Hart REBOUND (Off:1 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:31,2,KNICKS,KNICKS,KNICKS Turnover: Shot Clock (T#7),NA,TURNOVER,NA,0,0,0,0,0,1,0
+04:19,2,SPURS,Harper,Harper 1' Driving Layup (7 PTS),1,Driving Layup,NA,2,0,0,0,0,0,0
+04:06,2,KNICKS,Anunoby,Anunoby 15' Turnaround Jump Shot (14 PTS),15,Turnaround Jump Shot,NA,2,0,0,0,0,0,0
+03:47,2,SPURS,Harper,Harper 26' 3PT Jump Shot (10 PTS) (Fox 4 AST),26,3PT Jump Shot,Fox,3,0,1,0,0,0,0
+03:28,2,KNICKS,Brunson,MISS Brunson 27' 3PT Pullup Jump Shot,27,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+03:25,2,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+03:15,2,KNICKS,Brunson,MISS Brunson 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+03:12,2,SPURS,Johnson,Johnson REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:06,2,SPURS,Harper,Harper 2' Running Layup (12 PTS),2,Running Layup,NA,2,0,0,0,0,0,0
+02:51,2,SPURS,Vassell,Vassell P.FOUL (P2.PN) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+02:51,2,KNICKS,Brunson Free Throw,Brunson Free Throw 1 of 2 (13 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+02:51,2,SPURS,Castle,SUB: Castle FOR Fox,NA,SUB,NA,0,0,0,0,0,0,0
+02:51,2,KNICKS,Shamet,SUB: Shamet FOR Sochan,NA,SUB,NA,0,0,0,0,0,0,0
+02:51,2,KNICKS,Brunson Free Throw,MISS Brunson Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+02:49,2,SPURS,Wembanyama,Wembanyama REBOUND (Off:1 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:39,2,SPURS,Castle,MISS Castle 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+02:33,2,SPURS,Vassell,Vassell REBOUND (Off:1 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:28,2,SPURS,Wembanyama,MISS Wembanyama 26' 3PT Step Back Jump Shot,26,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+02:26,2,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+02:26,2,SPURS,Castle,Castle L.B.FOUL (P3.PN) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+02:26,2,KNICKS,Hart Free Throw,MISS Hart Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+02:26,2,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+02:26,2,SPURS,Champagnie,SUB: Champagnie FOR Castle,NA,SUB,NA,0,0,0,0,0,0,0
+02:26,2,SPURS,Fox,SUB: Fox FOR Harper,NA,SUB,NA,0,0,0,0,0,0,0
+02:26,2,KNICKS,Hart Free Throw,MISS Hart Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+02:23,2,KNICKS,Hart,Hart REBOUND (Off:2 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:21,2,KNICKS,Brunson,Brunson 25' 3PT Jump Shot (16 PTS) (Hart 3 AST),25,3PT Jump Shot,Hart,3,0,1,0,0,0,0
+02:02,2,SPURS,Champagnie,MISS Champagnie 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+02:00,2,KNICKS,Brunson,Brunson REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:52,2,KNICKS,Hart Bad Pass Turnover,Hart Bad Pass Turnover (P2.T8),NA,TURNOVER,NA,0,0,0,0,0,1,0
+01:52,2,SPURS,Vassell,Vassell STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+01:50,2,SPURS,Vassell Bad Pass Turnover,Vassell Bad Pass Turnover (P1.T2),NA,TURNOVER,NA,0,0,0,0,0,1,0
+01:50,2,KNICKS,Brunson,Brunson STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+01:45,2,SPURS,Johnson,Johnson S.FOUL (P2.PN) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+01:45,2,KNICKS,Brunson Free Throw,MISS Brunson Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+01:45,2,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+01:45,2,SPURS,Harper,SUB: Harper FOR Johnson,NA,SUB,NA,0,0,0,0,0,0,0
+01:45,2,KNICKS,Brunson Free Throw,Brunson Free Throw 2 of 2 (17 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+01:25,2,SPURS,Wembanyama,Wembanyama 1' Cutting Layup Shot (16 PTS) (Fox 5 AST),1,Cutting Layup Shot,Fox,2,0,1,0,0,0,0
+01:16,2,KNICKS,Brunson,Brunson 7' Pullup Jump Shot (19 PTS),7,Pullup Jump Shot,NA,2,0,0,0,0,0,0
+00:58,2,SPURS,Harper,Harper 3PT Jump Shot (15 PTS) (Fox 6 AST),NA,3PT Jump Shot,Fox,3,0,1,0,0,0,0
+00:44,2,KNICKS,Anunoby,MISS Anunoby 3PT Pullup Jump Shot,NA,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+00:44,2,SPURS,Wembanyama,Wembanyama BLOCK (2 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+00:41,2,SPURS,Champagnie,Champagnie REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:35,2,SPURS,Wembanyama,MISS Wembanyama 30' 3PT Jump Shot,30,3PT Jump Shot,NA,0,0,0,0,0,0,0
+00:32,2,KNICKS,Bridges,Bridges REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:26,2,KNICKS,Brunson,MISS Brunson 10' Running Pull-Up Jump Shot,10,Running Pull-Up Jump Shot,NA,0,0,0,0,0,0,0
+00:24,2,SPURS,Wembanyama,Wembanyama REBOUND (Off:1 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:01,2,SPURS,Fox,MISS Fox 6' Pullup Jump Shot,6,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+00:00,2,SPURS,Fox,Fox REBOUND (Off:1 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:37,3,KNICKS,Anunoby,MISS Anunoby 15' Step Back Jump Shot,15,Step Back Jump Shot,NA,0,0,0,0,0,0,0
+11:33,3,SPURS,Champagnie,Champagnie REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:22,3,SPURS,Vassell,MISS Vassell 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+11:19,3,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+11:04,3,KNICKS,Anunoby,Anunoby 26' 3PT Jump Shot (17 PTS) (Hart 4 AST),26,3PT Jump Shot,Hart,3,0,1,0,0,0,0
+10:49,3,SPURS,Wembanyama,MISS Wembanyama 4' Jump Bank Shot,4,Jump Bank Shot,NA,0,0,0,0,0,0,0
+10:47,3,KNICKS,Hart,Hart REBOUND (Off:2 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:46,3,KNICKS,Anunoby Lost Ball Turnover,Anunoby Lost Ball Turnover (P1.T9),NA,TURNOVER,NA,0,0,0,0,0,1,0
+10:46,3,SPURS,Champagnie,Champagnie STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+10:37,3,SPURS,Wembanyama,Wembanyama 3PT Running Jump Shot (19 PTS) (Castle 4 AST),NA,3PT Running Jump Shot,Castle,3,0,1,0,0,0,0
+10:14,3,KNICKS,Bridges,MISS Bridges 7' Fadeaway Jumper,7,Fadeaway Jumper,NA,0,0,0,0,0,0,0
+10:12,3,SPURS,Vassell,Vassell REBOUND (Off:1 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:09,3,SPURS,Castle Offensive Charge Foul,Castle Offensive Charge Foul (P4) (Z.Zarba),NA,FOUL,NA,0,0,0,0,0,0,1
+10:09,3,SPURS,Castle Offensive Foul Turnover,Castle Offensive Foul Turnover (P2.T3),NA,TURNOVER,NA,0,0,0,0,0,1,1
+10:09,3,SPURS,Johnson,SUB: Johnson FOR Castle,NA,SUB,NA,0,0,0,0,0,0,0
+09:53,3,KNICKS,Towns Out,Towns Out of Bounds Lost Ball Turnover (P3.T10),NA,TURNOVER,NA,0,0,0,0,0,1,0
+09:40,3,SPURS,Fox,Fox 16' Pullup Jump Shot (15 PTS) (Vassell 3 AST),16,Pullup Jump Shot,Vassell,2,0,1,0,0,0,0
+09:27,3,SPURS,Wembanyama FLAGRANT,Wembanyama FLAGRANT.FOUL.TYPE1 (P1.T1) (J.Williams),NA,FOUL,NA,0,0,0,0,0,0,1
+09:27,3,SPURS,Instant Replay,Instant Replay3rd Period (10:23 PM EST),NA,Instant Replay3rd Period (10:23 PM EST),NA,0,0,0,0,0,0,0
+09:27,3,KNICKS,Towns Free Throw Flagrant,Towns Free Throw Flagrant 1 of 2 (7 PTS),NA,Free Throw Flagrant 1 of 2,NA,1,0,0,0,0,0,0
+09:27,3,KNICKS,Towns Free Throw Flagrant,Towns Free Throw Flagrant 2 of 2 (8 PTS),NA,Free Throw Flagrant 2 of 2,NA,1,0,0,0,0,0,0
+09:18,3,KNICKS,Brunson,MISS Brunson 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+09:15,3,SPURS,Champagnie,Champagnie REBOUND (Off:0 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:58,3,SPURS,Johnson,MISS Johnson 2' Driving Layup,2,Driving Layup,NA,0,0,0,0,0,0,0
+08:57,3,SPURS,Johnson,Johnson REBOUND (Off:1 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:57,3,SPURS,Johnson Tip Layup Shot,MISS Johnson Tip Layup Shot,NA,Tip Layup Shot,NA,0,0,0,0,0,0,0
+08:56,3,SPURS,Johnson,Johnson REBOUND (Off:2 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:55,3,SPURS,Johnson,MISS Johnson 4' Putback Layup,4,Putback Layup,NA,0,0,0,0,0,0,0
+08:54,3,KNICKS,Anunoby,Anunoby REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:46,3,KNICKS,Anunoby,Anunoby 1' Cutting Dunk Shot (19 PTS) (Hart 5 AST),1,Cutting Dunk Shot,Hart,2,0,1,0,0,0,0
+08:39,3,SPURS,Champagnie,MISS Champagnie 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+08:37,3,KNICKS,Towns,Towns REBOUND (Off:1 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:23,3,KNICKS,Brunson,Brunson 25' 3PT Pullup Jump Shot (22 PTS) (Bridges 1 AST),25,3PT Pullup Jump Shot,Bridges,3,0,1,0,0,0,0
+08:23,3,SPURS,Spurs Timeout,Spurs Timeout: Regular (Reg.3 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+08:23,3,SPURS,Harper,SUB: Harper FOR Champagnie,NA,SUB,NA,0,0,0,0,0,0,0
+07:59,3,SPURS,Harper,MISS Harper 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+07:57,3,KNICKS,Towns,Towns REBOUND (Off:1 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:44,3,KNICKS,Brunson,MISS Brunson 13' Fadeaway Jumper,13,Fadeaway Jumper,NA,0,0,0,0,0,0,0
+07:42,3,SPURS,Harper,Harper REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:27,3,SPURS,Fox Bad Pass Turnover,Fox Bad Pass Turnover (P1.T4),NA,TURNOVER,NA,0,0,0,0,0,1,0
+07:27,3,KNICKS,Brunson,Brunson STEAL (3 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+07:25,3,SPURS,Wembanyama Violation,Wembanyama Violation:Kicked Ball (J.Williams),NA,Wembanyama Violation:Kicked Ball (J.Williams),NA,0,0,0,0,0,0,0
+07:15,3,KNICKS,Towns,MISS Towns 2' Driving Layup,2,Driving Layup,NA,0,0,0,0,0,0,0
+07:14,3,SPURS,Wembanyama,Wembanyama REBOUND (Off:1 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:02,3,SPURS,Vassell,MISS Vassell 27' 3PT Jump Shot,27,3PT Jump Shot,NA,0,0,0,0,0,0,0
+07:00,3,KNICKS,Towns,Towns REBOUND (Off:1 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:50,3,KNICKS,Anunoby,Anunoby 24' 3PT Jump Shot (22 PTS) (Towns 1 AST),24,3PT Jump Shot,Towns,3,0,1,0,0,0,0
+06:39,3,SPURS,Johnson,MISS Johnson 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+06:36,3,KNICKS,Brunson,Brunson REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:23,3,KNICKS,Bridges,MISS Bridges 12' Fadeaway Jumper,12,Fadeaway Jumper,NA,0,0,0,0,0,0,0
+06:20,3,SPURS,Vassell,Vassell REBOUND (Off:1 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:59,3,SPURS,Fox,MISS Fox 25' 3PT Step Back Jump Shot,25,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+05:56,3,KNICKS,Towns,Towns REBOUND (Off:1 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:34,3,KNICKS,Bridges,MISS Bridges 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+05:33,3,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+05:33,3,KNICKS,Shamet,SUB: Shamet FOR Anunoby,NA,SUB,NA,0,0,0,0,0,0,0
+05:33,3,KNICKS,Alvarado,SUB: Alvarado FOR Bridges,NA,SUB,NA,0,0,0,0,0,0,0
+05:33,3,SPURS,Kornet,SUB: Kornet FOR Wembanyama,NA,SUB,NA,0,0,0,0,0,0,0
+05:33,3,SPURS,Champagnie,SUB: Champagnie FOR Fox,NA,SUB,NA,0,0,0,0,0,0,0
+05:33,3,SPURS,Castle,SUB: Castle FOR Johnson,NA,SUB,NA,0,0,0,0,0,0,0
+05:31,3,KNICKS,Hart,Hart 25' 3PT Jump Shot (6 PTS) (Brunson 4 AST),25,3PT Jump Shot,Brunson,3,0,1,0,0,0,0
+05:10,3,SPURS,Harper Bad Pass Turnover,Harper Bad Pass Turnover (P1.T5),NA,TURNOVER,NA,0,0,0,0,0,1,0
+05:10,3,KNICKS,Hart,Hart STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+05:07,3,KNICKS,Shamet,MISS Shamet 3PT Running Jump Shot,NA,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+05:04,3,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+05:04,3,SPURS,Kornet,Kornet L.B.FOUL (P3.T2) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+04:51,3,KNICKS,Alvarado,MISS Alvarado 25' 3PT Pullup Jump Shot,25,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+04:48,3,SPURS,Vassell,Vassell REBOUND (Off:1 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:35,3,KNICKS,Hart,Hart S.FOUL (P2.T1) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+04:35,3,SPURS,Castle Free Throw,Castle Free Throw 1 of 2 (6 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+04:35,3,SPURS,Wembanyama,SUB: Wembanyama FOR Kornet,NA,SUB,NA,0,0,0,0,0,0,0
+04:35,3,SPURS,Castle Free Throw,Castle Free Throw 2 of 2 (7 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+04:23,3,KNICKS,Hart,MISS Hart 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+04:20,3,SPURS,Wembanyama,Wembanyama REBOUND (Off:1 Def:7),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:10,3,KNICKS,Towns,Towns S.FOUL (P4.T2) (Z.Zarba),NA,FOUL,NA,0,0,0,0,0,0,1
+04:10,3,SPURS,Harper Free Throw,Harper Free Throw 1 of 2 (16 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+04:10,3,KNICKS,Anunoby,SUB: Anunoby FOR Hart,NA,SUB,NA,0,0,0,0,0,0,0
+04:10,3,KNICKS,Robinson,SUB: Robinson FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+04:10,3,SPURS,Harper Free Throw,Harper Free Throw 2 of 2 (17 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+03:52,3,KNICKS,Brunson,Brunson 21' Driving Floating Jump Shot (24 PTS),21,Driving Floating Jump Shot,NA,2,0,0,0,0,0,0
+03:52,3,SPURS,Harper,Harper S.FOUL (P3.T3) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+03:52,3,KNICKS,Brunson Free Throw,Brunson Free Throw 1 of 1 (25 PTS),NA,Free Throw 1 of 1,NA,1,0,0,0,0,0,0
+03:36,3,SPURS,Harper,Harper 11' Turnaround Jump Shot (19 PTS) (Champagnie 3 AST),11,Turnaround Jump Shot,Champagnie,2,0,1,0,0,0,0
+03:13,3,KNICKS,Brunson,Brunson 18' Step Back Jump Shot (27 PTS),18,Step Back Jump Shot,NA,2,0,0,0,0,0,0
+02:59,3,SPURS,Harper,MISS Harper 25' 3PT Step Back Jump Shot,25,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+02:58,3,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+02:58,3,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 3 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+02:58,3,KNICKS,Clarkson,SUB: Clarkson FOR Alvarado,NA,SUB,NA,0,0,0,0,0,0,0
+02:58,3,SPURS,Fox,SUB: Fox FOR Harper,NA,SUB,NA,0,0,0,0,0,0,0
+02:43,3,KNICKS,Robinson Alley Oop Dunk,Robinson Alley Oop Dunk (2 PTS) (Brunson 5 AST),NA,Alley Oop Dunk,Brunson,2,0,1,0,0,0,0
+02:25,3,SPURS,Fox,MISS Fox 24' 3PT Jump Shot,24,3PT Jump Shot,NA,0,0,0,0,0,0,0
+02:23,3,SPURS,Castle,Castle REBOUND (Off:1 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:19,3,SPURS,Wembanyama,MISS Wembanyama 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+02:16,3,SPURS,Fox,Fox REBOUND (Off:2 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:14,3,SPURS,Wembanyama,MISS Wembanyama 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+02:13,3,KNICKS,Robinson,Robinson REBOUND (Off:3 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:01,3,KNICKS,Brunson Bad Pass Turnover,Brunson Bad Pass Turnover (P1.T11),NA,TURNOVER,NA,0,0,0,0,0,1,0
+02:01,3,SPURS,Champagnie,Champagnie STEAL (3 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+01:58,3,SPURS,Champagnie,MISS Champagnie 2' Running Layup,2,Running Layup,NA,0,0,0,0,0,0,0
+01:57,3,SPURS,Spurs,Spurs Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+01:57,3,KNICKS,Clarkson,Clarkson L.B.FOUL (P3.T3) (Z.Zarba),NA,FOUL,NA,0,0,0,0,0,0,1
+01:46,3,SPURS,Vassell,Vassell 25' 3PT Jump Shot (18 PTS) (Castle 5 AST),25,3PT Jump Shot,Castle,3,0,1,0,0,0,0
+01:17,3,KNICKS,Clarkson,MISS Clarkson 12' Turnaround Fadeaway Shot,12,Turnaround Fadeaway Shot,NA,0,0,0,0,0,0,0
+01:15,3,SPURS,Wembanyama,Wembanyama REBOUND (Off:1 Def:8),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:09,3,SPURS,Fox Out,Fox Out of Bounds - Bad Pass Turnover Turnover (P2.T6),NA,TURNOVER,NA,0,0,0,0,0,1,0
+00:53,3,KNICKS,Anunoby,Anunoby 26' 3PT Step Back Jump Shot (25 PTS) (Robinson 1 AST),26,3PT Step Back Jump Shot,Robinson,3,0,1,0,0,0,0
+00:33,3,SPURS,Fox Out,Fox Out of Bounds Lost Ball Turnover (P3.T7),NA,TURNOVER,NA,0,0,0,0,0,1,0
+00:33,3,KNICKS,Towns,SUB: Towns FOR Robinson,NA,SUB,NA,0,0,0,0,0,0,0
+00:33,3,SPURS,Harper,SUB: Harper FOR Castle,NA,SUB,NA,0,0,0,0,0,0,0
+00:17,3,KNICKS,Anunoby,MISS Anunoby 4' Cutting Layup Shot,4,Cutting Layup Shot,NA,0,0,0,0,0,0,0
+00:17,3,SPURS,Fox,Fox BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+00:15,3,KNICKS,Towns,Towns REBOUND (Off:2 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:11,3,KNICKS,Clarkson Bad Pass Turnover,Clarkson Bad Pass Turnover (P2.T12),NA,TURNOVER,NA,0,0,0,0,0,1,0
+00:11,3,SPURS,Champagnie,Champagnie STEAL (4 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+00:01,3,SPURS,Wembanyama,MISS Wembanyama 19' Fadeaway Jumper,19,Fadeaway Jumper,NA,0,0,0,0,0,0,0
+00:00,3,SPURS,Spurs,Spurs Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+11:48,4,SPURS,Wembanyama,MISS Wembanyama 4' Driving Layup,4,Driving Layup,NA,0,0,0,0,0,0,0
+11:48,4,KNICKS,Robinson,Robinson BLOCK (2 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+11:47,4,SPURS,Spurs,Spurs Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+11:46,4,SPURS,Harper Out,Harper Out of Bounds - Bad Pass Turnover Turnover (P2.T8),NA,TURNOVER,NA,0,0,0,0,0,1,0
+11:46,4,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 4 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+11:46,4,SPURS,Instant Replay,Instant Replay4th Period (10:55 PM EST),NA,Instant Replay4th Period (10:55 PM EST),NA,0,0,0,0,0,0,0
+11:30,4,KNICKS,McBride,MISS McBride 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+11:30,4,SPURS,Wembanyama,Wembanyama BLOCK (3 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+11:27,4,SPURS,Harper,Harper REBOUND (Off:0 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:10,4,SPURS,Harper,Harper 1' Driving Layup (21 PTS),1,Driving Layup,NA,2,0,0,0,0,0,0
+10:47,4,KNICKS,Robinson,MISS Robinson 2' Alley Oop Dunk,2,Alley Oop Dunk,NA,0,0,0,0,0,0,0
+10:45,4,SPURS,Fox,Fox REBOUND (Off:2 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:41,4,SPURS,Wembanyama,MISS Wembanyama 1' Alley Oop Layup,1,Alley Oop Layup,NA,0,0,0,0,0,0,0
+10:40,4,SPURS,Wembanyama,Wembanyama REBOUND (Off:2 Def:8),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:40,4,SPURS,Wembanyama Tip Layup Shot,MISS Wembanyama Tip Layup Shot,NA,Tip Layup Shot,NA,0,0,0,0,0,0,0
+10:39,4,SPURS,Wembanyama,Wembanyama REBOUND (Off:3 Def:8),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:37,4,KNICKS,Anunoby,Anunoby S.FOUL (P1.T1) (J.Williams),NA,FOUL,NA,0,0,0,0,0,0,1
+10:37,4,SPURS,Wembanyama Free Throw,Wembanyama Free Throw 1 of 2 (20 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+10:37,4,KNICKS,Bridges,SUB: Bridges FOR McBride,NA,SUB,NA,0,0,0,0,0,0,0
+10:37,4,SPURS,Wembanyama Free Throw,MISS Wembanyama Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+10:35,4,KNICKS,Anunoby,Anunoby REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:24,4,KNICKS,Shamet,MISS Shamet 24' 3PT Jump Shot,24,3PT Jump Shot,NA,0,0,0,0,0,0,0
+10:21,4,SPURS,Champagnie,Champagnie REBOUND (Off:0 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:10,4,SPURS,Harper,MISS Harper 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+10:09,4,KNICKS,Brunson,Brunson REBOUND (Off:0 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:57,4,KNICKS,Bridges,MISS Bridges 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+09:54,4,SPURS,Johnson,Johnson REBOUND (Off:2 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:46,4,KNICKS,Shamet,Shamet P.FOUL (P1.T2) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+09:46,4,KNICKS,Towns,SUB: Towns FOR Shamet,NA,SUB,NA,0,0,0,0,0,0,0
+09:46,4,KNICKS,Alvarado,SUB: Alvarado FOR Robinson,NA,SUB,NA,0,0,0,0,0,0,0
+09:46,4,SPURS,Castle,SUB: Castle FOR Harper,NA,SUB,NA,0,0,0,0,0,0,0
+09:38,4,SPURS,Wembanyama,MISS Wembanyama 1' Driving Floating Jump Shot,1,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+09:36,4,SPURS,Wembanyama,Wembanyama REBOUND (Off:4 Def:8),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:36,4,SPURS,Wembanyama Tip Layup Shot,MISS Wembanyama Tip Layup Shot,NA,Tip Layup Shot,NA,0,0,0,0,0,0,0
+09:34,4,SPURS,Wembanyama,Wembanyama REBOUND (Off:5 Def:8),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:33,4,SPURS,Wembanyama Putback Layup,Wembanyama Putback Layup (22 PTS),NA,Putback Layup,NA,2,0,0,0,0,0,0
+09:16,4,KNICKS,Alvarado,Alvarado 3PT Jump Shot (3 PTS) (Bridges 2 AST),NA,3PT Jump Shot,Bridges,3,0,1,0,0,0,0
+08:59,4,KNICKS,Alvarado,Alvarado P.FOUL (P3.T3) (J.Williams),NA,FOUL,NA,0,0,0,0,0,0,1
+08:59,4,KNICKS,Hart,SUB: Hart FOR Anunoby,NA,SUB,NA,0,0,0,0,0,0,0
+08:51,4,SPURS,Wembanyama,MISS Wembanyama 2' Alley Oop Layup,2,Alley Oop Layup,NA,0,0,0,0,0,0,0
+08:48,4,KNICKS,Hart,Hart REBOUND (Off:2 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:44,4,KNICKS,Bridges,Bridges 1' Running Layup (7 PTS) (Hart 6 AST),1,Running Layup,Hart,2,0,1,0,0,0,0
+08:43,4,SPURS,Spurs Timeout,Spurs Timeout: Regular (Reg.4 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+08:43,4,SPURS,Harper,SUB: Harper FOR Fox,NA,SUB,NA,0,0,0,0,0,0,0
+08:43,4,SPURS,Vassell,SUB: Vassell FOR Champagnie,NA,SUB,NA,0,0,0,0,0,0,0
+08:21,4,SPURS,Wembanyama,MISS Wembanyama 21' Pullup Jump Shot,21,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+08:19,4,KNICKS,Brunson,Brunson REBOUND (Off:0 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:18,4,KNICKS,Brunson Lost Ball Turnover,Brunson Lost Ball Turnover (P2.T13),NA,TURNOVER,NA,0,0,0,0,0,1,0
+08:18,4,SPURS,Johnson,Johnson STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+08:07,4,KNICKS,Brunson,Brunson P.FOUL (P1.T4) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+07:54,4,SPURS,Castle,MISS Castle 20' Step Back Jump Shot,20,Step Back Jump Shot,NA,0,0,0,0,0,0,0
+07:53,4,SPURS,Spurs,Spurs Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+07:53,4,SPURS,Spurs,Spurs Turnover: Shot Clock (T#9),NA,TURNOVER,NA,0,0,0,0,0,1,0
+07:28,4,KNICKS,Towns,Towns 24' 3PT Step Back Jump Shot (11 PTS) (Alvarado 1 AST),24,3PT Step Back Jump Shot,Alvarado,3,0,1,0,0,0,0
+07:14,4,KNICKS,Alvarado,Alvarado S.FOUL (P4.PN) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+07:14,4,SPURS,Castle Free Throw,Castle Free Throw 1 of 2 (8 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+07:14,4,SPURS,Champagnie,SUB: Champagnie FOR Johnson,NA,SUB,NA,0,0,0,0,0,0,0
+07:14,4,KNICKS,Anunoby,SUB: Anunoby FOR Bridges,NA,SUB,NA,0,0,0,0,0,0,0
+07:14,4,SPURS,Castle Free Throw,Castle Free Throw 2 of 2 (9 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+07:03,4,KNICKS,Anunoby,Anunoby 3PT Jump Shot (28 PTS) (Brunson 6 AST),NA,3PT Jump Shot,Brunson,3,0,1,0,0,0,0
+06:47,4,SPURS,Harper Bad Pass Turnover,Harper Bad Pass Turnover (P3.T10),NA,TURNOVER,NA,0,0,0,0,0,1,0
+06:47,4,KNICKS,Anunoby,Anunoby STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+06:35,4,KNICKS,Towns,Towns 4' Driving Layup (13 PTS) (Anunoby 1 AST),4,Driving Layup,Anunoby,2,0,1,0,0,0,0
+06:24,4,KNICKS,Alvarado,Alvarado P.FOUL (P5.PN) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+06:24,4,SPURS,Castle Free Throw,Castle Free Throw 1 of 2 (10 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+06:24,4,SPURS,Fox,SUB: Fox FOR Harper,NA,SUB,NA,0,0,0,0,0,0,0
+06:24,4,SPURS,Castle Free Throw,Castle Free Throw 2 of 2 (11 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+06:09,4,SPURS,Castle,Castle S.FOUL (P5.T1) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+06:09,4,KNICKS,Brunson Free Throw,Brunson Free Throw 1 of 2 (28 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+06:09,4,KNICKS,Brunson Free Throw,Brunson Free Throw 2 of 2 (29 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+05:58,4,SPURS,Champagnie,MISS Champagnie 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+05:55,4,KNICKS,Alvarado,Alvarado REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:48,4,KNICKS,Brunson Lost Ball Turnover,Brunson Lost Ball Turnover (P3.T14),NA,TURNOVER,NA,0,0,0,0,0,1,0
+05:48,4,SPURS,Fox,Fox STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+05:44,4,SPURS,Vassell,MISS Vassell 24' 3PT Running Jump Shot,24,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+05:41,4,KNICKS,Towns,Towns REBOUND (Off:2 Def:7),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:20,4,KNICKS,Brunson,Brunson 2' Driving Finger Roll Layup (31 PTS) (Towns 2 AST),2,Driving Finger Roll Layup,Towns,2,0,1,0,0,0,0
+04:57,4,SPURS,Fox,MISS Fox 21' Step Back Jump Shot,21,Step Back Jump Shot,NA,0,0,0,0,0,0,0
+04:54,4,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+04:34,4,KNICKS,Anunoby,Anunoby 3PT Jump Shot (31 PTS) (Alvarado 2 AST),NA,3PT Jump Shot,Alvarado,3,0,1,0,0,0,0
+04:32,4,SPURS,Spurs Timeout,Spurs Timeout: Regular (Reg.5 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+04:32,4,SPURS,Harper,SUB: Harper FOR Castle,NA,SUB,NA,0,0,0,0,0,0,0
+04:11,4,SPURS,Fox,Fox 26' 3PT Jump Shot (18 PTS) (Vassell 4 AST),26,3PT Jump Shot,Vassell,3,0,1,0,0,0,0
+03:49,4,KNICKS,Alvarado,Alvarado 2' Driving Finger Roll Layup (5 PTS),2,Driving Finger Roll Layup,NA,2,0,0,0,0,0,0
+03:31,4,SPURS,Wembanyama,Wembanyama 18' Jump Shot (24 PTS) (Fox 7 AST),18,Jump Shot,Fox,2,0,1,0,0,0,0
+03:07,4,KNICKS,Alvarado,Alvarado 25' 3PT Jump Shot (8 PTS) (Brunson 7 AST),25,3PT Jump Shot,Brunson,3,0,1,0,0,0,0
+02:43,4,SPURS,Fox,MISS Fox 26' 3PT Pullup Jump Shot,26,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+02:42,4,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+02:42,4,SPURS,Castle,SUB: Castle FOR Champagnie,NA,SUB,NA,0,0,0,0,0,0,0
+02:21,4,KNICKS,Brunson,Brunson 27' 3PT Pullup Jump Shot (34 PTS) (Alvarado 3 AST),27,3PT Pullup Jump Shot,Alvarado,3,0,1,0,0,0,0
+02:00,4,SPURS,Fox Bad Pass Turnover,Fox Bad Pass Turnover (P4.T11),NA,TURNOVER,NA,0,0,0,0,0,1,0
+02:00,4,KNICKS,Hart,Hart STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+01:57,4,KNICKS,Hart,MISS Hart 1' Running Layup,1,Running Layup,NA,0,0,0,0,0,0,0
+01:54,4,SPURS,Fox,Fox REBOUND (Off:2 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:47,4,KNICKS,Anunoby,Anunoby S.FOUL (P2.PN) (Z.Zarba),NA,FOUL,NA,0,0,0,0,0,0,1
+01:47,4,SPURS,Wembanyama Free Throw,MISS Wembanyama Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+01:47,4,SPURS,Spurs,Spurs Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+01:47,4,SPURS,Wembanyama Free Throw,MISS Wembanyama Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+01:45,4,KNICKS,Towns,Towns REBOUND (Off:2 Def:8),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:22,4,KNICKS,Brunson,Brunson 6' Driving Floating Jump Shot (36 PTS),6,Driving Floating Jump Shot,NA,2,0,0,0,0,0,0
+01:02,4,SPURS,Castle Step Out,Castle Step Out of Bounds Turnover (P3.T12),NA,TURNOVER,NA,0,0,0,0,0,1,0
+00:39,4,KNICKS,Brunson,MISS Brunson 12' Fadeaway Jumper,12,Fadeaway Jumper,NA,0,0,0,0,0,0,0
+00:39,4,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+00:39,4,KNICKS,KNICKS,KNICKS Turnover: Shot Clock (T#15),NA,TURNOVER,NA,0,0,0,0,0,1,0
+00:39,4,KNICKS,Robinson,SUB: Robinson FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+00:39,4,KNICKS,Shamet,SUB: Shamet FOR Brunson,NA,SUB,NA,0,0,0,0,0,0,0
+00:39,4,SPURS,Spurs Timeout,Spurs Timeout: Regular (Reg.6 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+00:32,4,SPURS,Fox,MISS Fox 19' Pullup Jump Shot,19,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+00:30,4,SPURS,Castle,Castle REBOUND (Off:2 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:30,4,KNICKS,Hart,Hart S.FOUL (P3.PN) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+00:30,4,SPURS,Castle Free Throw,Castle Free Throw 1 of 2 (12 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+00:30,4,KNICKS,Towns,SUB: Towns FOR Alvarado,NA,SUB,NA,0,0,0,0,0,0,0
+00:30,4,SPURS,Castle Free Throw,Castle Free Throw 2 of 2 (13 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+00:30,4,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 5 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+00:30,4,KNICKS,Brunson,SUB: Brunson FOR Robinson,NA,SUB,NA,0,0,0,0,0,0,0
+00:30,4,KNICKS,Alvarado,SUB: Alvarado FOR Shamet,NA,SUB,NA,0,0,0,0,0,0,0
+00:16,4,KNICKS,Brunson,MISS Brunson 5' Driving Floating Bank Jump Shot,5,Driving Floating Bank Jump Shot,NA,0,0,0,0,0,0,0
+00:14,4,SPURS,Fox,Fox REBOUND (Off:2 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:11,4,SPURS,Fox,MISS Fox 2' Layup,2,Layup,NA,0,0,0,0,0,0,0
+00:11,4,KNICKS,Anunoby,Anunoby BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+00:10,4,KNICKS,Alvarado,Alvarado REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:06,4,SPURS,Fox,Fox P.FOUL (P3.T2) (C.Kirkland),NA,FOUL,NA,0,0,0,0,0,0,1
+00:06,4,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 6 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+00:06,4,KNICKS,Shamet,SUB: Shamet FOR Hart,NA,SUB,NA,0,0,0,0,0,0,0
+00:06,4,KNICKS,Bridges,SUB: Bridges FOR Alvarado,NA,SUB,NA,0,0,0,0,0,0,0
+00:04,4,KNICKS,Brunson,MISS Brunson 31' 3PT Pullup Jump Shot,31,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+00:02,4,KNICKS,Anunoby,Anunoby REBOUND (Off:1 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:02,4,KNICKS,Anunoby Tip Layup Shot,Anunoby Tip Layup Shot (33 PTS),NA,Tip Layup Shot,NA,2,0,0,0,0,0,0
+00:01,4,SPURS,Spurs Timeout,Spurs Timeout: Regular (Reg.7 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+00:01,4,KNICKS,Hart,SUB: Hart FOR Brunson,NA,SUB,NA,0,0,0,0,0,0,0
+00:01,4,KNICKS,Robinson,SUB: Robinson FOR Shamet,NA,SUB,NA,0,0,0,0,0,0,0

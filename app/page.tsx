@@ -11,10 +11,16 @@ import Game1_SAS from "./graphics/game1/Game1_SAS";
 import Game1_NYK from "./graphics/game1/Game1_NYK";
 import Game2_SAS from "./graphics/game2/Game2_SAS";
 import Game2_NYK from "./graphics/game2/Game2_NYK";
+import game3_SAS from "./graphics/game3/Game3_SAS";
+import game3_NYK from "./graphics/game3/Game3_NYK";
+import game4_SAS from "./graphics/game4/Game4_SAS";
+import game4_NYK from "./graphics/game4/Game4_NYK";
 import { games } from "./info/games";
 import { spursPlayers, knicksPlayers } from "./info/players";
 import Game1Spread from "./graphics/game1/Game1Spread";
 import Game2Spread from "./graphics/game2/Game2Spread";
+import Game3Spread from "./graphics/game3/Game3Spread";
+import Game4Spread from "./graphics/game4/Game4Spread";
 import BoxScore from "./components/BoxScore";
 import Highlight from "./components/Highlight";
 
@@ -28,6 +34,8 @@ const gameVisuals: Array<{
 }> = [
   { sasCourt: Game1_SAS, nykCourt: Game1_NYK, spread: Game1Spread },
   { sasCourt: Game2_SAS, nykCourt: Game2_NYK, spread: Game2Spread },
+  { sasCourt: game3_SAS, nykCourt: game3_NYK, spread: Game3Spread },
+  { sasCourt: game4_SAS, nykCourt: game4_NYK, spread: Game4Spread },
 ];
 
 type PlayEntry = {
@@ -1019,6 +1027,36 @@ export default function Home() {
       ),
     [playsByGame],
   );
+  const activeGameHighlights = highlightsByGame[activeGameIndex] ?? [];
+  const activeGameSeconds =
+    gameSecondsByGame[activeGameIndex] ??
+    getDefaultGameSeconds(games[activeGameIndex]?.ot ?? 0);
+  const activeGameProgress = Math.min(
+    1,
+    Math.max(0, progressByGame[activeGameIndex] ?? 0),
+  );
+  const activeCurrentSecond = Math.floor(
+    activeGameProgress * activeGameSeconds,
+  );
+  const activeHighlightIndex = useMemo(() => {
+    if (activeGameHighlights.length === 0) return 0;
+
+    let latestIndex = 0;
+    for (let i = 0; i < activeGameHighlights.length; i += 1) {
+      const highlight = activeGameHighlights[i];
+      const highlightSecond = getAbsoluteSeconds(
+        highlight.quarter,
+        highlight.time,
+      );
+      if (highlightSecond <= activeCurrentSecond) {
+        latestIndex = i;
+      } else {
+        break;
+      }
+    }
+
+    return latestIndex;
+  }, [activeGameHighlights, activeCurrentSecond]);
 
   const nykTitleRef = useRef<HTMLHeadingElement | null>(null);
   const sasTitleRef = useRef<HTMLHeadingElement | null>(null);
@@ -1271,15 +1309,19 @@ export default function Home() {
       </div>
       {/* plays */}
       <div className="fixed z-100 top-0 right-0 w-[250px] h-full">
-        <div className="absolute inset-0 flex flex-col items-stretch">
-          {(highlightsByGame[activeGameIndex] ?? []).map((highlight, i) => (
-            <div
-              key={`${highlight.quarter}-${highlight.time}-${i}`}
-              style={{ transform: `translateY(${i * 110}%)` }}
-            >
-              <Highlight info={highlight} />
-            </div>
-          ))}
+        <div className="absolute inset-0 flex flex-col items-stretch overflow-hidden">
+          <div
+            className="relative duration-300 ease-out"
+            style={{
+              transform: `translateY(${activeHighlightIndex * -142}px)`,
+            }}
+          >
+            {activeGameHighlights.map((highlight, i) => (
+              <div key={`${highlight.quarter}-${highlight.time}-${i}`}>
+                <Highlight info={highlight} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       {/* main */}
