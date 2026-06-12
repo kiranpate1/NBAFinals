@@ -16,7 +16,7 @@ export default function GameGrid({ isInsideSticky, ot }: props) {
         gridTemplateRows: `${regulationMinutes}fr ${overtimeMinutes}fr`,
       }}
     >
-      <div className="absolute w-3/5 left-1/2 -translate-x-1/2 top-0 bottom-0 flex items-stretch justify-between">
+      <div className="absolute w-1/2 left-1/2 -translate-x-1/2 top-0 bottom-0 flex items-stretch justify-between">
         <div className="w-0 h-full border-l border-(--stroke) border-dotted"></div>
         <div className="w-0 h-full border-l border-(--stroke) border-dotted"></div>
         <div className="w-0 h-full border-l border-(--stroke) border-dotted"></div>

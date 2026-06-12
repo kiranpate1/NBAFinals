@@ -6,7 +6,7 @@ export default function Game3Spread({ spread }: props) {
   return (
     <div
       className="absolute top-0 left-1/2 -translate-x-1/2 h-full"
-      style={{ width: `${spread * 2}%` }}
+      style={{ width: `${(spread * 5) / 3}%` }}
     >
       <svg
         width="100%"

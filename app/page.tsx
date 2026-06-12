@@ -72,6 +72,7 @@ import R3Game4Spread from "./graphics/round3/game4/Game4Spread";
 import { games, rounds, type RoundMeta } from "./info/games";
 import BoxScore from "./components/BoxScore";
 import Highlight from "./components/Highlight";
+import NavGameCard from "./components/NavGameCard";
 
 type CourtGraphicComponent = React.ComponentType;
 type SpreadGraphicComponent = React.ComponentType<{ spread: number }>;
@@ -605,10 +606,8 @@ export default function Home() {
   const gameScrollElsRef = useRef<Array<HTMLDivElement | null>>([]);
   const footerRef = useRef<HTMLElement | null>(null);
   const courtHeightDynamicRef = useRef<HTMLDivElement | null>(null);
-  const animationFrameRef = useRef<number | null>(null);
-  const footerMetricsRef = useRef({ top: 0, bottom: 0 });
-  const gameClockRef = useRef<HTMLHeadingElement | null>(null);
-  const quarterRef = useRef<HTMLElement | null>(null);
+  // const animationFrameRef = useRef<number | null>(null);
+  // const footerMetricsRef = useRef({ top: 0, bottom: 0 });
   const sasCourtRef = useRef<HTMLDivElement | null>(null);
   const nykCourtRef = useRef<HTMLDivElement | null>(null);
   const [playsByGame, setPlaysByGame] = useState<PlayEntry[][]>(() =>
@@ -624,10 +623,15 @@ export default function Home() {
   const [progressByGame, setProgressByGame] = useState<number[]>(() =>
     games.map(() => 0),
   );
+  const [betweenProgressByGame, setBetweenProgressByGame] = useState<number[]>(
+    () => games.map(() => 0),
+  );
   const [gameSecondsByGame, setGameSecondsByGame] = useState<number[]>(() =>
     games.map((game) => getDefaultGameSeconds(game.ot)),
   );
   const [activeGameIndex, setActiveGameIndex] = useState(0);
+  const [gameClock, setGameClock] = useState("12:00");
+  const [gameQuarter, setGameQuarter] = useState("Q1");
   const [isInsideSplash, setIsInsideSplash] = useState(true);
   const [hasReachedBottom, setHasReachedBottom] = useState(false);
   const [activeCourtUrl, setActiveCourtUrl] = useState<string | null>(null);
@@ -750,6 +754,11 @@ export default function Home() {
       });
     };
 
+    const updateClockDisplay = (clock: string, quarter: string) => {
+      setGameClock((prev) => (prev === clock ? prev : clock));
+      setGameQuarter((prev) => (prev === quarter ? prev : quarter));
+    };
+
     const computeSnapshot = (
       entries: PlayEntry[],
       currentSeconds: number,
@@ -821,12 +830,7 @@ export default function Home() {
         currentSeconds,
         games[gameIndex]?.ot ?? 0,
       );
-      if (gameClockRef.current) {
-        gameClockRef.current.textContent = formatTime(remainingInQuarter);
-      }
-      if (quarterRef.current) {
-        quarterRef.current.textContent = quarter;
-      }
+      updateClockDisplay(formatTime(remainingInQuarter), quarter);
 
       let nykPlay: PlayEntry | null = null;
       let sasPlay: PlayEntry | null = null;
@@ -914,6 +918,43 @@ export default function Home() {
           }
         }
         return changed ? nextProgress : prev;
+      });
+
+      const nextBetweenProgress = games.map((_, index) => {
+        if (index === 0) return 0;
+
+        const previousGameScrollEl = gameScrollElsRef.current[index - 1];
+        const currentGameScrollEl = gameScrollElsRef.current[index];
+        if (!previousGameScrollEl || !currentGameScrollEl) return 0;
+
+        const previousRect = previousGameScrollEl.getBoundingClientRect();
+        const currentRect = currentGameScrollEl.getBoundingClientRect();
+
+        const transitionStart = previousRect.bottom;
+        const transitionEnd = currentRect.top;
+        const transitionDistance = transitionEnd - transitionStart;
+
+        if (transitionDistance <= 0) {
+          return boundaryTop >= transitionEnd ? 1 : 0;
+        }
+
+        if (boundaryTop <= transitionStart) return 0;
+        if (boundaryTop >= transitionEnd) return 1;
+
+        return (boundaryTop - transitionStart) / transitionDistance;
+      });
+
+      setBetweenProgressByGame((prev) => {
+        let changed = false;
+        for (let i = 0; i < prev.length; i += 1) {
+          if (
+            Math.abs((prev[i] ?? 0) - (nextBetweenProgress[i] ?? 0)) > 0.001
+          ) {
+            changed = true;
+            break;
+          }
+        }
+        return changed ? nextBetweenProgress : prev;
       });
 
       // Keep every game's score in sync with its current scroll progress.
@@ -1015,8 +1056,7 @@ export default function Home() {
           });
         }
 
-        if (gameClockRef.current) gameClockRef.current.textContent = "00:00";
-        if (quarterRef.current) quarterRef.current.textContent = "END";
+        updateClockDisplay("00:00", "END");
         nykEl.innerHTML = "&ensp;";
         sasEl.innerHTML = "&ensp;";
         // setBoxStats({
@@ -1033,8 +1073,7 @@ export default function Home() {
       if (scrolledPx <= 0) {
         if (lastZone === "above") return;
 
-        if (gameClockRef.current) gameClockRef.current.textContent = "12:00";
-        if (quarterRef.current) quarterRef.current.textContent = "Q1";
+        updateClockDisplay("12:00", "Q1");
         nykEl.innerHTML = "&ensp;";
         sasEl.innerHTML = "&ensp;";
         setBoxStats({
@@ -1206,6 +1245,13 @@ export default function Home() {
     });
   }, []);
 
+  // toggle future series visibility
+
+  const [showFutureSeries, setShowFutureSeries] = useState(false);
+  const toggleFutureSeries = () => {
+    setShowFutureSeries((prev) => !prev);
+  };
+
   // text effect inspired by my codepen
   const nykTitleRef = useRef<HTMLHeadingElement | null>(null);
   const sasTitleRef = useRef<HTMLHeadingElement | null>(null);
@@ -1372,9 +1418,31 @@ export default function Home() {
           </h3> */}
           {rounds.map((round, i) => {
             const roundStart = roundStartIndexes[i] ?? 0;
+            const progressBetweenRounds =
+              betweenProgressByGame[roundStart] ?? 0;
 
             return (
-              <React.Fragment key={i}>
+              <div className="w-full flex flex-col items-center" key={i}>
+                {i > 0 && (
+                  <svg
+                    width="20"
+                    height="100"
+                    viewBox="0 0 20 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                  >
+                    <path
+                      d="M10 0L10 16"
+                      stroke="rgba(0,0,0,0.35)"
+                      vectorEffect="non-scaling-stroke"
+                      style={{
+                        strokeDasharray: 100,
+                        strokeDashoffset: 100 - 100 * progressBetweenRounds,
+                      }}
+                    />
+                  </svg>
+                )}
                 {round.games.map((game, j) => {
                   const gameIndex = roundStart + j;
                   const progress = progressByGame[gameIndex] ?? 0;
@@ -1389,105 +1457,99 @@ export default function Home() {
                       : opponentScore > score.NYK
                         ? opponentColorVar
                         : "var(--stroke)";
-                  const navBackgroundColor = isActiveGame
-                    ? `color-mix(in srgb, var(--background) 88%, ${progressColor} 12%)`
-                    : "var(--background)";
-                  let dateLabel = 18;
-                  dateLabel += i * 2;
+                  const progressBetweenGames =
+                    betweenProgressByGame[gameIndex] ?? 0;
 
                   return (
-                    <div className="w-full flex flex-col items-center" key={j}>
-                      <svg
-                        width="20"
-                        height="16"
-                        viewBox="0 0 20 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10 0L10 16"
-                          stroke="black"
-                          vectorEffect="non-scaling-stroke"
-                        />
-                      </svg>
-                      <button
-                        type="button"
-                        className="relative w-full h-20 flex flex-col items-stretch hover:opacity-60 overflow-hidden cursor-pointer transition-colors duration-150"
-                        onClick={() => scrollToGameStart(gameIndex)}
-                        style={{ backgroundColor: navBackgroundColor }}
-                      >
-                        <small
-                          className="absolute top-1 left-1"
-                          style={{
-                            opacity: isInsideSplash ? 1 : 0,
-                          }}
+                    <div
+                      className="w-full flex flex-col items-center duration-300 ease-in-out"
+                      style={{
+                        opacity:
+                          !showFutureSeries &&
+                          i > 0 &&
+                          progressBetweenRounds === 0
+                            ? 0
+                            : 1,
+                        transform: `translateY(${!showFutureSeries && i > 0 && progressBetweenRounds === 0 ? 50 : 0}px)`,
+                      }}
+                      key={j}
+                    >
+                      {j > 0 && (
+                        <svg
+                          width="20"
+                          height="16"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          preserveAspectRatio="none"
                         >
-                          {dateLabel}
-                        </small>
-                        <div className="h-2 xl:h-3 overflow-hidden p-0 xl:p-0.5">
-                          <div
-                            className="h-full"
+                          <path
+                            d="M10 0L10 16"
+                            stroke="rgba(0,0,0,0.35)"
+                            vectorEffect="non-scaling-stroke"
                             style={{
-                              width: "100%",
-                              transformOrigin: "left center",
-                              transform: `scaleX(${Math.min(
-                                1,
-                                Math.max(0, progressByGame[gameIndex] ?? 0),
-                              )})`,
-                              backgroundColor: progressColor,
+                              strokeDasharray: 16,
+                              strokeDashoffset: 16 - 16 * progressBetweenGames,
                             }}
-                          ></div>
-                        </div>
-                        <div className="flex-1 grid grid-cols-[1fr_48px_1fr] items-center px-4">
-                          <div className="flex flex-col items-center gap-1">
-                            <p>{score.NYK}</p>
-                            <img
-                              src={"/nyk-logo.svg"}
-                              alt="NYK logo"
-                              className="hidden sm:block max-h-4"
-                              style={{
-                                opacity: isInsideSplash
-                                  ? "1"
-                                  : score.NYK > score.OPP
-                                    ? 1
-                                    : 0.15,
-                              }}
-                            />
-                          </div>
-                          <h3
-                            className="text-(--stroke) opacity-25"
-                            style={{
-                              transition: splashTransition,
-                              transform: isInsideSplash
-                                ? "scale(0.8)"
-                                : "scale(1.25)",
-                            }}
-                          >
-                            G{isInsideSplash ? "7pm" : game.game}
-                          </h3>
-                          <div className="flex flex-col items-center gap-1">
-                            <p>{score.OPP}</p>
-                            <img
-                              src={`/${round.opponent.toLowerCase()}-logo.svg`}
-                              alt={`${round.opponent} logo`}
-                              className="hidden sm:block max-h-4"
-                              style={{
-                                opacity: isInsideSplash
-                                  ? "1"
-                                  : opponentScore > score.NYK
-                                    ? 1
-                                    : 0.15,
-                              }}
-                            />
-                          </div>
-                        </div>
-                      </button>
+                          />
+                        </svg>
+                      )}
+                      <div
+                        className="w-full"
+                        style={{
+                          opacity:
+                            !showFutureSeries &&
+                            i > 0 &&
+                            progressBetweenRounds === 0
+                              ? 0
+                              : 1,
+                          transform: `translateY(${!showFutureSeries && i > 0 && progressBetweenRounds === 0 ? 50 : 0}px)`,
+                        }}
+                      >
+                        <NavGameCard
+                          scrollToGameStart={scrollToGameStart}
+                          gameIndex={gameIndex}
+                          isActiveGame={isActiveGame}
+                          progressByGame={progressByGame}
+                          score={score}
+                          gameClock={gameClock}
+                          gameQuarter={gameQuarter}
+                          round={round}
+                          game={game}
+                          isInsideSplash={isInsideSplash}
+                          splashTransition={splashTransition}
+                          progressColor={progressColor}
+                        />
+                      </div>
                     </div>
                   );
                 })}
-              </React.Fragment>
+              </div>
             );
           })}
+        </div>
+        <div className="absolute inset-[auto_0_0_0] w-full p-[16px_0_16px_16px] bg-(--background) flex items-center justify-between gap-4">
+          <small>Show all games</small>
+          <div
+            className="w-10 h-5 rounded-[10px] border border-(--stroke) p-0.5 cursor-pointer duration-200 ease-in-out"
+            style={{
+              borderColor: showFutureSeries ? "var(--nyk)" : "var(--stroke)",
+              backgroundColor: showFutureSeries ? "var(--nyk)" : "transparent",
+            }}
+            onClick={toggleFutureSeries}
+          >
+            <div
+              className="h-full aspect-square rounded-full duration-200 ease-in-out"
+              style={{
+                backgroundColor: showFutureSeries
+                  ? "var(--background)"
+                  : "var(--stroke)",
+                transform: showFutureSeries
+                  ? "translateX(20px)"
+                  : "translateX(0%)",
+              }}
+            ></div>
+          </div>
         </div>
       </div>
       {/* plays / stationary */}
@@ -1666,14 +1728,11 @@ export default function Home() {
                         </small>
                       </div>
                       <div className="absolute z-1 top-6 left-1/2 -translate-x-1/2 flex flex-col items-center">
-                        <h3
-                          className="gameclock pointer-events-auto"
-                          ref={gameClockRef}
-                        >
-                          12:00
+                        <h3 className="gameclock pointer-events-auto">
+                          {gameClock}
                         </h3>
-                        <small className="bg-(--background)" ref={quarterRef}>
-                          Q1
+                        <small className="bg-(--background)">
+                          {gameQuarter}
                         </small>
                       </div>
                       <div
@@ -1771,33 +1830,33 @@ export default function Home() {
                             ref={(el) => setGameScrollRef(gameIndex, el)}
                           >
                             <div
-                              className="sticky z-5 w-full h-0 grid grid-cols-10 pointer-events-auto opacity-70"
+                              className="sticky z-5 w-full h-0 grid grid-cols-12 pointer-events-auto opacity-70"
                               style={{
                                 top: `calc(100dvh - ${topLipHeight + courtHeight + 17}px)`,
                               }}
                             >
-                              <small className="[grid-area:1/2/1/2] place-self-end p-0.75 -translate-y-full">
+                              <small className="[grid-area:1/3/1/3] place-self-end p-0.75 -translate-y-full">
                                 30
                               </small>
-                              <small className="[grid-area:1/3/1/3] place-self-end p-0.75 -translate-y-full">
+                              <small className="[grid-area:1/4/1/4] place-self-end p-0.75 -translate-y-full">
                                 20
                               </small>
-                              <small className="[grid-area:1/4/1/4] place-self-end p-0.75 -translate-y-full">
+                              <small className="[grid-area:1/5/1/5] place-self-end p-0.75 -translate-y-full">
                                 10
                               </small>
-                              <small className="[grid-area:1/5/1/5] place-self-end p-0.75 -translate-y-full">
-                                0
-                              </small>
-                              <small className="[grid-area:1/6/1/6] place-self-start p-0.75 -translate-y-full">
+                              <small className="[grid-area:1/6/1/6] place-self-end p-0.75 -translate-y-full">
                                 0
                               </small>
                               <small className="[grid-area:1/7/1/7] place-self-start p-0.75 -translate-y-full">
-                                10
+                                0
                               </small>
                               <small className="[grid-area:1/8/1/8] place-self-start p-0.75 -translate-y-full">
-                                20
+                                10
                               </small>
                               <small className="[grid-area:1/9/1/9] place-self-start p-0.75 -translate-y-full">
+                                20
+                              </small>
+                              <small className="[grid-area:1/10/1/10] place-self-start p-0.75 -translate-y-full">
                                 30
                               </small>
                             </div>
