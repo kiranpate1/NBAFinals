@@ -5,7 +5,7 @@ import { NextResponse } from "next/server";
 type PlayEntry = {
   time: string;
   quarter: string;
-  team: "NYK" | "SAS";
+  team: "NYK" | "OPP";
   player: string;
   play: string;
   result: "made" | "miss" | "other";
@@ -135,7 +135,7 @@ export async function GET(
       const play = row[4];
       const assistRaw = row[7];
 
-      const team = teamRaw === "KNICKS" ? "NYK" : "SAS";
+      const team = teamRaw === "KNICKS" ? "NYK" : "OPP";
 
       plays.push({
         time,

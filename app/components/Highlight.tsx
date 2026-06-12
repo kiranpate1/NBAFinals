@@ -2,7 +2,7 @@ import Image from "next/image";
 
 type props = {
   info: {
-    team: "NYK" | "SAS";
+    team: "NYK" | "OPP";
     player: {
       name: string;
       position: string;
@@ -36,7 +36,7 @@ export default function Highlight({ info }: props) {
   }
 
   return (
-    <div className="w-full h-[142px] grid grid-cols-2 gap-2 p-1 border border-(--stroke) bg-[rgba(246,244,245,0.5)] rounded-xs overflow-hidden pointer-events-auto">
+    <div className="w-full h-35.5 grid grid-cols-[auto_1fr] gap-2 p-1 border border-(--stroke) rounded-xs overflow-hidden pointer-events-auto">
       <div className="flex flex-col items-stretch">
         <Image
           className="flex-1 pt-2 border border-(--stroke) rounded-xs object-cover"
@@ -54,7 +54,7 @@ export default function Highlight({ info }: props) {
           </small>
         </div>
       </div>
-      <div className="flex flex-col justify-between gap-1 p-1">
+      <div className="flex flex-col justify-between gap-1 p-0">
         <div className="flex flex-col gap-1">
           <div className="flex items-center gap-1">
             <h4 className="text-sm! bg-gray-300 px-1 rounded-sm">
@@ -62,13 +62,15 @@ export default function Highlight({ info }: props) {
             </h4>
             <small>{info.quarter}</small>
           </div>
-          <p className="text-xs opacity-70 text-pretty">{description}</p>
+          <p className="text-(--stroke) leading-[120%] text-pretty">
+            {description}
+          </p>
         </div>
         <div className="flex flex-col gap-1">
-          <p className="text-xs opacity-70">
+          <p className="smaller opacity-70">
             {points.length > 0 ? `PTS: ${points}` : ""}
           </p>
-          <p className="text-xs opacity-70">
+          <p className="smaller opacity-70">
             {assist.length > 0 ? `AST: ${assist}` : "Unassisted"}
           </p>
         </div>

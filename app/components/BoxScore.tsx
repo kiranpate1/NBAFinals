@@ -1,13 +1,13 @@
 import React from "react";
 
 type props = {
-  team: "NYK" | "SAS";
+  team: "NYK" | "OPP";
   players: {
     name: string;
     position: string;
   }[];
   boxStats: {
-    [team in "NYK" | "SAS"]: {
+    [team in "NYK" | "OPP"]: {
       [playerName: string]: {
         pts: number;
         fgMade: number;

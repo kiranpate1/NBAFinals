@@ -4,6 +4,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import SplashCourt from "./components/SplashCourt";
 import Court from "./components/Court";
 import GameGrid from "./components/GameGrid";
+import SeriesCard from "./components/SeriesCard";
 import GameCard from "./components/GameCard";
 import GameRecap from "./components/GameRecap";
 import GameScoreboard from "./components/GameScoreboard";
@@ -116,7 +117,7 @@ const gameVisuals = rounds.flatMap((round) => roundVisuals[round.id]);
 type PlayEntry = {
   time: string;
   quarter: string;
-  team: "NYK" | "SAS";
+  team: "NYK" | "OPP";
   player: string;
   play: string;
   result: "made" | "miss" | "other";
@@ -143,10 +144,10 @@ type PlayerStats = {
 };
 
 type TeamStats = Record<string, PlayerStats>;
-type TeamScore = { NYK: number; SAS: number };
+type TeamScore = { NYK: number; OPP: number };
 
 type HighlightInfo = {
-  team: "NYK" | "SAS";
+  team: "NYK" | "OPP";
   player: {
     name: string;
     position: string;
@@ -167,7 +168,7 @@ type TeamRosterPlayer = {
   imageUrl: string;
 };
 
-type TeamKey = "NYK" | "SAS";
+type TeamKey = "NYK" | "OPP";
 
 type ScoredPlay = {
   entry: PlayEntry;
@@ -182,7 +183,7 @@ type GameSegment = {
   endSeconds: number;
 };
 
-const makeEmptyTeamScore = (): TeamScore => ({ NYK: 0, SAS: 0 });
+const makeEmptyTeamScore = (): TeamScore => ({ NYK: 0, OPP: 0 });
 
 const makeEmptyPlayerStats = (): PlayerStats => ({
   pts: 0,
@@ -297,7 +298,7 @@ const resolveFromLookup = (lookup: Map<string, string>, token: string) => {
 };
 
 const resolveRosterName = (
-  team: "NYK" | "SAS",
+  team: "NYK" | "OPP",
   rawName: string,
   gameIndex: number,
 ) => {
@@ -484,7 +485,7 @@ const buildScoredTimeline = (entries: PlayEntry[]): ScoredPlay[] => {
 const getHighlightPriorityScore = (play: ScoredPlay): number => {
   const { entry, before, after } = play;
   const team = entry.team;
-  const opponent: TeamKey = team === "NYK" ? "SAS" : "NYK";
+  const opponent: TeamKey = team === "NYK" ? "OPP" : "NYK";
   const made = entry.result === "made";
   const threePointMake = made && isThreePointPlay(entry.play);
   const twoPointMake = made && entry.points === 2;
@@ -615,7 +616,7 @@ export default function Home() {
   );
   const [boxStats, setBoxStats] = useState(() => ({
     NYK: makeEmptyTeamStats(knicksPlayers),
-    SAS: makeEmptyTeamStats(getOpponentPlayersForGame(0)),
+    OPP: makeEmptyTeamStats(getOpponentPlayersForGame(0)),
   }));
   const [teamScoreByGame, setTeamScoreByGame] = useState<TeamScore[]>(() =>
     games.map(() => makeEmptyTeamScore()),
@@ -757,9 +758,9 @@ export default function Home() {
       const opponentPlayers = getOpponentPlayersForGame(gameIndex);
       const next = {
         NYK: makeEmptyTeamStats(knicksPlayers),
-        SAS: makeEmptyTeamStats(opponentPlayers),
+        OPP: makeEmptyTeamStats(opponentPlayers),
       };
-      const score: TeamScore = { NYK: 0, SAS: 0 };
+      const score: TeamScore = { NYK: 0, OPP: 0 };
 
       for (const entry of entries) {
         const entrySeconds = getAbsoluteSeconds(entry.quarter, entry.time);
@@ -834,7 +835,7 @@ export default function Home() {
         const entrySeconds = getAbsoluteSeconds(entry.quarter, entry.time);
         if (entrySeconds > currentSeconds) break;
         if (entry.team === "NYK") nykPlay = entry;
-        else if (entry.team === "SAS") sasPlay = entry;
+        else if (entry.team === "OPP") sasPlay = entry;
       }
 
       const nykResult = nykPlay
@@ -939,7 +940,7 @@ export default function Home() {
           for (let i = 0; i < prev.length; i += 1) {
             if (
               (prev[i]?.NYK ?? 0) !== (nextScores[i]?.NYK ?? 0) ||
-              (prev[i]?.SAS ?? 0) !== (nextScores[i]?.SAS ?? 0)
+              (prev[i]?.OPP ?? 0) !== (nextScores[i]?.OPP ?? 0)
             ) {
               changed = true;
               break;
@@ -1038,7 +1039,7 @@ export default function Home() {
         sasEl.innerHTML = "&ensp;";
         setBoxStats({
           NYK: makeEmptyTeamStats(knicksPlayers),
-          SAS: makeEmptyTeamStats(getOpponentPlayersForGame(activeIndex)),
+          OPP: makeEmptyTeamStats(getOpponentPlayersForGame(activeIndex)),
         });
         setTeamScoreByGame((prev) => {
           const next = [...prev];
@@ -1346,7 +1347,7 @@ export default function Home() {
       {/* nav / stationary */}
       <div className="fixed z-100 top-0 left-0 w-62.5 h-full">
         <div
-          className="relative flex flex-col pointer-events-auto"
+          className="absolute inset-[0_0_0_16px] flex flex-col h-full overflow-scroll pointer-events-auto"
           style={
             {
               // transition: splashTransition,
@@ -1380,7 +1381,7 @@ export default function Home() {
                   const isActiveGame = progress > 0 && progress < 1;
                   const score =
                     teamScoreByGame[gameIndex] ?? makeEmptyTeamScore();
-                  const opponentScore = score.SAS;
+                  const opponentScore = score.OPP;
                   const opponentColorVar = `var(--${round.opponent.toLowerCase()})`;
                   const progressColor =
                     score.NYK > opponentScore
@@ -1395,73 +1396,93 @@ export default function Home() {
                   dateLabel += i * 2;
 
                   return (
-                    <button
-                      type="button"
-                      className="relative flex flex-col items-stretch hover:opacity-60 overflow-hidden cursor-pointer transition-colors duration-150"
-                      onClick={() => scrollToGameStart(gameIndex)}
-                      style={{ backgroundColor: navBackgroundColor }}
-                      key={j}
-                    >
-                      <small
-                        className="absolute top-1 left-1"
-                        style={{
-                          opacity: isInsideSplash ? 1 : 0,
-                        }}
+                    <div className="w-full flex flex-col items-center" key={j}>
+                      <svg
+                        width="20"
+                        height="16"
+                        viewBox="0 0 20 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        {dateLabel}
-                      </small>
-                      <div className="h-2 xl:h-3 overflow-hidden p-0 xl:p-0.5">
-                        <div
-                          className="h-full"
-                          style={{
-                            width: "100%",
-                            transformOrigin: "left center",
-                            transform: `scaleX(${Math.min(
-                              1,
-                              Math.max(0, progressByGame[gameIndex] ?? 0),
-                            )})`,
-                            backgroundColor: progressColor,
-                          }}
-                        ></div>
-                      </div>
-                      <div className="flex-1 flex items-center justify-center px-4">
-                        <img
-                          src={"/nyk-logo.svg"}
-                          alt="NYK logo"
-                          className="hidden sm:block flex-1 h-4"
-                          style={{
-                            opacity: isInsideSplash
-                              ? "1"
-                              : score.NYK > score.SAS
-                                ? 1
-                                : 0.15,
-                          }}
+                        <path
+                          d="M10 0L10 16"
+                          stroke="black"
+                          vectorEffect="non-scaling-stroke"
                         />
-                        <p
-                          className="text-(--stroke)"
+                      </svg>
+                      <button
+                        type="button"
+                        className="relative w-full h-20 flex flex-col items-stretch hover:opacity-60 overflow-hidden cursor-pointer transition-colors duration-150"
+                        onClick={() => scrollToGameStart(gameIndex)}
+                        style={{ backgroundColor: navBackgroundColor }}
+                      >
+                        <small
+                          className="absolute top-1 left-1"
                           style={{
-                            transition: splashTransition,
-                            transform: isInsideSplash
-                              ? "scale(0.8)"
-                              : "scale(1.25)",
+                            opacity: isInsideSplash ? 1 : 0,
                           }}
                         >
-                          {isInsideSplash ? "7pm" : game.game}
-                        </p>
-                        <img
-                          src={`/${round.opponent.toLowerCase()}-logo.svg`}
-                          alt={`${round.opponent} logo`}
-                          className="hidden sm:block flex-1 h-4"
-                          style={{
-                            opacity: isInsideSplash
-                              ? "1"
-                              : opponentScore > score.NYK
-                                ? 1
-                                : 0.15,
-                          }}
-                        />
-                      </div>
-                    </button>
+                          {dateLabel}
+                        </small>
+                        <div className="h-2 xl:h-3 overflow-hidden p-0 xl:p-0.5">
+                          <div
+                            className="h-full"
+                            style={{
+                              width: "100%",
+                              transformOrigin: "left center",
+                              transform: `scaleX(${Math.min(
+                                1,
+                                Math.max(0, progressByGame[gameIndex] ?? 0),
+                              )})`,
+                              backgroundColor: progressColor,
+                            }}
+                          ></div>
+                        </div>
+                        <div className="flex-1 grid grid-cols-[1fr_48px_1fr] items-center px-4">
+                          <div className="flex flex-col items-center gap-1">
+                            <p>{score.NYK}</p>
+                            <img
+                              src={"/nyk-logo.svg"}
+                              alt="NYK logo"
+                              className="hidden sm:block max-h-4"
+                              style={{
+                                opacity: isInsideSplash
+                                  ? "1"
+                                  : score.NYK > score.OPP
+                                    ? 1
+                                    : 0.15,
+                              }}
+                            />
+                          </div>
+                          <h3
+                            className="text-(--stroke) opacity-25"
+                            style={{
+                              transition: splashTransition,
+                              transform: isInsideSplash
+                                ? "scale(0.8)"
+                                : "scale(1.25)",
+                            }}
+                          >
+                            G{isInsideSplash ? "7pm" : game.game}
+                          </h3>
+                          <div className="flex flex-col items-center gap-1">
+                            <p>{score.OPP}</p>
+                            <img
+                              src={`/${round.opponent.toLowerCase()}-logo.svg`}
+                              alt={`${round.opponent} logo`}
+                              className="hidden sm:block max-h-4"
+                              style={{
+                                opacity: isInsideSplash
+                                  ? "1"
+                                  : opponentScore > score.NYK
+                                    ? 1
+                                    : 0.15,
+                              }}
+                            />
+                          </div>
+                        </div>
+                      </button>
+                    </div>
                   );
                 })}
               </React.Fragment>
@@ -1471,15 +1492,18 @@ export default function Home() {
       </div>
       {/* plays / stationary */}
       <div className="fixed z-100 top-0 right-0 w-62.5 h-full">
-        <div className="absolute inset-0 flex flex-col items-stretch overflow-hidden">
+        <div className="absolute inset-[0_16px_0_0] flex flex-col items-stretch justify-end overflow-hidden">
           <div
-            className="relative duration-300 ease-out"
+            className="relative duration-300 ease-out flex flex-col items-stretch gap-2"
             style={{
-              transform: `translateY(${activeHighlightIndex * -142}px)`,
+              transform: `translateY(${(activeGameHighlights.length - 1) * 150 - activeHighlightIndex * 150 - 16}px)`,
             }}
           >
             {activeGameHighlights.map((highlight, i) => (
-              <div key={`${highlight.quarter}-${highlight.time}-${i}`}>
+              <div
+                style={{ opacity: activeHighlightIndex === i ? 1 : 0.25 }}
+                key={`${highlight.quarter}-${highlight.time}-${i}`}
+              >
                 <Highlight info={highlight} />
               </div>
             ))}
@@ -1515,13 +1539,13 @@ export default function Home() {
               </div>
               {/* background grid for nav */}
               <div className="absolute inset-4 flex flex-col items-stretch">
-                {rounds.map((round) => {
+                {rounds.map((round, roundIndex) => {
+                  const roundStart = roundStartIndexes[roundIndex] ?? 0;
                   return (
                     <React.Fragment key={round.id}>
-                      <div className="h-10 border-t border-(--stroke) flex items-center justify-center bg-(--background)">
-                        <small>{round.label}</small>
-                      </div>
-                      {round.games.map((game) => {
+                      <SeriesCard isInsideSticky={true} series={round.label} />
+                      {round.games.map((game, g) => {
+                        const gameIndex = roundStart + g;
                         return (
                           <div
                             className="relative flex items-stretch flex-col"
@@ -1545,6 +1569,30 @@ export default function Home() {
                               height={courtHeight + topLipHeight}
                               game={game}
                             />
+
+                            <div
+                              className="scoreboard absolute left-0 right-0 flex items-stretch flex-col"
+                              style={{
+                                top: `${courtHeight + topLipHeight}px`,
+                                bottom: `${-courtHeight + topLipHeight - 30}px`,
+                              }}
+                            >
+                              <div
+                                className="sticky -translate-y-full"
+                                style={{
+                                  inset: `calc(100dvh - 48px) 16px auto 16px`,
+                                }}
+                              >
+                                <GameScoreboard
+                                  isInsideSticky={true}
+                                  teamScore={
+                                    teamScoreByGame[gameIndex] ??
+                                    makeEmptyTeamScore()
+                                  }
+                                  opponent={rounds[roundIndex].opponent}
+                                />
+                              </div>
+                            </div>
                           </div>
                         );
                       })}
@@ -1587,7 +1635,7 @@ export default function Home() {
                     }}
                   >
                     <BoxScore
-                      team="SAS"
+                      team="OPP"
                       players={currentOpponentPlayers}
                       boxStats={boxStats}
                     />
@@ -1614,7 +1662,7 @@ export default function Home() {
                           className="text-left overflow-hidden whitespace-nowrap text-ellipsis"
                           ref={SASPlayRef}
                         >
-                          Example of SAS play
+                          Example of OPP play
                         </small>
                       </div>
                       <div className="absolute z-1 top-6 left-1/2 -translate-x-1/2 flex flex-col items-center">
@@ -1698,9 +1746,7 @@ export default function Home() {
 
                 return (
                   <React.Fragment key={round.id}>
-                    <div className="h-10 border-t border-(--stroke) flex items-center justify-center pointer-events-auto bg-(--background)">
-                      <h3>{round.label}</h3>
-                    </div>
+                    <SeriesCard isInsideSticky={false} series={round.label} />
                     {round.games.map((game, g) => {
                       const gameIndex = roundStart + g;
                       const gameVisual =
@@ -1774,10 +1820,11 @@ export default function Home() {
                             <div
                               className="sticky -translate-y-full"
                               style={{
-                                inset: `calc(100dvh - (${courtHeight + topLipHeight + 16}px)) 16px auto 16px`,
+                                inset: `calc(100dvh - 48px) 16px auto 16px`,
                               }}
                             >
                               <GameScoreboard
+                                isInsideSticky={false}
                                 teamScore={
                                   teamScoreByGame[gameIndex] ??
                                   makeEmptyTeamScore()

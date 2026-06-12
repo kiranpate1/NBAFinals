@@ -1,12 +1,17 @@
 type props = {
+  isInsideSticky: boolean;
   teamScore: {
     NYK: number;
-    SAS: number;
+    OPP: number;
   };
   opponent: string;
 };
 
-export default function GameScoreboard({ teamScore, opponent }: props) {
+export default function GameScoreboard({
+  isInsideSticky,
+  teamScore,
+  opponent,
+}: props) {
   return (
     <div className="flex justify-between items-center">
       <div className="flex flex-col lg:flex-row items-center gap-0 lg:gap-2 p-2 lg:p-4 pointer-events-auto">
@@ -18,9 +23,11 @@ export default function GameScoreboard({ teamScore, opponent }: props) {
       <div className="flex flex-col-reverse lg:flex-row items-center gap-0 lg:gap-2 p-2 lg:p-4 pointer-events-auto">
         <h2
           className="text-left"
-          style={{ color: `var(--${opponent.toLowerCase()})` }}
+          style={{
+            color: `var(--${opponent.toLowerCase()})`,
+          }}
         >
-          {teamScore.SAS}
+          {teamScore.OPP}
         </h2>
         <div className="h-12 lg:h-30 w-12 lg:w-30 flex items-center justify-center">
           <img

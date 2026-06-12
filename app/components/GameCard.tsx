@@ -17,7 +17,7 @@ export default function GameCard({ isInsideSticky, height, game }: props) {
         backgroundColor: isInsideSticky ? "transparent" : "var(--background)",
       }}
     >
-      <h2 className="">Game {game.game}</h2>
+      <h3 className="">Game {game.game}</h3>
       <p>{game.date}</p>
       <small>{game.arena}</small>
     </div>
