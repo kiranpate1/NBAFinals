@@ -1,0 +1,553 @@
+time,quarter,team,player,play,distance,result,assist,points,rebounds,assists,steals,blocks,turnovers,fouls
+12:00,1,KNICKS,Towns,Jump Ball Towns vs. Allen: Tip to Brunson,NA,Jump Ball Towns vs. Allen: Tip to Brunson,NA,0,0,0,0,0,0,0
+11:33,1,KNICKS,Anunoby,MISS Anunoby 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+11:31,1,CAVALIERS,Mobley,Mobley REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:16,1,CAVALIERS,Allen,MISS Allen 2' Cutting Layup Shot,2,Cutting Layup Shot,NA,0,0,0,0,0,0,0
+11:14,1,CAVALIERS,Wade,Wade REBOUND (Off:1 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:10,1,CAVALIERS,Harden,Harden 6' Driving Floating Jump Shot (2 PTS) (Wade 1 AST),6,Driving Floating Jump Shot,Wade,2,0,1,0,0,0,0
+10:51,1,KNICKS,Towns,MISS Towns 26' 3PT Step Back Jump Shot,26,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+10:48,1,CAVALIERS,Allen,Allen REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:41,1,KNICKS,Bridges,Bridges S.FOUL (P1.T1) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+10:41,1,CAVALIERS,Mobley Free Throw,MISS Mobley Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+10:41,1,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+10:41,1,CAVALIERS,Mobley Free Throw,Mobley Free Throw 2 of 2 (1 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+10:22,1,KNICKS,Brunson,MISS Brunson 25' 3PT Pullup Jump Shot,25,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+10:19,1,CAVALIERS,Mitchell,Mitchell REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:12,1,CAVALIERS,Mobley,MISS Mobley 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+10:09,1,KNICKS,Bridges,Bridges REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:01,1,KNICKS,Bridges,Bridges 7' Driving Floating Jump Shot (2 PTS) (Towns 1 AST),7,Driving Floating Jump Shot,Towns,2,0,1,0,0,0,0
+09:53,1,CAVALIERS,Mitchell Backcourt Turnover,Mitchell Backcourt Turnover (P1.T1),NA,TURNOVER,NA,0,0,0,0,0,1,0
+09:39,1,KNICKS,Brunson,MISS Brunson 3' Driving Finger Roll Layup,3,Driving Finger Roll Layup,NA,0,0,0,0,0,0,0
+09:38,1,CAVALIERS,Wade,Wade REBOUND (Off:1 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:24,1,CAVALIERS,Mitchell,Mitchell 25' 3PT Pullup Jump Shot (3 PTS) (Wade 2 AST),25,3PT Pullup Jump Shot,Wade,3,0,1,0,0,0,0
+08:56,1,CAVALIERS,Harden,Harden P.FOUL (P1.T1) (J.Capers),NA,FOUL,NA,0,0,0,0,0,0,1
+08:49,1,KNICKS,Towns Lost Ball Turnover,Towns Lost Ball Turnover (P1.T1),NA,TURNOVER,NA,0,0,0,0,0,1,0
+08:49,1,CAVALIERS,Mitchell,Mitchell STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+08:44,1,CAVALIERS,Mitchell,Mitchell 2' Running Layup (5 PTS),2,Running Layup,NA,2,0,0,0,0,0,0
+08:32,1,KNICKS,Bridges,MISS Bridges 17' Pullup Jump Shot,17,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+08:29,1,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+08:22,1,KNICKS,Brunson,Brunson 9' Floating Jump Shot (2 PTS) (Towns 2 AST),9,Floating Jump Shot,Towns,2,0,1,0,0,0,0
+08:08,1,CAVALIERS,Mitchell,Mitchell 1' Driving Layup (7 PTS) (Wade 3 AST),1,Driving Layup,Wade,2,0,1,0,0,0,0
+07:45,1,KNICKS,Hart,MISS Hart 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+07:42,1,CAVALIERS,Mobley,Mobley REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:20,1,CAVALIERS,Mitchell,MISS Mitchell 26' 3PT Pullup Jump Shot,26,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+07:18,1,KNICKS,Bridges,Bridges REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:01,1,KNICKS,Hart,MISS Hart 24' 3PT Jump Shot,24,3PT Jump Shot,NA,0,0,0,0,0,0,0
+06:58,1,CAVALIERS,Harden,Harden REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:51,1,CAVALIERS,Harden Driving Layup,MISS Harden Driving Layup,NA,Driving Layup,NA,0,0,0,0,0,0,0
+06:49,1,KNICKS,Towns,Towns REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:43,1,KNICKS,Anunoby,MISS Anunoby 1' Driving Layup,1,Driving Layup,NA,0,0,0,0,0,0,0
+06:43,1,CAVALIERS,Mitchell,Mitchell BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+06:42,1,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+06:42,1,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 1 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+06:42,1,CAVALIERS,Strus,SUB: Strus FOR Mitchell,NA,SUB,NA,0,0,0,0,0,0,0
+06:42,1,CAVALIERS,Merrill,SUB: Merrill FOR Mobley,NA,SUB,NA,0,0,0,0,0,0,0
+06:27,1,KNICKS,Towns,MISS Towns 2' Driving Floating Jump Shot,2,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+06:27,1,CAVALIERS,Allen,Allen BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+06:25,1,CAVALIERS,Harden,Harden REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:15,1,CAVALIERS,Strus,MISS Strus 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+06:13,1,KNICKS,Hart,Hart REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:01,1,KNICKS,Brunson,Brunson 16' Pullup Jump Shot (4 PTS) (Hart 1 AST),16,Pullup Jump Shot,Hart,2,0,1,0,0,0,0
+05:49,1,CAVALIERS,Wade,MISS Wade 24' 3PT Jump Shot,24,3PT Jump Shot,NA,0,0,0,0,0,0,0
+05:47,1,CAVALIERS,Allen,Allen REBOUND (Off:1 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:43,1,CAVALIERS,Allen,MISS Allen 1' Driving Bank Hook Shot,1,Driving Bank Hook Shot,NA,0,0,0,0,0,0,0
+05:41,1,KNICKS,Anunoby,Anunoby REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:38,1,KNICKS,Hart,Hart 1' Running Layup (2 PTS),1,Running Layup,NA,2,0,0,0,0,0,0
+05:11,1,CAVALIERS,Harden,MISS Harden 5' Driving Floating Jump Shot,5,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+05:08,1,CAVALIERS,Wade,Wade REBOUND (Off:2 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:07,1,CAVALIERS,Merrill,MISS Merrill 24' 3PT Jump Shot,24,3PT Jump Shot,NA,0,0,0,0,0,0,0
+05:06,1,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+05:06,1,KNICKS,Towns,Towns L.B.FOUL (P1.T2) (J.Capers),NA,FOUL,NA,0,0,0,0,0,0,1
+05:06,1,KNICKS,Robinson,SUB: Robinson FOR Anunoby,NA,SUB,NA,0,0,0,0,0,0,0
+05:06,1,KNICKS,McBride,SUB: McBride FOR Hart,NA,SUB,NA,0,0,0,0,0,0,0
+05:06,1,CAVALIERS,Schroder,SUB: Schroder FOR Wade,NA,SUB,NA,0,0,0,0,0,0,0
+04:53,1,CAVALIERS,Schroder,Schroder 3PT Jump Shot (3 PTS) (Strus 1 AST),NA,3PT Jump Shot,Strus,3,0,1,0,0,0,0
+04:33,1,CAVALIERS,Schroder,Schroder S.FOUL (P1.T2) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+04:33,1,KNICKS,Brunson Free Throw,Brunson Free Throw 1 of 2 (5 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+04:33,1,KNICKS,Clarkson,SUB: Clarkson FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+04:33,1,KNICKS,Brunson Free Throw,Brunson Free Throw 2 of 2 (6 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+04:24,1,CAVALIERS,Harden Bad Pass Turnover,Harden Bad Pass Turnover (P1.T2),NA,TURNOVER,NA,0,0,0,0,0,1,0
+04:24,1,KNICKS,Robinson,Robinson STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+04:18,1,KNICKS,Bridges,Bridges 2' Running Layup (4 PTS) (McBride 1 AST),2,Running Layup,McBride,2,0,1,0,0,0,0
+03:57,1,CAVALIERS,Schroder,MISS Schroder 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+03:54,1,KNICKS,Robinson,Robinson REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:46,1,KNICKS,Brunson,Brunson 1' Driving Reverse Layup (8 PTS),1,Driving Reverse Layup,NA,2,0,0,0,0,0,0
+03:46,1,CAVALIERS,Cavaliers Timeout,Cavaliers Timeout: Regular (Reg.1 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+03:46,1,CAVALIERS,Mitchell,SUB: Mitchell FOR Allen,NA,SUB,NA,0,0,0,0,0,0,0
+03:46,1,CAVALIERS,Mobley,SUB: Mobley FOR Harden,NA,SUB,NA,0,0,0,0,0,0,0
+03:36,1,CAVALIERS,Strus Lost Ball Turnover,Strus Lost Ball Turnover (P1.T3),NA,TURNOVER,NA,0,0,0,0,0,1,0
+03:36,1,KNICKS,Bridges,Bridges STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+03:33,1,KNICKS,Bridges,Bridges 1' Running Dunk (6 PTS),1,Running Dunk,NA,2,0,0,0,0,0,0
+03:21,1,CAVALIERS,Schroder,MISS Schroder 8' Driving Floating Jump Shot,8,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+03:19,1,KNICKS,Robinson,Robinson REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:11,1,KNICKS,Brunson,Brunson 14' Pullup Jump Shot (10 PTS),14,Pullup Jump Shot,NA,2,0,0,0,0,0,0
+02:56,1,CAVALIERS,Mobley Traveling Turnover,Mobley Traveling Turnover (P1.T4),NA,TURNOVER,NA,0,0,0,0,0,1,0
+02:44,1,KNICKS,Robinson,Robinson 1' Alley Oop Dunk (2 PTS) (Bridges 1 AST),1,Alley Oop Dunk,Bridges,2,0,1,0,0,0,0
+02:29,1,CAVALIERS,Merrill,MISS Merrill 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+02:27,1,KNICKS,Bridges,Bridges REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:22,1,KNICKS,Bridges Bad Pass Turnover,Bridges Bad Pass Turnover (P1.T2),NA,TURNOVER,NA,0,0,0,0,0,1,0
+02:22,1,CAVALIERS,Strus,Strus STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+02:15,1,CAVALIERS,Strus,MISS Strus 25' 3PT Running Jump Shot,25,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+02:14,1,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+02:14,1,KNICKS,McBride,McBride L.B.FOUL (P1.T3) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+02:14,1,KNICKS,Hart,SUB: Hart FOR Bridges,NA,SUB,NA,0,0,0,0,0,0,0
+02:09,1,CAVALIERS,Strus Bad Pass Turnover,Strus Bad Pass Turnover (P2.T5),NA,TURNOVER,NA,0,0,0,0,0,1,0
+02:09,1,KNICKS,Robinson,Robinson STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+02:03,1,KNICKS,McBride,MISS McBride 3PT Running Jump Shot,NA,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+02:00,1,KNICKS,Robinson,Robinson REBOUND (Off:1 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:46,1,KNICKS,Hart,MISS Hart 19' Pullup Jump Shot,19,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+01:43,1,CAVALIERS,Mobley,Mobley REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:32,1,CAVALIERS,Mitchell,MISS Mitchell 24' 3PT Jump Shot,24,3PT Jump Shot,NA,0,0,0,0,0,0,0
+01:29,1,KNICKS,Hart,Hart REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:24,1,KNICKS,Brunson,MISS Brunson 26' 3PT Running Jump Shot,26,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+01:22,1,KNICKS,McBride,McBride REBOUND (Off:1 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:19,1,KNICKS,Clarkson Bad Pass Turnover,Clarkson Bad Pass Turnover (P1.T3),NA,TURNOVER,NA,0,0,0,0,0,1,0
+01:19,1,CAVALIERS,Mitchell,Mitchell STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+01:09,1,CAVALIERS,Schroder,MISS Schroder 24' 3PT Jump Shot,24,3PT Jump Shot,NA,0,0,0,0,0,0,0
+01:06,1,KNICKS,Clarkson,Clarkson REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:56,1,KNICKS,Brunson,MISS Brunson 26' 3PT Pullup Jump Shot,26,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+00:52,1,CAVALIERS,Mitchell,Mitchell REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:48,1,CAVALIERS,Merrill,Merrill 2' Running Layup (2 PTS) (Mitchell 1 AST),2,Running Layup,Mitchell,2,0,1,0,0,0,0
+00:48,1,KNICKS,Hart,Hart S.FOUL (P1.T4) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+00:48,1,CAVALIERS,Merrill Free Throw,Merrill Free Throw 1 of 1 (3 PTS),NA,Free Throw 1 of 1,NA,1,0,0,0,0,0,0
+00:33,1,KNICKS,Clarkson,Clarkson 25' 3PT Pullup Jump Shot (3 PTS) (Robinson 1 AST),25,3PT Pullup Jump Shot,Robinson,3,0,1,0,0,0,0
+00:18,1,CAVALIERS,Mitchell,MISS Mitchell 16' Fadeaway Jumper,16,Fadeaway Jumper,NA,0,0,0,0,0,0,0
+00:15,1,KNICKS,Hart,Hart REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:02,1,CAVALIERS,Strus,Strus P.FOUL (P1.T3) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+00:02,1,KNICKS,Towns,SUB: Towns FOR Robinson,NA,SUB,NA,0,0,0,0,0,0,0
+00:02,1,CAVALIERS,Wade,SUB: Wade FOR Merrill,NA,SUB,NA,0,0,0,0,0,0,0
+00:02,1,CAVALIERS,Allen,SUB: Allen FOR Mitchell,NA,SUB,NA,0,0,0,0,0,0,0
+00:00,1,KNICKS,Brunson,MISS Brunson 28' 3PT Pullup Jump Shot,28,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+00:00,1,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+11:36,2,CAVALIERS,Mobley,MISS Mobley 19' Fadeaway Jumper,19,Fadeaway Jumper,NA,0,0,0,0,0,0,0
+11:33,2,KNICKS,Hart,Hart REBOUND (Off:0 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:28,2,KNICKS,Alvarado,MISS Alvarado 25' 3PT Running Pull-Up Jump Shot,25,3PT Running Pull-Up Jump Shot,NA,0,0,0,0,0,0,0
+11:25,2,CAVALIERS,Mitchell,Mitchell REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:17,2,CAVALIERS,Mitchell,Mitchell 1' Driving Layup (9 PTS),1,Driving Layup,NA,2,0,0,0,0,0,0
+10:52,2,KNICKS,Hart,MISS Hart 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+10:51,2,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+10:34,2,CAVALIERS,Mobley,MISS Mobley 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+10:31,2,KNICKS,Hart,Hart REBOUND (Off:0 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:23,2,KNICKS,Alvarado,Alvarado 2' Driving Floating Jump Shot (2 PTS) (Hart 2 AST),2,Driving Floating Jump Shot,Hart,2,0,1,0,0,0,0
+10:06,2,CAVALIERS,Mobley,Mobley 9' Driving Floating Bank Jump Shot (3 PTS),9,Driving Floating Bank Jump Shot,NA,2,0,0,0,0,0,0
+09:52,2,KNICKS,Towns,Towns 1' Cutting Layup Shot (2 PTS) (Hart 3 AST),1,Cutting Layup Shot,Hart,2,0,1,0,0,0,0
+09:34,2,CAVALIERS,Schroder,MISS Schroder 27' 3PT Jump Shot,27,3PT Jump Shot,NA,0,0,0,0,0,0,0
+09:31,2,KNICKS,Clarkson,Clarkson REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:25,2,KNICKS,Hart,Hart 2' Driving Layup (4 PTS),2,Driving Layup,NA,2,0,0,0,0,0,0
+09:05,2,CAVALIERS,Mobley,Mobley 2' Driving Layup (5 PTS),2,Driving Layup,NA,2,0,0,0,0,0,0
+08:55,2,KNICKS,Hart,Hart 3' Driving Hook Shot (6 PTS),3,Driving Hook Shot,NA,2,0,0,0,0,0,0
+08:42,2,CAVALIERS,Schroder,MISS Schroder 1' Driving Layup,1,Driving Layup,NA,0,0,0,0,0,0,0
+08:40,2,KNICKS,Towns,Towns REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:30,2,KNICKS,Towns,MISS Towns 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+08:27,2,CAVALIERS,Mobley,Mobley REBOUND (Off:0 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:23,2,KNICKS,McBride,McBride P.FOUL (P2.T1) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+08:23,2,KNICKS,Bridges,SUB: Bridges FOR Clarkson,NA,SUB,NA,0,0,0,0,0,0,0
+08:23,2,KNICKS,Shamet,SUB: Shamet FOR McBride,NA,SUB,NA,0,0,0,0,0,0,0
+08:23,2,KNICKS,Robinson,SUB: Robinson FOR Hart,NA,SUB,NA,0,0,0,0,0,0,0
+08:23,2,CAVALIERS,Ellis,SUB: Ellis FOR Strus,NA,SUB,NA,0,0,0,0,0,0,0
+08:23,2,CAVALIERS,Harden,SUB: Harden FOR Mobley,NA,SUB,NA,0,0,0,0,0,0,0
+08:23,2,CAVALIERS,Allen,SUB: Allen FOR Schroder,NA,SUB,NA,0,0,0,0,0,0,0
+08:15,2,CAVALIERS,Wade,Wade 3PT Jump Shot (3 PTS) (Harden 1 AST),NA,3PT Jump Shot,Harden,3,0,1,0,0,0,0
+07:56,2,KNICKS,Alvarado,Alvarado 8' Driving Floating Jump Shot (4 PTS),8,Driving Floating Jump Shot,NA,2,0,0,0,0,0,0
+07:29,2,CAVALIERS,Ellis Out,Ellis Out of Bounds Lost Ball Turnover (P1.T6),NA,TURNOVER,NA,0,0,0,0,0,1,0
+07:29,2,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 2 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+07:29,2,KNICKS,Brunson,SUB: Brunson FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+07:29,2,KNICKS,Anunoby,SUB: Anunoby FOR Alvarado,NA,SUB,NA,0,0,0,0,0,0,0
+07:29,2,CAVALIERS,Merrill,SUB: Merrill FOR Mitchell,NA,SUB,NA,0,0,0,0,0,0,0
+07:13,2,CAVALIERS,Ellis,Ellis P.FOUL (P1.T1) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+06:59,2,KNICKS,KNICKS,KNICKS Turnover: Shot Clock (T#4),NA,TURNOVER,NA,0,0,0,0,0,1,0
+06:49,2,CAVALIERS,Harden,Harden 5' Driving Floating Jump Shot (4 PTS),5,Driving Floating Jump Shot,NA,2,0,0,0,0,0,0
+06:26,2,KNICKS,Anunoby,MISS Anunoby 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+06:25,2,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+06:15,2,CAVALIERS,Harden Lost Ball Turnover,Harden Lost Ball Turnover (P2.T7),NA,TURNOVER,NA,0,0,0,0,0,1,0
+06:15,2,KNICKS,Brunson,Brunson STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+06:12,2,KNICKS,Brunson,Brunson 2' Driving Layup (12 PTS),2,Driving Layup,NA,2,0,0,0,0,0,0
+05:50,2,CAVALIERS,Ellis Out,Ellis Out of Bounds Lost Ball Turnover (P2.T8),NA,TURNOVER,NA,0,0,0,0,0,1,0
+05:34,2,KNICKS,Shamet,MISS Shamet 4' Driving Finger Roll Layup,4,Driving Finger Roll Layup,NA,0,0,0,0,0,0,0
+05:33,2,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+05:24,2,KNICKS,Anunoby,Anunoby 3PT Jump Shot (3 PTS) (Brunson 1 AST),NA,3PT Jump Shot,Brunson,3,0,1,0,0,0,0
+05:10,2,KNICKS,Robinson,Robinson S.FOUL (P1.T2) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+05:10,2,CAVALIERS,Ellis Free Throw,Ellis Free Throw 1 of 2 (1 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+05:10,2,KNICKS,Hart,SUB: Hart FOR Shamet,NA,SUB,NA,0,0,0,0,0,0,0
+05:10,2,CAVALIERS,Ellis Free Throw,Ellis Free Throw 2 of 2 (2 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+04:58,2,KNICKS,Anunoby Traveling Turnover,Anunoby Traveling Turnover (P1.T5),NA,TURNOVER,NA,0,0,0,0,0,1,0
+04:50,2,CAVALIERS,Merrill,Merrill 25' 3PT Jump Shot (6 PTS) (Harden 2 AST),25,3PT Jump Shot,Harden,3,0,1,0,0,0,0
+04:35,2,KNICKS,Brunson,MISS Brunson 26' 3PT Pullup Jump Shot,26,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+04:32,2,CAVALIERS,Harden,Harden REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:26,2,CAVALIERS,Harden,Harden 31' 3PT Running Pull-Up Jump Shot (7 PTS),31,3PT Running Pull-Up Jump Shot,NA,3,0,0,0,0,0,0
+04:25,2,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 3 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+04:25,2,KNICKS,Towns,SUB: Towns FOR Robinson,NA,SUB,NA,0,0,0,0,0,0,0
+04:01,2,KNICKS,Brunson Bad Pass Turnover,Brunson Bad Pass Turnover (P1.T6),NA,TURNOVER,NA,0,0,0,0,0,1,0
+04:01,2,CAVALIERS,Merrill,Merrill STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+03:50,2,CAVALIERS,Wade,MISS Wade 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+03:47,2,CAVALIERS,Allen,Allen REBOUND (Off:2 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:43,2,KNICKS,Brunson,Brunson P.FOUL (P1.T3) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+03:32,2,KNICKS,Anunoby,Anunoby S.FOUL (P1.T4) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+03:32,2,CAVALIERS,Allen Free Throw,Allen Free Throw 1 of 2 (1 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+03:32,2,CAVALIERS,Allen Free Throw,Allen Free Throw 2 of 2 (2 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+03:16,2,KNICKS,Hart,Hart 2' Driving Layup (8 PTS) (Towns 3 AST),2,Driving Layup,Towns,2,0,1,0,0,0,0
+02:59,2,CAVALIERS,Allen,MISS Allen 5' Driving Hook Shot,5,Driving Hook Shot,NA,0,0,0,0,0,0,0
+02:58,2,KNICKS,Towns,Towns REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:56,2,CAVALIERS,Merrill,Merrill P.FOUL (P1.T2) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+02:56,2,CAVALIERS,Strus,SUB: Strus FOR Wade,NA,SUB,NA,0,0,0,0,0,0,0
+02:56,2,CAVALIERS,Mitchell,SUB: Mitchell FOR Ellis,NA,SUB,NA,0,0,0,0,0,0,0
+02:56,2,CAVALIERS,Mobley,SUB: Mobley FOR Merrill,NA,SUB,NA,0,0,0,0,0,0,0
+02:46,2,KNICKS,Hart,MISS Hart 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+02:44,2,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+02:28,2,CAVALIERS,Harden Lost Ball Turnover,Harden Lost Ball Turnover (P3.T9),NA,TURNOVER,NA,0,0,0,0,0,1,0
+02:28,2,KNICKS,Brunson,Brunson STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+02:12,2,KNICKS,Bridges,Bridges 10' Jump Shot (8 PTS) (Towns 4 AST),10,Jump Shot,Towns,2,0,1,0,0,0,0
+02:01,2,CAVALIERS,Mitchell,Mitchell 25' 3PT Jump Shot (12 PTS) (Allen 1 AST),25,3PT Jump Shot,Allen,3,0,1,0,0,0,0
+02:01,2,KNICKS,Bridges,Bridges S.FOUL (P2.PN) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+02:01,2,CAVALIERS,Mitchell Free Throw,Mitchell Free Throw 1 of 1 (13 PTS),NA,Free Throw 1 of 1,NA,1,0,0,0,0,0,0
+01:44,2,KNICKS,Bridges,MISS Bridges 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+01:43,2,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+01:35,2,CAVALIERS,Harden Out,Harden Out of Bounds - Bad Pass Turnover Turnover (P4.T10),NA,TURNOVER,NA,0,0,0,0,0,1,0
+01:27,2,KNICKS,Bridges Bad Pass Turnover,Bridges Bad Pass Turnover (P2.T7),NA,TURNOVER,NA,0,0,0,0,0,1,0
+01:27,2,CAVALIERS,Allen,Allen STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+01:26,2,CAVALIERS,Mobley Bad Pass Turnover,Mobley Bad Pass Turnover (P2.T11),NA,TURNOVER,NA,0,0,0,0,0,1,0
+01:26,2,KNICKS,Anunoby,Anunoby STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+01:26,2,CAVALIERS,Allen,Allen S.FOUL (P1.T3) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+01:26,2,KNICKS,Hart Free Throw,Hart Free Throw 1 of 2 (9 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+01:26,2,KNICKS,Hart Free Throw,Hart Free Throw 2 of 2 (10 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+01:08,2,CAVALIERS,Strus,Strus 26' 3PT Jump Shot (3 PTS) (Mobley 1 AST),26,3PT Jump Shot,Mobley,3,0,1,0,0,0,0
+00:41,2,KNICKS,Anunoby,MISS Anunoby 27' 3PT Step Back Jump Shot,27,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+00:39,2,CAVALIERS,Mobley,Mobley REBOUND (Off:0 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:32,2,KNICKS,Hart,Hart S.FOUL (P2.PN) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+00:32,2,CAVALIERS,Allen Free Throw,MISS Allen Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+00:32,2,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+00:32,2,CAVALIERS,Allen Free Throw,Allen Free Throw 2 of 2 (3 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+00:16,2,KNICKS,Brunson,Brunson 6' Driving Floating Jump Shot (14 PTS),6,Driving Floating Jump Shot,NA,2,0,0,0,0,0,0
+00:03,2,CAVALIERS,Mitchell,Mitchell 26' 3PT Jump Shot (16 PTS) (Mobley 2 AST),26,3PT Jump Shot,Mobley,3,0,1,0,0,0,0
+00:01,2,KNICKS,Towns Bad Pass Turnover,Towns Bad Pass Turnover (P2.T8),NA,TURNOVER,NA,0,0,0,0,0,1,0
+00:01,2,CAVALIERS,Mitchell,Mitchell STEAL (3 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+00:00,2,CAVALIERS,CAVALIERS Heave,CAVALIERS Heave,NA,CAVALIERS Heave,NA,0,0,0,0,0,0,0
+00:00,2,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+11:42,3,CAVALIERS,Mitchell,MISS Mitchell 24' 3PT Pullup Jump Shot,24,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+11:40,3,KNICKS,Brunson,Brunson REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:33,3,KNICKS,Towns,MISS Towns 27' 3PT Running Jump Shot,27,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+11:30,3,KNICKS,Towns,Towns REBOUND (Off:1 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:28,3,KNICKS,Towns Lost Ball Turnover,Towns Lost Ball Turnover (P3.T9),NA,TURNOVER,NA,0,0,0,0,0,1,0
+11:28,3,CAVALIERS,Mitchell,Mitchell STEAL (4 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+11:25,3,CAVALIERS,Mitchell,Mitchell 1' Running Layup (18 PTS),1,Running Layup,NA,2,0,0,0,0,0,0
+11:09,3,CAVALIERS,Harden,Harden P.FOUL (P2.T1) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+10:58,3,KNICKS,Towns,MISS Towns 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+10:55,3,KNICKS,Towns,Towns REBOUND (Off:2 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:53,3,KNICKS,Towns,Towns 26' 3PT Step Back Jump Shot (5 PTS),26,3PT Step Back Jump Shot,NA,3,0,0,0,0,0,0
+10:41,3,CAVALIERS,Harden,MISS Harden 27' 3PT Jump Shot,27,3PT Jump Shot,NA,0,0,0,0,0,0,0
+10:40,3,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+10:40,3,CAVALIERS,Allen,Allen L.B.FOUL (P2.T2) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+10:27,3,KNICKS,Towns OFF,Towns OFF.Foul (P2) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+10:27,3,KNICKS,Towns Offensive Foul Turnover,Towns Offensive Foul Turnover (P4.T10),NA,TURNOVER,NA,0,0,0,0,0,1,1
+10:27,3,CAVALIERS,Cavaliers Timeout,Cavaliers Timeout: Regular (Reg.2 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+10:27,3,KNICKS,Instant Replay,Instant Replay3rd Period (9:34 PM EST),NA,Instant Replay3rd Period (9:34 PM EST),NA,0,0,0,0,0,0,0
+10:15,3,CAVALIERS,Mitchell Bad Pass Turnover,Mitchell Bad Pass Turnover (P2.T12),NA,TURNOVER,NA,0,0,0,0,0,1,0
+10:15,3,KNICKS,Towns,Towns STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+09:56,3,KNICKS,Hart Bad Pass Turnover,Hart Bad Pass Turnover (P1.T11),NA,TURNOVER,NA,0,0,0,0,0,1,0
+09:56,3,CAVALIERS,Mitchell,Mitchell STEAL (5 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+09:30,3,CAVALIERS,Mobley,Mobley 3PT Jump Shot (8 PTS) (Mitchell 2 AST),NA,3PT Jump Shot,Mitchell,3,0,1,0,0,0,0
+09:07,3,KNICKS,Towns,Towns 2' Driving Layup (7 PTS),2,Driving Layup,NA,2,0,0,0,0,0,0
+08:59,3,CAVALIERS,Wade,Wade 3PT Jump Shot (6 PTS) (Mobley 3 AST),NA,3PT Jump Shot,Mobley,3,0,1,0,0,0,0
+08:39,3,KNICKS,Towns,MISS Towns 15' Fadeaway Jumper,15,Fadeaway Jumper,NA,0,0,0,0,0,0,0
+08:36,3,CAVALIERS,Wade,Wade REBOUND (Off:2 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:28,3,CAVALIERS,Mitchell,MISS Mitchell 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+08:26,3,CAVALIERS,Mobley,Mobley REBOUND (Off:1 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:21,3,CAVALIERS,Mobley,MISS Mobley 2' Driving Floating Bank Jump Shot,2,Driving Floating Bank Jump Shot,NA,0,0,0,0,0,0,0
+08:19,3,CAVALIERS,Allen,Allen REBOUND (Off:3 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:19,3,KNICKS,Brunson,Brunson S.FOUL (P2.T1) (J.Capers),NA,FOUL,NA,0,0,0,0,0,0,1
+08:19,3,CAVALIERS,Allen Free Throw,MISS Allen Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+08:19,3,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+08:19,3,CAVALIERS,Allen Free Throw,Allen Free Throw 2 of 2 (4 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+08:09,3,KNICKS,Bridges Lost Ball Turnover,Bridges Lost Ball Turnover (P3.T12),NA,TURNOVER,NA,0,0,0,0,0,1,0
+08:09,3,CAVALIERS,Mitchell,Mitchell STEAL (6 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+08:05,3,CAVALIERS,Mitchell,Mitchell 1' Running Layup (20 PTS),1,Running Layup,NA,2,0,0,0,0,0,0
+07:43,3,KNICKS,Hart,Hart 3PT Jump Shot (13 PTS) (Brunson 2 AST),NA,3PT Jump Shot,Brunson,3,0,1,0,0,0,0
+07:24,3,CAVALIERS,Mitchell,Mitchell 2' Driving Layup (22 PTS),2,Driving Layup,NA,2,0,0,0,0,0,0
+07:16,3,KNICKS,Hart,MISS Hart 2' Driving Layup,2,Driving Layup,NA,0,0,0,0,0,0,0
+07:16,3,CAVALIERS,Mobley,Mobley BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+07:14,3,CAVALIERS,Mobley,Mobley REBOUND (Off:1 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:08,3,CAVALIERS,Mobley,Mobley 1' Dunk (10 PTS) (Harden 3 AST),1,Dunk,Harden,2,0,1,0,0,0,0
+07:08,3,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 4 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+06:53,3,CAVALIERS,Mitchell,Mitchell P.FOUL (P1.T3) (J.Capers),NA,FOUL,NA,0,0,0,0,0,0,1
+06:41,3,KNICKS,Brunson,MISS Brunson 9' Fadeaway Jumper,9,Fadeaway Jumper,NA,0,0,0,0,0,0,0
+06:36,3,CAVALIERS,Mobley,Mobley REBOUND (Off:1 Def:7),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:32,3,CAVALIERS,Mitchell Lost Ball Turnover,Mitchell Lost Ball Turnover (P3.T13),NA,TURNOVER,NA,0,0,0,0,0,1,0
+06:32,3,CAVALIERS,Mitchell,Mitchell L.B.FOUL (P2.T4) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+06:32,3,CAVALIERS,Strus,SUB: Strus FOR Mobley,NA,SUB,NA,0,0,0,0,0,0,0
+06:32,3,CAVALIERS,Merrill,SUB: Merrill FOR Mitchell,NA,SUB,NA,0,0,0,0,0,0,0
+06:24,3,KNICKS,Brunson,MISS Brunson 9' Pullup Jump Shot,9,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+06:21,3,CAVALIERS,Wade,Wade REBOUND (Off:2 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:15,3,KNICKS,Towns Violation,Towns Violation:Kicked Ball (J.DeRosa),NA,Towns Violation:Kicked Ball (J.DeRosa),NA,0,0,0,0,0,0,0
+06:09,3,CAVALIERS,Strus,MISS Strus 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+06:06,3,CAVALIERS,Allen,Allen REBOUND (Off:4 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:01,3,CAVALIERS,Allen Bad Pass Turnover,Allen Bad Pass Turnover (P1.T14),NA,TURNOVER,NA,0,0,0,0,0,1,0
+06:01,3,KNICKS,Hart,Hart STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+05:57,3,KNICKS,Bridges,Bridges 1' Running Layup (10 PTS) (Anunoby 1 AST),1,Running Layup,Anunoby,2,0,1,0,0,0,0
+05:38,3,CAVALIERS,Merrill,Merrill 24' 3PT Pullup Jump Shot (9 PTS) (Allen 2 AST),24,3PT Pullup Jump Shot,Allen,3,0,1,0,0,0,0
+05:25,3,KNICKS,Towns,Towns 1' Layup (9 PTS) (Hart 4 AST),1,Layup,Hart,2,0,1,0,0,0,0
+05:13,3,CAVALIERS,Strus,MISS Strus 27' 3PT Jump Shot,27,3PT Jump Shot,NA,0,0,0,0,0,0,0
+05:11,3,CAVALIERS,Harden,Harden REBOUND (Off:1 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:11,3,CAVALIERS,Harden,MISS Harden 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+05:10,3,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+05:10,3,KNICKS,Brunson,Brunson L.B.FOUL (P3.T2) (J.Capers),NA,FOUL,NA,0,0,0,0,0,0,1
+05:10,3,KNICKS,Robinson,SUB: Robinson FOR Hart,NA,SUB,NA,0,0,0,0,0,0,0
+05:10,3,KNICKS,Clarkson,SUB: Clarkson FOR Anunoby,NA,SUB,NA,0,0,0,0,0,0,0
+05:10,3,KNICKS,McBride,SUB: McBride FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+05:10,3,CAVALIERS,Schroder,SUB: Schroder FOR Wade,NA,SUB,NA,0,0,0,0,0,0,0
+05:03,3,CAVALIERS,Allen,Allen 5' Cutting Layup Shot (6 PTS) (Schroder 1 AST),5,Cutting Layup Shot,Schroder,2,0,1,0,0,0,0
+04:52,3,CAVALIERS,Strus,Strus S.FOUL (P2.PN) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+04:52,3,KNICKS,Brunson Free Throw,MISS Brunson Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+04:52,3,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+04:52,3,KNICKS,Brunson Free Throw,Brunson Free Throw 2 of 2 (15 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+04:34,3,CAVALIERS,Allen,Allen 1' Layup (8 PTS) (Schroder 2 AST),1,Layup,Schroder,2,0,1,0,0,0,0
+04:17,3,KNICKS,Brunson,MISS Brunson 16' Step Back Jump Shot,16,Step Back Jump Shot,NA,0,0,0,0,0,0,0
+04:14,3,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+04:01,3,CAVALIERS,Merrill,MISS Merrill 24' 3PT Jump Shot,24,3PT Jump Shot,NA,0,0,0,0,0,0,0
+03:58,3,CAVALIERS,Allen,Allen REBOUND (Off:5 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:55,3,CAVALIERS,Harden,Harden 1' Driving Layup (9 PTS) (Allen 3 AST),1,Driving Layup,Allen,2,0,1,0,0,0,0
+03:44,3,CAVALIERS,Harden,Harden P.FOUL (P3.PN) (J.Capers),NA,FOUL,NA,0,0,0,0,0,0,1
+03:44,3,KNICKS,Bridges Free Throw,Bridges Free Throw 1 of 2 (11 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+03:44,3,CAVALIERS,Mitchell,SUB: Mitchell FOR Harden,NA,SUB,NA,0,0,0,0,0,0,0
+03:44,3,CAVALIERS,Mobley,SUB: Mobley FOR Allen,NA,SUB,NA,0,0,0,0,0,0,0
+03:44,3,KNICKS,Bridges Free Throw,Bridges Free Throw 2 of 2 (12 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+03:26,3,CAVALIERS,Mobley,Mobley 6' Driving Hook Shot (12 PTS) (Mitchell 3 AST),6,Driving Hook Shot,Mitchell,2,0,1,0,0,0,0
+03:18,3,CAVALIERS,Strus,Strus S.FOUL (P3.PN) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+03:18,3,KNICKS,Brunson Free Throw,Brunson Free Throw 1 of 2 (16 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+03:18,3,KNICKS,Brunson Free Throw,Brunson Free Throw 2 of 2 (17 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+03:05,3,CAVALIERS,Merrill,Merrill 25' 3PT Jump Shot (12 PTS) (Schroder 3 AST),25,3PT Jump Shot,Schroder,3,0,1,0,0,0,0
+03:02,3,CAVALIERS,Schroder Personal Take Foul,Schroder Personal Take Foul (P2.PN) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+03:02,3,KNICKS,Robinson Free Throw,MISS Robinson Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+03:02,3,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+03:02,3,KNICKS,Hart,SUB: Hart FOR Bridges,NA,SUB,NA,0,0,0,0,0,0,0
+03:02,3,KNICKS,Robinson Free Throw,Robinson Free Throw 2 of 2 (3 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+02:45,3,CAVALIERS,Schroder,MISS Schroder 3' Driving Finger Roll Layup,3,Driving Finger Roll Layup,NA,0,0,0,0,0,0,0
+02:43,3,KNICKS,Hart,Hart REBOUND (Off:0 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:41,3,KNICKS,Brunson,MISS Brunson 12' Running Pull-Up Jump Shot,12,Running Pull-Up Jump Shot,NA,0,0,0,0,0,0,0
+02:39,3,KNICKS,Robinson,Robinson REBOUND (Off:2 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:39,3,KNICKS,Robinson Tip Layup Shot,MISS Robinson Tip Layup Shot,NA,Tip Layup Shot,NA,0,0,0,0,0,0,0
+02:38,3,KNICKS,Robinson,Robinson REBOUND (Off:3 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:38,3,CAVALIERS,Mitchell,Mitchell S.FOUL (P3.PN) (J.Capers),NA,FOUL,NA,0,0,0,0,0,0,1
+02:38,3,KNICKS,Robinson Free Throw,MISS Robinson Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+02:38,3,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+02:38,3,KNICKS,Robinson Free Throw,MISS Robinson Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+02:35,3,CAVALIERS,Mobley,Mobley REBOUND (Off:1 Def:8),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:31,3,CAVALIERS,Cavaliers Timeout,Cavaliers Timeout: Regular (Reg.3 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+02:16,3,KNICKS,McBride,McBride P.FOUL (P3.T3) (J.Capers),NA,FOUL,NA,0,0,0,0,0,0,1
+02:10,3,CAVALIERS,Mitchell,Mitchell 2' Driving Layup (24 PTS),2,Driving Layup,NA,2,0,0,0,0,0,0
+02:10,3,KNICKS,Robinson Violation,Robinson Violation:Defensive Goaltending (S.Foster),NA,Robinson Violation:Defensive Goaltending (S.Foster),NA,0,0,0,0,0,0,0
+02:09,3,CAVALIERS,Merrill Personal Take Foul,Merrill Personal Take Foul (P2.PN) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+02:09,3,KNICKS,Robinson Free Throw,MISS Robinson Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+02:09,3,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+02:09,3,KNICKS,Robinson Free Throw,MISS Robinson Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+02:07,3,CAVALIERS,Mitchell,Mitchell REBOUND (Off:0 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:07,3,KNICKS,Clarkson,Clarkson P.FOUL (P1.T4) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+01:57,3,CAVALIERS,Mobley,MISS Mobley 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+01:56,3,KNICKS,Brunson,Brunson REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:52,3,KNICKS,Brunson,Brunson 2' Running Layup (19 PTS),2,Running Layup,NA,2,0,0,0,0,0,0
+01:37,3,CAVALIERS,Schroder,MISS Schroder 3' Driving Floating Bank Jump Shot,3,Driving Floating Bank Jump Shot,NA,0,0,0,0,0,0,0
+01:35,3,KNICKS,McBride,McBride REBOUND (Off:1 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:31,3,KNICKS,Brunson,MISS Brunson 3' Running Pull-Up Jump Shot,3,Running Pull-Up Jump Shot,NA,0,0,0,0,0,0,0
+01:29,3,KNICKS,Robinson,Robinson REBOUND (Off:4 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:29,3,KNICKS,Robinson Tip Dunk Shot,MISS Robinson Tip Dunk Shot,NA,Tip Dunk Shot,NA,0,0,0,0,0,0,0
+01:28,3,CAVALIERS,Strus,Strus REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:28,3,KNICKS,Hart,Hart P.FOUL (P3.PN) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+01:28,3,CAVALIERS,Strus Free Throw,Strus Free Throw 1 of 2 (4 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+01:28,3,CAVALIERS,Strus Free Throw,Strus Free Throw 2 of 2 (5 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+01:21,3,CAVALIERS,Mobley,Mobley P.FOUL (P1.PN) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+01:21,3,KNICKS,Robinson Free Throw,Robinson Free Throw 1 of 2 (4 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+01:21,3,KNICKS,Robinson Free Throw,MISS Robinson Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+01:19,3,CAVALIERS,Merrill,Merrill REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:09,3,CAVALIERS,Mitchell,Mitchell 2' Driving Layup (26 PTS),2,Driving Layup,NA,2,0,0,0,0,0,0
+00:57,3,CAVALIERS,Mitchell,Mitchell S.FOUL (P4.PN) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+00:57,3,KNICKS,Brunson Free Throw,Brunson Free Throw 1 of 2 (20 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+00:57,3,KNICKS,Brunson Free Throw,MISS Brunson Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+00:56,3,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+00:56,3,KNICKS,Towns,SUB: Towns FOR Robinson,NA,SUB,NA,0,0,0,0,0,0,0
+00:51,3,KNICKS,Hart Out,Hart Out of Bounds - Bad Pass Turnover Turnover (P2.T13),NA,TURNOVER,NA,0,0,0,0,0,1,0
+00:35,3,CAVALIERS,Schroder,MISS Schroder 3' Driving Layup,3,Driving Layup,NA,0,0,0,0,0,0,0
+00:35,3,KNICKS,Clarkson,Clarkson BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+00:33,3,CAVALIERS,Strus,Strus REBOUND (Off:1 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:31,3,CAVALIERS,Mitchell,MISS Mitchell 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+00:30,3,KNICKS,Towns,Towns REBOUND (Off:2 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:12,3,CAVALIERS,Schroder,Schroder S.FOUL (P3.PN) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+00:12,3,KNICKS,Brunson Free Throw,MISS Brunson Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+00:12,3,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+00:12,3,KNICKS,Bridges,SUB: Bridges FOR Clarkson,NA,SUB,NA,0,0,0,0,0,0,0
+00:12,3,KNICKS,Anunoby,SUB: Anunoby FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+00:12,3,CAVALIERS,Harden,SUB: Harden FOR Schroder,NA,SUB,NA,0,0,0,0,0,0,0
+00:12,3,KNICKS,Brunson Free Throw,Brunson Free Throw 2 of 2 (21 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+00:01,3,CAVALIERS,Harden,MISS Harden 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+00:01,3,KNICKS,Anunoby,Anunoby REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:43,4,KNICKS,Clarkson,MISS Clarkson 2' Driving Hook Shot,2,Driving Hook Shot,NA,0,0,0,0,0,0,0
+11:42,4,CAVALIERS,Mobley,Mobley REBOUND (Off:1 Def:9),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:27,4,CAVALIERS,Mobley,MISS Mobley 4' Driving Hook Shot,4,Driving Hook Shot,NA,0,0,0,0,0,0,0
+11:24,4,KNICKS,Hart,Hart REBOUND (Off:0 Def:7),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:21,4,KNICKS,Towns Traveling Turnover,Towns Traveling Turnover (P5.T14),NA,TURNOVER,NA,0,0,0,0,0,1,0
+11:09,4,KNICKS,McBride,McBride S.FOUL (P4.T1) (J.Capers),NA,FOUL,NA,0,0,0,0,0,0,1
+11:09,4,CAVALIERS,Harden Free Throw,Harden Free Throw 1 of 2 (10 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+11:09,4,CAVALIERS,Harden Free Throw,Harden Free Throw 2 of 2 (11 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+10:53,4,KNICKS,Towns Lost Ball Turnover,Towns Lost Ball Turnover (P6.T15),NA,TURNOVER,NA,0,0,0,0,0,1,0
+10:53,4,CAVALIERS,Harden,Harden STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+10:49,4,CAVALIERS,Harden Lost Ball Turnover,Harden Lost Ball Turnover (P5.T15),NA,TURNOVER,NA,0,0,0,0,0,1,0
+10:49,4,CAVALIERS,Harden,Harden L.B.FOUL (P4.T1) (J.Capers),NA,FOUL,NA,0,0,0,0,0,0,1
+10:34,4,KNICKS,Towns,MISS Towns 3' Driving Layup,3,Driving Layup,NA,0,0,0,0,0,0,0
+10:31,4,CAVALIERS,Mobley,Mobley REBOUND (Off:1 Def:10),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:12,4,CAVALIERS,Merrill,MISS Merrill 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+10:10,4,KNICKS,Alvarado,Alvarado REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:00,4,KNICKS,Clarkson,MISS Clarkson 6' Driving Floating Jump Shot,6,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+09:59,4,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+09:59,4,CAVALIERS,Strus,Strus L.B.FOUL (P4.T2) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+09:59,4,KNICKS,Bridges,SUB: Bridges FOR Hart,NA,SUB,NA,0,0,0,0,0,0,0
+09:59,4,KNICKS,Brunson,SUB: Brunson FOR Alvarado,NA,SUB,NA,0,0,0,0,0,0,0
+09:59,4,CAVALIERS,Wade,SUB: Wade FOR Strus,NA,SUB,NA,0,0,0,0,0,0,0
+09:59,4,CAVALIERS,Mitchell,SUB: Mitchell FOR Merrill,NA,SUB,NA,0,0,0,0,0,0,0
+09:46,4,KNICKS,Brunson Bad Pass Turnover,Brunson Bad Pass Turnover (P2.T16),NA,TURNOVER,NA,0,0,0,0,0,1,0
+09:46,4,CAVALIERS,Schroder,Schroder STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+09:34,4,CAVALIERS,Harden,MISS Harden 27' 3PT Step Back Jump Shot,27,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+09:32,4,KNICKS,Bridges,Bridges REBOUND (Off:0 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:20,4,KNICKS,Brunson,MISS Brunson 4' Driving Floating Bank Jump Shot,4,Driving Floating Bank Jump Shot,NA,0,0,0,0,0,0,0
+09:18,4,KNICKS,Towns,Towns REBOUND (Off:3 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:17,4,KNICKS,Towns,Towns 1' Putback Layup (11 PTS),1,Putback Layup,NA,2,0,0,0,0,0,0
+09:09,4,KNICKS,McBride,McBride P.FOUL (P5.T2) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+09:09,4,KNICKS,Shamet,SUB: Shamet FOR McBride,NA,SUB,NA,0,0,0,0,0,0,0
+09:00,4,CAVALIERS,Harden,MISS Harden 4' Driving Hook Shot,4,Driving Hook Shot,NA,0,0,0,0,0,0,0
+08:58,4,KNICKS,Towns,Towns REBOUND (Off:3 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:51,4,KNICKS,Bridges,MISS Bridges 2' Driving Reverse Layup,2,Driving Reverse Layup,NA,0,0,0,0,0,0,0
+08:51,4,CAVALIERS,Mobley,Mobley BLOCK (2 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+08:49,4,CAVALIERS,Mobley,Mobley REBOUND (Off:1 Def:11),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:39,4,CAVALIERS,Wade,Wade 3PT Jump Shot (9 PTS) (Schroder 4 AST),NA,3PT Jump Shot,Schroder,3,0,1,0,0,0,0
+08:39,4,KNICKS,Clarkson,Clarkson S.FOUL (P2.T3) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+08:39,4,KNICKS,Robinson,SUB: Robinson FOR Clarkson,NA,SUB,NA,0,0,0,0,0,0,0
+08:39,4,CAVALIERS,Wade Free Throw,Wade Free Throw 1 of 1 (10 PTS),NA,Free Throw 1 of 1,NA,1,0,0,0,0,0,0
+08:28,4,KNICKS,Towns,MISS Towns 2' Driving Layup,2,Driving Layup,NA,0,0,0,0,0,0,0
+08:26,4,CAVALIERS,Mitchell,Mitchell REBOUND (Off:0 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:19,4,CAVALIERS,Mitchell,Mitchell 26' 3PT Jump Shot (29 PTS) (Schroder 5 AST),26,3PT Jump Shot,Schroder,3,0,1,0,0,0,0
+08:04,4,KNICKS,Bridges,MISS Bridges 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+08:02,4,CAVALIERS,Mobley,Mobley REBOUND (Off:1 Def:12),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:52,4,KNICKS,Towns,Towns S.FOUL (P3.T4) (J.Capers),NA,FOUL,NA,0,0,0,0,0,0,1
+07:52,4,CAVALIERS,Harden Free Throw,Harden Free Throw 1 of 2 (12 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+07:52,4,KNICKS,Anunoby,SUB: Anunoby FOR Robinson,NA,SUB,NA,0,0,0,0,0,0,0
+07:52,4,CAVALIERS,Harden Free Throw,MISS Harden Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+07:49,4,KNICKS,Towns,Towns REBOUND (Off:3 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:39,4,KNICKS,Brunson,Brunson 6' Driving Floating Jump Shot (23 PTS),6,Driving Floating Jump Shot,NA,2,0,0,0,0,0,0
+07:16,4,CAVALIERS,Mobley Offensive Charge Foul,Mobley Offensive Charge Foul (P2) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+07:16,4,CAVALIERS,Mobley Offensive Foul Turnover,Mobley Offensive Foul Turnover (P3.T16),NA,TURNOVER,NA,0,0,0,0,0,1,1
+07:16,4,CAVALIERS,Allen,SUB: Allen FOR Mobley,NA,SUB,NA,0,0,0,0,0,0,0
+07:16,4,CAVALIERS,Strus,SUB: Strus FOR Schroder,NA,SUB,NA,0,0,0,0,0,0,0
+07:04,4,KNICKS,Brunson,MISS Brunson 13' Driving Floating Jump Shot,13,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+07:04,4,CAVALIERS,Harden,Harden BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+07:01,4,KNICKS,Towns,Towns REBOUND (Off:4 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:58,4,KNICKS,Shamet,Shamet 26' 3PT Jump Shot (3 PTS) (Towns 5 AST),26,3PT Jump Shot,Towns,3,0,1,0,0,0,0
+06:41,4,CAVALIERS,Mitchell Out,Mitchell Out of Bounds - Bad Pass Turnover Turnover (P4.T17),NA,TURNOVER,NA,0,0,0,0,0,1,0
+06:41,4,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 5 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+06:25,4,KNICKS,Towns,Towns 2' Reverse Layup (13 PTS) (Brunson 3 AST),2,Reverse Layup,Brunson,2,0,1,0,0,0,0
+05:58,4,CAVALIERS,Harden,MISS Harden 21' Pullup Jump Shot,21,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+05:56,4,KNICKS,Towns,Towns REBOUND (Off:4 Def:7),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:44,4,KNICKS,Brunson,Brunson 4' Driving Finger Roll Layup (25 PTS),4,Driving Finger Roll Layup,NA,2,0,0,0,0,0,0
+05:36,4,KNICKS,Brunson,Brunson P.FOUL (P4.PN) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+05:36,4,CAVALIERS,Harden Free Throw,MISS Harden Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+05:36,4,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+05:36,4,CAVALIERS,Mobley,SUB: Mobley FOR Strus,NA,SUB,NA,0,0,0,0,0,0,0
+05:36,4,CAVALIERS,Harden Free Throw,Harden Free Throw 2 of 2 (13 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+05:24,4,KNICKS,Brunson,Brunson 4' Driving Floating Bank Jump Shot (27 PTS),4,Driving Floating Bank Jump Shot,NA,2,0,0,0,0,0,0
+05:04,4,KNICKS,Anunoby,Anunoby S.FOUL (P2.PN) (J.Capers),NA,FOUL,NA,0,0,0,0,0,0,1
+05:04,4,CAVALIERS,Allen Free Throw,MISS Allen Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+05:04,4,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+05:04,4,CAVALIERS,Allen Free Throw,MISS Allen Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+05:02,4,KNICKS,Towns,Towns REBOUND (Off:4 Def:8),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:47,4,KNICKS,Brunson,Brunson 12' Pullup Jump Shot (29 PTS),12,Pullup Jump Shot,NA,2,0,0,0,0,0,0
+04:21,4,CAVALIERS,Harden,MISS Harden 27' 3PT Step Back Jump Shot,27,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+04:20,4,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+04:20,4,CAVALIERS,Cavaliers,Cavaliers Turnover: Shot Clock (T#18),NA,TURNOVER,NA,0,0,0,0,0,1,0
+04:03,4,KNICKS,Brunson,Brunson 7' Pullup Jump Shot (31 PTS),7,Pullup Jump Shot,NA,2,0,0,0,0,0,0
+03:47,4,CAVALIERS,Mitchell,MISS Mitchell 26' 3PT Step Back Jump Shot,26,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+03:44,4,KNICKS,Towns,Towns REBOUND (Off:4 Def:9),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:30,4,KNICKS,Brunson,Brunson 26' 3PT Pullup Jump Shot (34 PTS),26,3PT Pullup Jump Shot,NA,3,0,0,0,0,0,0
+03:30,4,CAVALIERS,Cavaliers Timeout,Cavaliers Timeout: Regular (Reg.4 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+03:30,4,CAVALIERS,Merrill,SUB: Merrill FOR Wade,NA,SUB,NA,0,0,0,0,0,0,0
+03:09,4,CAVALIERS,Mobley,Mobley 26' 3PT Jump Shot (15 PTS) (Merrill 1 AST),26,3PT Jump Shot,Merrill,3,0,1,0,0,0,0
+02:54,4,CAVALIERS,Allen,Allen S.FOUL (P3.T3) (J.Capers),NA,FOUL,NA,0,0,0,0,0,0,1
+02:54,4,KNICKS,Anunoby Free Throw,Anunoby Free Throw 1 of 2 (4 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+02:54,4,KNICKS,Anunoby Free Throw,MISS Anunoby Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+02:53,4,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+02:53,4,CAVALIERS,Merrill,Merrill L.B.FOUL (P3.T4) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+02:38,4,KNICKS,Bridges,Bridges 25' 3PT Step Back Jump Shot (15 PTS),25,3PT Step Back Jump Shot,NA,3,0,0,0,0,0,0
+02:17,4,CAVALIERS,Harden,MISS Harden 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+02:14,4,KNICKS,Shamet,Shamet REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:01,4,KNICKS,Towns OFF,Towns OFF.Foul (P4) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+02:01,4,KNICKS,Towns Offensive Foul Turnover,Towns Offensive Foul Turnover (P7.T17),NA,TURNOVER,NA,0,0,0,0,0,1,1
+01:52,4,CAVALIERS,Mitchell,MISS Mitchell 2' Driving Finger Roll Layup,2,Driving Finger Roll Layup,NA,0,0,0,0,0,0,0
+01:51,4,CAVALIERS,Allen,Allen REBOUND (Off:6 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:51,4,CAVALIERS,Allen Tip Layup Shot,Allen Tip Layup Shot (10 PTS),NA,Tip Layup Shot,NA,2,0,0,0,0,0,0
+01:41,4,KNICKS,Anunoby,MISS Anunoby 27' 3PT Jump Shot,27,3PT Jump Shot,NA,0,0,0,0,0,0,0
+01:38,4,CAVALIERS,Mobley,Mobley REBOUND (Off:1 Def:13),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:28,4,CAVALIERS,Mobley,MISS Mobley 11' Jump Shot,11,Jump Shot,NA,0,0,0,0,0,0,0
+01:25,4,KNICKS,Brunson,Brunson REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:14,4,KNICKS,Bridges,Bridges 24' 3PT Jump Shot (18 PTS) (Brunson 4 AST),24,3PT Jump Shot,Brunson,3,0,1,0,0,0,0
+01:01,4,CAVALIERS,Mitchell,MISS Mitchell 16' Driving Floating Jump Shot,16,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+01:01,4,KNICKS,Towns,Towns BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+01:00,4,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+00:45,4,KNICKS,Shamet,Shamet 3PT Jump Shot (6 PTS) (Anunoby 2 AST),NA,3PT Jump Shot,Anunoby,3,0,1,0,0,0,0
+00:31,4,CAVALIERS,Harden,Harden 11' Turnaround Jump Shot (15 PTS),11,Turnaround Jump Shot,NA,2,0,0,0,0,0,0
+00:19,4,KNICKS,Brunson,Brunson 3' Driving Floating Bank Jump Shot (36 PTS),3,Driving Floating Bank Jump Shot,NA,2,0,0,0,0,0,0
+00:03,4,CAVALIERS,Merrill,MISS Merrill 27' 3PT Jump Shot,27,3PT Jump Shot,NA,0,0,0,0,0,0,0
+00:03,4,KNICKS,Bridges,Bridges REBOUND (Off:0 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:00,4,KNICKS,KNICKS Heave,KNICKS Heave,NA,KNICKS Heave,NA,0,0,0,0,0,0,0
+00:00,4,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+05:00,5,KNICKS,Towns,Jump Ball Towns vs. Allen: Tip to Bridges,NA,Jump Ball Towns vs. Allen: Tip to Bridges,NA,0,0,0,0,0,0,0
+04:45,5,CAVALIERS,Harden,Harden S.FOUL (P5.T1) (J.Capers),NA,FOUL,NA,0,0,0,0,0,0,1
+04:45,5,KNICKS,Anunoby Free Throw,Anunoby Free Throw 1 of 2 (5 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+04:45,5,KNICKS,Anunoby Free Throw,Anunoby Free Throw 2 of 2 (6 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+04:21,5,CAVALIERS,Cavaliers,Cavaliers Turnover: Shot Clock (T#19),NA,TURNOVER,NA,0,0,0,0,0,1,0
+04:03,5,KNICKS,Brunson,Brunson 8' Driving Floating Jump Shot (38 PTS),8,Driving Floating Jump Shot,NA,2,0,0,0,0,0,0
+03:49,5,CAVALIERS,Mitchell,MISS Mitchell 2' Driving Finger Roll Layup,2,Driving Finger Roll Layup,NA,0,0,0,0,0,0,0
+03:46,5,KNICKS,Brunson,Brunson REBOUND (Off:0 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:31,5,KNICKS,Brunson Offensive Charge Foul,Brunson Offensive Charge Foul (P5) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+03:31,5,KNICKS,Brunson Offensive Foul Turnover,Brunson Offensive Foul Turnover (P3.T18),NA,TURNOVER,NA,0,0,0,0,0,1,1
+03:19,5,CAVALIERS,Mobley,MISS Mobley 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+03:16,5,KNICKS,Anunoby,Anunoby REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:56,5,KNICKS,Anunoby,Anunoby 2' Driving Layup (8 PTS) (Brunson 5 AST),2,Driving Layup,Brunson,2,0,1,0,0,0,0
+02:46,5,KNICKS,Bridges,Bridges P.FOUL (P3.T1) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+02:31,5,CAVALIERS,Harden,MISS Harden 25' 3PT Step Back Jump Shot,25,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+02:28,5,KNICKS,Anunoby,Anunoby REBOUND (Off:0 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:09,5,KNICKS,Anunoby,MISS Anunoby 5' Driving Layup,5,Driving Layup,NA,0,0,0,0,0,0,0
+02:09,5,CAVALIERS,Mobley,Mobley BLOCK (3 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+02:08,5,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+01:58,5,CAVALIERS,Mobley,MISS Mobley 27' 3PT Jump Shot,27,3PT Jump Shot,NA,0,0,0,0,0,0,0
+01:55,5,KNICKS,Anunoby,Anunoby REBOUND (Off:0 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:49,5,KNICKS,Shamet,Shamet 25' 3PT Running Jump Shot (9 PTS) (Brunson 6 AST),25,3PT Running Jump Shot,Brunson,3,0,1,0,0,0,0
+01:49,5,CAVALIERS,Cavaliers Timeout,Cavaliers Timeout: Regular (Reg.5 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+01:49,5,KNICKS,Hart,SUB: Hart FOR Brunson,NA,SUB,NA,0,0,0,0,0,0,0
+01:49,5,CAVALIERS,Strus,SUB: Strus FOR Allen,NA,SUB,NA,0,0,0,0,0,0,0
+01:45,5,CAVALIERS,Strus,Strus 25' 3PT Jump Shot (8 PTS) (Merrill 2 AST),25,3PT Jump Shot,Merrill,3,0,1,0,0,0,0
+01:45,5,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 6 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+01:45,5,KNICKS,Brunson,SUB: Brunson FOR Hart,NA,SUB,NA,0,0,0,0,0,0,0
+01:31,5,KNICKS,Brunson,MISS Brunson 12' Driving Floating Jump Shot,12,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+01:30,5,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+01:30,5,CAVALIERS,Merrill,Merrill L.B.FOUL (P4.T2) (J.Capers),NA,FOUL,NA,0,0,0,0,0,0,1
+01:19,5,CAVALIERS,Merrill,Merrill P.FOUL (P5.PN) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+01:19,5,KNICKS,Anunoby Free Throw,MISS Anunoby Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+01:19,5,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+01:19,5,KNICKS,Anunoby Free Throw,Anunoby Free Throw 2 of 2 (9 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+01:13,5,CAVALIERS,Strus Lost Ball Turnover,Strus Lost Ball Turnover (P3.T20),NA,TURNOVER,NA,0,0,0,0,0,1,0
+01:13,5,KNICKS,Bridges,Bridges STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+00:60,5,CAVALIERS,Merrill Violation,Merrill Violation:Kicked Ball (J.DeRosa),NA,Merrill Violation:Kicked Ball (J.DeRosa),NA,0,0,0,0,0,0,0
+00:52,5,KNICKS,Anunoby,MISS Anunoby 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+00:52,5,CAVALIERS,Cavaliers,Cavaliers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+00:41,5,CAVALIERS,Harden Bad Pass Turnover,Harden Bad Pass Turnover (P6.T21),NA,TURNOVER,NA,0,0,0,0,0,1,0
+00:41,5,KNICKS,Brunson,Brunson STEAL (3 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+00:40,5,CAVALIERS,Strus,Strus P.FOUL (P5.PN) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+00:40,5,KNICKS,Anunoby Free Throw,Anunoby Free Throw 1 of 2 (10 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+00:40,5,KNICKS,Hart,SUB: Hart FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+00:40,5,KNICKS,Anunoby Free Throw,Anunoby Free Throw 2 of 2 (11 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+00:35,5,KNICKS,Anunoby,Anunoby P.FOUL (P3.T2) (J.DeRosa),NA,FOUL,NA,0,0,0,0,0,0,1
+00:33,5,CAVALIERS,Mitchell,MISS Mitchell 32' 3PT Pullup Jump Shot,32,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+00:31,5,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+00:31,5,KNICKS,Towns,SUB: Towns FOR Hart,NA,SUB,NA,0,0,0,0,0,0,0
+00:29,5,CAVALIERS,Mitchell,Mitchell P.FOUL (P5.PN) (S.Foster),NA,FOUL,NA,0,0,0,0,0,0,1
+00:29,5,KNICKS,Anunoby Free Throw,Anunoby Free Throw 1 of 2 (12 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+00:29,5,KNICKS,Hart,SUB: Hart FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+00:29,5,KNICKS,Anunoby Free Throw,Anunoby Free Throw 2 of 2 (13 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+00:27,5,CAVALIERS,Mobley,MISS Mobley 27' 3PT Pullup Jump Shot,27,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+00:24,5,KNICKS,Brunson,Brunson REBOUND (Off:0 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:01,5,KNICKS,KNICKS,KNICKS Turnover: Shot Clock (T#19),NA,TURNOVER,NA,0,0,0,0,0,1,0

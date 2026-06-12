@@ -9,6 +9,9 @@
   --stroke: #0f131d;
   --nyk: #f58426;
   --sas: #061922;
+  --cle: #860038;
+  --phi: #1d428a;
+  --atl: #c8102e;
   --make: #142df0;
   --miss: #ff3700;
   --font-sans: var(--font-geist-sans);
@@ -37,13 +40,6 @@ body {
   overflow-x: hidden;
   /* color: var(--foreground);
   font-family: var(--font-sans), sans-serif; */
-}
-
-h1,
-h2,
-h3,
-p,
-small {
 }
 
 h1,

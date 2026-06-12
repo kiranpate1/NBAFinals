@@ -7,36 +7,111 @@ import GameGrid from "./components/GameGrid";
 import GameCard from "./components/GameCard";
 import GameRecap from "./components/GameRecap";
 import GameScoreboard from "./components/GameScoreboard";
-import Game1_SAS from "./graphics/game1/Game1_SAS";
-import Game1_NYK from "./graphics/game1/Game1_NYK";
-import Game2_SAS from "./graphics/game2/Game2_SAS";
-import Game2_NYK from "./graphics/game2/Game2_NYK";
-import game3_SAS from "./graphics/game3/Game3_SAS";
-import game3_NYK from "./graphics/game3/Game3_NYK";
-import game4_SAS from "./graphics/game4/Game4_SAS";
-import game4_NYK from "./graphics/game4/Game4_NYK";
-import { games } from "./info/games";
-import { spursPlayers, knicksPlayers } from "./info/players";
-import Game1Spread from "./graphics/game1/Game1Spread";
-import Game2Spread from "./graphics/game2/Game2Spread";
-import Game3Spread from "./graphics/game3/Game3Spread";
-import Game4Spread from "./graphics/game4/Game4Spread";
+import {
+  knicksPlayers,
+  spursPlayers,
+  cavaliersPlayers,
+  sixersPlayers,
+  hawksPlayers,
+} from "./info/players";
+import FGame1_SAS from "./graphics/finals/game1/Game1_SAS";
+import FGame1_NYK from "./graphics/finals/game1/Game1_NYK";
+import FGame2_SAS from "./graphics/finals/game2/Game2_SAS";
+import FGame2_NYK from "./graphics/finals/game2/Game2_NYK";
+import FGame3_SAS from "./graphics/finals/game3/Game3_SAS";
+import FGame3_NYK from "./graphics/finals/game3/Game3_NYK";
+import FGame4_SAS from "./graphics/finals/game4/Game4_SAS";
+import FGame4_NYK from "./graphics/finals/game4/Game4_NYK";
+import FGame1Spread from "./graphics/finals/game1/Game1Spread";
+import FGame2Spread from "./graphics/finals/game2/Game2Spread";
+import FGame3Spread from "./graphics/finals/game3/Game3Spread";
+import FGame4Spread from "./graphics/finals/game4/Game4Spread";
+import R1Game1_ATL from "./graphics/round1/game1/Game1_ATL";
+import R1Game1_NYK from "./graphics/round1/game1/Game1_NYK";
+import R1Game1Spread from "./graphics/round1/game1/Game1Spread";
+import R1Game2_ATL from "./graphics/round1/game2/Game2_ATL";
+import R1Game2_NYK from "./graphics/round1/game2/Game2_NYK";
+import R1Game2Spread from "./graphics/round1/game2/Game2Spread";
+import R1Game3_ATL from "./graphics/round1/game3/Game3_ATL";
+import R1Game3_NYK from "./graphics/round1/game3/Game3_NYK";
+import R1Game3Spread from "./graphics/round1/game3/Game3Spread";
+import R1Game4_ATL from "./graphics/round1/game4/Game4_ATL";
+import R1Game4_NYK from "./graphics/round1/game4/Game4_NYK";
+import R1Game4Spread from "./graphics/round1/game4/Game4Spread";
+import R1Game5_ATL from "./graphics/round1/game5/Game5_ATL";
+import R1Game5_NYK from "./graphics/round1/game5/Game5_NYK";
+import R1Game5Spread from "./graphics/round1/game5/Game5Spread";
+import R1Game6_ATL from "./graphics/round1/game6/Game6_ATL";
+import R1Game6_NYK from "./graphics/round1/game6/Game6_NYK";
+import R1Game6Spread from "./graphics/round1/game6/Game6Spread";
+import R2Game1_PHI from "./graphics/round2/game1/Game1_PHI";
+import R2Game1_NYK from "./graphics/round2/game1/Game1_NYK";
+import R2Game1Spread from "./graphics/round2/game1/Game1Spread";
+import R2Game2_PHI from "./graphics/round2/game2/Game2_PHI";
+import R2Game2_NYK from "./graphics/round2/game2/Game2_NYK";
+import R2Game2Spread from "./graphics/round2/game2/Game2Spread";
+import R2Game3_PHI from "./graphics/round2/game3/Game3_PHI";
+import R2Game3_NYK from "./graphics/round2/game3/Game3_NYK";
+import R2Game3Spread from "./graphics/round2/game3/Game3Spread";
+import R2Game4_PHI from "./graphics/round2/game4/Game4_PHI";
+import R2Game4_NYK from "./graphics/round2/game4/Game4_NYK";
+import R2Game4Spread from "./graphics/round2/game4/Game4Spread";
+import R3Game1_CLE from "./graphics/round3/game1/Game1_CLE";
+import R3Game1_NYK from "./graphics/round3/game1/Game1_NYK";
+import R3Game1Spread from "./graphics/round3/game1/Game1Spread";
+import R3Game2_CLE from "./graphics/round3/game2/Game2_CLE";
+import R3Game2_NYK from "./graphics/round3/game2/Game2_NYK";
+import R3Game2Spread from "./graphics/round3/game2/Game2Spread";
+import R3Game3_CLE from "./graphics/round3/game3/Game3_CLE";
+import R3Game3_NYK from "./graphics/round3/game3/Game3_NYK";
+import R3Game3Spread from "./graphics/round3/game3/Game3Spread";
+import R3Game4_CLE from "./graphics/round3/game4/Game4_CLE";
+import R3Game4_NYK from "./graphics/round3/game4/Game4_NYK";
+import R3Game4Spread from "./graphics/round3/game4/Game4Spread";
+import { games, rounds, type RoundMeta } from "./info/games";
 import BoxScore from "./components/BoxScore";
 import Highlight from "./components/Highlight";
 
 type CourtGraphicComponent = React.ComponentType;
 type SpreadGraphicComponent = React.ComponentType<{ spread: number }>;
 
-const gameVisuals: Array<{
-  sasCourt: CourtGraphicComponent;
-  nykCourt: CourtGraphicComponent;
-  spread: SpreadGraphicComponent;
-}> = [
-  { sasCourt: Game1_SAS, nykCourt: Game1_NYK, spread: Game1Spread },
-  { sasCourt: Game2_SAS, nykCourt: Game2_NYK, spread: Game2Spread },
-  { sasCourt: game3_SAS, nykCourt: game3_NYK, spread: Game3Spread },
-  { sasCourt: game4_SAS, nykCourt: game4_NYK, spread: Game4Spread },
-];
+const roundVisuals: Record<
+  RoundMeta["id"],
+  Array<{
+    sasCourt: CourtGraphicComponent;
+    nykCourt: CourtGraphicComponent;
+    spread: SpreadGraphicComponent;
+  }>
+> = {
+  round1: [
+    { sasCourt: R1Game1_ATL, nykCourt: R1Game1_NYK, spread: R1Game1Spread },
+    { sasCourt: R1Game2_ATL, nykCourt: R1Game2_NYK, spread: R1Game2Spread },
+    { sasCourt: R1Game3_ATL, nykCourt: R1Game3_NYK, spread: R1Game3Spread },
+    { sasCourt: R1Game4_ATL, nykCourt: R1Game4_NYK, spread: R1Game4Spread },
+    { sasCourt: R1Game5_ATL, nykCourt: R1Game5_NYK, spread: R1Game5Spread },
+    { sasCourt: R1Game6_ATL, nykCourt: R1Game6_NYK, spread: R1Game6Spread },
+  ],
+  round2: [
+    { sasCourt: R2Game1_PHI, nykCourt: R2Game1_NYK, spread: R2Game1Spread },
+    { sasCourt: R2Game2_PHI, nykCourt: R2Game2_NYK, spread: R2Game2Spread },
+    { sasCourt: R2Game3_PHI, nykCourt: R2Game3_NYK, spread: R2Game3Spread },
+    { sasCourt: R2Game4_PHI, nykCourt: R2Game4_NYK, spread: R2Game4Spread },
+  ],
+  round3: [
+    { sasCourt: R3Game1_CLE, nykCourt: R3Game1_NYK, spread: R3Game1Spread },
+    { sasCourt: R3Game2_CLE, nykCourt: R3Game2_NYK, spread: R3Game2Spread },
+    { sasCourt: R3Game3_CLE, nykCourt: R3Game3_NYK, spread: R3Game3Spread },
+    { sasCourt: R3Game4_CLE, nykCourt: R3Game4_NYK, spread: R3Game4Spread },
+  ],
+  finals: [
+    { sasCourt: FGame1_SAS, nykCourt: FGame1_NYK, spread: FGame1Spread },
+    { sasCourt: FGame2_SAS, nykCourt: FGame2_NYK, spread: FGame2Spread },
+    { sasCourt: FGame3_SAS, nykCourt: FGame3_NYK, spread: FGame3Spread },
+    { sasCourt: FGame4_SAS, nykCourt: FGame4_NYK, spread: FGame4Spread },
+  ],
+};
+
+const gameVisuals = rounds.flatMap((round) => roundVisuals[round.id]);
 
 type PlayEntry = {
   time: string;
@@ -169,6 +244,47 @@ const knicksNameLookup = makeNameLookup(knicksPlayers, {
 });
 const spursNameLookup = makeNameLookup(spursPlayers);
 
+const opponentPlayersByCode = {
+  ATL: hawksPlayers,
+  PHI: sixersPlayers,
+  CLE: cavaliersPlayers,
+  SAS: spursPlayers,
+} as const;
+
+type OpponentCode = keyof typeof opponentPlayersByCode;
+
+const opponentNameLookupByCode: Record<OpponentCode, Map<string, string>> = {
+  ATL: makeNameLookup(hawksPlayers),
+  PHI: makeNameLookup(sixersPlayers),
+  CLE: makeNameLookup(cavaliersPlayers),
+  SAS: spursNameLookup,
+};
+
+const opponentPlayersByNameByCode: Record<
+  OpponentCode,
+  Map<string, TeamRosterPlayer>
+> = {
+  ATL: new Map(hawksPlayers.map((player) => [player.name, player])),
+  PHI: new Map(sixersPlayers.map((player) => [player.name, player])),
+  CLE: new Map(cavaliersPlayers.map((player) => [player.name, player])),
+  SAS: new Map(spursPlayers.map((player) => [player.name, player])),
+};
+
+const getOpponentCodeForGame = (gameIndex: number): OpponentCode => {
+  const game = games[gameIndex] ?? games[0];
+  const opponentAbbrev =
+    game.awayTeam === "NYK" ? game.homeTeam : game.awayTeam;
+
+  if (opponentAbbrev in opponentPlayersByCode) {
+    return opponentAbbrev as OpponentCode;
+  }
+
+  return "SAS";
+};
+
+const getOpponentPlayersForGame = (gameIndex: number): TeamRosterPlayer[] =>
+  opponentPlayersByCode[getOpponentCodeForGame(gameIndex)];
+
 const resolveFromLookup = (lookup: Map<string, string>, token: string) => {
   if (lookup.has(token)) return lookup.get(token) ?? null;
 
@@ -180,12 +296,19 @@ const resolveFromLookup = (lookup: Map<string, string>, token: string) => {
   return null;
 };
 
-const resolveRosterName = (team: "NYK" | "SAS", rawName: string) => {
+const resolveRosterName = (
+  team: "NYK" | "SAS",
+  rawName: string,
+  gameIndex: number,
+) => {
   const token = normalizeNameToken(rawName);
   if (!token || token === "na" || token === "unknown") return null;
   if (token === "team knicks" || token === "team spurs") return null;
 
-  const lookup = team === "NYK" ? knicksNameLookup : spursNameLookup;
+  const lookup =
+    team === "NYK"
+      ? knicksNameLookup
+      : opponentNameLookupByCode[getOpponentCodeForGame(gameIndex)];
   const directMatch = resolveFromLookup(lookup, token);
   if (directMatch) return directMatch;
 
@@ -278,10 +401,9 @@ const getQuarterAndTime = (
 
 const getDefaultGameSeconds = (otCount: number) => (48 + otCount * 5) * 60;
 
-const teamPlayersByName: Record<TeamKey, Map<string, TeamRosterPlayer>> = {
-  NYK: new Map(knicksPlayers.map((player) => [player.name, player])),
-  SAS: new Map(spursPlayers.map((player) => [player.name, player])),
-};
+const knicksPlayersByName = new Map(
+  knicksPlayers.map((player) => [player.name, player]),
+);
 
 const fallbackHighlight: HighlightInfo = {
   team: "NYK",
@@ -389,12 +511,21 @@ const getHighlightPriorityScore = (play: ScoredPlay): number => {
   return tier * 1000 + detailScore;
 };
 
-const toHighlightInfo = (play: ScoredPlay): HighlightInfo => {
+const toHighlightInfo = (
+  play: ScoredPlay,
+  gameIndex: number,
+): HighlightInfo => {
   const { entry } = play;
-  const resolvedName = resolveRosterName(entry.team, entry.player);
-  const teamLookup = teamPlayersByName[entry.team];
+  const resolvedName = resolveRosterName(entry.team, entry.player, gameIndex);
+  const opponentCode = getOpponentCodeForGame(gameIndex);
+  const teamLookup =
+    entry.team === "NYK"
+      ? knicksPlayersByName
+      : opponentPlayersByNameByCode[opponentCode];
   const defaultPlayer =
-    entry.team === "NYK" ? knicksPlayers[0] : spursPlayers[0];
+    entry.team === "NYK"
+      ? knicksPlayers[0]
+      : opponentPlayersByCode[opponentCode][0];
   const rosterPlayer = resolvedName
     ? (teamLookup.get(resolvedName) ?? defaultPlayer)
     : defaultPlayer;
@@ -418,6 +549,7 @@ const toHighlightInfo = (play: ScoredPlay): HighlightInfo => {
 const getHighlightsForGame = (
   entries: PlayEntry[],
   otCount: number,
+  gameIndex: number,
 ): HighlightInfo[] => {
   const timeline = buildScoredTimeline(entries);
   const segments = getHighlightSegments(otCount);
@@ -457,7 +589,7 @@ const getHighlightsForGame = (
       }
     }
 
-    return toHighlightInfo(best);
+    return toHighlightInfo(best, gameIndex);
   });
 };
 
@@ -469,22 +601,7 @@ export default function Home() {
   const playBoundaryRef = useRef<HTMLDivElement | null>(null);
   const NYKPlayRef = useRef<HTMLDivElement | null>(null);
   const SASPlayRef = useRef<HTMLDivElement | null>(null);
-  const Game1ScrollRef = useRef<HTMLDivElement | null>(null);
-  const Game2ScrollRef = useRef<HTMLDivElement | null>(null);
-  const Game3ScrollRef = useRef<HTMLDivElement | null>(null);
-  const Game4ScrollRef = useRef<HTMLDivElement | null>(null);
-  const Game5ScrollRef = useRef<HTMLDivElement | null>(null);
-  const Game6ScrollRef = useRef<HTMLDivElement | null>(null);
-  const Game7ScrollRef = useRef<HTMLDivElement | null>(null);
-  const gameScrollRefs = [
-    Game1ScrollRef,
-    Game2ScrollRef,
-    Game3ScrollRef,
-    Game4ScrollRef,
-    Game5ScrollRef,
-    Game6ScrollRef,
-    Game7ScrollRef,
-  ];
+  const gameScrollElsRef = useRef<Array<HTMLDivElement | null>>([]);
   const footerRef = useRef<HTMLElement | null>(null);
   const courtHeightDynamicRef = useRef<HTMLDivElement | null>(null);
   const animationFrameRef = useRef<number | null>(null);
@@ -498,7 +615,7 @@ export default function Home() {
   );
   const [boxStats, setBoxStats] = useState(() => ({
     NYK: makeEmptyTeamStats(knicksPlayers),
-    SAS: makeEmptyTeamStats(spursPlayers),
+    SAS: makeEmptyTeamStats(getOpponentPlayersForGame(0)),
   }));
   const [teamScoreByGame, setTeamScoreByGame] = useState<TeamScore[]>(() =>
     games.map(() => makeEmptyTeamScore()),
@@ -518,6 +635,9 @@ export default function Home() {
   );
   const [isCourtVisible, setIsCourtVisible] = useState(false);
   const courtTransitionRef = useRef<number | null>(null);
+  const setGameScrollRef = (index: number, el: HTMLDivElement | null) => {
+    gameScrollElsRef.current[index] = el;
+  };
   const activeGameVisual = gameVisuals[activeGameIndex] ?? gameVisuals[0];
   const ActiveSASCourt = activeGameVisual.sasCourt;
   const ActiveNYKCourt = activeGameVisual.nykCourt;
@@ -549,7 +669,7 @@ export default function Home() {
   }, [activeCourtUrl]);
 
   const scrollToGameStart = (gameIndex: number) => {
-    const targetEl = gameScrollRefs[gameIndex]?.current;
+    const targetEl = gameScrollElsRef.current[gameIndex];
     if (!targetEl) return;
 
     const top =
@@ -567,7 +687,7 @@ export default function Home() {
     const loadPlays = async () => {
       const responses = await Promise.all(
         games.map((game) =>
-          fetch(`/api/games/${game.game}`, { cache: "no-store" })
+          fetch(`/api/games/${game.id}`, { cache: "no-store" })
             .then(async (response) => {
               if (!response.ok) return [] as PlayEntry[];
               return (await response.json()) as PlayEntry[];
@@ -599,8 +719,8 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    const scrollEntries = gameScrollRefs
-      .map((ref, index) => ({ index, el: ref.current }))
+    const scrollEntries = gameScrollElsRef.current
+      .map((el, index) => ({ index, el }))
       .filter(
         (
           entry,
@@ -629,10 +749,15 @@ export default function Home() {
       });
     };
 
-    const computeSnapshot = (entries: PlayEntry[], currentSeconds: number) => {
+    const computeSnapshot = (
+      entries: PlayEntry[],
+      currentSeconds: number,
+      gameIndex: number,
+    ) => {
+      const opponentPlayers = getOpponentPlayersForGame(gameIndex);
       const next = {
         NYK: makeEmptyTeamStats(knicksPlayers),
-        SAS: makeEmptyTeamStats(spursPlayers),
+        SAS: makeEmptyTeamStats(opponentPlayers),
       };
       const score: TeamScore = { NYK: 0, SAS: 0 };
 
@@ -643,7 +768,11 @@ export default function Home() {
         score[entry.team] += entry.points;
 
         const teamStats = next[entry.team];
-        const scorerName = resolveRosterName(entry.team, entry.player);
+        const scorerName = resolveRosterName(
+          entry.team,
+          entry.player,
+          gameIndex,
+        );
 
         if (scorerName && teamStats[scorerName]) {
           const scorerLine = teamStats[scorerName];
@@ -663,7 +792,11 @@ export default function Home() {
           }
         }
 
-        const assistName = resolveRosterName(entry.team, entry.assist);
+        const assistName = resolveRosterName(
+          entry.team,
+          entry.assist,
+          gameIndex,
+        );
         if (assistName && teamStats[assistName]) {
           teamStats[assistName].ast += entry.assists;
         }
@@ -674,7 +807,7 @@ export default function Home() {
 
     const renderAtSecond = (currentSeconds: number, gameIndex: number) => {
       const activePlays = playsByGame[gameIndex] ?? [];
-      const snapshot = computeSnapshot(activePlays, currentSeconds);
+      const snapshot = computeSnapshot(activePlays, currentSeconds, gameIndex);
       setBoxStats(snapshot.boxStats);
       setTeamScoreByGame((prev) => {
         const next = [...prev];
@@ -760,8 +893,7 @@ export default function Home() {
     const handleGame1Scroll = () => {
       const boundaryTop = boundaryEl.getBoundingClientRect().top;
 
-      const nextProgress = gameScrollRefs.map((ref) => {
-        const sectionEl = ref.current;
+      const nextProgress = gameScrollElsRef.current.map((sectionEl) => {
         if (!sectionEl) return 0;
 
         const sectionRect = sectionEl.getBoundingClientRect();
@@ -797,7 +929,7 @@ export default function Home() {
           Math.floor((Math.min(1, Math.max(0, progress)) || 0) * totalSeconds),
         );
 
-        return computeSnapshot(entries, seconds).score;
+        return computeSnapshot(entries, seconds, index).score;
       });
 
       setTeamScoreByGame((prev) => {
@@ -869,7 +1001,11 @@ export default function Home() {
         if (scrolledPx > rect.height) {
           const activePlays = playsByGame[activeIndex] ?? [];
           const finalSecond = Math.max(0, Math.floor(totalSeconds));
-          const finalSnapshot = computeSnapshot(activePlays, finalSecond);
+          const finalSnapshot = computeSnapshot(
+            activePlays,
+            finalSecond,
+            activeIndex,
+          );
           setBoxStats(finalSnapshot.boxStats);
           setTeamScoreByGame((prev) => {
             const next = [...prev];
@@ -902,7 +1038,7 @@ export default function Home() {
         sasEl.innerHTML = "&ensp;";
         setBoxStats({
           NYK: makeEmptyTeamStats(knicksPlayers),
-          SAS: makeEmptyTeamStats(spursPlayers),
+          SAS: makeEmptyTeamStats(getOpponentPlayersForGame(activeIndex)),
         });
         setTeamScoreByGame((prev) => {
           const next = [...prev];
@@ -958,76 +1094,81 @@ export default function Home() {
     };
   }, [playsByGame, gameSecondsByGame]);
 
-  useEffect(() => {
-    const footerElement = footerRef.current;
-    const courtElement = courtHeightDynamicRef.current;
+  // useEffect(() => {
+  //   const footerElement = footerRef.current;
+  //   const courtElement = courtHeightDynamicRef.current;
 
-    if (!footerElement || !courtElement) {
-      return;
-    }
+  //   if (!footerElement || !courtElement) {
+  //     return;
+  //   }
 
-    const maxCourtHeight = 520;
+  //   const maxCourtHeight = 520;
 
-    const measureFooter = () => {
-      const footerRect = footerElement.getBoundingClientRect();
-      footerMetricsRef.current = {
-        top: footerRect.top + window.scrollY,
-        bottom: footerRect.bottom + window.scrollY,
-      };
-    };
+  //   const measureFooter = () => {
+  //     const footerRect = footerElement.getBoundingClientRect();
+  //     footerMetricsRef.current = {
+  //       top: footerRect.top + window.scrollY,
+  //       bottom: footerRect.bottom + window.scrollY,
+  //     };
+  //   };
 
-    const loop = () => {
-      const { top: footerTop, bottom: footerBottom } = footerMetricsRef.current;
-      const footerHeight = footerBottom - footerTop;
+  //   const loop = () => {
+  //     const { top: footerTop, bottom: footerBottom } = footerMetricsRef.current;
+  //     const footerHeight = footerBottom - footerTop;
 
-      if (footerHeight > 0) {
-        const viewportBottom = window.scrollY + window.innerHeight;
-        const progress = (viewportBottom - footerTop) / footerHeight;
-        const clampedProgress = Math.min(1, Math.max(0, progress));
-        const nextHeight =
-          courtHeight + (maxCourtHeight - courtHeight) * clampedProgress;
-        courtElement.style.height = `${nextHeight}px`;
-      }
+  //     if (footerHeight > 0) {
+  //       const viewportBottom = window.scrollY + window.innerHeight;
+  //       const progress = (viewportBottom - footerTop) / footerHeight;
+  //       const clampedProgress = Math.min(1, Math.max(0, progress));
+  //       const nextHeight =
+  //         courtHeight + (maxCourtHeight - courtHeight) * clampedProgress;
+  //       courtElement.style.height = `${nextHeight}px`;
+  //     }
 
-      animationFrameRef.current = window.requestAnimationFrame(loop);
-    };
+  //     animationFrameRef.current = window.requestAnimationFrame(loop);
+  //   };
 
-    const onResize = () => {
-      measureFooter();
-    };
+  //   const onResize = () => {
+  //     measureFooter();
+  //   };
 
-    measureFooter();
-    animationFrameRef.current = window.requestAnimationFrame(loop);
+  //   measureFooter();
+  //   animationFrameRef.current = window.requestAnimationFrame(loop);
 
-    window.addEventListener("resize", onResize);
+  //   window.addEventListener("resize", onResize);
 
-    const resizeObserver =
-      typeof ResizeObserver !== "undefined"
-        ? new ResizeObserver(onResize)
-        : null;
+  //   const resizeObserver =
+  //     typeof ResizeObserver !== "undefined"
+  //       ? new ResizeObserver(onResize)
+  //       : null;
 
-    resizeObserver?.observe(footerElement);
+  //   resizeObserver?.observe(footerElement);
 
-    return () => {
-      window.removeEventListener("resize", onResize);
-      resizeObserver?.disconnect();
+  //   return () => {
+  //     window.removeEventListener("resize", onResize);
+  //     resizeObserver?.disconnect();
 
-      if (animationFrameRef.current !== null) {
-        window.cancelAnimationFrame(animationFrameRef.current);
-        animationFrameRef.current = null;
-      }
-    };
-  }, [courtHeight]);
+  //     if (animationFrameRef.current !== null) {
+  //       window.cancelAnimationFrame(animationFrameRef.current);
+  //       animationFrameRef.current = null;
+  //     }
+  //   };
+  // }, [courtHeight]);
 
+  // current highlight logic
   const splashTransition = "0.2s ease-in-out";
   const highlightsByGame = useMemo(
     () =>
       playsByGame.map((entries, index) =>
-        getHighlightsForGame(entries, games[index]?.ot ?? 0),
+        getHighlightsForGame(entries, games[index]?.ot ?? 0, index),
       ),
     [playsByGame],
   );
-  const activeGameHighlights = highlightsByGame[activeGameIndex] ?? [];
+  const currentOpponentPlayers = getOpponentPlayersForGame(activeGameIndex);
+  const activeGameHighlights = useMemo(
+    () => highlightsByGame[activeGameIndex] ?? [],
+    [highlightsByGame, activeGameIndex],
+  );
   const activeGameSeconds =
     gameSecondsByGame[activeGameIndex] ??
     getDefaultGameSeconds(games[activeGameIndex]?.ot ?? 0);
@@ -1041,23 +1182,30 @@ export default function Home() {
   const activeHighlightIndex = useMemo(() => {
     if (activeGameHighlights.length === 0) return 0;
 
+    const segments = getHighlightSegments(games[activeGameIndex]?.ot ?? 0);
     let latestIndex = 0;
-    for (let i = 0; i < activeGameHighlights.length; i += 1) {
-      const highlight = activeGameHighlights[i];
-      const highlightSecond = getAbsoluteSeconds(
-        highlight.quarter,
-        highlight.time,
-      );
-      if (highlightSecond <= activeCurrentSecond) {
+
+    for (let i = 0; i < segments.length; i += 1) {
+      if (segments[i].startSeconds <= activeCurrentSecond) {
         latestIndex = i;
       } else {
         break;
       }
     }
 
-    return latestIndex;
-  }, [activeGameHighlights, activeCurrentSecond]);
+    return Math.min(latestIndex, activeGameHighlights.length - 1);
+  }, [activeGameHighlights.length, activeCurrentSecond, activeGameIndex]);
 
+  const roundStartIndexes = useMemo(() => {
+    let offset = 0;
+    return rounds.map((round) => {
+      const start = offset;
+      offset += round.games.length;
+      return start;
+    });
+  }, []);
+
+  // text effect inspired by my codepen
   const nykTitleRef = useRef<HTMLHeadingElement | null>(null);
   const sasTitleRef = useRef<HTMLHeadingElement | null>(null);
 
@@ -1195,8 +1343,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* nav */}
-      <div className="fixed z-100 top-0 left-0 w-[250px] h-full">
+      {/* nav / stationary */}
+      <div className="fixed z-100 top-0 left-0 w-62.5 h-full">
         <div
           className="relative flex flex-col pointer-events-auto"
           style={
@@ -1221,94 +1369,108 @@ export default function Home() {
           >
             May <span style={{ opacity: 0.5 }}>2026</span>
           </h3> */}
-          {games.map((game, i) => {
-            const progress = progressByGame[i] ?? 0;
-            const isActiveGame = progress > 0 && progress < 1;
-            const score = teamScoreByGame[i] ?? makeEmptyTeamScore();
-            const progressColor =
-              score.NYK > score.SAS
-                ? "var(--nyk)"
-                : score.SAS > score.NYK
-                  ? "var(--sas)"
-                  : "var(--stroke)";
-            const navBackgroundColor = isActiveGame
-              ? `color-mix(in srgb, var(--background) 88%, ${progressColor} 12%)`
-              : "var(--background)";
-            let dateLabel = 18;
-            dateLabel += i * 2;
+          {rounds.map((round, i) => {
+            const roundStart = roundStartIndexes[i] ?? 0;
 
             return (
-              <button
-                type="button"
-                className="relative flex flex-col items-stretch hover:opacity-60 overflow-hidden cursor-pointer transition-colors duration-150"
-                onClick={() => scrollToGameStart(i)}
-                style={{ backgroundColor: navBackgroundColor }}
-                key={i}
-              >
-                <small
-                  className="absolute top-1 left-1"
-                  style={{
-                    opacity: isInsideSplash ? 1 : 0,
-                  }}
-                >
-                  {dateLabel}
-                </small>
-                <div className="h-2 xl:h-3 overflow-hidden p-0 xl:p-0.5">
-                  <div
-                    className="h-full"
-                    style={{
-                      width: "100%",
-                      transformOrigin: "left center",
-                      transform: `scaleX(${Math.min(
-                        1,
-                        Math.max(0, progressByGame[i] ?? 0),
-                      )})`,
-                      backgroundColor: progressColor,
-                    }}
-                  ></div>
-                </div>
-                <div className="flex-1 flex items-center justify-center px-4">
-                  <img
-                    src="/knicks-logo.svg"
-                    alt="NYK logo"
-                    className="hidden sm:block flex-1 h-4"
-                    style={{
-                      opacity: isInsideSplash
-                        ? "1"
-                        : score.NYK > score.SAS
-                          ? 1
-                          : 0.15,
-                    }}
-                  />
-                  <p
-                    className="text-(--stroke)"
-                    style={{
-                      transition: splashTransition,
-                      transform: isInsideSplash ? "scale(0.8)" : "scale(1.25)",
-                    }}
-                  >
-                    {isInsideSplash ? "7pm" : i + 1}
-                  </p>
-                  <img
-                    src="/spurs-logo.svg"
-                    alt="SAS logo"
-                    className="hidden sm:block flex-1 h-4"
-                    style={{
-                      opacity: isInsideSplash
-                        ? "1"
-                        : score.SAS > score.NYK
-                          ? 1
-                          : 0.15,
-                    }}
-                  />
-                </div>
-              </button>
+              <React.Fragment key={i}>
+                {round.games.map((game, j) => {
+                  const gameIndex = roundStart + j;
+                  const progress = progressByGame[gameIndex] ?? 0;
+                  const isActiveGame = progress > 0 && progress < 1;
+                  const score =
+                    teamScoreByGame[gameIndex] ?? makeEmptyTeamScore();
+                  const opponentScore = score.SAS;
+                  const opponentColorVar = `var(--${round.opponent.toLowerCase()})`;
+                  const progressColor =
+                    score.NYK > opponentScore
+                      ? "var(--nyk)"
+                      : opponentScore > score.NYK
+                        ? opponentColorVar
+                        : "var(--stroke)";
+                  const navBackgroundColor = isActiveGame
+                    ? `color-mix(in srgb, var(--background) 88%, ${progressColor} 12%)`
+                    : "var(--background)";
+                  let dateLabel = 18;
+                  dateLabel += i * 2;
+
+                  return (
+                    <button
+                      type="button"
+                      className="relative flex flex-col items-stretch hover:opacity-60 overflow-hidden cursor-pointer transition-colors duration-150"
+                      onClick={() => scrollToGameStart(gameIndex)}
+                      style={{ backgroundColor: navBackgroundColor }}
+                      key={j}
+                    >
+                      <small
+                        className="absolute top-1 left-1"
+                        style={{
+                          opacity: isInsideSplash ? 1 : 0,
+                        }}
+                      >
+                        {dateLabel}
+                      </small>
+                      <div className="h-2 xl:h-3 overflow-hidden p-0 xl:p-0.5">
+                        <div
+                          className="h-full"
+                          style={{
+                            width: "100%",
+                            transformOrigin: "left center",
+                            transform: `scaleX(${Math.min(
+                              1,
+                              Math.max(0, progressByGame[gameIndex] ?? 0),
+                            )})`,
+                            backgroundColor: progressColor,
+                          }}
+                        ></div>
+                      </div>
+                      <div className="flex-1 flex items-center justify-center px-4">
+                        <img
+                          src={"/nyk-logo.svg"}
+                          alt="NYK logo"
+                          className="hidden sm:block flex-1 h-4"
+                          style={{
+                            opacity: isInsideSplash
+                              ? "1"
+                              : score.NYK > score.SAS
+                                ? 1
+                                : 0.15,
+                          }}
+                        />
+                        <p
+                          className="text-(--stroke)"
+                          style={{
+                            transition: splashTransition,
+                            transform: isInsideSplash
+                              ? "scale(0.8)"
+                              : "scale(1.25)",
+                          }}
+                        >
+                          {isInsideSplash ? "7pm" : game.game}
+                        </p>
+                        <img
+                          src={`/${round.opponent.toLowerCase()}-logo.svg`}
+                          alt={`${round.opponent} logo`}
+                          className="hidden sm:block flex-1 h-4"
+                          style={{
+                            opacity: isInsideSplash
+                              ? "1"
+                              : opponentScore > score.NYK
+                                ? 1
+                                : 0.15,
+                          }}
+                        />
+                      </div>
+                    </button>
+                  );
+                })}
+              </React.Fragment>
             );
           })}
         </div>
       </div>
-      {/* plays */}
-      <div className="fixed z-100 top-0 right-0 w-[250px] h-full">
+      {/* plays / stationary */}
+      <div className="fixed z-100 top-0 right-0 w-62.5 h-full">
         <div className="absolute inset-0 flex flex-col items-stretch overflow-hidden">
           <div
             className="relative duration-300 ease-out"
@@ -1324,286 +1486,324 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* main */}
-      <div className="relative grid grid-cols-[250px_1fr_250px]">
-        <div
-          className="relative z-4 pointer-events-none"
-          // style={{
-          //   transition: splashTransition,
-          //   inset: `-${isInsideSplash ? 116 : topLipHeight}px 0 0 0`,
-          // }}
-        ></div>
-        <div className="relative">
-          {/* info */}
-          <div className="absolute z-3 inset-0 pointer-events-none">
-            {/* solid background for grid */}
-            <div className="sticky top-[100dvh] w-full h-0 flex items-end justify-stretch">
-              <div className="relative w-full h-screen p-4">
-                <div className="absolute inset-[auto_0_0_0] px-4 pb-4 bg-(--background)">
-                  <div
-                    className="relative border-t border-(--stroke) flex flex-col items-center justify-end"
-                    style={{ paddingTop: topLipHeight }}
-                  >
-                    <div style={{ height: courtHeight }}></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* background grid for nav */}
-            <div className="absolute inset-4 flex flex-col items-stretch">
-              {games.map((game, g) => (
-                <div className="relative flex items-stretch flex-col" key={g}>
-                  <GameCard
-                    isInsideSticky={true}
-                    height={courtHeight + topLipHeight}
-                    game={g + 1}
-                  />
-                  <div
-                    className="relative"
-                    style={{
-                      height: `${gameScroll + (gameScroll / 48) * game.ot * 5}vh`,
-                    }}
-                  >
-                    <GameGrid isInsideSticky={true} ot={game.ot} />
-                  </div>
-                  <GameRecap
-                    isInsideSticky={true}
-                    height={courtHeight + topLipHeight}
-                    game={g + 1}
-                  />
-                </div>
-              ))}
-              <div style={{ height: `${courtHeight + topLipHeight}px` }}></div>
-            </div>
-            {/* top lip */}
-            <div className="sticky z-1 top-0 w-full h-4 px-4 bg-(--background) flex flex-col items-stretch justify-end">
-              <div className="translate-y-px border-b border-(--stroke)"></div>
-            </div>
-            {/* court, play-by-play, boxscores */}
-            <div className="sticky top-[100dvh] w-full h-0 flex items-end justify-stretch pointer-events-none">
-              <div className="relative w-full h-dvh p-4">
-                <div className="absolute z-10 inset-[0_0_auto_0] h-4 bg-(--background)"></div>
-                <div className="absolute z-10 inset-[auto_0_0_0] h-4 bg-(--background)"></div>
-                <div
-                  className="absolute top-9.5 xl:top-4 left-4 w-[calc(50dvw-15px)] xl:w-102 border border-(--stroke) bg-(--background) overflow-x-scroll overflow-y-scroll duration-200"
-                  style={{
-                    opacity: hasReachedBottom ? 0 : 1,
-                    height: courtHeight + topLipHeight - 18,
-                    pointerEvents: hasReachedBottom ? "none" : "auto",
-                  }}
-                >
-                  <BoxScore
-                    team="NYK"
-                    players={knicksPlayers}
-                    boxStats={boxStats}
-                  />
-                </div>
-                <div
-                  className="absolute top-9.5 xl:top-4 right-4 w-[calc(50dvw-15px)] xl:w-102 border border-(--stroke) bg-(--background) overflow-x-scroll overflow-y-scroll duration-200"
-                  style={{
-                    opacity: hasReachedBottom ? 0 : 1,
-                    height: courtHeight + topLipHeight - 18,
-                    pointerEvents: hasReachedBottom ? "none" : "auto",
-                  }}
-                >
-                  <BoxScore
-                    team="SAS"
-                    players={spursPlayers}
-                    boxStats={boxStats}
-                  />
-                </div>
-                <div
-                  className="absolute z-10 left-0 right-0 h-0 px-4 pb-4"
-                  style={{ bottom: courtHeight + topLipHeight }}
-                >
-                  <div
-                    className="relative flex flex-col items-center justify-end"
-                    style={{ paddingTop: topLipHeight }}
-                  >
-                    <div
-                      className="absolute inset-[0_0_auto_0] border-b border-(--stroke) bg-(--background) grid grid-cols-2 gap-2 py-1 pointer-events-auto"
-                      ref={playBoundaryRef}
-                    >
-                      <small
-                        className="text-right overflow-hidden whitespace-nowrap text-ellipsis"
-                        ref={NYKPlayRef}
-                      >
-                        Example of NYK play
-                      </small>
-                      <small
-                        className="text-left overflow-hidden whitespace-nowrap text-ellipsis"
-                        ref={SASPlayRef}
-                      >
-                        Example of SAS play
-                      </small>
-                    </div>
-                    <div className="absolute z-1 top-6 left-1/2 -translate-x-1/2 flex flex-col items-center">
-                      <h3
-                        className="gameclock pointer-events-auto"
-                        ref={gameClockRef}
-                      >
-                        12:00
-                      </h3>
-                      <small className="bg-(--background)" ref={quarterRef}>
-                        Q1
-                      </small>
-                    </div>
-                    <div
-                      className="absolute top-0 left-1/2 -translate-x-1/2 w-px bg-(--stroke) opacity-50"
-                      style={{ height: topLipHeight }}
-                    ></div>
-                    <div
-                      className="relative border border-(--stroke) bg-(--background) max-h-[calc(100vw*50/94)]"
-                      ref={courtHeightDynamicRef}
-                      style={{ height: courtHeight }}
-                    >
-                      <div className="absolute z-1 inset-0 pointer-events-auto">
-                        <div
-                          className="sas_courts absolute top-0 right-0 w-50/94 flex justify-center"
-                          style={{
-                            transformOrigin: "bottom right",
-                            transform: "rotate(90deg) translate(100%)",
-                          }}
-                          ref={sasCourtRef}
-                        >
-                          {/* add other game cards here eventually */}
-                          {hasReachedBottom ? (
-                            gameVisuals.map((visual, index) => {
-                              const SASCourt = visual.sasCourt;
-                              return <SASCourt key={`sas-series-${index}`} />;
-                            })
-                          ) : (
-                            <ActiveSASCourt />
-                          )}
-                        </div>
-                        <div
-                          className="nyk_courts absolute top-0 left-0 w-50/94 flex justify-center"
-                          style={{
-                            transformOrigin: "bottom left",
-                            transform: "rotate(-90deg) translate(-100%)",
-                          }}
-                          ref={nykCourtRef}
-                        >
-                          {/* add other game cards here eventually */}
-                          {hasReachedBottom ? (
-                            gameVisuals.map((visual, index) => {
-                              const NYKCourt = visual.nykCourt;
-                              return <NYKCourt key={`nyk-series-${index}`} />;
-                            })
-                          ) : (
-                            <ActiveNYKCourt />
-                          )}
-                        </div>
-                      </div>
-                      <Court
-                        court={displayedCourtUrl}
-                        visible={isCourtVisible}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute inset-4 border-l border-r border-b border-(--stroke)"></div>
-              </div>
-            </div>
-          </div>
-          {/* games content */}
+      {/* main / per round */}
+      <div className="relative">
+        {/* loop the div below for each round */}
+        <div className="relative grid grid-cols-[250px_1fr_250px]">
           <div
-            className="relative z-1 w-full p-4 flex flex-col items-stretch"
-            style={{}}
-          >
-            {/* insert games loop here eventually */}
-
-            {games.map((game, g) => {
-              const gameVisual = gameVisuals[g] ?? gameVisuals[0];
-              const SpreadGraphic = gameVisual.spread;
-              const gameScrollRef = gameScrollRefs[g] ?? gameScrollRefs[0];
-
-              return (
-                <div className="relative pointer-events-none" key={g}>
-                  <GameCard
-                    isInsideSticky={false}
-                    height={courtHeight + topLipHeight}
-                    game={g + 1}
-                  />
-                  <div
-                    className="relative flex flex-col h-full items-center justify-between"
-                    style={{
-                      height: `${gameScroll + (gameScroll / 48) * game.ot * 5}vh`,
-                    }}
-                    ref={gameScrollRef}
-                  >
+            className="relative z-4 pointer-events-none"
+            // style={{
+            //   transition: splashTransition,
+            //   inset: `-${isInsideSplash ? 116 : topLipHeight}px 0 0 0`,
+            // }}
+          ></div>
+          <div className="relative">
+            {/* info */}
+            <div className="absolute z-3 inset-0 pointer-events-none">
+              {/* solid background for grid */}
+              <div className="sticky top-[100dvh] w-full h-0 flex items-end justify-stretch">
+                <div className="relative w-full h-screen p-4">
+                  <div className="absolute inset-[auto_0_0_0] px-4 pb-4 bg-(--background)">
                     <div
-                      className="sticky z-5 w-full h-0 grid grid-cols-10 pointer-events-auto opacity-70"
-                      style={{
-                        top: `calc(100dvh - ${topLipHeight + courtHeight + 17}px)`,
-                      }}
+                      className="relative border-t border-(--stroke) flex flex-col items-center justify-end"
+                      style={{ paddingTop: topLipHeight }}
                     >
-                      <small className="[grid-area:1/2/1/2] place-self-end p-0.75 -translate-y-full">
-                        30
-                      </small>
-                      <small className="[grid-area:1/3/1/3] place-self-end p-0.75 -translate-y-full">
-                        20
-                      </small>
-                      <small className="[grid-area:1/4/1/4] place-self-end p-0.75 -translate-y-full">
-                        10
-                      </small>
-                      <small className="[grid-area:1/5/1/5] place-self-end p-0.75 -translate-y-full">
-                        0
-                      </small>
-                      <small className="[grid-area:1/6/1/6] place-self-start p-0.75 -translate-y-full">
-                        0
-                      </small>
-                      <small className="[grid-area:1/7/1/7] place-self-start p-0.75 -translate-y-full">
-                        10
-                      </small>
-                      <small className="[grid-area:1/8/1/8] place-self-start p-0.75 -translate-y-full">
-                        20
-                      </small>
-                      <small className="[grid-area:1/9/1/9] place-self-start p-0.75 -translate-y-full">
-                        30
-                      </small>
-                    </div>
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-full bg-(--stroke)"></div>
-                    <GameGrid isInsideSticky={false} ot={game.ot} />
-                    <SpreadGraphic spread={game.spread} />
-                  </div>
-                  <GameRecap
-                    isInsideSticky={false}
-                    height={courtHeight + topLipHeight}
-                    game={g + 1}
-                  />
-                  <div
-                    className="scoreboard absolute left-0 right-0 flex items-stretch flex-col"
-                    style={{
-                      top: `${courtHeight + topLipHeight}px`,
-                      bottom: `${-courtHeight + topLipHeight - 30}px`,
-                    }}
-                  >
-                    <div
-                      className="sticky -translate-y-full"
-                      style={{
-                        inset: `calc(100dvh - (${courtHeight + topLipHeight + 16}px)) 16px auto 16px`,
-                      }}
-                    >
-                      <GameScoreboard
-                        teamScore={teamScoreByGame[g] ?? makeEmptyTeamScore()}
-                      />
+                      <div style={{ height: courtHeight }}></div>
                     </div>
                   </div>
                 </div>
-              );
-            })}
+              </div>
+              {/* background grid for nav */}
+              <div className="absolute inset-4 flex flex-col items-stretch">
+                {rounds.map((round) => {
+                  return (
+                    <React.Fragment key={round.id}>
+                      <div className="h-10 border-t border-(--stroke) flex items-center justify-center bg-(--background)">
+                        <small>{round.label}</small>
+                      </div>
+                      {round.games.map((game) => {
+                        return (
+                          <div
+                            className="relative flex items-stretch flex-col"
+                            key={game.id}
+                          >
+                            <GameCard
+                              isInsideSticky={true}
+                              height={courtHeight + topLipHeight}
+                              game={game}
+                            />
+                            <div
+                              className="relative"
+                              style={{
+                                height: `${gameScroll + (gameScroll / 48) * game.ot * 5}vh`,
+                              }}
+                            >
+                              <GameGrid isInsideSticky={true} ot={game.ot} />
+                            </div>
+                            <GameRecap
+                              isInsideSticky={true}
+                              height={courtHeight + topLipHeight}
+                              game={game}
+                            />
+                          </div>
+                        );
+                      })}
+                    </React.Fragment>
+                  );
+                })}
+                <div
+                  style={{ height: `${courtHeight + topLipHeight}px` }}
+                ></div>
+              </div>
+              {/* top lip */}
+              <div className="sticky z-1 top-0 w-full h-4 px-4 bg-(--background) flex flex-col items-stretch justify-end">
+                <div className="translate-y-px border-b border-(--stroke)"></div>
+              </div>
+              {/* court, play-by-play, boxscores */}
+              <div className="sticky top-[100dvh] w-full h-0 flex items-end justify-stretch pointer-events-none">
+                <div className="relative w-full h-dvh p-4">
+                  <div className="absolute z-10 inset-[0_0_auto_0] h-4 bg-(--background)"></div>
+                  <div className="absolute z-10 inset-[auto_0_0_0] h-4 bg-(--background)"></div>
+                  <div
+                    className="absolute top-9.5 xl:top-4 left-4 w-[calc(50dvw-15px)] xl:w-102 border border-(--stroke) bg-(--background) overflow-x-scroll overflow-y-scroll duration-200 pointer-events-auto"
+                    style={{
+                      // opacity: hasReachedBottom ? 0 : 1,
+                      height: courtHeight + topLipHeight - 18,
+                      // pointerEvents: hasReachedBottom ? "none" : "auto",
+                    }}
+                  >
+                    <BoxScore
+                      team="NYK"
+                      players={knicksPlayers}
+                      boxStats={boxStats}
+                    />
+                  </div>
+                  <div
+                    className="absolute top-9.5 xl:top-4 right-4 w-[calc(50dvw-15px)] xl:w-102 border border-(--stroke) bg-(--background) overflow-x-scroll overflow-y-scroll duration-200 pointer-events-auto"
+                    style={{
+                      // opacity: hasReachedBottom ? 0 : 1,
+                      height: courtHeight + topLipHeight - 18,
+                      // pointerEvents: hasReachedBottom ? "none" : "auto",
+                    }}
+                  >
+                    <BoxScore
+                      team="SAS"
+                      players={currentOpponentPlayers}
+                      boxStats={boxStats}
+                    />
+                  </div>
+                  <div
+                    className="absolute z-10 left-0 right-0 h-0 px-4 pb-4"
+                    style={{ bottom: courtHeight + topLipHeight }}
+                  >
+                    <div
+                      className="relative flex flex-col items-center justify-end"
+                      style={{ paddingTop: topLipHeight }}
+                    >
+                      <div
+                        className="absolute inset-[0_0_auto_0] border-b border-(--stroke) bg-(--background) grid grid-cols-2 gap-2 py-1 pointer-events-auto"
+                        ref={playBoundaryRef}
+                      >
+                        <small
+                          className="text-right overflow-hidden whitespace-nowrap text-ellipsis"
+                          ref={NYKPlayRef}
+                        >
+                          Example of NYK play
+                        </small>
+                        <small
+                          className="text-left overflow-hidden whitespace-nowrap text-ellipsis"
+                          ref={SASPlayRef}
+                        >
+                          Example of SAS play
+                        </small>
+                      </div>
+                      <div className="absolute z-1 top-6 left-1/2 -translate-x-1/2 flex flex-col items-center">
+                        <h3
+                          className="gameclock pointer-events-auto"
+                          ref={gameClockRef}
+                        >
+                          12:00
+                        </h3>
+                        <small className="bg-(--background)" ref={quarterRef}>
+                          Q1
+                        </small>
+                      </div>
+                      <div
+                        className="absolute top-0 left-1/2 -translate-x-1/2 w-px bg-(--stroke) opacity-50"
+                        style={{ height: topLipHeight }}
+                      ></div>
+                      <div
+                        className="relative border border-(--stroke) bg-(--background) max-h-[calc(100vw*50/94)]"
+                        ref={courtHeightDynamicRef}
+                        style={{ height: courtHeight }}
+                      >
+                        <div className="absolute z-1 inset-0 pointer-events-auto">
+                          <div
+                            className="sas_courts absolute top-0 right-0 w-50/94 flex justify-center"
+                            style={{
+                              transformOrigin: "bottom right",
+                              transform: "rotate(90deg) translate(100%)",
+                            }}
+                            ref={sasCourtRef}
+                          >
+                            {/* add other game cards here eventually */}
+                            {hasReachedBottom ? (
+                              gameVisuals.map((visual, index) => {
+                                const SASCourt = visual.sasCourt;
+                                return <SASCourt key={`sas-series-${index}`} />;
+                              })
+                            ) : (
+                              <ActiveSASCourt />
+                            )}
+                          </div>
+                          <div
+                            className="nyk_courts absolute top-0 left-0 w-50/94 flex justify-center"
+                            style={{
+                              transformOrigin: "bottom left",
+                              transform: "rotate(-90deg) translate(-100%)",
+                            }}
+                            ref={nykCourtRef}
+                          >
+                            {/* add other game cards here eventually */}
+                            {hasReachedBottom ? (
+                              gameVisuals.map((visual, index) => {
+                                const NYKCourt = visual.nykCourt;
+                                return <NYKCourt key={`nyk-series-${index}`} />;
+                              })
+                            ) : (
+                              <ActiveNYKCourt />
+                            )}
+                          </div>
+                        </div>
+                        <Court
+                          court={displayedCourtUrl}
+                          visible={isCourtVisible}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute inset-4 border-l border-r border-b border-(--stroke)"></div>
+                </div>
+              </div>
+            </div>
+            {/* games content */}
             <div
-              className="relative w-full"
-              style={{ height: `${courtHeight + topLipHeight}px` }}
-            ></div>
+              className="relative z-1 w-full p-4 flex flex-col items-stretch"
+              style={{}}
+            >
+              {/* insert games loop here eventually */}
+
+              {rounds.map((round, roundIndex) => {
+                const roundStart = roundStartIndexes[roundIndex] ?? 0;
+
+                return (
+                  <React.Fragment key={round.id}>
+                    <div className="h-10 border-t border-(--stroke) flex items-center justify-center pointer-events-auto bg-(--background)">
+                      <h3>{round.label}</h3>
+                    </div>
+                    {round.games.map((game, g) => {
+                      const gameIndex = roundStart + g;
+                      const gameVisual =
+                        gameVisuals[gameIndex] ?? gameVisuals[0];
+                      const SpreadGraphic = gameVisual.spread;
+
+                      return (
+                        <div
+                          className="relative pointer-events-none"
+                          key={game.id}
+                        >
+                          <GameCard
+                            isInsideSticky={false}
+                            height={courtHeight + topLipHeight}
+                            game={game}
+                          />
+                          <div
+                            className="relative flex flex-col h-full items-center justify-between"
+                            style={{
+                              height: `${gameScroll + (gameScroll / 48) * game.ot * 5}vh`,
+                            }}
+                            ref={(el) => setGameScrollRef(gameIndex, el)}
+                          >
+                            <div
+                              className="sticky z-5 w-full h-0 grid grid-cols-10 pointer-events-auto opacity-70"
+                              style={{
+                                top: `calc(100dvh - ${topLipHeight + courtHeight + 17}px)`,
+                              }}
+                            >
+                              <small className="[grid-area:1/2/1/2] place-self-end p-0.75 -translate-y-full">
+                                30
+                              </small>
+                              <small className="[grid-area:1/3/1/3] place-self-end p-0.75 -translate-y-full">
+                                20
+                              </small>
+                              <small className="[grid-area:1/4/1/4] place-self-end p-0.75 -translate-y-full">
+                                10
+                              </small>
+                              <small className="[grid-area:1/5/1/5] place-self-end p-0.75 -translate-y-full">
+                                0
+                              </small>
+                              <small className="[grid-area:1/6/1/6] place-self-start p-0.75 -translate-y-full">
+                                0
+                              </small>
+                              <small className="[grid-area:1/7/1/7] place-self-start p-0.75 -translate-y-full">
+                                10
+                              </small>
+                              <small className="[grid-area:1/8/1/8] place-self-start p-0.75 -translate-y-full">
+                                20
+                              </small>
+                              <small className="[grid-area:1/9/1/9] place-self-start p-0.75 -translate-y-full">
+                                30
+                              </small>
+                            </div>
+                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-full bg-(--stroke)"></div>
+                            <GameGrid isInsideSticky={false} ot={game.ot} />
+                            <SpreadGraphic spread={game.spread} />
+                          </div>
+                          <GameRecap
+                            isInsideSticky={false}
+                            height={courtHeight + topLipHeight}
+                            game={game}
+                          />
+                          <div
+                            className="scoreboard absolute left-0 right-0 flex items-stretch flex-col"
+                            style={{
+                              top: `${courtHeight + topLipHeight}px`,
+                              bottom: `${-courtHeight + topLipHeight - 30}px`,
+                            }}
+                          >
+                            <div
+                              className="sticky -translate-y-full"
+                              style={{
+                                inset: `calc(100dvh - (${courtHeight + topLipHeight + 16}px)) 16px auto 16px`,
+                              }}
+                            >
+                              <GameScoreboard
+                                teamScore={
+                                  teamScoreByGame[gameIndex] ??
+                                  makeEmptyTeamScore()
+                                }
+                                opponent={rounds[roundIndex].opponent}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </React.Fragment>
+                );
+              })}
+              <div
+                className="relative w-full"
+                style={{ height: `${courtHeight + topLipHeight}px` }}
+              ></div>
+            </div>
           </div>
+          <div></div>
         </div>
-        <div></div>
       </div>
       <footer
         ref={footerRef}
-        className="relative z-6 w-full min-h-screen lg:min-h-[550px]"
+        className="relative z-6 w-full min-h-screen lg:min-h-137.5"
         style={{ height: `calc(100vh - ${courtHeight + topLipHeight + 14}px)` }}
       >
         {/* <div className="absolute inset-[calc(53vw+140px)_0_auto_0] sm:inset-[calc(50vw-160px)_0_auto_0] lg:inset-[-254px_0_auto_0] flex items-center justify-between">

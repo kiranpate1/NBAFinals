@@ -1,0 +1,508 @@
+time,quarter,team,player,play,distance,result,assist,points,rebounds,assists,steals,blocks,turnovers,fouls
+12:00,1,HAWKS,Okongwu,Jump Ball Okongwu vs. Towns: Tip to Hart,NA,Jump Ball Okongwu vs. Towns: Tip to Hart,NA,0,0,0,0,0,0,0
+11:38,1,KNICKS,Hart Lost Ball Turnover,Hart Lost Ball Turnover (P1.T1),NA,TURNOVER,NA,0,0,0,0,0,1,0
+11:38,1,HAWKS,McCollum,McCollum STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+11:27,1,HAWKS,Daniels,MISS Daniels 4' Driving Floating Jump Shot,4,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+11:24,1,KNICKS,Hart,Hart REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:20,1,KNICKS,Towns,MISS Towns 25' 3PT Running Jump Shot,25,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+11:17,1,HAWKS,Okongwu,Okongwu REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:05,1,HAWKS,Johnson,MISS Johnson 10' Driving Floating Jump Shot,10,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+11:03,1,KNICKS,Hart,Hart REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:57,1,KNICKS,Brunson,Brunson 1' Driving Layup (2 PTS),1,Driving Layup,NA,2,0,0,0,0,0,0
+10:29,1,HAWKS,McCollum,McCollum 26' 3PT Step Back Jump Shot (3 PTS),26,3PT Step Back Jump Shot,NA,3,0,0,0,0,0,0
+10:11,1,KNICKS,Anunoby,Anunoby 3PT Step Back Jump Shot (3 PTS) (Brunson 1 AST),NA,3PT Step Back Jump Shot,Brunson,3,0,1,0,0,0,0
+09:41,1,HAWKS,Alexander-Walker,MISS Alexander-Walker 10' Driving Floating Jump Shot,10,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+09:34,1,KNICKS,Towns,Towns REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:28,1,KNICKS,Anunoby,MISS Anunoby 24' 3PT Running Jump Shot,24,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+09:26,1,HAWKS,Johnson,Johnson REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:21,1,KNICKS,Towns,Towns S.FOUL (P1.T1) (N.Sago),NA,FOUL,NA,0,0,0,0,0,0,1
+09:21,1,HAWKS,Daniels Free Throw,MISS Daniels Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+09:21,1,HAWKS,HAWKS,HAWKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+09:21,1,HAWKS,Daniels Free Throw,Daniels Free Throw 2 of 2 (1 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+09:02,1,KNICKS,Bridges Bad Pass Turnover,Bridges Bad Pass Turnover (P1.T2),NA,TURNOVER,NA,0,0,0,0,0,1,0
+09:02,1,HAWKS,Johnson,Johnson STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+09:00,1,HAWKS,Okongwu Bad Pass Turnover,Okongwu Bad Pass Turnover (P1.T1),NA,TURNOVER,NA,0,0,0,0,0,1,0
+09:00,1,KNICKS,Hart,Hart STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+08:54,1,KNICKS,Bridges,MISS Bridges 3PT Running Jump Shot,NA,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+08:50,1,HAWKS,Johnson,Johnson REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:41,1,HAWKS,Alexander-Walker,MISS Alexander-Walker 26' 3PT Pullup Jump Shot,26,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+08:37,1,KNICKS,Brunson,Brunson REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:19,1,KNICKS,Anunoby,MISS Anunoby 11' Step Back Jump Shot,11,Step Back Jump Shot,NA,0,0,0,0,0,0,0
+08:18,1,KNICKS,Knicks,Knicks Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+08:18,1,HAWKS,Johnson,Johnson L.B.FOUL (P1.T1) (N.Sago),NA,FOUL,NA,0,0,0,0,0,0,1
+08:16,1,KNICKS,Brunson Bad Pass Turnover,Brunson Bad Pass Turnover (P1.T3),NA,TURNOVER,NA,0,0,0,0,0,1,0
+08:16,1,HAWKS,Daniels,Daniels STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+08:12,1,HAWKS,Daniels Lost Ball Turnover,Daniels Lost Ball Turnover (P1.T2),NA,TURNOVER,NA,0,0,0,0,0,1,0
+08:12,1,KNICKS,Brunson,Brunson STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+08:06,1,KNICKS,Anunoby,Anunoby 1' Running Finger Roll Layup (5 PTS) (Hart 1 AST),1,Running Finger Roll Layup,Hart,2,0,1,0,0,0,0
+08:06,1,HAWKS,HAWKS Timeout,HAWKS Timeout: Regular (Full 1 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+07:42,1,KNICKS,Hart,Hart S.FOUL (P1.T2) (M.Davis),NA,FOUL,NA,0,0,0,0,0,0,1
+07:42,1,HAWKS,Johnson Free Throw,Johnson Free Throw 1 of 2 (1 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+07:42,1,HAWKS,Johnson Free Throw,Johnson Free Throw 2 of 2 (2 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+07:17,1,KNICKS,Anunoby,MISS Anunoby 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+07:14,1,HAWKS,Johnson,Johnson REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:10,1,HAWKS,Johnson,MISS Johnson 2' Driving Layup,2,Driving Layup,NA,0,0,0,0,0,0,0
+07:10,1,KNICKS,Anunoby,Anunoby BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+07:09,1,HAWKS,HAWKS,HAWKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+07:03,1,HAWKS,Alexander-Walker Lost Ball Turnover,Alexander-Walker Lost Ball Turnover (P1.T3),NA,TURNOVER,NA,0,0,0,0,0,1,0
+07:03,1,KNICKS,Anunoby,Anunoby STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+07:00,1,KNICKS,Anunoby,Anunoby 1' Running Dunk (7 PTS),1,Running Dunk,NA,2,0,0,0,0,0,0
+06:47,1,HAWKS,McCollum,MISS McCollum 4' Driving Floating Bank Jump Shot,4,Driving Floating Bank Jump Shot,NA,0,0,0,0,0,0,0
+06:44,1,KNICKS,Bridges,Bridges REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:34,1,KNICKS,Brunson,MISS Brunson 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+06:31,1,HAWKS,Johnson,Johnson REBOUND (Off:0 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:25,1,HAWKS,Johnson,Johnson 26' 3PT Jump Shot (5 PTS) (Daniels 1 AST),26,3PT Jump Shot,Daniels,3,0,1,0,0,0,0
+06:04,1,KNICKS,Anunoby Driving Dunk,MISS Anunoby Driving Dunk,NA,Driving Dunk,NA,0,0,0,0,0,0,0
+06:04,1,HAWKS,Okongwu,Okongwu BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+06:02,1,HAWKS,McCollum,McCollum REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:59,1,HAWKS,Daniels,Daniels 7' Running Layup (3 PTS) (Johnson 1 AST),7,Running Layup,Johnson,2,0,1,0,0,0,0
+05:44,1,KNICKS,Anunoby,MISS Anunoby 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+05:40,1,HAWKS,Daniels,Daniels REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:36,1,HAWKS,McCollum,McCollum 12' Running Pull-Up Jump Shot (5 PTS),12,Running Pull-Up Jump Shot,NA,2,0,0,0,0,0,0
+05:36,1,KNICKS,Knicks Timeout,Knicks Timeout: Regular (Reg.1 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+05:36,1,HAWKS,Vincent,SUB: Vincent FOR McCollum,NA,SUB,NA,0,0,0,0,0,0,0
+05:36,1,KNICKS,McBride,SUB: McBride FOR Anunoby,NA,SUB,NA,0,0,0,0,0,0,0
+05:36,1,KNICKS,Robinson,SUB: Robinson FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+05:16,1,KNICKS,Brunson,MISS Brunson 25' 3PT Step Back Jump Shot,25,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+05:13,1,HAWKS,Daniels,Daniels REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:52,1,HAWKS,Johnson,MISS Johnson 13' Pullup Jump Shot,13,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+04:48,1,KNICKS,Robinson,Robinson REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:31,1,KNICKS,McBride,MISS McBride 5' Pullup Jump Shot,5,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+04:30,1,KNICKS,Robinson,Robinson REBOUND (Off:1 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:30,1,KNICKS,Robinson Tip Layup Shot,MISS Robinson Tip Layup Shot,NA,Tip Layup Shot,NA,0,0,0,0,0,0,0
+04:29,1,HAWKS,HAWKS,HAWKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+04:29,1,HAWKS,Kuminga,SUB: Kuminga FOR Alexander-Walker,NA,SUB,NA,0,0,0,0,0,0,0
+04:21,1,HAWKS,Johnson,MISS Johnson 26' 3PT Pullup Jump Shot,26,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+04:19,1,HAWKS,Kuminga,Kuminga REBOUND (Off:1 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:15,1,KNICKS,Bridges,Bridges P.FOUL (P1.T3) (M.Davis),NA,FOUL,NA,0,0,0,0,0,0,1
+04:12,1,HAWKS,Johnson,Johnson 1' Driving Layup (7 PTS) (Vincent 1 AST),1,Driving Layup,Vincent,2,0,1,0,0,0,0
+04:06,1,KNICKS,Hart Out,Hart Out of Bounds Lost Ball Turnover (P2.T4),NA,TURNOVER,NA,0,0,0,0,0,1,0
+03:59,1,HAWKS,Kuminga,Kuminga 2' Floating Jump Shot (2 PTS) (Daniels 2 AST),2,Floating Jump Shot,Daniels,2,0,1,0,0,0,0
+03:41,1,KNICKS,Brunson,Brunson 1' Driving Reverse Layup (4 PTS) (Hart 2 AST),1,Driving Reverse Layup,Hart,2,0,1,0,0,0,0
+03:30,1,HAWKS,Vincent,Vincent 25' 3PT Jump Shot (3 PTS) (Johnson 2 AST),25,3PT Jump Shot,Johnson,3,0,1,0,0,0,0
+03:12,1,KNICKS,Bridges Step Out,Bridges Step Out of Bounds Turnover (P2.T5),NA,TURNOVER,NA,0,0,0,0,0,1,0
+02:51,1,HAWKS,Kuminga,Kuminga 12' Fadeaway Jumper (4 PTS),12,Fadeaway Jumper,NA,2,0,0,0,0,0,0
+02:34,1,KNICKS,McBride,MISS McBride 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+02:32,1,HAWKS,Kuminga,Kuminga REBOUND (Off:1 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:29,1,HAWKS,Vincent OFF,Vincent OFF.Foul (P1) (N.Buchert),NA,FOUL,NA,0,0,0,0,0,0,1
+02:29,1,HAWKS,Vincent Offensive Foul Turnover,Vincent Offensive Foul Turnover (P1.T4),NA,TURNOVER,NA,0,0,0,0,0,1,1
+02:29,1,HAWKS,McCollum,SUB: McCollum FOR Johnson,NA,SUB,NA,0,0,0,0,0,0,0
+02:29,1,HAWKS,Gueye,SUB: Gueye FOR Okongwu,NA,SUB,NA,0,0,0,0,0,0,0
+02:29,1,KNICKS,Clarkson,SUB: Clarkson FOR Bridges,NA,SUB,NA,0,0,0,0,0,0,0
+02:29,1,KNICKS,Anunoby,SUB: Anunoby FOR Hart,NA,SUB,NA,0,0,0,0,0,0,0
+02:15,1,KNICKS,Brunson,MISS Brunson 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+02:13,1,KNICKS,Robinson,Robinson REBOUND (Off:2 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:03,1,KNICKS,Brunson,Brunson 6' Driving Floating Jump Shot (6 PTS),6,Driving Floating Jump Shot,NA,2,0,0,0,0,0,0
+01:52,1,KNICKS,McBride,McBride P.FOUL (P1.T4) (M.Davis),NA,FOUL,NA,0,0,0,0,0,0,1
+01:52,1,HAWKS,Alexander-Walker,SUB: Alexander-Walker FOR Vincent,NA,SUB,NA,0,0,0,0,0,0,0
+01:39,1,HAWKS,McCollum,McCollum 17' Turnaround Jump Shot (7 PTS),17,Turnaround Jump Shot,NA,2,0,0,0,0,0,0
+01:22,1,HAWKS,Kuminga,Kuminga S.FOUL (P1.T2) (N.Sago),NA,FOUL,NA,0,0,0,0,0,0,1
+01:22,1,KNICKS,Brunson Free Throw,Brunson Free Throw 1 of 2 (7 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+01:22,1,KNICKS,Brunson Free Throw,Brunson Free Throw 2 of 2 (8 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+01:08,1,HAWKS,Gueye,Gueye 26' 3PT Jump Shot (3 PTS) (McCollum 1 AST),26,3PT Jump Shot,McCollum,3,0,1,0,0,0,0
+00:55,1,KNICKS,Brunson,Brunson 14' Pullup Jump Shot (10 PTS),14,Pullup Jump Shot,NA,2,0,0,0,0,0,0
+00:55,1,HAWKS,McCollum,McCollum S.FOUL (P1.PN) (N.Sago),NA,FOUL,NA,0,0,0,0,0,0,1
+00:55,1,KNICKS,Brunson Free Throw,Brunson Free Throw 1 of 1 (11 PTS),NA,Free Throw 1 of 1,NA,1,0,0,0,0,0,0
+00:43,1,HAWKS,Kuminga,Kuminga 27' 3PT Pullup Jump Shot (7 PTS) (Daniels 3 AST),27,3PT Pullup Jump Shot,Daniels,3,0,1,0,0,0,0
+00:31,1,KNICKS,Brunson,MISS Brunson 24' 3PT Step Back Jump Shot,24,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+00:27,1,KNICKS,Clarkson,Clarkson REBOUND (Off:1 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:24,1,KNICKS,Anunoby,Anunoby 3PT Jump Shot (10 PTS) (Clarkson 1 AST),NA,3PT Jump Shot,Clarkson,3,0,1,0,0,0,0
+00:03,1,HAWKS,Kuminga,Kuminga 26' 3PT Jump Shot (10 PTS) (Gueye 1 AST),26,3PT Jump Shot,Gueye,3,0,1,0,0,0,0
+00:01,1,KNICKS,KNICKS Heave,KNICKS Heave,NA,KNICKS Heave,NA,0,0,0,0,0,0,0
+00:00,1,KNICKS,Knicks,Knicks Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+11:41,2,HAWKS,Kispert,MISS Kispert 4' Driving Floating Bank Jump Shot,4,Driving Floating Bank Jump Shot,NA,0,0,0,0,0,0,0
+11:40,2,HAWKS,Gueye,Gueye REBOUND (Off:1 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:39,2,HAWKS,Gueye Tip Dunk Shot,Gueye Tip Dunk Shot (5 PTS),NA,Tip Dunk Shot,NA,2,0,0,0,0,0,0
+11:19,2,KNICKS,Towns Out,Towns Out of Bounds - Bad Pass Turnover Turnover (P1.T6),NA,TURNOVER,NA,0,0,0,0,0,1,0
+11:08,2,HAWKS,Gueye,MISS Gueye 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+11:05,2,KNICKS,Towns,Towns REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:48,2,KNICKS,Towns,Towns 1' Driving Dunk (2 PTS),1,Driving Dunk,NA,2,0,0,0,0,0,0
+10:39,2,KNICKS,Anunoby,Anunoby S.FOUL (P1.T1) (N.Buchert),NA,FOUL,NA,0,0,0,0,0,0,1
+10:39,2,HAWKS,Kuminga Free Throw,Kuminga Free Throw 1 of 2 (11 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+10:39,2,HAWKS,Kuminga Free Throw,MISS Kuminga Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+10:36,2,KNICKS,Anunoby,Anunoby REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:26,2,KNICKS,Clarkson,Clarkson 9' Turnaround Jump Shot (2 PTS),9,Turnaround Jump Shot,NA,2,0,0,0,0,0,0
+10:26,2,HAWKS,Kispert,Kispert S.FOUL (P1.T1) (N.Buchert),NA,FOUL,NA,0,0,0,0,0,0,1
+10:26,2,KNICKS,Clarkson Free Throw,MISS Clarkson Free Throw 1 of 1,NA,Free Throw 1 of 1,NA,0,0,0,0,0,0,0
+10:22,2,HAWKS,Alexander-Walker,Alexander-Walker REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:08,2,HAWKS,McCollum,McCollum 10' Fadeaway Jumper (9 PTS),10,Fadeaway Jumper,NA,2,0,0,0,0,0,0
+09:43,2,KNICKS,Knicks,Knicks Turnover: Shot Clock (T#7),NA,TURNOVER,NA,0,0,0,0,0,1,0
+09:33,2,KNICKS,Alvarado,Alvarado S.FOUL (P1.T2) (N.Buchert),NA,FOUL,NA,0,0,0,0,0,0,1
+09:33,2,HAWKS,McCollum Free Throw,MISS McCollum Free Throw 1 of 3,NA,Free Throw 1 of 3,NA,0,0,0,0,0,0,0
+09:33,2,HAWKS,HAWKS,HAWKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+09:33,2,HAWKS,McCollum Free Throw,McCollum Free Throw 2 of 3 (10 PTS),NA,Free Throw 2 of 3,NA,1,0,0,0,0,0,0
+09:33,2,HAWKS,McCollum Free Throw,McCollum Free Throw 3 of 3 (11 PTS),NA,Free Throw 3 of 3,NA,1,0,0,0,0,0,0
+09:10,2,KNICKS,Clarkson,MISS Clarkson 25' 3PT Pullup Jump Shot,25,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+09:06,2,HAWKS,Kuminga,Kuminga REBOUND (Off:1 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:01,2,HAWKS,McCollum,MISS McCollum 28' 3PT Running Jump Shot,28,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+08:58,2,KNICKS,Towns,Towns REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:56,2,KNICKS,Alvarado Running Layup,Alvarado Running Layup (2 PTS) (Towns 1 AST),NA,Running Layup,Towns,2,0,1,0,0,0,0
+08:56,2,HAWKS,Alexander-Walker,Alexander-Walker S.FOUL (P1.T2) (N.Buchert),NA,FOUL,NA,0,0,0,0,0,0,1
+08:56,2,HAWKS,Vincent,SUB: Vincent FOR McCollum,NA,SUB,NA,0,0,0,0,0,0,0
+08:56,2,HAWKS,Johnson,SUB: Johnson FOR Gueye,NA,SUB,NA,0,0,0,0,0,0,0
+08:56,2,HAWKS,Okongwu,SUB: Okongwu FOR Kispert,NA,SUB,NA,0,0,0,0,0,0,0
+08:56,2,KNICKS,Hart,SUB: Hart FOR Anunoby,NA,SUB,NA,0,0,0,0,0,0,0
+08:56,2,KNICKS,Bridges,SUB: Bridges FOR Shamet,NA,SUB,NA,0,0,0,0,0,0,0
+08:56,2,KNICKS,Alvarado Free Throw,Alvarado Free Throw 1 of 1 (3 PTS),NA,Free Throw 1 of 1,NA,1,0,0,0,0,0,0
+08:38,2,KNICKS,Bridges,Bridges S.FOUL (P2.T3) (N.Buchert),NA,FOUL,NA,0,0,0,0,0,0,1
+08:38,2,HAWKS,Vincent Free Throw,Vincent Free Throw 1 of 2 (4 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+08:38,2,HAWKS,Vincent Free Throw,Vincent Free Throw 2 of 2 (5 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+08:17,2,KNICKS,Clarkson,MISS Clarkson 12' Fadeaway Jumper,12,Fadeaway Jumper,NA,0,0,0,0,0,0,0
+08:16,2,KNICKS,Towns,Towns REBOUND (Off:1 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:16,2,KNICKS,Towns Putback Layup,Towns Putback Layup (4 PTS),NA,Putback Layup,NA,2,0,0,0,0,0,0
+07:58,2,HAWKS,Alexander-Walker,MISS Alexander-Walker 2' Driving Layup,2,Driving Layup,NA,0,0,0,0,0,0,0
+07:56,2,KNICKS,Hart,Hart REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:50,2,KNICKS,Bridges,MISS Bridges 3PT Running Jump Shot,NA,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+07:48,2,HAWKS,Johnson,Johnson REBOUND (Off:0 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:43,2,HAWKS,Johnson,Johnson 1' Running Layup (9 PTS),1,Running Layup,NA,2,0,0,0,0,0,0
+07:22,2,KNICKS,Alvarado,Alvarado 2' Cutting Layup Shot (5 PTS) (Hart 3 AST),2,Cutting Layup Shot,Hart,2,0,1,0,0,0,0
+07:07,2,HAWKS,Kuminga Lost Ball Turnover,Kuminga Lost Ball Turnover (P1.T5),NA,TURNOVER,NA,0,0,0,0,0,1,0
+07:07,2,KNICKS,Towns,Towns STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+07:02,2,KNICKS,Clarkson,MISS Clarkson 1' Running Layup,1,Running Layup,NA,0,0,0,0,0,0,0
+07:00,2,KNICKS,Hart,Hart REBOUND (Off:1 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:59,2,KNICKS,Hart,MISS Hart 2' Putback Layup,2,Putback Layup,NA,0,0,0,0,0,0,0
+06:58,2,KNICKS,Towns,Towns REBOUND (Off:2 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:58,2,KNICKS,Towns Tip Layup Shot,Towns Tip Layup Shot (6 PTS),NA,Tip Layup Shot,NA,2,0,0,0,0,0,0
+06:58,2,HAWKS,HAWKS Timeout,HAWKS Timeout: Regular (Full 2 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+06:58,2,HAWKS,McCollum,SUB: McCollum FOR Alexander-Walker,NA,SUB,NA,0,0,0,0,0,0,0
+06:58,2,HAWKS,Daniels,SUB: Daniels FOR Vincent,NA,SUB,NA,0,0,0,0,0,0,0
+06:58,2,KNICKS,Anunoby,SUB: Anunoby FOR Clarkson,NA,SUB,NA,0,0,0,0,0,0,0
+06:58,2,KNICKS,Brunson,SUB: Brunson FOR Alvarado,NA,SUB,NA,0,0,0,0,0,0,0
+06:58,2,KNICKS,Robinson,SUB: Robinson FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+06:34,2,HAWKS,McCollum,McCollum 15' Turnaround Fadeaway (13 PTS),15,Turnaround Fadeaway,NA,2,0,0,0,0,0,0
+06:15,2,KNICKS,Bridges Bad Pass Turnover,Bridges Bad Pass Turnover (P3.T8),NA,TURNOVER,NA,0,0,0,0,0,1,0
+06:15,2,HAWKS,Okongwu,Okongwu STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+06:12,2,HAWKS,Okongwu,Okongwu 1' Running Dunk (2 PTS),1,Running Dunk,NA,2,0,0,0,0,0,0
+05:55,2,KNICKS,Brunson,Brunson 7' Turnaround Jump Shot (13 PTS),7,Turnaround Jump Shot,NA,2,0,0,0,0,0,0
+05:46,2,HAWKS,Okongwu,MISS Okongwu 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+05:44,2,KNICKS,Hart,Hart REBOUND (Off:1 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:27,2,KNICKS,Brunson,MISS Brunson 8' Fadeaway Jumper,8,Fadeaway Jumper,NA,0,0,0,0,0,0,0
+05:25,2,HAWKS,Daniels,Daniels REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:24,2,HAWKS,McCollum Step Out,McCollum Step Out of Bounds Turnover (P1.T6),NA,TURNOVER,NA,0,0,0,0,0,1,0
+05:10,2,KNICKS,Bridges,MISS Bridges 12' Turnaround Jump Shot,12,Turnaround Jump Shot,NA,0,0,0,0,0,0,0
+05:08,2,HAWKS,Johnson,Johnson REBOUND (Off:0 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:02,2,HAWKS,Daniels,MISS Daniels 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+05:00,2,HAWKS,Okongwu,Okongwu REBOUND (Off:1 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:00,2,HAWKS,Okongwu Tip Dunk Shot,Okongwu Tip Dunk Shot (4 PTS),NA,Tip Dunk Shot,NA,2,0,0,0,0,0,0
+04:49,2,KNICKS,Anunoby,MISS Anunoby 2' Driving Layup,2,Driving Layup,NA,0,0,0,0,0,0,0
+04:49,2,HAWKS,Okongwu,Okongwu BLOCK (2 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+04:47,2,HAWKS,Okongwu,Okongwu REBOUND (Off:1 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:42,2,HAWKS,Kuminga,MISS Kuminga 2' Driving Layup,2,Driving Layup,NA,0,0,0,0,0,0,0
+04:41,2,KNICKS,Anunoby,Anunoby REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:23,2,KNICKS,Hart,MISS Hart 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+04:20,2,HAWKS,Johnson,Johnson REBOUND (Off:0 Def:7),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:11,2,KNICKS,Anunoby,Anunoby S.FOUL (P2.T4) (N.Sago),NA,FOUL,NA,0,0,0,0,0,0,1
+04:11,2,HAWKS,Johnson Free Throw,Johnson Free Throw 1 of 2 (10 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+04:11,2,HAWKS,Alexander-Walker,SUB: Alexander-Walker FOR Kuminga,NA,SUB,NA,0,0,0,0,0,0,0
+04:11,2,HAWKS,Johnson Free Throw,Johnson Free Throw 2 of 2 (11 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+03:55,2,KNICKS,Robinson,Robinson 1' Cutting Dunk Shot (2 PTS) (Brunson 2 AST),1,Cutting Dunk Shot,Brunson,2,0,1,0,0,0,0
+03:46,2,HAWKS,McCollum,McCollum 26' 3PT Step Back Jump Shot (16 PTS),26,3PT Step Back Jump Shot,NA,3,0,0,0,0,0,0
+03:46,2,KNICKS,Anunoby,Anunoby L.B.FOUL (P3.PN) (N.Buchert),NA,FOUL,NA,0,0,0,0,0,0,1
+03:46,2,KNICKS,Towns,SUB: Towns FOR Anunoby,NA,SUB,NA,0,0,0,0,0,0,0
+03:46,2,KNICKS,McBride,SUB: McBride FOR Robinson,NA,SUB,NA,0,0,0,0,0,0,0
+03:46,2,HAWKS,Alexander-Walker Free Throw,Alexander-Walker Free Throw 1 of 1 (1 PTS),NA,Free Throw 1 of 1,NA,1,0,0,0,0,0,0
+03:32,2,KNICKS,Brunson,MISS Brunson 9' Turnaround Jump Shot,9,Turnaround Jump Shot,NA,0,0,0,0,0,0,0
+03:29,2,HAWKS,Daniels,Daniels REBOUND (Off:0 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:17,2,HAWKS,McCollum,MISS McCollum 23' Step Back Jump Shot,23,Step Back Jump Shot,NA,0,0,0,0,0,0,0
+03:15,2,HAWKS,Daniels,Daniels REBOUND (Off:1 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:13,2,HAWKS,Johnson,MISS Johnson 1' Cutting Layup Shot,1,Cutting Layup Shot,NA,0,0,0,0,0,0,0
+03:13,2,KNICKS,Towns,Towns BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+03:12,2,KNICKS,Towns,Towns REBOUND (Off:2 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:04,2,KNICKS,Towns Driving Layup,Towns Driving Layup (8 PTS) (Bridges 1 AST),NA,Driving Layup,Bridges,2,0,1,0,0,0,0
+02:52,2,HAWKS,Johnson,MISS Johnson 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+02:48,2,KNICKS,Hart,Hart REBOUND (Off:1 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:47,2,KNICKS,Hart,MISS Hart 1' Driving Layup,1,Driving Layup,NA,0,0,0,0,0,0,0
+02:47,2,HAWKS,McCollum,McCollum BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+02:46,2,HAWKS,HAWKS,HAWKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+02:46,2,KNICKS,Knicks Timeout,Knicks Timeout: Regular (Reg.2 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+02:46,2,KNICKS,Clarkson,SUB: Clarkson FOR Bridges,NA,SUB,NA,0,0,0,0,0,0,0
+02:33,2,HAWKS,Okongwu,MISS Okongwu 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+02:29,2,KNICKS,Towns,Towns REBOUND (Off:2 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:25,2,KNICKS,Clarkson,Clarkson 1' Running Layup (4 PTS) (Towns 2 AST),1,Running Layup,Towns,2,0,1,0,0,0,0
+02:14,2,HAWKS,Alexander-Walker,MISS Alexander-Walker 26' 3PT Step Back Jump Shot,26,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+02:11,2,KNICKS,Knicks,Knicks Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+01:57,2,KNICKS,McBride,McBride 25' 3PT Jump Shot (3 PTS) (Hart 4 AST),25,3PT Jump Shot,Hart,3,0,1,0,0,0,0
+01:43,2,HAWKS,McCollum,MISS McCollum 7' Driving Floating Jump Shot,7,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+01:41,2,KNICKS,Towns,Towns REBOUND (Off:2 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:27,2,KNICKS,Clarkson,Clarkson 1' Driving Layup (6 PTS),1,Driving Layup,NA,2,0,0,0,0,0,0
+01:08,2,HAWKS,Johnson,MISS Johnson 2' Driving Layup,2,Driving Layup,NA,0,0,0,0,0,0,0
+01:06,2,KNICKS,Hart,Hart REBOUND (Off:1 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:02,2,KNICKS,Clarkson,MISS Clarkson 3PT Running Jump Shot,NA,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+01:00,2,HAWKS,Okongwu,Okongwu REBOUND (Off:1 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:57,2,KNICKS,Brunson,Brunson P.FOUL (P1.PN) (N.Buchert),NA,FOUL,NA,0,0,0,0,0,0,1
+00:57,2,HAWKS,Alexander-Walker Free Throw,Alexander-Walker Free Throw 1 of 2 (2 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+00:57,2,HAWKS,Alexander-Walker Free Throw,Alexander-Walker Free Throw 2 of 2 (3 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+00:44,2,KNICKS,McBride,McBride 25' 3PT Jump Shot (6 PTS) (Brunson 3 AST),25,3PT Jump Shot,Brunson,3,0,1,0,0,0,0
+00:25,2,HAWKS,Alexander-Walker,MISS Alexander-Walker 2' Driving Layup,2,Driving Layup,NA,0,0,0,0,0,0,0
+00:22,2,KNICKS,Brunson,Brunson REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:01,2,KNICKS,McBride,MISS McBride 24' 3PT Pullup Jump Shot,24,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+00:00,2,KNICKS,Knicks,Knicks Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+11:43,3,HAWKS,Alexander-Walker,MISS Alexander-Walker 3' Driving Finger Roll Layup,3,Driving Finger Roll Layup,NA,0,0,0,0,0,0,0
+11:40,3,KNICKS,Anunoby,Anunoby REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:30,3,KNICKS,Towns,Towns 2' Driving Layup (10 PTS),2,Driving Layup,NA,2,0,0,0,0,0,0
+11:21,3,HAWKS,Okongwu,Okongwu 25' 3PT Jump Shot (7 PTS) (Johnson 3 AST),25,3PT Jump Shot,Johnson,3,0,1,0,0,0,0
+11:03,3,HAWKS,Okongwu Violation,Okongwu Violation:Kicked Ball (N.Sago),NA,Okongwu Violation:Kicked Ball (N.Sago),NA,0,0,0,0,0,0,0
+10:58,3,KNICKS,Brunson,Brunson 2' Driving Layup (15 PTS),2,Driving Layup,NA,2,0,0,0,0,0,0
+10:58,3,HAWKS,Okongwu,Okongwu S.FOUL (P1.T1) (M.Davis),NA,FOUL,NA,0,0,0,0,0,0,1
+10:58,3,KNICKS,Brunson Free Throw,MISS Brunson Free Throw 1 of 1,NA,Free Throw 1 of 1,NA,0,0,0,0,0,0,0
+10:55,3,HAWKS,Okongwu,Okongwu REBOUND (Off:1 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:46,3,HAWKS,McCollum,MISS McCollum 15' Pullup Jump Shot,15,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+10:45,3,HAWKS,Daniels,Daniels REBOUND (Off:2 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:45,3,HAWKS,Daniels Tip Dunk Shot,Daniels Tip Dunk Shot (5 PTS),NA,Tip Dunk Shot,NA,2,0,0,0,0,0,0
+10:28,3,KNICKS,Brunson,MISS Brunson 25' 3PT Pullup Jump Shot,25,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+10:26,3,HAWKS,Daniels,Daniels REBOUND (Off:2 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:22,3,HAWKS,Alexander-Walker,Alexander-Walker 3PT Running Jump Shot (6 PTS) (Johnson 4 AST),NA,3PT Running Jump Shot,Johnson,3,0,1,0,0,0,0
+09:56,3,KNICKS,Hart,MISS Hart 12' Turnaround Jump Shot,12,Turnaround Jump Shot,NA,0,0,0,0,0,0,0
+09:54,3,HAWKS,Daniels,Daniels REBOUND (Off:2 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:49,3,HAWKS,Alexander-Walker,Alexander-Walker 26' 3PT Running Jump Shot (9 PTS) (Daniels 4 AST),26,3PT Running Jump Shot,Daniels,3,0,1,0,0,0,0
+09:48,3,KNICKS,Knicks Timeout,Knicks Timeout: Regular (Reg.3 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+09:48,3,KNICKS,McBride,SUB: McBride FOR Bridges,NA,SUB,NA,0,0,0,0,0,0,0
+09:26,3,KNICKS,Anunoby,MISS Anunoby 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+09:24,3,KNICKS,Hart,Hart REBOUND (Off:2 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:22,3,KNICKS,Brunson,MISS Brunson 4' Driving Floating Jump Shot,4,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+09:21,3,KNICKS,Anunoby,Anunoby REBOUND (Off:1 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:21,3,KNICKS,Anunoby Tip Dunk Shot,Anunoby Tip Dunk Shot (12 PTS),NA,Tip Dunk Shot,NA,2,0,0,0,0,0,0
+09:13,3,HAWKS,Johnson,MISS Johnson 26' 3PT Pullup Jump Shot,26,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+09:09,3,KNICKS,Brunson,Brunson REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:06,3,KNICKS,McBride,MISS McBride 25' 3PT Running Jump Shot,25,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+09:03,3,KNICKS,Towns,Towns REBOUND (Off:3 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:54,3,KNICKS,Towns,MISS Towns 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+08:49,3,HAWKS,Daniels,Daniels REBOUND (Off:2 Def:7),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:44,3,KNICKS,Hart,Hart P.FOUL (P2.T1) (N.Sago),NA,FOUL,NA,0,0,0,0,0,0,1
+08:36,3,HAWKS,Okongwu,MISS Okongwu 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+08:33,3,HAWKS,McCollum,McCollum REBOUND (Off:1 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:33,3,HAWKS,McCollum Traveling Turnover,McCollum Traveling Turnover (P2.T7),NA,TURNOVER,NA,0,0,0,0,0,1,0
+08:14,3,HAWKS,Okongwu,Okongwu P.FOUL (P2.T2) (N.Buchert),NA,FOUL,NA,0,0,0,0,0,0,1
+08:07,3,HAWKS,Johnson,Johnson S.FOUL (P2.T3) (M.Davis),NA,FOUL,NA,0,0,0,0,0,0,1
+08:07,3,KNICKS,Anunoby Free Throw,Anunoby Free Throw 1 of 2 (13 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+08:07,3,KNICKS,Anunoby Free Throw,Anunoby Free Throw 2 of 2 (14 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+07:48,3,HAWKS,Johnson,MISS Johnson 4' Driving Floating Jump Shot,4,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+07:47,3,KNICKS,Towns,Towns REBOUND (Off:3 Def:7),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:40,3,HAWKS,Daniels,Daniels S.FOUL (P1.T4) (N.Buchert),NA,FOUL,NA,0,0,0,0,0,0,1
+07:40,3,KNICKS,Towns Free Throw,Towns Free Throw 1 of 2 (11 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+07:40,3,KNICKS,Towns Free Throw,Towns Free Throw 2 of 2 (12 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+07:23,3,HAWKS,Daniels,MISS Daniels 1' Driving Finger Roll Layup,1,Driving Finger Roll Layup,NA,0,0,0,0,0,0,0
+07:22,3,KNICKS,Knicks,Knicks Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+07:10,3,KNICKS,Towns,Towns 26' 3PT Jump Shot (15 PTS) (Hart 5 AST),26,3PT Jump Shot,Hart,3,0,1,0,0,0,0
+06:56,3,HAWKS,McCollum,MISS McCollum 8' Floating Jump Shot,8,Floating Jump Shot,NA,0,0,0,0,0,0,0
+06:54,3,HAWKS,McCollum,McCollum REBOUND (Off:2 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:53,3,HAWKS,Alexander-Walker,MISS Alexander-Walker 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+06:53,3,KNICKS,Anunoby,Anunoby BLOCK (2 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+06:49,3,KNICKS,Hart,Hart REBOUND (Off:2 Def:7),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:40,3,KNICKS,Brunson,Brunson 9' Driving Floating Bank Jump Shot (17 PTS),9,Driving Floating Bank Jump Shot,NA,2,0,0,0,0,0,0
+06:40,3,HAWKS,HAWKS Timeout,HAWKS Timeout: Regular (Full 3 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+06:40,3,HAWKS,Vincent,SUB: Vincent FOR McCollum,NA,SUB,NA,0,0,0,0,0,0,0
+06:40,3,KNICKS,Clarkson,SUB: Clarkson FOR Hart,NA,SUB,NA,0,0,0,0,0,0,0
+06:20,3,HAWKS,Alexander-Walker,Alexander-Walker 2' Driving Finger Roll Layup (11 PTS),2,Driving Finger Roll Layup,NA,2,0,0,0,0,0,0
+06:07,3,HAWKS,Okongwu,Okongwu P.FOUL (P3.PN) (M.Davis),NA,FOUL,NA,0,0,0,0,0,0,1
+06:07,3,KNICKS,Towns Free Throw,Towns Free Throw 1 of 2 (16 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+06:07,3,HAWKS,Gueye,SUB: Gueye FOR Okongwu,NA,SUB,NA,0,0,0,0,0,0,0
+06:07,3,KNICKS,Towns Free Throw,Towns Free Throw 2 of 2 (17 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+05:54,3,HAWKS,Johnson Driving Finger Roll Layup,Johnson Driving Finger Roll Layup (13 PTS),NA,Driving Finger Roll Layup,NA,2,0,0,0,0,0,0
+05:42,3,KNICKS,Clarkson,MISS Clarkson 3' Pullup Jump Shot,3,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+05:42,3,HAWKS,Daniels,Daniels BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+05:41,3,HAWKS,Daniels,Daniels REBOUND (Off:2 Def:8),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:34,3,HAWKS,Johnson,Johnson 1' Running Reverse Layup (15 PTS),1,Running Reverse Layup,NA,2,0,0,0,0,0,0
+05:19,3,KNICKS,Brunson,Brunson 2' Driving Layup (19 PTS),2,Driving Layup,NA,2,0,0,0,0,0,0
+05:11,3,HAWKS,Alexander-Walker,Alexander-Walker 3PT Jump Shot (14 PTS) (Daniels 5 AST),NA,3PT Jump Shot,Daniels,3,0,1,0,0,0,0
+04:42,3,KNICKS,Brunson,MISS Brunson 12' Turnaround Fadeaway Shot,12,Turnaround Fadeaway Shot,NA,0,0,0,0,0,0,0
+04:41,3,KNICKS,Knicks,Knicks Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+04:41,3,KNICKS,Knicks,Knicks Turnover: Shot Clock (T#9),NA,TURNOVER,NA,0,0,0,0,0,1,0
+04:41,3,HAWKS,Kuminga,SUB: Kuminga FOR Alexander-Walker,NA,SUB,NA,0,0,0,0,0,0,0
+04:27,3,HAWKS,Vincent,MISS Vincent 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+04:23,3,KNICKS,Anunoby,Anunoby REBOUND (Off:1 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:16,3,HAWKS,Gueye,Gueye S.FOUL (P1.PN) (M.Davis),NA,FOUL,NA,0,0,0,0,0,0,1
+04:16,3,KNICKS,Anunoby Free Throw,Anunoby Free Throw 1 of 2 (15 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+04:16,3,KNICKS,Hart,SUB: Hart FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+04:16,3,KNICKS,Anunoby Free Throw,Anunoby Free Throw 2 of 2 (16 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+04:05,3,HAWKS,Daniels Double Dribble Turnover,Daniels Double Dribble Turnover (P2.T8),NA,TURNOVER,NA,0,0,0,0,0,1,0
+03:49,3,KNICKS,Hart,MISS Hart 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+03:46,3,HAWKS,Daniels,Daniels REBOUND (Off:2 Def:9),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:38,3,HAWKS,Daniels,Daniels 25' 3PT Jump Shot (8 PTS) (Johnson 5 AST),25,3PT Jump Shot,Johnson,3,0,1,0,0,0,0
+03:22,3,KNICKS,Brunson Lost Ball Turnover,Brunson Lost Ball Turnover (P2.T10),NA,TURNOVER,NA,0,0,0,0,0,1,0
+03:22,3,HAWKS,Johnson,Johnson STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+03:09,3,KNICKS,McBride,McBride S.FOUL (P2.T2) (M.Davis),NA,FOUL,NA,0,0,0,0,0,0,1
+03:09,3,HAWKS,Johnson Free Throw,MISS Johnson Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+03:09,3,HAWKS,HAWKS,HAWKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+03:09,3,HAWKS,Johnson Free Throw,Johnson Free Throw 2 of 2 (16 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+02:56,3,KNICKS,McBride Bad Pass Turnover,McBride Bad Pass Turnover (P1.T11),NA,TURNOVER,NA,0,0,0,0,0,1,0
+02:56,3,HAWKS,Daniels,Daniels STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+02:52,3,HAWKS,Kuminga,Kuminga 1' Running Layup (13 PTS) (Daniels 6 AST),1,Running Layup,Daniels,2,0,1,0,0,0,0
+02:26,3,KNICKS,Clarkson,MISS Clarkson 1' Driving Layup,1,Driving Layup,NA,0,0,0,0,0,0,0
+02:26,3,HAWKS,Kuminga,Kuminga BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+02:25,3,KNICKS,Clarkson,Clarkson REBOUND (Off:2 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:25,3,KNICKS,Clarkson Putback Layup,MISS Clarkson Putback Layup,NA,Putback Layup,NA,0,0,0,0,0,0,0
+02:25,3,KNICKS,Anunoby,Anunoby REBOUND (Off:2 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:25,3,KNICKS,Anunoby Tip Layup Shot,Anunoby Tip Layup Shot (18 PTS),NA,Tip Layup Shot,NA,2,0,0,0,0,0,0
+02:09,3,HAWKS,Kuminga,Kuminga 6' Turnaround Fadeaway (15 PTS) (Johnson 6 AST),6,Turnaround Fadeaway,Johnson,2,0,1,0,0,0,0
+01:49,3,KNICKS,Anunoby,Anunoby 1' Driving Layup (20 PTS),1,Driving Layup,NA,2,0,0,0,0,0,0
+01:49,3,HAWKS,Johnson,Johnson S.FOUL (P3.PN) (M.Davis),NA,FOUL,NA,0,0,0,0,0,0,1
+01:49,3,HAWKS,McCollum,SUB: McCollum FOR Johnson,NA,SUB,NA,0,0,0,0,0,0,0
+01:49,3,KNICKS,Towns,SUB: Towns FOR Clarkson,NA,SUB,NA,0,0,0,0,0,0,0
+01:49,3,KNICKS,Anunoby Free Throw,Anunoby Free Throw 1 of 1 (21 PTS),NA,Free Throw 1 of 1,NA,1,0,0,0,0,0,0
+01:30,3,HAWKS,Gueye,MISS Gueye 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+01:26,3,HAWKS,Vincent,Vincent REBOUND (Off:1 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:24,3,HAWKS,Kuminga,MISS Kuminga 12' Pullup Jump Shot,12,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+01:24,3,KNICKS,Towns,Towns REBOUND (Off:3 Def:8),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:13,3,KNICKS,Hart,MISS Hart 4' Driving Layup,4,Driving Layup,NA,0,0,0,0,0,0,0
+01:12,3,HAWKS,HAWKS,HAWKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+01:12,3,HAWKS,HAWKS Timeout,HAWKS Timeout: Coach Challenge (Full 3 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+01:12,3,KNICKS,Instant Replay,Instant Replay3rd Period (8:58 PM EST),NA,Instant Replay3rd Period (8:58 PM EST),NA,0,0,0,0,0,0,0
+01:12,3,HAWKS,Okongwu,SUB: Okongwu FOR Gueye,NA,SUB,NA,0,0,0,0,0,0,0
+01:04,3,HAWKS,Daniels,MISS Daniels 6' Driving Layup,6,Driving Layup,NA,0,0,0,0,0,0,0
+01:04,3,KNICKS,Anunoby,Anunoby BLOCK (3 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+01:01,3,KNICKS,Towns,Towns REBOUND (Off:3 Def:9),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:54,3,KNICKS,Brunson,Brunson 2' Driving Layup (21 PTS),2,Driving Layup,NA,2,0,0,0,0,0,0
+00:46,3,HAWKS,Daniels Bad Pass Turnover,Daniels Bad Pass Turnover (P3.T9),NA,TURNOVER,NA,0,0,0,0,0,1,0
+00:46,3,KNICKS,Towns,Towns STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+00:40,3,KNICKS,Towns,MISS Towns 1' Running Layup,1,Running Layup,NA,0,0,0,0,0,0,0
+00:36,3,HAWKS,Daniels,Daniels REBOUND (Off:2 Def:10),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:36,3,HAWKS,Daniels Lost Ball Turnover,Daniels Lost Ball Turnover (P4.T10),NA,TURNOVER,NA,0,0,0,0,0,1,0
+00:36,3,KNICKS,Hart,Hart STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+00:33,3,KNICKS,Towns Lost Ball Turnover,Towns Lost Ball Turnover (P2.T12),NA,TURNOVER,NA,0,0,0,0,0,1,0
+00:33,3,HAWKS,McCollum,McCollum STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+00:28,3,HAWKS,McCollum,MISS McCollum 25' 3PT Running Pull-Up Jump Shot,25,3PT Running Pull-Up Jump Shot,NA,0,0,0,0,0,0,0
+00:25,3,HAWKS,McCollum,McCollum REBOUND (Off:3 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:25,3,KNICKS,Brunson,Brunson S.FOUL (P2.T3) (M.Davis),NA,FOUL,NA,0,0,0,0,0,0,1
+00:25,3,HAWKS,McCollum Free Throw,McCollum Free Throw 1 of 2 (17 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+00:25,3,HAWKS,Gueye,SUB: Gueye FOR Vincent,NA,SUB,NA,0,0,0,0,0,0,0
+00:25,3,HAWKS,Alexander-Walker,SUB: Alexander-Walker FOR Okongwu,NA,SUB,NA,0,0,0,0,0,0,0
+00:25,3,HAWKS,McCollum Free Throw,McCollum Free Throw 2 of 2 (18 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+00:06,3,KNICKS,Towns,Towns 1' Driving Reverse Layup (19 PTS) (Hart 6 AST),1,Driving Reverse Layup,Hart,2,0,1,0,0,0,0
+00:01,3,HAWKS,Kuminga,MISS Kuminga 14' Pullup Jump Shot,14,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+00:00,3,HAWKS,HAWKS,HAWKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+11:48,4,KNICKS,Alvarado,MISS Alvarado 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+11:45,4,HAWKS,McCollum,McCollum REBOUND (Off:3 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:39,4,HAWKS,McCollum,MISS McCollum 14' Pullup Jump Shot,14,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+11:36,4,KNICKS,Knicks,Knicks Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+11:20,4,KNICKS,McBride,MISS McBride 17' Step Back Jump Shot,17,Step Back Jump Shot,NA,0,0,0,0,0,0,0
+11:20,4,HAWKS,HAWKS,HAWKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+11:20,4,HAWKS,HAWKS Timeout,HAWKS Timeout: Regular (Full 4 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+11:20,4,KNICKS,Instant Replay,Instant Replay4th Period (9:08 PM EST),NA,Instant Replay4th Period (9:08 PM EST),NA,0,0,0,0,0,0,0
+11:08,4,HAWKS,McCollum Lost Ball Turnover,McCollum Lost Ball Turnover (P3.T11),NA,TURNOVER,NA,0,0,0,0,0,1,0
+11:08,4,KNICKS,Robinson,Robinson STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+11:08,4,HAWKS,McCollum,McCollum P.FOUL (P2.T1) (M.Davis),NA,FOUL,NA,0,0,0,0,0,0,1
+11:08,4,KNICKS,Clarkson,SUB: Clarkson FOR Alvarado,NA,SUB,NA,0,0,0,0,0,0,0
+10:53,4,KNICKS,Bridges Lost Ball Turnover,Bridges Lost Ball Turnover (P4.T13),NA,TURNOVER,NA,0,0,0,0,0,1,0
+10:53,4,HAWKS,Alexander-Walker,Alexander-Walker STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+10:44,4,HAWKS,Kuminga,MISS Kuminga 27' 3PT Jump Shot,27,3PT Jump Shot,NA,0,0,0,0,0,0,0
+10:40,4,KNICKS,McBride,McBride REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:34,4,KNICKS,Hart,MISS Hart 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+10:31,4,HAWKS,Kispert,Kispert REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:27,4,HAWKS,Kuminga,Kuminga 1' Running Layup (17 PTS) (Kispert 1 AST),1,Running Layup,Kispert,2,0,1,0,0,0,0
+10:15,4,KNICKS,Clarkson,Clarkson 6' Floating Jump Shot (8 PTS) (Bridges 2 AST),6,Floating Jump Shot,Bridges,2,0,1,0,0,0,0
+10:02,4,HAWKS,Kuminga,MISS Kuminga 24' 3PT Jump Shot,24,3PT Jump Shot,NA,0,0,0,0,0,0,0
+09:59,4,KNICKS,Robinson,Robinson REBOUND (Off:2 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:50,4,KNICKS,Clarkson Traveling Turnover,Clarkson Traveling Turnover (P1.T14),NA,TURNOVER,NA,0,0,0,0,0,1,0
+09:50,4,HAWKS,Vincent,SUB: Vincent FOR McCollum,NA,SUB,NA,0,0,0,0,0,0,0
+09:50,4,HAWKS,Johnson,SUB: Johnson FOR Kispert,NA,SUB,NA,0,0,0,0,0,0,0
+09:32,4,HAWKS,Vincent,MISS Vincent 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+09:29,4,HAWKS,Kuminga,Kuminga REBOUND (Off:2 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:28,4,HAWKS,Kuminga,Kuminga 1' Putback Layup (19 PTS),1,Putback Layup,NA,2,0,0,0,0,0,0
+09:27,4,KNICKS,Knicks Timeout,Knicks Timeout: Regular (Reg.4 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+09:25,4,KNICKS,Anunoby,SUB: Anunoby FOR Clarkson,NA,SUB,NA,0,0,0,0,0,0,0
+09:25,4,KNICKS,Towns,SUB: Towns FOR Robinson,NA,SUB,NA,0,0,0,0,0,0,0
+09:25,4,KNICKS,Brunson,SUB: Brunson FOR Bridges,NA,SUB,NA,0,0,0,0,0,0,0
+09:13,4,KNICKS,Towns,MISS Towns 2' Driving Layup,2,Driving Layup,NA,0,0,0,0,0,0,0
+09:10,4,HAWKS,Johnson,Johnson REBOUND (Off:0 Def:8),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:02,4,HAWKS,Johnson Bad Pass Turnover,Johnson Bad Pass Turnover (P1.T12),NA,TURNOVER,NA,0,0,0,0,0,1,0
+09:02,4,KNICKS,Brunson,Brunson STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+08:54,4,KNICKS,McBride,McBride 3PT Running Jump Shot (9 PTS) (Towns 3 AST),NA,3PT Running Jump Shot,Towns,3,0,1,0,0,0,0
+08:42,4,HAWKS,Johnson,Johnson 26' 3PT Pullup Jump Shot (19 PTS),26,3PT Pullup Jump Shot,NA,3,0,0,0,0,0,0
+08:18,4,KNICKS,McBride,MISS McBride 26' 3PT Pullup Jump Shot,26,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+08:15,4,HAWKS,Alexander-Walker,Alexander-Walker REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:06,4,KNICKS,Towns,Towns S.FOUL (P2.T1) (N.Buchert),NA,FOUL,NA,0,0,0,0,0,0,1
+08:06,4,HAWKS,Johnson Free Throw,MISS Johnson Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+08:06,4,HAWKS,HAWKS,HAWKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+08:06,4,HAWKS,Daniels,SUB: Daniels FOR Vincent,NA,SUB,NA,0,0,0,0,0,0,0
+08:06,4,HAWKS,Johnson Free Throw,Johnson Free Throw 2 of 2 (20 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+07:48,4,KNICKS,McBride,MISS McBride 7' Driving Floating Jump Shot,7,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+07:46,4,KNICKS,Towns,Towns REBOUND (Off:4 Def:9),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:46,4,HAWKS,Kuminga,Kuminga S.FOUL (P2.T2) (M.Davis),NA,FOUL,NA,0,0,0,0,0,0,1
+07:46,4,KNICKS,Towns Free Throw,Towns Free Throw 1 of 2 (20 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+07:46,4,KNICKS,Towns Free Throw,Towns Free Throw 2 of 2 (21 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+07:38,4,HAWKS,Johnson Traveling Turnover,Johnson Traveling Turnover (P2.T13),NA,TURNOVER,NA,0,0,0,0,0,1,0
+07:35,4,KNICKS,Hart,Hart 1' Driving Dunk (2 PTS) (Towns 4 AST),1,Driving Dunk,Towns,2,0,1,0,0,0,0
+07:17,4,HAWKS,Daniels Bad Pass Turnover,Daniels Bad Pass Turnover (P5.T14),NA,TURNOVER,NA,0,0,0,0,0,1,0
+07:17,4,KNICKS,McBride,McBride STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+07:12,4,KNICKS,McBride,McBride 26' 3PT Running Jump Shot (12 PTS) (Brunson 4 AST),26,3PT Running Jump Shot,Brunson,3,0,1,0,0,0,0
+07:11,4,HAWKS,HAWKS Timeout,HAWKS Timeout: Regular (Full 5 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+07:11,4,HAWKS,McCollum,SUB: McCollum FOR Alexander-Walker,NA,SUB,NA,0,0,0,0,0,0,0
+06:56,4,HAWKS,McCollum Lost Ball Turnover,McCollum Lost Ball Turnover (P4.T15),NA,TURNOVER,NA,0,0,0,0,0,1,0
+06:56,4,KNICKS,McBride,McBride STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+06:53,4,KNICKS,McBride Lost Ball Turnover,McBride Lost Ball Turnover (P2.T15),NA,TURNOVER,NA,0,0,0,0,0,1,0
+06:53,4,HAWKS,Daniels,Daniels STEAL (3 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+06:53,4,HAWKS,Daniels,Jump Ball Daniels vs. McBride: Tip to Johnson,NA,Jump Ball Daniels vs. McBride: Tip to Johnson,NA,0,0,0,0,0,0,0
+06:48,4,HAWKS,McCollum,MISS McCollum 6' Driving Floating Jump Shot,6,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+06:47,4,HAWKS,Okongwu,Okongwu REBOUND (Off:2 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:47,4,HAWKS,Okongwu Tip Layup Shot,Okongwu Tip Layup Shot (9 PTS),NA,Tip Layup Shot,NA,2,0,0,0,0,0,0
+06:23,4,HAWKS,Kuminga,Kuminga S.FOUL (P3.T3) (M.Davis),NA,FOUL,NA,0,0,0,0,0,0,1
+06:23,4,KNICKS,Anunoby Free Throw,Anunoby Free Throw 1 of 2 (22 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+06:23,4,HAWKS,Alexander-Walker,SUB: Alexander-Walker FOR Kuminga,NA,SUB,NA,0,0,0,0,0,0,0
+06:23,4,KNICKS,Anunoby Free Throw,Anunoby Free Throw 2 of 2 (23 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+06:03,4,HAWKS,Alexander-Walker,MISS Alexander-Walker 26' 3PT Pullup Jump Shot,26,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+06:00,4,HAWKS,Daniels,Daniels REBOUND (Off:3 Def:10),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:51,4,KNICKS,McBride,McBride S.FOUL (P3.T2) (M.Davis),NA,FOUL,NA,0,0,0,0,0,0,1
+05:51,4,HAWKS,McCollum Free Throw,McCollum Free Throw 1 of 2 (19 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+05:51,4,HAWKS,Kuminga,SUB: Kuminga FOR Daniels,NA,SUB,NA,0,0,0,0,0,0,0
+05:51,4,HAWKS,McCollum Free Throw,MISS McCollum Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+05:49,4,KNICKS,Anunoby,Anunoby REBOUND (Off:2 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:35,4,KNICKS,Brunson,Brunson 1' Driving Layup (23 PTS),1,Driving Layup,NA,2,0,0,0,0,0,0
+05:14,4,HAWKS,McCollum,MISS McCollum 16' Pullup Jump Shot,16,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+05:11,4,KNICKS,Towns,Towns REBOUND (Off:4 Def:10),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:06,4,KNICKS,Brunson Running Layup,MISS Brunson Running Layup,NA,Running Layup,NA,0,0,0,0,0,0,0
+05:06,4,HAWKS,Alexander-Walker,Alexander-Walker BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+05:04,4,HAWKS,Alexander-Walker,Alexander-Walker REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:04,4,HAWKS,Alexander-Walker Out,Alexander-Walker Out of Bounds - Bad Pass Turnover Turnover (P2.T16),NA,TURNOVER,NA,0,0,0,0,0,1,0
+05:04,4,KNICKS,Knicks Timeout,Knicks Timeout: Regular (Reg.5 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+04:59,4,KNICKS,Towns Out,Towns Out of Bounds - Bad Pass Turnover Turnover (P3.T16),NA,TURNOVER,NA,0,0,0,0,0,1,0
+04:45,4,HAWKS,Kuminga,Kuminga 1' Cutting Layup Shot (21 PTS) (Johnson 7 AST),1,Cutting Layup Shot,Johnson,2,0,1,0,0,0,0
+04:29,4,KNICKS,McBride,MISS McBride 26' 3PT Pullup Jump Shot,26,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+04:26,4,HAWKS,Johnson,Johnson REBOUND (Off:0 Def:9),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:15,4,KNICKS,Brunson,Brunson S.FOUL (P3.T3) (N.Buchert),NA,FOUL,NA,0,0,0,0,0,0,1
+04:15,4,HAWKS,Johnson Free Throw,MISS Johnson Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+04:15,4,HAWKS,HAWKS,HAWKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+04:15,4,HAWKS,Johnson Free Throw,MISS Johnson Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+04:13,4,KNICKS,Towns,Towns REBOUND (Off:4 Def:11),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:55,4,KNICKS,Towns,MISS Towns 1' Driving Dunk,1,Driving Dunk,NA,0,0,0,0,0,0,0
+03:55,4,HAWKS,Johnson,Johnson BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+03:51,4,KNICKS,Anunoby,Anunoby REBOUND (Off:3 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:50,4,KNICKS,Anunoby,Anunoby 3PT Pullup Jump Shot (26 PTS),NA,3PT Pullup Jump Shot,NA,3,0,0,0,0,0,0
+03:32,4,HAWKS,Johnson,MISS Johnson 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+03:28,4,KNICKS,Towns,Towns REBOUND (Off:4 Def:12),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:10,4,KNICKS,Brunson,MISS Brunson 11' Driving Floating Jump Shot,11,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+03:09,4,HAWKS,Okongwu,Okongwu REBOUND (Off:2 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:08,4,KNICKS,Hart,Hart P.FOUL (P3.T4) (N.Buchert),NA,FOUL,NA,0,0,0,0,0,0,1
+03:08,4,KNICKS,Knicks Timeout,Knicks Timeout: Regular (Reg.6 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+03:08,4,KNICKS,Instant Replay,Instant Replay4th Period (9:35 PM EST),NA,Instant Replay4th Period (9:35 PM EST),NA,0,0,0,0,0,0,0
+02:51,4,HAWKS,McCollum,McCollum 14' Pullup Jump Shot (21 PTS),14,Pullup Jump Shot,NA,2,0,0,0,0,0,0
+02:36,4,KNICKS,McBride,MISS McBride 3' Driving Layup,3,Driving Layup,NA,0,0,0,0,0,0,0
+02:36,4,HAWKS,McCollum,McCollum BLOCK (2 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+02:36,4,KNICKS,Knicks,Knicks Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+02:23,4,KNICKS,Anunoby,Anunoby 25' 3PT Jump Shot (29 PTS) (McBride 1 AST),25,3PT Jump Shot,McBride,3,0,1,0,0,0,0
+01:58,4,HAWKS,Johnson,Johnson 4' Driving Floating Bank Jump Shot (22 PTS) (Okongwu 1 AST),4,Driving Floating Bank Jump Shot,Okongwu,2,0,1,0,0,0,0
+01:41,4,KNICKS,McBride,McBride 25' 3PT Jump Shot (15 PTS) (Anunoby 1 AST),25,3PT Jump Shot,Anunoby,3,0,1,0,0,0,0
+01:24,4,HAWKS,McCollum,MISS McCollum 1' Driving Reverse Layup,1,Driving Reverse Layup,NA,0,0,0,0,0,0,0
+01:21,4,KNICKS,Towns,Towns REBOUND (Off:4 Def:13),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:03,4,KNICKS,Brunson,Brunson 7' Driving Floating Jump Shot (25 PTS),7,Driving Floating Jump Shot,NA,2,0,0,0,0,0,0
+01:03,4,HAWKS,McCollum,McCollum S.FOUL (P3.T4) (N.Buchert),NA,FOUL,NA,0,0,0,0,0,0,1
+01:03,4,KNICKS,Brunson Free Throw,Brunson Free Throw 1 of 1 (26 PTS),NA,Free Throw 1 of 1,NA,1,0,0,0,0,0,0
+00:55,4,HAWKS,Johnson,MISS Johnson 2' Driving Dunk,2,Driving Dunk,NA,0,0,0,0,0,0,0
+00:55,4,KNICKS,Towns,Towns BLOCK (2 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+00:53,4,HAWKS,Johnson,Johnson REBOUND (Off:1 Def:9),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:53,4,HAWKS,Johnson Putback Layup,Johnson Putback Layup (24 PTS),NA,Putback Layup,NA,2,0,0,0,0,0,0
+00:32,4,KNICKS,Hart,MISS Hart 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+00:29,4,KNICKS,Anunoby,Anunoby REBOUND (Off:4 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:17,4,KNICKS,Brunson,MISS Brunson 19' Pullup Jump Shot,19,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+00:16,4,KNICKS,Knicks,Knicks Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+00:16,4,KNICKS,Knicks,Knicks Turnover: Shot Clock (T#17),NA,TURNOVER,NA,0,0,0,0,0,1,0
+00:16,4,HAWKS,HAWKS Timeout,HAWKS Timeout: Regular (Full 6 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+00:16,4,KNICKS,Shamet,SUB: Shamet FOR Brunson,NA,SUB,NA,0,0,0,0,0,0,0
+00:16,4,KNICKS,Bridges,SUB: Bridges FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+00:13,4,HAWKS,McCollum,McCollum 16' Fadeaway Jumper (23 PTS) (Johnson 8 AST),16,Fadeaway Jumper,Johnson,2,0,1,0,0,0,0
+00:13,4,KNICKS,Knicks Timeout,Knicks Timeout: Regular (Reg.7 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+00:13,4,HAWKS,Daniels,SUB: Daniels FOR McCollum,NA,SUB,NA,0,0,0,0,0,0,0
+00:13,4,KNICKS,Brunson,SUB: Brunson FOR Shamet,NA,SUB,NA,0,0,0,0,0,0,0
+00:13,4,KNICKS,Towns,SUB: Towns FOR Bridges,NA,SUB,NA,0,0,0,0,0,0,0
+00:01,4,KNICKS,Brunson Bad Pass Turnover,Brunson Bad Pass Turnover (P3.T18),NA,TURNOVER,NA,0,0,0,0,0,1,0
+00:01,4,HAWKS,Kuminga,Kuminga STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0

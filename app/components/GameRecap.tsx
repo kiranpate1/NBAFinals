@@ -1,14 +1,14 @@
-import { games } from "../info/games";
+import type { GameMeta } from "../info/games";
 import PlayerCard from "./PlayerCard";
 
 type props = {
   isInsideSticky: boolean;
   height: number;
-  game: number;
+  game: GameMeta;
 };
 
 export default function GameRecap({ isInsideSticky, height, game }: props) {
-  const gameInfo = games[game - 1].info;
+  const gameInfo = game.info;
   return (
     <div
       className="relative w-full lg:grid lg:grid-cols-[275px_1fr_275px] border-b border-(--stroke)"
@@ -19,12 +19,12 @@ export default function GameRecap({ isInsideSticky, height, game }: props) {
       }}
     >
       <div className="w-full h-full flex justify-center lg:[grid-area:1/2/2/3]">
-        <div className="w-full h-full max-w-[900px] grid grid-cols-6 grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 gap-2 p-2">
+        <div className="w-full h-full max-w-225 grid grid-cols-6 grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 gap-2 p-2">
           <div className="[grid-area:2/1/2/4] lg:[grid-area:1/1/1/2]">
             <PlayerCard info={gameInfo.nykPlayer} />
           </div>
           <div className="[grid-area:1/2/1/6] lg:[grid-area:1/2/1/3] flex justify-center">
-            <div className="w-full max-w-[150px] lg:max-w-none h-full border border-(--stroke) rounded-xs flex flex-col items-stretch gap-1 overflow-hidden">
+            <div className="w-full max-w-37.5 lg:max-w-none h-full border border-(--stroke) rounded-xs flex flex-col items-stretch gap-1 overflow-hidden">
               <div
                 className="flex-1 border-b border-(--stroke)"
                 style={{

@@ -26,7 +26,7 @@ type props = {
 function BoxScore({ team, players, boxStats }: props) {
   return (
     <div className="w-full h-full">
-      <div className="grid grid-cols-[1fr_32px_40px_32px_32px_32px_32px_32px] h-6.5 pl-1.5 border-b border-(--stroke) text-(--stroke) min-w-[380px]">
+      <div className="grid grid-cols-[1fr_32px_40px_32px_32px_32px_32px_32px] h-6.5 pl-1.5 border-b border-(--stroke) text-(--stroke) min-w-95">
         <small className="self-center justify-self-start">Player</small>
         <small className="place-self-center">PTS</small>
         <small className="place-self-center">FG</small>
@@ -38,7 +38,7 @@ function BoxScore({ team, players, boxStats }: props) {
       </div>
       {players.map((player, i) => (
         <div
-          className="grid grid-cols-[1fr_32px_40px_32px_32px_32px_32px_32px] py-0.5 pl-1.5 border-b border-(--stroke) text-(--stroke) min-w-[380px]"
+          className="grid grid-cols-[1fr_32px_40px_32px_32px_32px_32px_32px] py-0.5 pl-1.5 border-b border-(--stroke) text-(--stroke) min-w-95"
           key={player.name}
         >
           <p className="smaller self-center justify-self-start">

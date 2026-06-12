@@ -1,0 +1,457 @@
+time,quarter,team,player,play,distance,result,assist,points,rebounds,assists,steals,blocks,turnovers,fouls
+12:00,1,KNICKS,Towns,Jump Ball Towns vs. Drummond: Tip to Hart,NA,Jump Ball Towns vs. Drummond: Tip to Hart,NA,0,0,0,0,0,0,0
+11:38,1,KNICKS,Hart,MISS Hart 25' 3PT Step Back Jump Shot,25,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+11:36,1,SIXERS,Drummond,Drummond REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:30,1,SIXERS,Oubre,Oubre Jr. 2' Running Dunk (2 PTS) (George 1 AST),2,Jr. 2' Running Dunk,George,2,0,1,0,0,0,0
+11:14,1,KNICKS,Bridges,Bridges 1' Cutting Finger Roll Layup Shot (2 PTS) (Towns 1 AST),1,Cutting Finger Roll Layup Shot,Towns,2,0,1,0,0,0,0
+10:54,1,SIXERS,George,George 12' Jump Shot (2 PTS),12,Jump Shot,NA,2,0,0,0,0,0,0
+10:29,1,KNICKS,Anunoby,Anunoby 24' 3PT Jump Shot (3 PTS) (Brunson 1 AST),24,3PT Jump Shot,Brunson,3,0,1,0,0,0,0
+10:12,1,SIXERS,George,George 25' 3PT Pullup Jump Shot (5 PTS),25,3PT Pullup Jump Shot,NA,3,0,0,0,0,0,0
+09:56,1,SIXERS,Drummond,Drummond P.FOUL (P1.T1) (T.Brothers),NA,FOUL,NA,0,0,0,0,0,0,1
+09:50,1,KNICKS,Towns OFF,Towns OFF.Foul (P1) (T.Brothers),NA,FOUL,NA,0,0,0,0,0,0,1
+09:50,1,KNICKS,Towns Offensive Foul Turnover,Towns Offensive Foul Turnover (P1.T1),NA,TURNOVER,NA,0,0,0,0,0,1,1
+09:35,1,SIXERS,Maxey Backcourt Turnover,Maxey Backcourt Turnover (P1.T1),NA,TURNOVER,NA,0,0,0,0,0,1,0
+09:22,1,SIXERS,Oubre,Oubre Jr. FLAGRANT.FOUL.TYPE1 (P1.T2) (T.Brothers),NA,FOUL,NA,0,0,0,0,0,0,1
+09:22,1,KNICKS,Instant Replay,Instant Replay1st Period (7:19 PM EST),NA,Instant Replay1st Period (7:19 PM EST),NA,0,0,0,0,0,0,0
+09:22,1,KNICKS,Towns Free Throw Flagrant,Towns Free Throw Flagrant 1 of 2 (1 PTS),NA,Free Throw Flagrant 1 of 2,NA,1,0,0,0,0,0,0
+09:22,1,KNICKS,Towns Free Throw Flagrant,MISS Towns Free Throw Flagrant 2 of 2,NA,Free Throw Flagrant 2 of 2,NA,0,0,0,0,0,0,0
+09:22,1,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+09:12,1,KNICKS,Towns,Towns 2' Driving Finger Roll Layup (3 PTS),2,Driving Finger Roll Layup,NA,2,0,0,0,0,0,0
+08:59,1,SIXERS,George OFF,George OFF.Foul (P1) (T.Ford),NA,FOUL,NA,0,0,0,0,0,0,1
+08:59,1,SIXERS,George Offensive Foul Turnover,George Offensive Foul Turnover (P1.T2),NA,TURNOVER,NA,0,0,0,0,0,1,1
+08:46,1,KNICKS,Hart,MISS Hart 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+08:43,1,SIXERS,Edgecombe,Edgecombe REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:27,1,SIXERS,Oubre,Oubre Jr. Lost Ball Turnover (P1.T3),NA,TURNOVER,NA,0,0,0,0,0,1,0
+08:27,1,KNICKS,Anunoby,Anunoby STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+08:25,1,KNICKS,Anunoby,MISS Anunoby 24' 3PT Running Jump Shot,24,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+08:22,1,SIXERS,Edgecombe,Edgecombe REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:15,1,SIXERS,George,George 3PT Jump Shot (8 PTS) (Drummond 1 AST),NA,3PT Jump Shot,Drummond,3,0,1,0,0,0,0
+07:59,1,KNICKS,Bridges,MISS Bridges 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+07:57,1,SIXERS,Drummond,Drummond REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:50,1,SIXERS,George,George 3PT Jump Shot (11 PTS) (Maxey 1 AST),NA,3PT Jump Shot,Maxey,3,0,1,0,0,0,0
+07:36,1,KNICKS,Brunson,MISS Brunson 25' 3PT Pullup Jump Shot,25,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+07:33,1,SIXERS,Maxey,Maxey REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:29,1,SIXERS,Maxey Running Reverse Layup,Maxey Running Reverse Layup (2 PTS),NA,Running Reverse Layup,NA,2,0,0,0,0,0,0
+07:23,1,KNICKS,Hart Lost Ball Turnover,Hart Lost Ball Turnover (P1.T2),NA,TURNOVER,NA,0,0,0,0,0,1,0
+07:23,1,SIXERS,Edgecombe,Edgecombe STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+07:20,1,SIXERS,Maxey,MISS Maxey 24' 3PT Running Jump Shot,24,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+07:18,1,KNICKS,Towns,Towns REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:07,1,KNICKS,Towns,Towns 9' Driving Floating Jump Shot (5 PTS) (Anunoby 1 AST),9,Driving Floating Jump Shot,Anunoby,2,0,1,0,0,0,0
+06:55,1,SIXERS,George Bad Pass Turnover,George Bad Pass Turnover (P2.T4),NA,TURNOVER,NA,0,0,0,0,0,1,0
+06:55,1,KNICKS,Towns,Towns STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+06:50,1,KNICKS,Anunoby Running Reverse Dunk Shot,Anunoby Running Reverse Dunk Shot (5 PTS) (Brunson 2 AST),NA,Running Reverse Dunk Shot,Brunson,2,0,1,0,0,0,0
+06:35,1,SIXERS,Maxey,MISS Maxey 7' Driving Floating Jump Shot,7,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+06:33,1,KNICKS,Hart,Hart REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:29,1,KNICKS,Bridges,Bridges 2' Running Layup (4 PTS) (Hart 1 AST),2,Running Layup,Hart,2,0,1,0,0,0,0
+06:03,1,SIXERS,Edgecombe,Edgecombe 7' Driving Floating Jump Shot (2 PTS),7,Driving Floating Jump Shot,NA,2,0,0,0,0,0,0
+05:54,1,SIXERS,Drummond,Drummond S.FOUL (P2.T3) (B.Forte),NA,FOUL,NA,0,0,0,0,0,0,1
+05:54,1,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 1 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+05:54,1,SIXERS,Bona,SUB: Bona FOR Drummond,NA,SUB,NA,0,0,0,0,0,0,0
+05:54,1,KNICKS,Towns Free Throw,Towns Free Throw 1 of 2 (6 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+05:54,1,KNICKS,Towns Free Throw,Towns Free Throw 2 of 2 (7 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+05:40,1,SIXERS,George,MISS George 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+05:37,1,KNICKS,Anunoby,Anunoby REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:27,1,KNICKS,Anunoby,Anunoby 1' Driving Layup (7 PTS) (Towns 2 AST),1,Driving Layup,Towns,2,0,1,0,0,0,0
+05:08,1,SIXERS,Edgecombe,MISS Edgecombe 5' Driving Layup,5,Driving Layup,NA,0,0,0,0,0,0,0
+05:08,1,KNICKS,Bridges,Bridges BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+05:07,1,SIXERS,76ers,76ers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+05:07,1,KNICKS,Clarkson,SUB: Clarkson FOR Anunoby,NA,SUB,NA,0,0,0,0,0,0,0
+05:07,1,KNICKS,McBride,SUB: McBride FOR Bridges,NA,SUB,NA,0,0,0,0,0,0,0
+05:07,1,SIXERS,Grimes,SUB: Grimes FOR Edgecombe,NA,SUB,NA,0,0,0,0,0,0,0
+05:02,1,SIXERS,Maxey,MISS Maxey 20' Step Back Jump Shot,20,Step Back Jump Shot,NA,0,0,0,0,0,0,0
+05:00,1,SIXERS,Bona,Bona REBOUND (Off:1 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:50,1,SIXERS,George,MISS George 25' 3PT Pullup Jump Shot,25,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+04:48,1,KNICKS,Clarkson,Clarkson REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:40,1,KNICKS,Brunson,MISS Brunson 3' Driving Layup,3,Driving Layup,NA,0,0,0,0,0,0,0
+04:38,1,SIXERS,George,George REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:29,1,KNICKS,Towns,Towns S.FOUL (P2.T1) (T.Ford),NA,FOUL,NA,0,0,0,0,0,0,1
+04:29,1,SIXERS,Grimes Free Throw,Grimes Free Throw 1 of 2 (1 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+04:29,1,KNICKS,Hukporti,SUB: Hukporti FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+04:29,1,SIXERS,Edgecombe,SUB: Edgecombe FOR George,NA,SUB,NA,0,0,0,0,0,0,0
+04:29,1,SIXERS,Grimes Free Throw,Grimes Free Throw 2 of 2 (2 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+04:15,1,KNICKS,Brunson,MISS Brunson 5' Driving Floating Jump Shot,5,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+04:12,1,SIXERS,76ers,76ers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+03:58,1,SIXERS,Oubre,Oubre Jr. 3PT Jump Shot (5 PTS) (Edgecombe 1 AST),NA,Jr. 3PT Jump Shot,Edgecombe,3,0,1,0,0,0,0
+03:39,1,SIXERS,Bona,Bona S.FOUL (P1.T4) (T.Ford),NA,FOUL,NA,0,0,0,0,0,0,1
+03:39,1,KNICKS,Clarkson Free Throw,Clarkson Free Throw 1 of 2 (1 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+03:39,1,SIXERS,Lane,Lane,NA,Lane,NA,0,0,0,0,0,0,0
+03:39,1,KNICKS,Clarkson Free Throw,Clarkson Free Throw 2 of 2 (2 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+03:25,1,SIXERS,Oubre,Oubre Jr. 3PT Jump Shot (8 PTS) (Grimes 1 AST),NA,Jr. 3PT Jump Shot,Grimes,3,0,1,0,0,0,0
+03:05,1,SIXERS,Grimes,Grimes P.FOUL (P1.PN) (T.Ford),NA,FOUL,NA,0,0,0,0,0,0,1
+03:05,1,KNICKS,Anunoby,SUB: Anunoby FOR Hart,NA,SUB,NA,0,0,0,0,0,0,0
+03:05,1,KNICKS,Brunson Free Throw,Brunson Free Throw 1 of 2 (1 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+03:05,1,KNICKS,Brunson Free Throw,Brunson Free Throw 2 of 2 (2 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+02:49,1,SIXERS,Grimes,MISS Grimes 13' Step Back Jump Shot,13,Step Back Jump Shot,NA,0,0,0,0,0,0,0
+02:47,1,KNICKS,Clarkson,Clarkson REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:37,1,KNICKS,Brunson Lost Ball Turnover,Brunson Lost Ball Turnover (P1.T3),NA,TURNOVER,NA,0,0,0,0,0,1,0
+02:37,1,SIXERS,Oubre,Oubre Jr. STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+02:35,1,KNICKS,McBride,McBride S.FOUL (P1.T2) (T.Ford),NA,FOUL,NA,0,0,0,0,0,0,1
+02:35,1,SIXERS,76ers,76ers Timeout: Regular (Reg.1 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+02:35,1,SIXERS,George,SUB: George FOR Maxey,NA,SUB,NA,0,0,0,0,0,0,0
+02:35,1,SIXERS,Edgecombe Free Throw,MISS Edgecombe Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+02:35,1,SIXERS,76ers,76ers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+02:35,1,SIXERS,Edgecombe Free Throw,Edgecombe Free Throw 2 of 2 (3 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+02:16,1,KNICKS,McBride,MISS McBride 3' Driving Reverse Layup,3,Driving Reverse Layup,NA,0,0,0,0,0,0,0
+02:16,1,SIXERS,George,George BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+02:15,1,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+02:13,1,KNICKS,Hukporti,Hukporti 1' Cutting Dunk Shot (2 PTS) (Brunson 3 AST),1,Cutting Dunk Shot,Brunson,2,0,1,0,0,0,0
+01:56,1,KNICKS,Hukporti,Hukporti S.FOUL (P1.T3) (T.Brothers),NA,FOUL,NA,0,0,0,0,0,0,1
+01:56,1,SIXERS,Bona Free Throw,Bona Free Throw 1 of 2 (1 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+01:56,1,SIXERS,Bona Free Throw,MISS Bona Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+01:55,1,KNICKS,Hukporti,Hukporti REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:39,1,KNICKS,Brunson,Brunson 25' 3PT Pullup Jump Shot (5 PTS),25,3PT Pullup Jump Shot,NA,3,0,0,0,0,0,0
+01:24,1,SIXERS,Grimes Out,Grimes Out of Bounds Lost Ball Turnover (P1.T5),NA,TURNOVER,NA,0,0,0,0,0,1,0
+01:23,1,SIXERS,Edgecombe,Edgecombe P.FOUL (P1.PN) (B.Forte),NA,FOUL,NA,0,0,0,0,0,0,1
+01:23,1,KNICKS,Brunson Free Throw,Brunson Free Throw 1 of 2 (6 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+01:23,1,SIXERS,Maxey,SUB: Maxey FOR Oubre Jr.,NA,SUB,NA,0,0,0,0,0,0,0
+01:23,1,KNICKS,Brunson Free Throw,Brunson Free Throw 2 of 2 (7 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+01:10,1,KNICKS,Hukporti,Hukporti S.FOUL (P2.PN) (B.Forte),NA,FOUL,NA,0,0,0,0,0,0,1
+01:10,1,SIXERS,Edgecombe Free Throw,MISS Edgecombe Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+01:10,1,SIXERS,76ers,76ers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+01:10,1,SIXERS,Edgecombe Free Throw,Edgecombe Free Throw 2 of 2 (4 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+00:55,1,KNICKS,Brunson,MISS Brunson 2' Driving Layup,2,Driving Layup,NA,0,0,0,0,0,0,0
+00:55,1,SIXERS,Bona,Bona BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+00:52,1,SIXERS,Maxey,Maxey REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:47,1,KNICKS,Hukporti,Hukporti S.FOUL (P3.PN) (B.Forte),NA,FOUL,NA,0,0,0,0,0,0,1
+00:47,1,SIXERS,Maxey Free Throw,Maxey Free Throw 1 of 2 (3 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+00:47,1,KNICKS,Sochan,SUB: Sochan FOR Hukporti,NA,SUB,NA,0,0,0,0,0,0,0
+00:47,1,SIXERS,Maxey Free Throw,Maxey Free Throw 2 of 2 (4 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+00:34,1,KNICKS,Brunson,Brunson 9' Step Back Jump Shot (9 PTS),9,Step Back Jump Shot,NA,2,0,0,0,0,0,0
+00:14,1,SIXERS,Grimes,Grimes 24' 3PT Jump Shot (5 PTS) (Edgecombe 2 AST),24,3PT Jump Shot,Edgecombe,3,0,1,0,0,0,0
+00:01,1,KNICKS,Anunoby,MISS Anunoby 10' Fadeaway Jumper,10,Fadeaway Jumper,NA,0,0,0,0,0,0,0
+00:01,1,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+11:45,2,SIXERS,Maxey,Maxey 1' Cutting Dunk Shot (6 PTS) (George 2 AST),1,Cutting Dunk Shot,George,2,0,1,0,0,0,0
+11:24,2,KNICKS,Towns,Towns 5' Driving Floating Bank Jump Shot (9 PTS),5,Driving Floating Bank Jump Shot,NA,2,0,0,0,0,0,0
+11:14,2,KNICKS,Towns,Towns P.FOUL (P3.T1) (T.Brothers),NA,FOUL,NA,0,0,0,0,0,0,1
+11:14,2,KNICKS,Hart,SUB: Hart FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+11:10,2,KNICKS,McBride,McBride S.FOUL (P2.T2) (B.Forte),NA,FOUL,NA,0,0,0,0,0,0,1
+11:10,2,SIXERS,Maxey Free Throw,Maxey Free Throw 1 of 2 (7 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+11:10,2,SIXERS,Maxey Free Throw,Maxey Free Throw 2 of 2 (8 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+11:03,2,KNICKS,Alvarado,MISS Alvarado 2' Driving Finger Roll Layup,2,Driving Finger Roll Layup,NA,0,0,0,0,0,0,0
+11:03,2,SIXERS,Bona,Bona BLOCK (2 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+11:02,2,SIXERS,Maxey,Maxey REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:49,2,SIXERS,Bona Lost Ball Turnover,Bona Lost Ball Turnover (P1.T6),NA,TURNOVER,NA,0,0,0,0,0,1,0
+10:49,2,KNICKS,Hart,Hart STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+10:36,2,KNICKS,Anunoby,MISS Anunoby 27' 3PT Jump Shot,27,3PT Jump Shot,NA,0,0,0,0,0,0,0
+10:34,2,SIXERS,Oubre,Oubre Jr. REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:23,2,SIXERS,Maxey,MISS Maxey 2' Driving Layup,2,Driving Layup,NA,0,0,0,0,0,0,0
+10:21,2,SIXERS,Bona,Bona REBOUND (Off:2 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:20,2,KNICKS,Anunoby,Anunoby S.FOUL (P1.T3) (T.Ford),NA,FOUL,NA,0,0,0,0,0,0,1
+10:20,2,SIXERS,Bona Free Throw,MISS Bona Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+10:20,2,SIXERS,76ers,76ers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+10:20,2,SIXERS,Bona Free Throw,Bona Free Throw 2 of 2 (2 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+10:08,2,KNICKS,Bridges,Bridges 12' Fadeaway Jumper (6 PTS) (Alvarado 1 AST),12,Fadeaway Jumper,Alvarado,2,0,1,0,0,0,0
+09:59,2,SIXERS,Maxey,Maxey 25' 3PT Jump Shot (11 PTS) (George 3 AST),25,3PT Jump Shot,George,3,0,1,0,0,0,0
+09:44,2,KNICKS,Anunoby,Anunoby 1' Driving Layup (9 PTS),1,Driving Layup,NA,2,0,0,0,0,0,0
+09:30,2,SIXERS,Grimes,MISS Grimes 1' Driving Reverse Layup,1,Driving Reverse Layup,NA,0,0,0,0,0,0,0
+09:30,2,KNICKS,Anunoby,Anunoby BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+09:28,2,KNICKS,McBride,McBride REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:23,2,KNICKS,Alvarado,Alvarado 25' 3PT Pullup Jump Shot (3 PTS) (McBride 1 AST),25,3PT Pullup Jump Shot,McBride,3,0,1,0,0,0,0
+09:07,2,SIXERS,Maxey,Maxey 13' Turnaround Fadeaway (13 PTS),13,Turnaround Fadeaway,NA,2,0,0,0,0,0,0
+08:52,2,KNICKS,Hart OFF,Hart OFF.Foul (P1) (T.Brothers),NA,FOUL,NA,0,0,0,0,0,0,1
+08:52,2,KNICKS,Hart Offensive Foul Turnover,Hart Offensive Foul Turnover (P2.T4),NA,TURNOVER,NA,0,0,0,0,0,1,1
+08:52,2,SIXERS,Edgecombe,SUB: Edgecombe FOR Grimes,NA,SUB,NA,0,0,0,0,0,0,0
+08:34,2,SIXERS,Maxey,Maxey 18' Fadeaway Jumper (15 PTS),18,Fadeaway Jumper,NA,2,0,0,0,0,0,0
+08:15,2,KNICKS,Bridges,Bridges 19' Pullup Jump Shot (8 PTS) (Hart 2 AST),19,Pullup Jump Shot,Hart,2,0,1,0,0,0,0
+08:04,2,SIXERS,George,MISS George 26' 3PT Step Back Jump Shot,26,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+08:02,2,SIXERS,Bona,Bona REBOUND (Off:3 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:58,2,KNICKS,Alvarado,Alvarado P.FOUL (P1.T4) (T.Brothers),NA,FOUL,NA,0,0,0,0,0,0,1
+07:58,2,KNICKS,Clarkson,SUB: Clarkson FOR McBride,NA,SUB,NA,0,0,0,0,0,0,0
+07:58,2,KNICKS,Hukporti,SUB: Hukporti FOR Anunoby,NA,SUB,NA,0,0,0,0,0,0,0
+07:47,2,KNICKS,Alvarado,Alvarado S.FOUL (P2.PN) (T.Ford),NA,FOUL,NA,0,0,0,0,0,0,1
+07:47,2,SIXERS,Maxey Free Throw,MISS Maxey Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+07:47,2,SIXERS,76ers,76ers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+07:47,2,KNICKS,Brunson,SUB: Brunson FOR Alvarado,NA,SUB,NA,0,0,0,0,0,0,0
+07:47,2,SIXERS,Drummond,SUB: Drummond FOR Bona,NA,SUB,NA,0,0,0,0,0,0,0
+07:47,2,SIXERS,Maxey Free Throw,Maxey Free Throw 2 of 2 (16 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+07:29,2,KNICKS,Hart,MISS Hart 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+07:26,2,KNICKS,Clarkson,Clarkson REBOUND (Off:1 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:21,2,KNICKS,Brunson,MISS Brunson 12' Driving Floating Jump Shot,12,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+07:19,2,KNICKS,Hukporti,Hukporti REBOUND (Off:1 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:19,2,KNICKS,Hukporti,MISS Hukporti 3' Putback Layup,3,Putback Layup,NA,0,0,0,0,0,0,0
+07:18,2,KNICKS,Clarkson,Clarkson REBOUND (Off:2 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:18,2,KNICKS,Clarkson,MISS Clarkson 1' Tip Layup Shot,1,Tip Layup Shot,NA,0,0,0,0,0,0,0
+07:17,2,SIXERS,Drummond,Drummond REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:09,2,SIXERS,Oubre,MISS Oubre Jr. 3' Cutting Dunk Shot,3,Jr. 3' Cutting Dunk Shot,NA,0,0,0,0,0,0,0
+07:08,2,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+06:45,2,KNICKS,Brunson Bad Pass Turnover,Brunson Bad Pass Turnover (P2.T5),NA,TURNOVER,NA,0,0,0,0,0,1,0
+06:45,2,SIXERS,Drummond,Drummond STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+06:43,2,SIXERS,Maxey,MISS Maxey 28' 3PT Running Pull-Up Jump Shot,28,3PT Running Pull-Up Jump Shot,NA,0,0,0,0,0,0,0
+06:40,2,SIXERS,Drummond,Drummond REBOUND (Off:1 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:40,2,SIXERS,Drummond Tip Layup Shot,Drummond Tip Layup Shot (2 PTS),NA,Tip Layup Shot,NA,2,0,0,0,0,0,0
+06:32,2,KNICKS,Hukporti,MISS Hukporti 1' Cutting Layup Shot,1,Cutting Layup Shot,NA,0,0,0,0,0,0,0
+06:29,2,KNICKS,Clarkson,Clarkson REBOUND (Off:3 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:27,2,KNICKS,Clarkson,Clarkson 4' Floating Jump Shot (4 PTS) (Bridges 1 AST),4,Floating Jump Shot,Bridges,2,0,1,0,0,0,0
+06:11,2,SIXERS,Maxey,Maxey 1' Driving Layup (18 PTS),1,Driving Layup,NA,2,0,0,0,0,0,0
+06:03,2,KNICKS,Clarkson,Clarkson 1' Driving Layup (6 PTS),1,Driving Layup,NA,2,0,0,0,0,0,0
+06:00,2,SIXERS,76ers,76ers Timeout: Regular (Reg.2 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+05:43,2,SIXERS,Maxey,MISS Maxey 9' Driving Floating Jump Shot,9,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+05:41,2,KNICKS,Hukporti,Hukporti REBOUND (Off:1 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:32,2,KNICKS,Clarkson Lost Ball Turnover,Clarkson Lost Ball Turnover (P1.T6),NA,TURNOVER,NA,0,0,0,0,0,1,0
+05:32,2,SIXERS,Maxey,Maxey STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+05:22,2,SIXERS,Oubre,Oubre Jr. Dunk (10 PTS) (Maxey 2 AST),NA,Jr. Dunk,Maxey,2,0,1,0,0,0,0
+05:05,2,KNICKS,Brunson,Brunson 5' Driving Floating Jump Shot (11 PTS),5,Driving Floating Jump Shot,NA,2,0,0,0,0,0,0
+04:53,2,SIXERS,Maxey Bad Pass Turnover,Maxey Bad Pass Turnover (P2.T7),NA,TURNOVER,NA,0,0,0,0,0,1,0
+04:53,2,KNICKS,Hart,Hart STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+04:49,2,KNICKS,Clarkson,MISS Clarkson 3PT Running Jump Shot,NA,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+04:47,2,SIXERS,Drummond,Drummond REBOUND (Off:1 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:47,2,KNICKS,Hukporti,Hukporti P.FOUL (P4.PN) (B.Forte),NA,FOUL,NA,0,0,0,0,0,0,1
+04:47,2,SIXERS,Drummond Free Throw,Drummond Free Throw 1 of 2 (3 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+04:47,2,KNICKS,Anunoby,SUB: Anunoby FOR Clarkson,NA,SUB,NA,0,0,0,0,0,0,0
+04:47,2,KNICKS,Shamet,SUB: Shamet FOR Hukporti,NA,SUB,NA,0,0,0,0,0,0,0
+04:47,2,SIXERS,Grimes,SUB: Grimes FOR George,NA,SUB,NA,0,0,0,0,0,0,0
+04:47,2,SIXERS,Drummond Free Throw,Drummond Free Throw 2 of 2 (4 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+04:34,2,KNICKS,Brunson,Brunson 4' Driving Layup (13 PTS),4,Driving Layup,NA,2,0,0,0,0,0,0
+04:12,2,SIXERS,Edgecombe,MISS Edgecombe 2' Floating Jump Shot,2,Floating Jump Shot,NA,0,0,0,0,0,0,0
+04:10,2,SIXERS,Edgecombe,Edgecombe REBOUND (Off:1 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:08,2,SIXERS,Edgecombe Lost Ball Turnover,Edgecombe Lost Ball Turnover (P1.T8),NA,TURNOVER,NA,0,0,0,0,0,1,0
+04:08,2,KNICKS,Anunoby,Anunoby STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+04:00,2,KNICKS,Anunoby Running Dunk,Anunoby Running Dunk (11 PTS) (Brunson 4 AST),NA,Running Dunk,Brunson,2,0,1,0,0,0,0
+03:37,2,SIXERS,Maxey,MISS Maxey 8' Turnaround Bank Shot,8,Turnaround Bank Shot,NA,0,0,0,0,0,0,0
+03:36,2,KNICKS,Hart,Hart REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:33,2,KNICKS,Bridges,Bridges 1' Running Alley Oop Dunk Shot (10 PTS) (Hart 3 AST),1,Running Alley Oop Dunk Shot,Hart,2,0,1,0,0,0,0
+03:19,2,SIXERS,76ers,76ers Timeout: Regular (Reg.3 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+03:19,2,SIXERS,George,SUB: George FOR Edgecombe,NA,SUB,NA,0,0,0,0,0,0,0
+03:19,2,SIXERS,Bona,SUB: Bona FOR Drummond,NA,SUB,NA,0,0,0,0,0,0,0
+03:08,2,SIXERS,George,George 14' Jump Shot (13 PTS) (Maxey 3 AST),14,Jump Shot,Maxey,2,0,1,0,0,0,0
+03:08,2,KNICKS,Hart,Hart S.FOUL (P2.PN) (B.Forte),NA,FOUL,NA,0,0,0,0,0,0,1
+03:08,2,KNICKS,Hart,Hart T.FOUL (P2.PN) (T.Ford),NA,FOUL,NA,0,0,0,0,0,0,1
+03:08,2,SIXERS,Maxey Free Throw Technical,Maxey Free Throw Technical (19 PTS),NA,Free Throw Technical,NA,1,0,0,0,0,0,0
+03:08,2,SIXERS,George Free Throw,MISS George Free Throw 1 of 1,NA,Free Throw 1 of 1,NA,0,0,0,0,0,0,0
+03:06,2,KNICKS,Hart,Hart REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:58,2,KNICKS,Brunson,MISS Brunson 26' 3PT Pullup Jump Shot,26,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+02:55,2,SIXERS,Grimes,Grimes REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:39,2,SIXERS,Oubre,MISS Oubre Jr. 26' 3PT Jump Shot,26,Jr. 26' 3PT Jump Shot,NA,0,0,0,0,0,0,0
+02:37,2,KNICKS,Hart,Hart REBOUND (Off:0 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:37,2,SIXERS,Bona,Bona P.FOUL (P2.T1) (T.Ford),NA,FOUL,NA,0,0,0,0,0,0,1
+02:22,2,KNICKS,Anunoby,MISS Anunoby 19' Step Back Jump Shot,19,Step Back Jump Shot,NA,0,0,0,0,0,0,0
+02:19,2,SIXERS,Oubre,Oubre Jr. REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:00,2,SIXERS,Oubre,MISS Oubre Jr. 12' Turnaround Jump Shot,12,Jr. 12' Turnaround Jump Shot,NA,0,0,0,0,0,0,0
+01:58,2,SIXERS,Bona,Bona REBOUND (Off:4 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:52,2,SIXERS,Maxey Bad Pass Turnover,Maxey Bad Pass Turnover (P3.T9),NA,TURNOVER,NA,0,0,0,0,0,1,0
+01:52,2,KNICKS,Brunson,Brunson STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+01:48,2,KNICKS,Brunson,Brunson 2' Running Finger Roll Layup (15 PTS),2,Running Finger Roll Layup,NA,2,0,0,0,0,0,0
+01:30,2,SIXERS,Grimes,MISS Grimes 26' 3PT Pullup Jump Shot,26,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+01:28,2,SIXERS,Bona,Bona REBOUND (Off:5 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:26,2,SIXERS,Bona Bad Pass Turnover,Bona Bad Pass Turnover (P2.T10),NA,TURNOVER,NA,0,0,0,0,0,1,0
+01:26,2,KNICKS,Bridges,Bridges STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+01:20,2,KNICKS,Anunoby,Anunoby 1' Running Layup (13 PTS) (Hart 4 AST),1,Running Layup,Hart,2,0,1,0,0,0,0
+00:56,2,SIXERS,Maxey,MISS Maxey 15' Fadeaway Jumper,15,Fadeaway Jumper,NA,0,0,0,0,0,0,0
+00:54,2,KNICKS,Bridges,Bridges REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:51,2,SIXERS,George,George P.FOUL (P2.T2) (T.Brothers),NA,FOUL,NA,0,0,0,0,0,0,1
+00:51,2,SIXERS,Edgecombe,SUB: Edgecombe FOR Grimes,NA,SUB,NA,0,0,0,0,0,0,0
+00:43,2,KNICKS,Hart,Hart 1' Driving Layup (2 PTS),1,Driving Layup,NA,2,0,0,0,0,0,0
+00:32,2,SIXERS,George,MISS George 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+00:29,2,SIXERS,Bona,Bona REBOUND (Off:6 Def:0),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:27,2,SIXERS,Edgecombe,Edgecombe 2' Driving Layup (6 PTS) (Bona 1 AST),2,Driving Layup,Bona,2,0,1,0,0,0,0
+00:13,2,KNICKS,Brunson,MISS Brunson 1' Driving Layup,1,Driving Layup,NA,0,0,0,0,0,0,0
+00:12,2,SIXERS,Bona,Bona REBOUND (Off:6 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:06,2,SIXERS,Edgecombe,Edgecombe 25' 3PT Jump Shot (9 PTS) (Maxey 4 AST),25,3PT Jump Shot,Maxey,3,0,1,0,0,0,0
+00:04,2,SIXERS,Bona,Bona L.B.FOUL (P3.PN) (T.Ford),NA,FOUL,NA,0,0,0,0,0,0,1
+00:04,2,SIXERS,76ers,76ers Violation: Delay of game Violation,NA,76ers Violation: Delay of game Violation,NA,0,0,0,0,0,0,0
+00:04,2,KNICKS,Brunson Free Throw,MISS Brunson Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+00:04,2,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+00:04,2,SIXERS,Grimes,SUB: Grimes FOR Bona,NA,SUB,NA,0,0,0,0,0,0,0
+00:04,2,KNICKS,Brunson Free Throw,Brunson Free Throw 2 of 2 (16 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+00:00,2,SIXERS,Edgecombe,MISS Edgecombe 24' 3PT Pullup Jump Shot,24,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+00:00,2,SIXERS,76ers,76ers Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+11:47,3,SIXERS,George,MISS George 26' 3PT Jump Shot,26,3PT Jump Shot,NA,0,0,0,0,0,0,0
+11:44,3,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+11:30,3,KNICKS,Bridges,Bridges 2' Cutting Layup Shot (12 PTS) (Towns 3 AST),2,Cutting Layup Shot,Towns,2,0,1,0,0,0,0
+11:09,3,SIXERS,Edgecombe OFF,Edgecombe OFF.Foul (P2) (T.Ford),NA,FOUL,NA,0,0,0,0,0,0,1
+11:09,3,SIXERS,Edgecombe Offensive Foul Turnover,Edgecombe Offensive Foul Turnover (P2.T11),NA,TURNOVER,NA,0,0,0,0,0,1,1
+10:52,3,KNICKS,Brunson,MISS Brunson 16' Pullup Jump Shot,16,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+10:50,3,SIXERS,Drummond,Drummond REBOUND (Off:1 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:39,3,SIXERS,Edgecombe,Edgecombe 24' 3PT Jump Shot (12 PTS) (Oubre Jr. 1 AST),24,3PT Jump Shot,Oubre Jr.,3,0,1,0,0,0,0
+10:26,3,KNICKS,Bridges,MISS Bridges 7' Fadeaway Bank Shot,7,Fadeaway Bank Shot,NA,0,0,0,0,0,0,0
+10:24,3,SIXERS,Drummond,Drummond REBOUND (Off:1 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:12,3,KNICKS,Hart,Hart P.FOUL (P3.T1) (T.Brothers),NA,FOUL,NA,0,0,0,0,0,0,1
+10:12,3,SIXERS,Edgecombe Out,Edgecombe Out of Bounds - Bad Pass Turnover Turnover (P3.T12),NA,TURNOVER,NA,0,0,0,0,0,1,0
+09:55,3,KNICKS,Towns,Towns 25' 3PT Jump Shot (12 PTS) (Hart 5 AST),25,3PT Jump Shot,Hart,3,0,1,0,0,0,0
+09:37,3,SIXERS,Oubre,MISS Oubre Jr. 1' Driving Floating Jump Shot,1,Jr. 1' Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+09:36,3,SIXERS,Drummond,Drummond REBOUND (Off:2 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:36,3,SIXERS,Drummond,Drummond 1' Tip Layup Shot (6 PTS),1,Tip Layup Shot,NA,2,0,0,0,0,0,0
+09:25,3,KNICKS,Bridges,MISS Bridges 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+09:23,3,SIXERS,George,George REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:07,3,SIXERS,Maxey,Maxey 2' Driving Floating Bank Jump Shot (21 PTS),2,Driving Floating Bank Jump Shot,NA,2,0,0,0,0,0,0
+08:48,3,KNICKS,Anunoby,MISS Anunoby 24' 3PT Jump Shot,24,3PT Jump Shot,NA,0,0,0,0,0,0,0
+08:46,3,KNICKS,Bridges,Bridges REBOUND (Off:1 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:45,3,KNICKS,Bridges,Bridges 8' Jump Shot (14 PTS),8,Jump Shot,NA,2,0,0,0,0,0,0
+08:33,3,SIXERS,George,George 27' 3PT Jump Shot (16 PTS) (Maxey 5 AST),27,3PT Jump Shot,Maxey,3,0,1,0,0,0,0
+08:22,3,KNICKS,Towns,Towns 2' Driving Floating Bank Jump Shot (14 PTS) (Bridges 2 AST),2,Driving Floating Bank Jump Shot,Bridges,2,0,1,0,0,0,0
+08:22,3,SIXERS,Drummond,Drummond S.FOUL (P3.T1) (T.Brothers),NA,FOUL,NA,0,0,0,0,0,0,1
+08:22,3,KNICKS,Towns Free Throw,Towns Free Throw 1 of 1 (15 PTS),NA,Free Throw 1 of 1,NA,1,0,0,0,0,0,0
+08:07,3,SIXERS,Oubre,Oubre Jr. 1' Driving Layup (12 PTS) (George 4 AST),1,Jr. 1' Driving Layup,George,2,0,1,0,0,0,0
+07:54,3,SIXERS,Drummond,Drummond S.FOUL (P4.T2) (B.Forte),NA,FOUL,NA,0,0,0,0,0,0,1
+07:54,3,KNICKS,Towns Free Throw,Towns Free Throw 1 of 2 (16 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+07:54,3,SIXERS,Bona,SUB: Bona FOR Drummond,NA,SUB,NA,0,0,0,0,0,0,0
+07:54,3,KNICKS,Towns Free Throw,Towns Free Throw 2 of 2 (17 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+07:34,3,SIXERS,Edgecombe,Edgecombe 20' Pullup Jump Shot (14 PTS),20,Pullup Jump Shot,NA,2,0,0,0,0,0,0
+07:09,3,SIXERS,Bona,Bona P.FOUL (P4.T3) (B.Forte),NA,FOUL,NA,0,0,0,0,0,0,1
+07:01,3,KNICKS,Towns,Towns 6' Turnaround Bank Shot (19 PTS),6,Turnaround Bank Shot,NA,2,0,0,0,0,0,0
+06:47,3,SIXERS,George,George 3PT Step Back Jump Shot (19 PTS) (Oubre Jr. 2 AST),NA,3PT Step Back Jump Shot,Oubre Jr.,3,0,1,0,0,0,0
+06:31,3,KNICKS,Bridges,Bridges 1' Cutting Layup Shot (16 PTS) (Towns 4 AST),1,Cutting Layup Shot,Towns,2,0,1,0,0,0,0
+06:16,3,SIXERS,Maxey Bad Pass Turnover,Maxey Bad Pass Turnover (P4.T13),NA,TURNOVER,NA,0,0,0,0,0,1,0
+06:16,3,SIXERS,George,George L.B.FOUL (P3.T4) (T.Ford),NA,FOUL,NA,0,0,0,0,0,0,1
+06:16,3,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 2 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+06:16,3,SIXERS,Grimes,SUB: Grimes FOR Edgecombe,NA,SUB,NA,0,0,0,0,0,0,0
+06:03,3,KNICKS,Brunson,Brunson 2' Driving Reverse Layup (18 PTS) (Towns 5 AST),2,Driving Reverse Layup,Towns,2,0,1,0,0,0,0
+05:46,3,SIXERS,George,MISS George 26' 3PT Step Back Jump Shot,26,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+05:45,3,KNICKS,Bridges,Bridges REBOUND (Off:1 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:24,3,KNICKS,Brunson,MISS Brunson 26' 3PT Step Back Jump Shot,26,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+05:22,3,SIXERS,Grimes,Grimes REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:06,3,SIXERS,Oubre,MISS Oubre Jr. 26' 3PT Jump Shot,26,Jr. 26' 3PT Jump Shot,NA,0,0,0,0,0,0,0
+05:03,3,KNICKS,Hart,Hart REBOUND (Off:0 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:53,3,SIXERS,Bona,Bona S.FOUL (P5.PN) (T.Brothers),NA,FOUL,NA,0,0,0,0,0,0,1
+04:53,3,KNICKS,Towns Free Throw,MISS Towns Free Throw 1 of 2,NA,Free Throw 1 of 2,NA,0,0,0,0,0,0,0
+04:53,3,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+04:53,3,SIXERS,Barlow,SUB: Barlow FOR Bona,NA,SUB,NA,0,0,0,0,0,0,0
+04:53,3,KNICKS,Towns Free Throw,Towns Free Throw 2 of 2 (20 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+04:31,3,KNICKS,Towns,Towns S.FOUL (P4.T2) (T.Brothers),NA,FOUL,NA,0,0,0,0,0,0,1
+04:31,3,SIXERS,Oubre,Oubre Jr. Free Throw 1 of 2 (13 PTS),NA,Jr. Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+04:31,3,KNICKS,Shamet,SUB: Shamet FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+04:31,3,SIXERS,Oubre,Oubre Jr. Free Throw 2 of 2 (14 PTS),NA,Jr. Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+04:24,3,SIXERS,Grimes,Grimes S.FOUL (P2.PN) (T.Brothers),NA,FOUL,NA,0,0,0,0,0,0,1
+04:24,3,KNICKS,Anunoby Free Throw,Anunoby Free Throw 1 of 2 (14 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+04:24,3,SIXERS,Edgecombe,SUB: Edgecombe FOR Oubre Jr.,NA,SUB,NA,0,0,0,0,0,0,0
+04:24,3,KNICKS,Anunoby Free Throw,Anunoby Free Throw 2 of 2 (15 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+04:01,3,SIXERS,Maxey Lost Ball Turnover,Maxey Lost Ball Turnover (P5.T14),NA,TURNOVER,NA,0,0,0,0,0,1,0
+04:01,3,KNICKS,Anunoby,Anunoby STEAL (3 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+03:46,3,KNICKS,Hart Traveling Turnover,Hart Traveling Turnover (P3.T7),NA,TURNOVER,NA,0,0,0,0,0,1,0
+03:36,3,SIXERS,Barlow OFF,Barlow OFF.Foul (P1) (T.Brothers),NA,FOUL,NA,0,0,0,0,0,0,1
+03:36,3,SIXERS,Barlow Offensive Foul Turnover,Barlow Offensive Foul Turnover (P1.T15),NA,TURNOVER,NA,0,0,0,0,0,1,1
+03:15,3,KNICKS,Anunoby,Anunoby 7' Jump Bank Shot (17 PTS) (Brunson 5 AST),7,Jump Bank Shot,Brunson,2,0,1,0,0,0,0
+02:56,3,SIXERS,Barlow,Barlow 2' Dunk (2 PTS),2,Dunk,NA,2,0,0,0,0,0,0
+02:38,3,KNICKS,Brunson,MISS Brunson 2' Driving Layup,2,Driving Layup,NA,0,0,0,0,0,0,0
+02:38,3,SIXERS,Barlow,Barlow BLOCK (1 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+02:36,3,SIXERS,George,George REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:14,3,SIXERS,Edgecombe,Edgecombe 24' 3PT Jump Shot (17 PTS) (Grimes 2 AST),24,3PT Jump Shot,Grimes,3,0,1,0,0,0,0
+01:49,3,SIXERS,George,George P.FOUL (P4.PN) (B.Forte),NA,FOUL,NA,0,0,0,0,0,0,1
+01:49,3,SIXERS,76ers,76ers Timeout: Regular (Reg.4 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+01:49,3,KNICKS,McBride,SUB: McBride FOR Shamet,NA,SUB,NA,0,0,0,0,0,0,0
+01:49,3,SIXERS,Oubre,SUB: Oubre Jr. FOR George,NA,SUB,NA,0,0,0,0,0,0,0
+01:49,3,KNICKS,Anunoby Free Throw,Anunoby Free Throw 1 of 2 (18 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+01:49,3,KNICKS,Anunoby Free Throw,Anunoby Free Throw 2 of 2 (19 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+01:39,3,SIXERS,Edgecombe Bad Pass Turnover,Edgecombe Bad Pass Turnover (P4.T16),NA,TURNOVER,NA,0,0,0,0,0,1,0
+01:39,3,KNICKS,Anunoby,Anunoby STEAL (4 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+01:36,3,KNICKS,Brunson,MISS Brunson 24' 3PT Running Jump Shot,24,3PT Running Jump Shot,NA,0,0,0,0,0,0,0
+01:34,3,KNICKS,Anunoby,Anunoby REBOUND (Off:1 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:30,3,KNICKS,McBride,MISS McBride 25' 3PT Step Back Jump Shot,25,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+01:28,3,KNICKS,Anunoby,Anunoby REBOUND (Off:2 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:17,3,KNICKS,Anunoby,Anunoby 25' 3PT Jump Shot (22 PTS) (Brunson 6 AST),25,3PT Jump Shot,Brunson,3,0,1,0,0,0,0
+00:59,3,SIXERS,Barlow,Barlow 1' Dunk (4 PTS) (Grimes 3 AST),1,Dunk,Grimes,2,0,1,0,0,0,0
+00:37,3,KNICKS,Bridges,MISS Bridges 2' Reverse Layup,2,Reverse Layup,NA,0,0,0,0,0,0,0
+00:36,3,SIXERS,Barlow,Barlow REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:30,3,KNICKS,Anunoby,Anunoby S.FOUL (P2.T3) (B.Forte),NA,FOUL,NA,0,0,0,0,0,0,1
+00:30,3,SIXERS,Grimes Free Throw,Grimes Free Throw 1 of 2 (6 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+00:30,3,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 3 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+00:30,3,KNICKS,Shamet,SUB: Shamet FOR Hart,NA,SUB,NA,0,0,0,0,0,0,0
+00:30,3,SIXERS,Grimes Free Throw,Grimes Free Throw 2 of 2 (7 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+00:08,3,KNICKS,McBride Traveling Turnover,McBride Traveling Turnover (P1.T8),NA,TURNOVER,NA,0,0,0,0,0,1,0
+00:08,3,SIXERS,George,SUB: George FOR Barlow,NA,SUB,NA,0,0,0,0,0,0,0
+00:08,3,KNICKS,Sochan,SUB: Sochan FOR Brunson,NA,SUB,NA,0,0,0,0,0,0,0
+00:03,3,SIXERS,Maxey,MISS Maxey 11' Driving Floating Jump Shot,11,Driving Floating Jump Shot,NA,0,0,0,0,0,0,0
+00:01,3,KNICKS,Bridges,Bridges REBOUND (Off:1 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:48,4,KNICKS,Alvarado Bad Pass Turnover,Alvarado Bad Pass Turnover (P1.T9),NA,TURNOVER,NA,0,0,0,0,0,1,0
+11:48,4,SIXERS,George,George STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+11:36,4,SIXERS,George,MISS George 18' Pullup Jump Shot,18,Pullup Jump Shot,NA,0,0,0,0,0,0,0
+11:34,4,KNICKS,Bridges,Bridges REBOUND (Off:1 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+11:19,4,KNICKS,McBride,MISS McBride 25' 3PT Step Back Jump Shot,25,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+11:16,4,SIXERS,George,George REBOUND (Off:0 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:59,4,SIXERS,Barlow,Barlow 1' Cutting Layup Shot (6 PTS) (Edgecombe 3 AST),1,Cutting Layup Shot,Edgecombe,2,0,1,0,0,0,0
+10:43,4,KNICKS,Hart Out,Hart Out of Bounds Lost Ball Turnover (P4.T10),NA,TURNOVER,NA,0,0,0,0,0,1,0
+10:28,4,SIXERS,George,MISS George 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+10:25,4,SIXERS,Edgecombe,Edgecombe REBOUND (Off:2 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:16,4,SIXERS,Maxey,MISS Maxey 16' Fadeaway Jumper,16,Fadeaway Jumper,NA,0,0,0,0,0,0,0
+10:14,4,KNICKS,Towns,Towns REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+10:09,4,KNICKS,Towns Bad Pass Turnover,Towns Bad Pass Turnover (P2.T11),NA,TURNOVER,NA,0,0,0,0,0,1,0
+10:09,4,SIXERS,Grimes,Grimes STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+10:00,4,SIXERS,Maxey,MISS Maxey 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+09:58,4,KNICKS,Towns,Towns REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:49,4,KNICKS,McBride,McBride 25' 3PT Jump Shot (3 PTS) (Towns 6 AST),25,3PT Jump Shot,Towns,3,0,1,0,0,0,0
+09:20,4,SIXERS,George,MISS George 18' Turnaround Fadeaway Shot,18,Turnaround Fadeaway Shot,NA,0,0,0,0,0,0,0
+09:18,4,KNICKS,Towns,Towns REBOUND (Off:0 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+09:09,4,SIXERS,Grimes,Grimes P.FOUL (P3.T1) (B.Forte),NA,FOUL,NA,0,0,0,0,0,0,1
+09:09,4,KNICKS,Anunoby,SUB: Anunoby FOR Bridges,NA,SUB,NA,0,0,0,0,0,0,0
+09:09,4,KNICKS,Brunson,SUB: Brunson FOR Alvarado,NA,SUB,NA,0,0,0,0,0,0,0
+09:05,4,KNICKS,Towns,MISS Towns 3' Driving Dunk,3,Driving Dunk,NA,0,0,0,0,0,0,0
+09:03,4,KNICKS,Towns,Towns REBOUND (Off:1 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:57,4,KNICKS,Anunoby,MISS Anunoby 24' 3PT Jump Shot,24,3PT Jump Shot,NA,0,0,0,0,0,0,0
+08:54,4,SIXERS,Barlow,Barlow REBOUND (Off:0 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+08:43,4,SIXERS,Maxey,Maxey 14' Step Back Jump Shot (23 PTS),14,Step Back Jump Shot,NA,2,0,0,0,0,0,0
+08:30,4,KNICKS,Brunson,Brunson 8' Fadeaway Jumper (20 PTS),8,Fadeaway Jumper,NA,2,0,0,0,0,0,0
+08:07,4,SIXERS,Edgecombe,MISS Edgecombe 3' Cutting Layup Shot,3,Cutting Layup Shot,NA,0,0,0,0,0,0,0
+08:05,4,KNICKS,Anunoby,Anunoby REBOUND (Off:2 Def:2),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:57,4,KNICKS,Anunoby,Anunoby 2' Driving Layup (24 PTS) (Hart 6 AST),2,Driving Layup,Hart,2,0,1,0,0,0,0
+07:47,4,SIXERS,76ers,76ers Timeout: Regular (Reg.5 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+07:47,4,SIXERS,Oubre,SUB: Oubre Jr. FOR Grimes,NA,SUB,NA,0,0,0,0,0,0,0
+07:35,4,SIXERS,George,MISS George 13' Fadeaway Jumper,13,Fadeaway Jumper,NA,0,0,0,0,0,0,0
+07:33,4,KNICKS,Hart,Hart REBOUND (Off:0 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+07:22,4,KNICKS,Towns Lost Ball Turnover,Towns Lost Ball Turnover (P3.T12),NA,TURNOVER,NA,0,0,0,0,0,1,0
+07:22,4,SIXERS,George,George STEAL (2 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+07:18,4,KNICKS,Anunoby,Anunoby S.FOUL (P3.T1) (B.Forte),NA,FOUL,NA,0,0,0,0,0,0,1
+07:18,4,SIXERS,Oubre,Oubre Jr. Free Throw 1 of 2 (15 PTS),NA,Jr. Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+07:18,4,SIXERS,Oubre,Oubre Jr. Free Throw 2 of 2 (16 PTS),NA,Jr. Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+07:02,4,KNICKS,Anunoby,MISS Anunoby 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+07:02,4,SIXERS,Barlow,Barlow BLOCK (2 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+07:00,4,SIXERS,Edgecombe,Edgecombe REBOUND (Off:2 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+06:52,4,SIXERS,Oubre,Oubre Jr. 3PT Jump Shot (19 PTS) (Maxey 6 AST),NA,Jr. 3PT Jump Shot,Maxey,3,0,1,0,0,0,0
+06:25,4,KNICKS,Hart,Hart 24' 3PT Jump Shot (5 PTS) (Anunoby 2 AST),24,3PT Jump Shot,Anunoby,3,0,1,0,0,0,0
+06:01,4,SIXERS,Edgecombe,MISS Edgecombe 25' 3PT Jump Shot,25,3PT Jump Shot,NA,0,0,0,0,0,0,0
+05:58,4,KNICKS,Towns,Towns REBOUND (Off:1 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:46,4,KNICKS,Towns,MISS Towns 6' Driving Floating Bank Jump Shot,6,Driving Floating Bank Jump Shot,NA,0,0,0,0,0,0,0
+05:43,4,SIXERS,Oubre,Oubre Jr. REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:28,4,SIXERS,Oubre,MISS Oubre Jr. 26' 3PT Jump Shot,26,Jr. 26' 3PT Jump Shot,NA,0,0,0,0,0,0,0
+05:25,4,KNICKS,Anunoby,Anunoby REBOUND (Off:2 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+05:06,4,KNICKS,Brunson,Brunson 17' Pullup Jump Shot (22 PTS),17,Pullup Jump Shot,NA,2,0,0,0,0,0,0
+04:42,4,SIXERS,Edgecombe,MISS Edgecombe 24' 3PT Step Back Jump Shot,24,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+04:40,4,KNICKS,Towns,Towns REBOUND (Off:1 Def:6),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:25,4,KNICKS,Brunson,MISS Brunson 21' Step Back Jump Shot,21,Step Back Jump Shot,NA,0,0,0,0,0,0,0
+04:22,4,SIXERS,Oubre,Oubre Jr. REBOUND (Off:0 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:16,4,SIXERS,Maxey,MISS Maxey 2' Driving Layup,2,Driving Layup,NA,0,0,0,0,0,0,0
+04:10,4,SIXERS,George,George REBOUND (Off:1 Def:4),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:07,4,SIXERS,Maxey,MISS Maxey 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+04:04,4,KNICKS,Towns,Towns REBOUND (Off:1 Def:7),NA,REBOUND,NA,0,1,0,0,0,0,0
+04:01,4,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 4 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+04:01,4,KNICKS,Bridges,SUB: Bridges FOR McBride,NA,SUB,NA,0,0,0,0,0,0,0
+03:46,4,KNICKS,Brunson,Brunson 16' Turnaround Jump Shot (24 PTS),16,Turnaround Jump Shot,NA,2,0,0,0,0,0,0
+03:21,4,SIXERS,Edgecombe,MISS Edgecombe 27' 3PT Pullup Jump Shot,27,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+03:19,4,KNICKS,Hart,Hart REBOUND (Off:0 Def:7),NA,REBOUND,NA,0,1,0,0,0,0,0
+03:14,4,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 5 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+03:03,4,KNICKS,Anunoby,MISS Anunoby 3' Dunk,3,Dunk,NA,0,0,0,0,0,0,0
+03:03,4,SIXERS,George,George BLOCK (2 BLK),NA,BLOCK,NA,0,0,0,0,1,0,0
+03:01,4,KNICKS,Towns,Towns REBOUND (Off:2 Def:7),NA,REBOUND,NA,0,1,0,0,0,0,0
+02:56,4,KNICKS,Bridges,Bridges 20' Step Back Jump Shot (18 PTS) (Towns 7 AST),20,Step Back Jump Shot,Towns,2,0,1,0,0,0,0
+02:39,4,SIXERS,Maxey Lost Ball Turnover,Maxey Lost Ball Turnover (P6.T17),NA,TURNOVER,NA,0,0,0,0,0,1,0
+02:39,4,KNICKS,Hart,Hart STEAL (3 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+02:31,4,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 6 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+02:31,4,KNICKS,McBride,SUB: McBride FOR Anunoby,NA,SUB,NA,0,0,0,0,0,0,0
+02:21,4,KNICKS,Brunson Lost Ball Turnover,Brunson Lost Ball Turnover (P3.T13),NA,TURNOVER,NA,0,0,0,0,0,1,0
+02:21,4,SIXERS,Barlow,Barlow STEAL (1 STL),NA,STEAL,NA,0,0,0,1,0,0,0
+02:19,4,SIXERS,76ers,76ers Timeout: Regular (Reg.6 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+02:08,4,SIXERS,Barlow Out,Barlow Out of Bounds - Bad Pass Turnover Turnover (P2.T18),NA,TURNOVER,NA,0,0,0,0,0,1,0
+01:52,4,KNICKS,McBride,MISS McBride 3PT Jump Shot,NA,3PT Jump Shot,NA,0,0,0,0,0,0,0
+01:49,4,SIXERS,George,George REBOUND (Off:1 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:47,4,KNICKS,Bridges,Bridges P.FOUL (P1.T2) (T.Ford),NA,FOUL,NA,0,0,0,0,0,0,1
+01:33,4,KNICKS,Brunson,Brunson S.FOUL (P1.PN) (T.Brothers),NA,FOUL,NA,0,0,0,0,0,0,1
+01:33,4,SIXERS,Maxey Free Throw,Maxey Free Throw 1 of 2 (24 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+01:33,4,SIXERS,Maxey Free Throw,MISS Maxey Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+01:31,4,KNICKS,Towns,Towns REBOUND (Off:2 Def:8),NA,REBOUND,NA,0,1,0,0,0,0,0
+01:17,4,SIXERS,Oubre,Oubre Jr. P.FOUL (P2.T2) (B.Forte),NA,FOUL,NA,0,0,0,0,0,0,1
+01:06,4,SIXERS,Edgecombe,Edgecombe S.FOUL (P3.PN) (T.Ford),NA,FOUL,NA,0,0,0,0,0,0,1
+01:06,4,KNICKS,Brunson Free Throw,Brunson Free Throw 1 of 2 (25 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+01:06,4,SIXERS,Grimes,SUB: Grimes FOR Barlow,NA,SUB,NA,0,0,0,0,0,0,0
+01:06,4,KNICKS,Brunson Free Throw,Brunson Free Throw 2 of 2 (26 PTS),NA,Free Throw 2 of 2,NA,1,0,0,0,0,0,0
+01:00,4,SIXERS,Maxey,Maxey 3' Driving Layup (26 PTS),3,Driving Layup,NA,2,0,0,0,0,0,0
+00:38,4,KNICKS,Hart,MISS Hart 25' 3PT Step Back Jump Shot,25,3PT Step Back Jump Shot,NA,0,0,0,0,0,0,0
+00:35,4,SIXERS,Oubre,Oubre Jr. REBOUND (Off:0 Def:5),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:27,4,SIXERS,George,MISS George 27' 3PT Jump Shot,27,3PT Jump Shot,NA,0,0,0,0,0,0,0
+00:25,4,KNICKS,KNICKS,KNICKS Rebound,NA,REBOUND,NA,0,1,0,0,0,0,0
+00:25,4,KNICKS,KNICKS Timeout,KNICKS Timeout: Regular (Full 7 Short 0),NA,TIMEOUT,NA,0,0,0,0,0,0,0
+00:22,4,SIXERS,Maxey Personal Take Foul,Maxey Personal Take Foul (P1.PN) (T.Ford),NA,FOUL,NA,0,0,0,0,0,0,1
+00:22,4,KNICKS,McBride Free Throw,McBride Free Throw 1 of 2 (4 PTS),NA,Free Throw 1 of 2,NA,1,0,0,0,0,0,0
+00:22,4,KNICKS,Shamet,SUB: Shamet FOR Towns,NA,SUB,NA,0,0,0,0,0,0,0
+00:22,4,KNICKS,McBride Free Throw,MISS McBride Free Throw 2 of 2,NA,Free Throw 2 of 2,NA,0,0,0,0,0,0,0
+00:22,4,SIXERS,Grimes,Grimes REBOUND (Off:0 Def:3),NA,REBOUND,NA,0,1,0,0,0,0,0
+00:16,4,SIXERS,Maxey,MISS Maxey 26' 3PT Pullup Jump Shot,26,3PT Pullup Jump Shot,NA,0,0,0,0,0,0,0
+00:13,4,KNICKS,Brunson,Brunson REBOUND (Off:0 Def:1),NA,REBOUND,NA,0,1,0,0,0,0,0

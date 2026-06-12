@@ -1,9 +1,9 @@
-import { games } from "../info/games";
+import type { GameMeta } from "../info/games";
 
 type props = {
   isInsideSticky: boolean;
   height: number;
-  game: number;
+  game: GameMeta;
 };
 
 export default function GameCard({ isInsideSticky, height, game }: props) {
@@ -17,9 +17,9 @@ export default function GameCard({ isInsideSticky, height, game }: props) {
         backgroundColor: isInsideSticky ? "transparent" : "var(--background)",
       }}
     >
-      <h2 className="">Game {game}</h2>
-      <p>{games[game - 1].date}</p>
-      <small>{games[game - 1].arena}</small>
+      <h2 className="">Game {game.game}</h2>
+      <p>{game.date}</p>
+      <small>{game.arena}</small>
     </div>
   );
 }

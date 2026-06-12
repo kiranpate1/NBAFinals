@@ -53,8 +53,11 @@ const parseCsvLine = (line: string): string[] => {
 
 const toDisplayPlayer = (player: string) => {
   if (!player) return "Unknown";
-  if (player === "KNICKS") return "Team Thunder";
+  if (player === "KNICKS") return "Team Knicks";
   if (player === "SPURS") return "Team Spurs";
+  if (player === "HAWKS") return "Team Hawks";
+  if (player === "SIXERS" || player === "76ERS") return "Team 76ers";
+  if (player === "CAVALIERS") return "Team Cavaliers";
   return player;
 };
 
@@ -79,18 +82,38 @@ export async function GET(
   { params }: { params: Promise<{ game: string }> },
 ) {
   const { game } = await params;
-  const gameNumber = Number.parseInt(game, 10);
+  const rawId = game.trim().toLowerCase();
 
-  if (!Number.isFinite(gameNumber) || gameNumber < 1 || gameNumber > 7) {
-    return NextResponse.json({ error: "Invalid game number" }, { status: 400 });
+  const csvFileById = (() => {
+    // Backward compatibility: /api/games/1 resolves to finals game 1.
+    if (/^\d+$/.test(rawId)) {
+      const gameNumber = Number.parseInt(rawId, 10);
+      if (Number.isFinite(gameNumber) && gameNumber >= 1 && gameNumber <= 7) {
+        return `fg${gameNumber}.compiled.csv`;
+      }
+      return null;
+    }
+
+    if (/^fg[1-7]$/.test(rawId)) {
+      return `${rawId}.compiled.csv`;
+    }
+
+    const roundMatch = rawId.match(/^r([1-3])g([1-7])$/);
+    if (!roundMatch) return null;
+
+    const round = Number.parseInt(roundMatch[1], 10);
+    const gameNumber = Number.parseInt(roundMatch[2], 10);
+    const maxGameByRound = { 1: 6, 2: 4, 3: 4 } as const;
+    if (gameNumber > maxGameByRound[round as 1 | 2 | 3]) return null;
+
+    return `r${round}g${gameNumber}.compiled.csv`;
+  })();
+
+  if (!csvFileById) {
+    return NextResponse.json({ error: "Invalid game id" }, { status: 400 });
   }
 
-  const csvPath = path.join(
-    process.cwd(),
-    "app",
-    "info",
-    `game${gameNumber}.compiled.csv`,
-  );
+  const csvPath = path.join(process.cwd(), "app", "info", csvFileById);
 
   try {
     const csvText = await fs.readFile(csvPath, "utf8");
@@ -112,9 +135,7 @@ export async function GET(
       const play = row[4];
       const assistRaw = row[7];
 
-      const team =
-        teamRaw === "KNICKS" ? "NYK" : teamRaw === "SPURS" ? "SAS" : null;
-      if (!team) continue;
+      const team = teamRaw === "KNICKS" ? "NYK" : "SAS";
 
       plays.push({
         time,

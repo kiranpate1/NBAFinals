@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type props = {
   info: {
     team: "NYK" | "SAS";
@@ -36,10 +38,12 @@ export default function Highlight({ info }: props) {
   return (
     <div className="w-full h-[142px] grid grid-cols-2 gap-2 p-1 border border-(--stroke) bg-[rgba(246,244,245,0.5)] rounded-xs overflow-hidden pointer-events-auto">
       <div className="flex flex-col items-stretch">
-        <img
+        <Image
           className="flex-1 pt-2 border border-(--stroke) rounded-xs object-cover"
           src={info.player.imageUrl || "/placeholder-player.png"}
           alt={info.player.name}
+          width={100}
+          height={100}
         />
         <div className="p-1 flex flex-col gap-0.5">
           <p className="smaller">
