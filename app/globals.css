@@ -4,19 +4,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #e9e9f5;
+  --background: #101729;
   --foreground: #171717;
-  --stroke: #0f131d;
-  --nyk: #f58426;
-  --sas: #061922;
-  --cle: #860038;
-  --phi: #1d428a;
-  --atl: #c8102e;
-  --make: #142df0;
+  --stroke: #c9e8fa;
+  --nyk: #f36528;
+  --sas: #2bd1c5;
+  --cle: #cf0f1f;
+  --phi: #0070e2;
+  --atl: #ee0a05;
+  --make: #09e653;
   --miss: #ff3700;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-mono-sans: var(--font-geist-mono-sans);
+  --font-jersey10: var(--font-jersey10);
 }
 
 * {
@@ -37,6 +38,7 @@ html {
 
 body {
   background: var(--background);
+  color: white;
   overflow-x: hidden;
   /* color: var(--foreground);
   font-family: var(--font-sans), sans-serif; */
@@ -45,7 +47,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: var(--font-bebas-neue, "Bebas Neue", system-ui, sans-serif);
+  font-family: var(--font-jersey10, "Jersey10"), sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 115%;
@@ -146,7 +148,7 @@ small {
 
 .court g path {
   stroke-width: 2px;
-  fill: rgba(255, 255, 255, 0.75);
+  fill: rgba(0, 0, 0, 0.75);
 }
 
 #loader {

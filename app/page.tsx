@@ -1247,9 +1247,9 @@ export default function Home() {
 
   // toggle future series visibility
 
-  const [showFutureSeries, setShowFutureSeries] = useState(false);
+  const [showAllGames, setshowAllGames] = useState(false);
   const toggleFutureSeries = () => {
-    setShowFutureSeries((prev) => !prev);
+    setshowAllGames((prev) => !prev);
   };
 
   // text effect inspired by my codepen
@@ -1393,7 +1393,7 @@ export default function Home() {
       {/* nav / stationary */}
       <div className="fixed z-100 top-0 left-0 w-62.5 h-full">
         <div
-          className="absolute inset-[0_0_0_16px] flex flex-col h-full overflow-scroll pointer-events-auto"
+          className="absolute inset-[0_0_0_16px] h-full flex flex-col"
           style={
             {
               // transition: splashTransition,
@@ -1407,7 +1407,8 @@ export default function Home() {
             }
           }
         >
-          {/* <h3
+          <div className="flex-1 relative flex flex-col overflow-scroll pointer-events-auto">
+            {/* <h3
             className="absolute top-0 left-2 -translate-y-full text-(--stroke)"
             style={{
               transition: splashTransition,
@@ -1416,139 +1417,164 @@ export default function Home() {
           >
             May <span style={{ opacity: 0.5 }}>2026</span>
           </h3> */}
-          {rounds.map((round, i) => {
-            const roundStart = roundStartIndexes[i] ?? 0;
-            const progressBetweenRounds =
-              betweenProgressByGame[roundStart] ?? 0;
+            {rounds.map((round, i) => {
+              const roundStart = roundStartIndexes[i] ?? 0;
+              const progressBetweenRounds =
+                betweenProgressByGame[roundStart] ?? 0;
+              const isRoundVisible =
+                showAllGames || i === 0 || progressBetweenRounds > 0;
 
-            return (
-              <div className="w-full flex flex-col items-center" key={i}>
-                {i > 0 && (
-                  <svg
-                    width="20"
-                    height="100"
-                    viewBox="0 0 20 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                  >
-                    <path
-                      d="M10 0L10 16"
-                      stroke="rgba(0,0,0,0.35)"
-                      vectorEffect="non-scaling-stroke"
-                      style={{
-                        strokeDasharray: 100,
-                        strokeDashoffset: 100 - 100 * progressBetweenRounds,
-                      }}
-                    />
-                  </svg>
-                )}
-                {round.games.map((game, j) => {
-                  const gameIndex = roundStart + j;
-                  const progress = progressByGame[gameIndex] ?? 0;
-                  const isActiveGame = progress > 0 && progress < 1;
-                  const score =
-                    teamScoreByGame[gameIndex] ?? makeEmptyTeamScore();
-                  const opponentScore = score.OPP;
-                  const opponentColorVar = `var(--${round.opponent.toLowerCase()})`;
-                  const progressColor =
-                    score.NYK > opponentScore
-                      ? "var(--nyk)"
-                      : opponentScore > score.NYK
-                        ? opponentColorVar
-                        : "var(--stroke)";
-                  const progressBetweenGames =
-                    betweenProgressByGame[gameIndex] ?? 0;
+              let completedNYKWins = 0;
+              let completedOPPWins = 0;
+              round.games.forEach((_, gameOffset) => {
+                const gameIndex = roundStart + gameOffset;
+                const gameProgress = progressByGame[gameIndex] ?? 0;
+                if (gameProgress < 1) return;
 
-                  return (
-                    <div
-                      className="w-full flex flex-col items-center duration-300 ease-in-out"
-                      style={{
-                        opacity:
-                          !showFutureSeries &&
-                          i > 0 &&
-                          progressBetweenRounds === 0
-                            ? 0
-                            : 1,
-                        transform: `translateY(${!showFutureSeries && i > 0 && progressBetweenRounds === 0 ? 50 : 0}px)`,
-                      }}
-                      key={j}
+                const score =
+                  teamScoreByGame[gameIndex] ?? makeEmptyTeamScore();
+                if (score.NYK > score.OPP) completedNYKWins += 1;
+                else if (score.OPP > score.NYK) completedOPPWins += 1;
+              });
+
+              const requiredGamesInSeries = Math.min(
+                7,
+                4 + Math.min(completedNYKWins, completedOPPWins),
+              );
+
+              return (
+                <div className="w-full flex flex-col items-center" key={i}>
+                  {i > 0 && (
+                    <svg
+                      width="20"
+                      height="100"
+                      viewBox="0 0 20 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      preserveAspectRatio="none"
                     >
-                      {j > 0 && (
-                        <svg
-                          width="20"
-                          height="16"
-                          viewBox="0 0 20 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          preserveAspectRatio="none"
-                        >
-                          <path
-                            d="M10 0L10 16"
-                            stroke="rgba(0,0,0,0.35)"
-                            vectorEffect="non-scaling-stroke"
-                            style={{
-                              strokeDasharray: 16,
-                              strokeDashoffset: 16 - 16 * progressBetweenGames,
-                            }}
-                          />
-                        </svg>
-                      )}
-                      <div
-                        className="w-full"
+                      <path
+                        d="M10 0L10 16"
+                        stroke="rgba(255,255,255,0.35)"
+                        strokeWidth="1.5"
+                        vectorEffect="non-scaling-stroke"
                         style={{
-                          opacity:
-                            !showFutureSeries &&
-                            i > 0 &&
-                            progressBetweenRounds === 0
-                              ? 0
-                              : 1,
-                          transform: `translateY(${!showFutureSeries && i > 0 && progressBetweenRounds === 0 ? 50 : 0}px)`,
+                          strokeDasharray: 100,
+                          strokeDashoffset: 100 - 100 * progressBetweenRounds,
                         }}
+                      />
+                    </svg>
+                  )}
+                  {round.games.map((game, j) => {
+                    const gameIndex = roundStart + j;
+                    const progress = progressByGame[gameIndex] ?? 0;
+                    const isActiveGame = progress > 0 && progress < 1;
+                    const score =
+                      teamScoreByGame[gameIndex] ?? makeEmptyTeamScore();
+                    const opponentScore = score.OPP;
+                    const opponentColorVar = `var(--${round.opponent.toLowerCase()})`;
+                    const progressColor =
+                      score.NYK > opponentScore
+                        ? "var(--nyk)"
+                        : opponentScore > score.NYK
+                          ? opponentColorVar
+                          : "color-mix(in srgb, var(--background) 50%, var(--stroke) 25%)";
+                    const progressBetweenGames =
+                      betweenProgressByGame[gameIndex] ?? 0;
+                    const isGameNecessary = j < requiredGamesInSeries;
+                    const shouldShowGame =
+                      showAllGames || (isRoundVisible && isGameNecessary);
+
+                    return (
+                      <div
+                        className="w-full flex flex-col items-center duration-300 ease-in-out"
+                        style={{
+                          opacity: shouldShowGame ? 1 : 0,
+                          transform: `translateY(${shouldShowGame ? 0 : 50}px)`,
+                          pointerEvents: shouldShowGame ? "auto" : "none",
+                        }}
+                        key={j}
                       >
-                        <NavGameCard
-                          scrollToGameStart={scrollToGameStart}
-                          gameIndex={gameIndex}
-                          isActiveGame={isActiveGame}
-                          progressByGame={progressByGame}
-                          score={score}
-                          gameClock={gameClock}
-                          gameQuarter={gameQuarter}
-                          round={round}
-                          game={game}
-                          isInsideSplash={isInsideSplash}
-                          splashTransition={splashTransition}
-                          progressColor={progressColor}
-                        />
+                        {j > 0 && (
+                          <svg
+                            width="20"
+                            height="16"
+                            viewBox="0 0 20 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="none"
+                          >
+                            <path
+                              d="M10 0L10 16"
+                              stroke="rgba(255,255,255,0.35)"
+                              strokeWidth="1.5"
+                              vectorEffect="non-scaling-stroke"
+                              style={{
+                                strokeDasharray: 16,
+                                strokeDashoffset:
+                                  16 - 16 * progressBetweenGames,
+                              }}
+                            />
+                          </svg>
+                        )}
+                        <div
+                          className="w-full"
+                          style={{
+                            opacity: shouldShowGame ? 1 : 0,
+                            transform: `translateY(${shouldShowGame ? 0 : 50}px)`,
+                            pointerEvents: shouldShowGame ? "auto" : "none",
+                          }}
+                        >
+                          <NavGameCard
+                            scrollToGameStart={scrollToGameStart}
+                            gameIndex={gameIndex}
+                            isActiveGame={isActiveGame}
+                            progressByGame={progressByGame}
+                            score={score}
+                            gameClock={gameClock}
+                            gameQuarter={gameQuarter}
+                            round={round}
+                            game={game}
+                            isInsideSplash={isInsideSplash}
+                            splashTransition={splashTransition}
+                            progressColor={progressColor}
+                          />
+                        </div>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
+              );
+            })}
+          </div>
+          <div className="relative w-full py-4 bg-(--background) flex flex-col items-stretch gap-4.5">
+            <div className="flex items-center justify-between gap-4">
+              <small>Show all games</small>
+              <div
+                className="w-10 h-5 rounded-[10px] border border-(--stroke) p-0.5 cursor-pointer duration-200 ease-in-out"
+                style={{
+                  borderColor: showAllGames ? "var(--nyk)" : "var(--stroke)",
+                  backgroundColor: showAllGames ? "var(--nyk)" : "transparent",
+                }}
+                onClick={toggleFutureSeries}
+              >
+                <div
+                  className="h-full aspect-square rounded-full duration-200 ease-in-out"
+                  style={{
+                    backgroundColor: showAllGames
+                      ? "var(--background)"
+                      : "var(--stroke)",
+                    transform: showAllGames
+                      ? "translateX(20px)"
+                      : "translateX(0%)",
+                  }}
+                ></div>
               </div>
-            );
-          })}
-        </div>
-        <div className="absolute inset-[auto_0_0_0] w-full p-[16px_0_16px_16px] bg-(--background) flex items-center justify-between gap-4">
-          <small>Show all games</small>
-          <div
-            className="w-10 h-5 rounded-[10px] border border-(--stroke) p-0.5 cursor-pointer duration-200 ease-in-out"
-            style={{
-              borderColor: showFutureSeries ? "var(--nyk)" : "var(--stroke)",
-              backgroundColor: showFutureSeries ? "var(--nyk)" : "transparent",
-            }}
-            onClick={toggleFutureSeries}
-          >
+            </div>
             <div
-              className="h-full aspect-square rounded-full duration-200 ease-in-out"
-              style={{
-                backgroundColor: showFutureSeries
-                  ? "var(--background)"
-                  : "var(--stroke)",
-                transform: showFutureSeries
-                  ? "translateX(20px)"
-                  : "translateX(0%)",
-              }}
-            ></div>
+              className="border border-(--stroke) w-full"
+              style={{ height: courtHeight + topLipHeight - 18 }}
+            />
           </div>
         </div>
       </div>
@@ -1675,12 +1701,13 @@ export default function Home() {
                   <div className="absolute z-10 inset-[0_0_auto_0] h-4 bg-(--background)"></div>
                   <div className="absolute z-10 inset-[auto_0_0_0] h-4 bg-(--background)"></div>
                   <div
-                    className="absolute top-9.5 xl:top-4 left-4 w-[calc(50dvw-15px)] xl:w-102 border border-(--stroke) bg-(--background) overflow-x-scroll overflow-y-scroll duration-200 pointer-events-auto"
-                    style={{
-                      // opacity: hasReachedBottom ? 0 : 1,
-                      height: courtHeight + topLipHeight - 18,
-                      // pointerEvents: hasReachedBottom ? "none" : "auto",
-                    }}
+                    className="absolute top-9.5 xl:top-4 left-4 w-[calc(50dvw-15px)] xl:w-102 h-[calc(22dvh)] border border-(--stroke) bg-(--background) duration-200 pointer-events-auto"
+                    style={
+                      {
+                        // opacity: hasReachedBottom ? 0 : 1,
+                        // pointerEvents: hasReachedBottom ? "none" : "auto",
+                      }
+                    }
                   >
                     <BoxScore
                       team="NYK"
@@ -1689,12 +1716,13 @@ export default function Home() {
                     />
                   </div>
                   <div
-                    className="absolute top-9.5 xl:top-4 right-4 w-[calc(50dvw-15px)] xl:w-102 border border-(--stroke) bg-(--background) overflow-x-scroll overflow-y-scroll duration-200 pointer-events-auto"
-                    style={{
-                      // opacity: hasReachedBottom ? 0 : 1,
-                      height: courtHeight + topLipHeight - 18,
-                      // pointerEvents: hasReachedBottom ? "none" : "auto",
-                    }}
+                    className="absolute top-9.5 xl:top-4 right-4 w-[calc(50dvw-15px)] xl:w-102 h-[calc(22dvh)] border border-(--stroke) bg-(--background) duration-200 pointer-events-auto"
+                    style={
+                      {
+                        // opacity: hasReachedBottom ? 0 : 1,
+                        // pointerEvents: hasReachedBottom ? "none" : "auto",
+                      }
+                    }
                   >
                     <BoxScore
                       team="OPP"
@@ -1811,6 +1839,11 @@ export default function Home() {
                       const gameVisual =
                         gameVisuals[gameIndex] ?? gameVisuals[0];
                       const SpreadGraphic = gameVisual.spread;
+                      const gameProgress = progressByGame[gameIndex] ?? 0;
+                      const firstSeventhGameProgress = Math.min(
+                        1,
+                        Math.max(0, gameProgress * 7),
+                      );
 
                       return (
                         <div
@@ -1821,6 +1854,7 @@ export default function Home() {
                             isInsideSticky={false}
                             height={courtHeight + topLipHeight}
                             game={game}
+                            scrollProgress={firstSeventhGameProgress}
                           />
                           <div
                             className="relative flex flex-col h-full items-center justify-between"

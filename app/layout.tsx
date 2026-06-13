@@ -43,6 +43,18 @@ const bebasNeue = localFont({
   display: "swap",
 });
 
+const jersey10 = localFont({
+  src: [
+    {
+      path: "../public/fonts/Jersey_10/Jersey10-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-jersey10",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://bykiranpa.tel/"),
   title: {
@@ -105,7 +117,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.variable} ${jersey10.variable} antialiased`}
       >
         {children}
       </body>

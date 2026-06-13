@@ -9,7 +9,7 @@ type props = {
 export default function SeriesCard({ isInsideSticky, series }: props) {
   return (
     <div
-      className="relative w-full flex flex-col items-center justify-center gap-2"
+      className="relative w-full flex flex-col items-center justify-center gap-2 border-b border-(--stroke)"
       style={{
         height: `200px`,
         opacity: isInsideSticky ? 0 : 1,

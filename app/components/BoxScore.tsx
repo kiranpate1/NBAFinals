@@ -25,7 +25,7 @@ type props = {
 
 function BoxScore({ team, players, boxStats }: props) {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full flex flex-col items-stretch">
       <div className="grid grid-cols-[1fr_32px_40px_32px_32px_32px_32px_32px] h-6.5 pl-1.5 border-b border-(--stroke) text-(--stroke) min-w-95">
         <small className="self-center justify-self-start">Player</small>
         <small className="place-self-center">PTS</small>
@@ -36,45 +36,47 @@ function BoxScore({ team, players, boxStats }: props) {
         <small className="place-self-center">STL</small>
         <small className="place-self-center">BLK</small>
       </div>
-      {players.map((player, i) => (
-        <div
-          className="grid grid-cols-[1fr_32px_40px_32px_32px_32px_32px_32px] py-0.5 pl-1.5 border-b border-(--stroke) text-(--stroke) min-w-95"
-          key={player.name}
-        >
-          <p className="smaller self-center justify-self-start">
-            {player.name[0]}. {player.name.split(" ")[1]}
-            &ensp;
-            {i < 5 && (
-              <span style={{ opacity: 0.5 }}>{player.position[0]}</span>
-            )}
-          </p>
-          <p className="smaller place-self-center">
-            {boxStats[team][player.name]?.pts ?? 0}
-          </p>
-          <p className="smaller place-self-center">
-            {(boxStats[team][player.name]?.fgMade ?? 0) +
-              "-" +
-              (boxStats[team][player.name]?.fgAtt ?? 0)}
-          </p>
-          <p className="smaller place-self-center">
-            {boxStats[team][player.name]?.reb ?? 0}
-          </p>
-          <p className="smaller place-self-center">
-            {boxStats[team][player.name]?.ast ?? 0}
-          </p>
-          <p className="smaller place-self-center">
-            {(boxStats[team][player.name]?.threePtMade ?? 0) +
-              "-" +
-              (boxStats[team][player.name]?.threePtAtt ?? 0)}
-          </p>
-          <p className="smaller place-self-center">
-            {boxStats[team][player.name]?.stl ?? 0}
-          </p>
-          <p className="smaller place-self-center">
-            {boxStats[team][player.name]?.blk ?? 0}
-          </p>
-        </div>
-      ))}
+      <div className="w-full h-full flex flex-col items-stretch overflow-x-scroll overflow-y-scroll">
+        {players.map((player, i) => (
+          <div
+            className="grid grid-cols-[1fr_32px_40px_32px_32px_32px_32px_32px] py-0.5 pl-1.5 border-b border-[color-mix(in_srgb,var(--background)_50%,var(--stroke)_15%)] text-(--stroke) min-w-95"
+            key={player.name}
+          >
+            <p className="smaller self-center justify-self-start">
+              {player.name[0]}. {player.name.split(" ")[1]}
+              &ensp;
+              {i < 5 && (
+                <span style={{ opacity: 0.5 }}>{player.position[0]}</span>
+              )}
+            </p>
+            <p className="smaller place-self-center">
+              {boxStats[team][player.name]?.pts ?? 0}
+            </p>
+            <p className="smaller place-self-center">
+              {(boxStats[team][player.name]?.fgMade ?? 0) +
+                "-" +
+                (boxStats[team][player.name]?.fgAtt ?? 0)}
+            </p>
+            <p className="smaller place-self-center">
+              {boxStats[team][player.name]?.reb ?? 0}
+            </p>
+            <p className="smaller place-self-center">
+              {boxStats[team][player.name]?.ast ?? 0}
+            </p>
+            <p className="smaller place-self-center">
+              {(boxStats[team][player.name]?.threePtMade ?? 0) +
+                "-" +
+                (boxStats[team][player.name]?.threePtAtt ?? 0)}
+            </p>
+            <p className="smaller place-self-center">
+              {boxStats[team][player.name]?.stl ?? 0}
+            </p>
+            <p className="smaller place-self-center">
+              {boxStats[team][player.name]?.blk ?? 0}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
