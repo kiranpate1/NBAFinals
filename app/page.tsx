@@ -610,6 +610,8 @@ export default function Home() {
   // const footerMetricsRef = useRef({ top: 0, bottom: 0 });
   const sasCourtRef = useRef<HTMLDivElement | null>(null);
   const nykCourtRef = useRef<HTMLDivElement | null>(null);
+  const navScrollRef = useRef<HTMLDivElement | null>(null);
+  const navGameRefsRef = useRef<Array<HTMLDivElement | null>>([]);
   const [playsByGame, setPlaysByGame] = useState<PlayEntry[][]>(() =>
     games.map(() => []),
   );
@@ -1134,6 +1136,18 @@ export default function Home() {
     };
   }, [playsByGame, gameSecondsByGame]);
 
+  useEffect(() => {
+    const scrollContainer = navScrollRef.current;
+    const activeGameEl = navGameRefsRef.current[activeGameIndex];
+
+    if (scrollContainer && activeGameEl) {
+      activeGameEl.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+      });
+    }
+  }, [activeGameIndex]);
+
   // useEffect(() => {
   //   const footerElement = footerRef.current;
   //   const courtElement = courtHeightDynamicRef.current;
@@ -1250,6 +1264,13 @@ export default function Home() {
   const [showAllGames, setshowAllGames] = useState(false);
   const toggleFutureSeries = () => {
     setshowAllGames((prev) => !prev);
+  };
+
+  const getWinnerColor = (score: TeamScore, opponent: string) => {
+    const opponentColorVar = `var(--${opponent.toLowerCase()})`;
+    if (score.NYK > score.OPP) return "var(--nyk)";
+    if (score.OPP > score.NYK) return opponentColorVar;
+    return "color-mix(in srgb, var(--background) 50%, var(--stroke) 25%)";
   };
 
   // text effect inspired by my codepen
@@ -1407,7 +1428,10 @@ export default function Home() {
             }
           }
         >
-          <div className="flex-1 relative flex flex-col overflow-scroll pointer-events-auto">
+          <div
+            className="flex-1 relative flex flex-col overflow-scroll pointer-events-auto"
+            ref={navScrollRef}
+          >
             {/* <h3
             className="absolute top-0 left-2 -translate-y-full text-(--stroke)"
             style={{
@@ -1423,6 +1447,29 @@ export default function Home() {
                 betweenProgressByGame[roundStart] ?? 0;
               const isRoundVisible =
                 showAllGames || i === 0 || progressBetweenRounds > 0;
+              const roundSeparatorGradientId = `nav-round-separator-${i}`;
+
+              const currentRoundFirstScore =
+                teamScoreByGame[roundStart] ?? makeEmptyTeamScore();
+              const currentRoundFirstColor = getWinnerColor(
+                currentRoundFirstScore,
+                round.opponent,
+              );
+
+              let previousRoundLastColor = currentRoundFirstColor;
+              if (i > 0) {
+                const previousRound = rounds[i - 1];
+                const previousRoundStart = roundStartIndexes[i - 1] ?? 0;
+                const previousRoundLastGameIndex =
+                  previousRoundStart + previousRound.games.length - 1;
+                const previousRoundLastScore =
+                  teamScoreByGame[previousRoundLastGameIndex] ??
+                  makeEmptyTeamScore();
+                previousRoundLastColor = getWinnerColor(
+                  previousRoundLastScore,
+                  previousRound.opponent,
+                );
+              }
 
               let completedNYKWins = 0;
               let completedOPPWins = 0;
@@ -1453,10 +1500,30 @@ export default function Home() {
                       xmlns="http://www.w3.org/2000/svg"
                       preserveAspectRatio="none"
                     >
+                      <defs>
+                        <linearGradient
+                          id={roundSeparatorGradientId}
+                          x1="10"
+                          y1="0"
+                          x2="10"
+                          y2="16"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop
+                            offset="0%"
+                            stopColor={previousRoundLastColor}
+                          />
+                          <stop
+                            offset="100%"
+                            stopColor={currentRoundFirstColor}
+                          />
+                        </linearGradient>
+                      </defs>
                       <path
                         d="M10 0L10 16"
-                        stroke="rgba(255,255,255,0.35)"
+                        stroke={`url(#${roundSeparatorGradientId})`}
                         strokeWidth="1.5"
+                        strokeLinecap="round"
                         vectorEffect="non-scaling-stroke"
                         style={{
                           strokeDasharray: 100,
@@ -1471,16 +1538,16 @@ export default function Home() {
                     const isActiveGame = progress > 0 && progress < 1;
                     const score =
                       teamScoreByGame[gameIndex] ?? makeEmptyTeamScore();
-                    const opponentScore = score.OPP;
-                    const opponentColorVar = `var(--${round.opponent.toLowerCase()})`;
-                    const progressColor =
-                      score.NYK > opponentScore
-                        ? "var(--nyk)"
-                        : opponentScore > score.NYK
-                          ? opponentColorVar
-                          : "color-mix(in srgb, var(--background) 50%, var(--stroke) 25%)";
+                    const progressColor = getWinnerColor(score, round.opponent);
                     const progressBetweenGames =
                       betweenProgressByGame[gameIndex] ?? 0;
+                    const previousGameScore =
+                      teamScoreByGame[gameIndex - 1] ?? makeEmptyTeamScore();
+                    const previousGameColor = getWinnerColor(
+                      previousGameScore,
+                      round.opponent,
+                    );
+                    const gameSeparatorGradientId = `nav-game-separator-${gameIndex}`;
                     const isGameNecessary = j < requiredGamesInSeries;
                     const shouldShowGame =
                       showAllGames || (isRoundVisible && isGameNecessary);
@@ -1494,6 +1561,9 @@ export default function Home() {
                           pointerEvents: shouldShowGame ? "auto" : "none",
                         }}
                         key={j}
+                        ref={(el) => {
+                          navGameRefsRef.current[gameIndex] = el;
+                        }}
                       >
                         {j > 0 && (
                           <svg
@@ -1504,10 +1574,27 @@ export default function Home() {
                             xmlns="http://www.w3.org/2000/svg"
                             preserveAspectRatio="none"
                           >
+                            <defs>
+                              <linearGradient
+                                id={gameSeparatorGradientId}
+                                x1="10"
+                                y1="0"
+                                x2="10"
+                                y2="16"
+                                gradientUnits="userSpaceOnUse"
+                              >
+                                <stop
+                                  offset="0%"
+                                  stopColor={previousGameColor}
+                                />
+                                <stop offset="100%" stopColor={progressColor} />
+                              </linearGradient>
+                            </defs>
                             <path
                               d="M10 0L10 16"
-                              stroke="rgba(255,255,255,0.35)"
+                              stroke={`url(#${gameSeparatorGradientId})`}
                               strokeWidth="1.5"
+                              strokeLinecap="round"
                               vectorEffect="non-scaling-stroke"
                               style={{
                                 strokeDasharray: 16,
