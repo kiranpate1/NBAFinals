@@ -7,6 +7,7 @@
   --background: #101729;
   --foreground: #171717;
   --stroke: #c9e8fa;
+  --stroke-light: color-mix(in srgb, var(--stroke) 20%, #235a8d 80%);
   --nyk: #f36528;
   --sas: #2bd1c5;
   --cle: #cd2812;

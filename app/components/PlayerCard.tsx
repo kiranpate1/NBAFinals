@@ -8,7 +8,7 @@ type props = {
 
 export default function PlayerCard({ info }: props) {
   return (
-    <div className="w-full h-full border border-[color-mix(in_srgb,var(--stroke)_20%,var(--background)_80%)] rounded-xs flex flex-row lg:flex-col items-center lg:items-stretch justify-stretch lg:justify-start gap-1 overflow-hidden">
+    <div className="w-full h-full border border-[color-mix(in_srgb,var(--stroke)_20%,var(--background)_80%)] rounded-2xl flex flex-row lg:flex-col items-center lg:items-stretch justify-stretch lg:justify-start gap-1 overflow-hidden">
       <div
         className="hidden sm:block max-w-40 lg:max-w-none h-full flex-1 border-r lg:border-r-0 lg:border-b border-[color-mix(in_srgb,var(--stroke)_20%,var(--background)_80%)]"
         style={{

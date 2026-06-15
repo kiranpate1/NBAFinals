@@ -17,50 +17,50 @@ export default function GameGrid({ isInsideSticky, ot }: props) {
       }}
     >
       <div className="absolute w-1/2 left-1/2 -translate-x-1/2 top-0 bottom-0 flex items-stretch justify-between">
-        <div className="w-0 h-full border-l border-(--stroke) border-dotted"></div>
-        <div className="w-0 h-full border-l border-(--stroke) border-dotted"></div>
-        <div className="w-0 h-full border-l border-(--stroke) border-dotted"></div>
+        <div className="w-0 h-full border-l border-(--stroke-light) border-dotted"></div>
+        <div className="w-0 h-full border-l border-(--stroke-light) border-dotted"></div>
+        <div className="w-0 h-full border-l border-(--stroke-light) border-dotted"></div>
         <div className="w-px h-full"></div>
-        <div className="w-0 h-full border-r border-(--stroke) border-dotted"></div>
-        <div className="w-0 h-full border-r border-(--stroke) border-dotted"></div>
-        <div className="w-0 h-full border-r border-(--stroke) border-dotted"></div>
+        <div className="w-0 h-full border-r border-(--stroke-light) border-dotted"></div>
+        <div className="w-0 h-full border-r border-(--stroke-light) border-dotted"></div>
+        <div className="w-0 h-full border-r border-(--stroke-light) border-dotted"></div>
       </div>
       <div className="relative w-full flex flex-col items-stretch justify-between">
-        <div className="relative w-full h-0 border-b border-(--stroke)">
+        <div className="relative w-full h-0 border-b border-(--stroke-light)">
           <small className="absolute top-1 left-1">12:00 Q1</small>
           <small className="absolute top-1 right-1">Q1 12:00</small>
         </div>
-        <div className="w-full h-0 border-b border-(--stroke) border-dotted"></div>
-        <div className="w-full h-0 border-b border-(--stroke) border-dotted"></div>
-        <div className="w-full h-0 border-b border-(--stroke) border-dotted"></div>
-        <div className="relative w-full h-0 border-b border-(--stroke)">
+        <div className="w-full h-0 border-b border-(--stroke-light) border-dotted"></div>
+        <div className="w-full h-0 border-b border-(--stroke-light) border-dotted"></div>
+        <div className="w-full h-0 border-b border-(--stroke-light) border-dotted"></div>
+        <div className="relative w-full h-0 border-b border-(--stroke-light)">
           <small className="absolute bottom-0.75 left-1">END Q1</small>
           <small className="absolute bottom-0.75 right-1">Q1 END</small>
           <small className="absolute top-1 left-1">12:00 Q2</small>
           <small className="absolute top-1 right-1">Q2 12:00</small>
         </div>
-        <div className="w-full h-0 border-b border-(--stroke) border-dotted"></div>
-        <div className="w-full h-0 border-b border-(--stroke) border-dotted"></div>
-        <div className="w-full h-0 border-b border-(--stroke) border-dotted"></div>
-        <div className="relative w-full h-0 border-b border-(--stroke)">
+        <div className="w-full h-0 border-b border-(--stroke-light) border-dotted"></div>
+        <div className="w-full h-0 border-b border-(--stroke-light) border-dotted"></div>
+        <div className="w-full h-0 border-b border-(--stroke-light) border-dotted"></div>
+        <div className="relative w-full h-0 border-b border-(--stroke-light)">
           <small className="absolute bottom-0.75 left-1">END Q2</small>
           <small className="absolute bottom-0.75 right-1">Q2 END</small>
           <small className="absolute top-1 left-1">12:00 Q3</small>
           <small className="absolute top-1 right-1">Q3 12:00</small>
         </div>
-        <div className="w-full h-0 border-b border-(--stroke) border-dotted"></div>
-        <div className="w-full h-0 border-b border-(--stroke) border-dotted"></div>
-        <div className="w-full h-0 border-b border-(--stroke) border-dotted"></div>
-        <div className="relative w-full h-0 border-b border-(--stroke)">
+        <div className="w-full h-0 border-b border-(--stroke-light) border-dotted"></div>
+        <div className="w-full h-0 border-b border-(--stroke-light) border-dotted"></div>
+        <div className="w-full h-0 border-b border-(--stroke-light) border-dotted"></div>
+        <div className="relative w-full h-0 border-b border-(--stroke-light)">
           <small className="absolute bottom-0.75 left-1">END Q3</small>
           <small className="absolute bottom-0.75 right-1">Q3 END</small>
           <small className="absolute top-1 left-1">12:00 Q4</small>
           <small className="absolute top-1 right-1">Q4 12:00</small>
         </div>
-        <div className="w-full h-0 border-b border-(--stroke) border-dotted"></div>
-        <div className="w-full h-0 border-b border-(--stroke) border-dotted"></div>
-        <div className="w-full h-0 border-b border-(--stroke) border-dotted"></div>
-        <div className="relative w-full h-0 border-b border-(--stroke)">
+        <div className="w-full h-0 border-b border-(--stroke-light) border-dotted"></div>
+        <div className="w-full h-0 border-b border-(--stroke-light) border-dotted"></div>
+        <div className="w-full h-0 border-b border-(--stroke-light) border-dotted"></div>
+        <div className="relative w-full h-0 border-b border-(--stroke-light)">
           <small className="absolute bottom-0.75 left-1">
             {hasOvertime ? "END REG" : "END"}
           </small>
@@ -84,7 +84,7 @@ export default function GameGrid({ isInsideSticky, ot }: props) {
             return (
               <div
                 key={`ot-end-${i + 1}`}
-                className="relative w-full h-0 border-b border-(--stroke)"
+                className="relative w-full h-0 border-b border-(--stroke-light)"
               >
                 <small className="absolute bottom-0.75 left-1">
                   {isFinalOt ? "END" : `END OT${i + 1}`}

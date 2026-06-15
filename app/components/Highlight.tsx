@@ -61,9 +61,8 @@ export default function Highlight({ info }: props) {
             }
           </p>
           <small className="flex items-center gap-1">
-            <span className="opacity-60">{info.teamLabel}</span>
-            <span className="opacity-40">|</span>#{info.player.number} -{" "}
-            {info.player.position}
+            <span className="opacity-60">{info.teamLabel} | </span>#
+            {info.player.number} - {info.player.position}
           </small>
         </div>
       </div>

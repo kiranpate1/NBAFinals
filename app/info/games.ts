@@ -35,32 +35,16 @@ export type RoundMeta = {
   id: "round1" | "round2" | "round3" | "finals";
   label: string;
   opponent: string;
+  opponentName: string;
   games: GameMeta[];
 };
-
-const makeRecapInfo = (
-  print: string,
-  text: string,
-  imageUrl: string,
-): RecapInfo => ({
-  headline: { print, text, imageUrl },
-  nykPlayer: {
-    name: "Jalen Brunson",
-    description: "31 PTS, 8-14 3PT, 58% FG",
-    imageUrl: "/brunson.png",
-  },
-  sasPlayer: {
-    name: "Victor Wembanyama",
-    description: "41 PTS, 24 REB, 56% FG",
-    imageUrl: "/wemby.png",
-  },
-});
 
 export const rounds: RoundMeta[] = [
   {
     id: "round1",
     label: "Round 1",
     opponent: "ATL",
+    opponentName: "Atlanta Hawks",
     games: [
       {
         id: "r1g1",
@@ -206,9 +190,9 @@ export const rounds: RoundMeta[] = [
             imageUrl: "/players/nyk/brunson.png",
           },
           sasPlayer: {
-            name: "",
-            description: "",
-            imageUrl: "/players/atl/idk.png",
+            name: "Jalen Johnson",
+            description: "18 PTS, 10 REB",
+            imageUrl: "/players/atl/johnson.png",
           },
         },
       },
@@ -248,6 +232,7 @@ export const rounds: RoundMeta[] = [
     id: "round2",
     label: "Round 2",
     opponent: "PHI",
+    opponentName: "Philadelphia 76ers",
     games: [
       {
         id: "r2g1",
@@ -375,6 +360,7 @@ export const rounds: RoundMeta[] = [
     id: "round3",
     label: "Round 3",
     opponent: "CLE",
+    opponentName: "Cleveland Cavaliers",
     games: [
       {
         id: "r3g1",
@@ -502,6 +488,7 @@ export const rounds: RoundMeta[] = [
     id: "finals",
     label: "Finals",
     opponent: "SAS",
+    opponentName: "San Antonio Spurs",
     games: [
       {
         id: "fg1",

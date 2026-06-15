@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import SplashCourt from "./components/SplashCourt";
 import Court from "./components/Court";
 import GameGrid from "./components/GameGrid";
 import SeriesCard from "./components/SeriesCard";
@@ -1280,86 +1279,6 @@ export default function Home() {
     return "color-mix(in srgb, var(--background) 50%, var(--stroke) 25%)";
   };
 
-  // text effect inspired by my codepen
-  const nykTitleRef = useRef<HTMLHeadingElement | null>(null);
-  const sasTitleRef = useRef<HTMLHeadingElement | null>(null);
-
-  useEffect(() => {
-    const nykTitleEl = nykTitleRef.current;
-    const sasTitleEl = sasTitleRef.current;
-    if (!nykTitleEl || !sasTitleEl) return;
-
-    const titleElms = [nykTitleEl, sasTitleEl];
-
-    titleElms.forEach((el) => {
-      el.style.opacity = "1";
-      const titleLetters = el.textContent || "";
-      let letters: string[] = [];
-
-      el.innerHTML = "";
-
-      letters = titleLetters.split("");
-      const widths: number[] = [];
-
-      console.log(letters);
-
-      letters.forEach((letter, n) => {
-        const span = document.createElement("span") as HTMLSpanElement;
-        const div = document.createElement("div") as HTMLDivElement;
-        if (letter == " ") {
-          div.innerHTML = "&nbsp";
-        } else {
-          div.innerHTML = letter;
-        }
-        span.style.display = "inline-block";
-        span.style.lineHeight = "1";
-        span.appendChild(div);
-        el.appendChild(span);
-        widths.push(div.getBoundingClientRect().width);
-
-        // nykTitleEl.style.opacity = '1'
-        div.style.overflow = "hidden";
-        div.style.width = "0px";
-        div.style.transform = `skewX(${el == nykTitleEl ? -75 : 75}deg) scaleX(${el == nykTitleEl ? (letters.length - n) * 2 : n * 2})`;
-        div.style.transition = `${el == nykTitleEl ? 0.2 + n / 15 : 0.2 + (letters.length - n) / 15}s ease-out`;
-      });
-
-      const allSpans = el.querySelectorAll(
-        "h1 span div",
-      ) as NodeListOf<HTMLDivElement>;
-
-      setTimeout(function () {
-        allSpans.forEach((items, n) => {
-          const delay =
-            el == nykTitleEl
-              ? 50 + easeRegular(n, letters.length - 1)
-              : 50 + easeRegular(n, letters.length);
-          const elNumber = el == nykTitleEl ? n : 2 - n;
-
-          setTimeout(function () {
-            // nykTitleEl.style.opacity = '0.7'
-            allSpans[elNumber].style.width = `${widths[elNumber]}px`;
-            allSpans[elNumber].style.transform = "skewX(0deg) scaleX(1)";
-          }, delay);
-        });
-      }, 500);
-    });
-  }, []);
-
-  function easeRegular(x: number, length: number) {
-    if (x < 0) x = 0;
-    if (x > length) x = length;
-
-    const normalizedX = x / length;
-    const normalizedY =
-      normalizedX < 0.5
-        ? 4 * Math.pow(normalizedX, 3)
-        : 1 - Math.pow(-2 * normalizedX + 2, 3) / 2;
-
-    const y = normalizedY * 200;
-    return y;
-  }
-
   return (
     <main>
       {/* loader */}
@@ -1390,319 +1309,276 @@ export default function Home() {
       </div>
       {/* splash */}
       <div
-        className="relative z-4 w-full bg-(--background) p-6 xl:p-[63px_63px_163px_63px] transition-[padding] duration-300 ease-in-out"
+        className="relative z-4 w-full bg-(--background) p-4 transition-[padding] duration-300 ease-in-out"
         style={{
           height: `100dvh`,
         }}
         ref={splashRef}
       >
-        <div className="relative w-full h-full grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 border border-(--stroke)">
-          <SplashCourt />
-          {/* use text effect from your codepen, both animating from center */}
-          <div className="place-self-center flex flex-col items-center text-(--nyk)">
-            <p>Oklahoma City Thunder</p>
-            <h1 ref={nykTitleRef} className="opacity-0">
-              NYK
-            </h1>
-            <small>64-18</small>
-          </div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-0.5">
-            <h3>VS</h3>
-          </div>
-          <div className="place-self-center flex flex-col items-center text-(--sas)">
-            <p>San Antonio Spurs</p>
-            <h1 ref={sasTitleRef} className="opacity-0">
-              SAS
-            </h1>
-            <small>62-20</small>
-          </div>
-        </div>
-      </div>
-      {/* nav / stationary */}
-      <div className="fixed z-100 top-0 left-0 w-62.5 h-full">
-        <div
-          className="absolute inset-[0_0_0_16px] h-full flex flex-col"
-          style={
-            {
-              // transition: splashTransition,
-              // gridTemplateColumns: isInsideSplash
-              //   ? "1fr 1fr 1fr 1fr 1fr 1fr 0.5fr"
-              //   : "repeat(7, 1fr)",
-              // maxWidth: isInsideSplash ? "100%" : "975px",
-              // height: isInsideSplash ? 100 : topLipHeight - 17,
-              // opacity: isInsideSplash ? 0 : 1,
-              // maxHeight: hasReachedBottom ? "none" : "",
-            }
-          }
-        >
-          <div
-            className="flex-1 relative flex flex-col overflow-scroll pointer-events-auto"
-            ref={navScrollRef}
-          >
-            {/* <h3
-            className="absolute top-0 left-2 -translate-y-full text-(--stroke)"
-            style={{
-              transition: splashTransition,
-              opacity: isInsideSplash ? 1 : 0,
-            }}
-          >
-            May <span style={{ opacity: 0.5 }}>2026</span>
-          </h3> */}
-            {rounds.map((round, i) => {
-              const roundStart = roundStartIndexes[i] ?? 0;
-              const progressBetweenRounds =
-                betweenProgressByGame[roundStart] ?? 0;
-              const isRoundVisible =
-                showAllGames || i === 0 || progressBetweenRounds > 0;
-              const roundSeparatorGradientId = `nav-round-separator-${i}`;
-
-              const currentRoundFirstScore =
-                teamScoreByGame[roundStart] ?? makeEmptyTeamScore();
-              const currentRoundFirstColor = getWinnerColor(
-                currentRoundFirstScore,
-                round.opponent,
-              );
-
-              let previousRoundLastColor = currentRoundFirstColor;
-              if (i > 0) {
-                const previousRound = rounds[i - 1];
-                const previousRoundStart = roundStartIndexes[i - 1] ?? 0;
-                const previousRoundLastGameIndex =
-                  previousRoundStart + previousRound.games.length - 1;
-                const previousRoundLastScore =
-                  teamScoreByGame[previousRoundLastGameIndex] ??
-                  makeEmptyTeamScore();
-                previousRoundLastColor = getWinnerColor(
-                  previousRoundLastScore,
-                  previousRound.opponent,
-                );
-              }
-
-              let completedNYKWins = 0;
-              let completedOPPWins = 0;
-              round.games.forEach((_, gameOffset) => {
-                const gameIndex = roundStart + gameOffset;
-                const gameProgress = progressByGame[gameIndex] ?? 0;
-                if (gameProgress < 1) return;
-
-                const score =
-                  teamScoreByGame[gameIndex] ?? makeEmptyTeamScore();
-                if (score.NYK > score.OPP) completedNYKWins += 1;
-                else if (score.OPP > score.NYK) completedOPPWins += 1;
-              });
-
-              const requiredGamesInSeries = Math.min(
-                7,
-                4 + Math.min(completedNYKWins, completedOPPWins),
-              );
-
-              return (
-                <div className="w-full flex flex-col items-center" key={i}>
-                  {i > 0 && (
-                    <svg
-                      width="20"
-                      height="100"
-                      viewBox="0 0 20 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      preserveAspectRatio="none"
-                    >
-                      <defs>
-                        <linearGradient
-                          id={roundSeparatorGradientId}
-                          x1="10"
-                          y1="0"
-                          x2="10"
-                          y2="16"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop
-                            offset="0%"
-                            stopColor={previousRoundLastColor}
-                          />
-                          <stop
-                            offset="100%"
-                            stopColor={currentRoundFirstColor}
-                          />
-                        </linearGradient>
-                      </defs>
-                      <path
-                        d="M10 0L10 16"
-                        stroke={`url(#${roundSeparatorGradientId})`}
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        vectorEffect="non-scaling-stroke"
-                        style={{
-                          strokeDasharray: 100,
-                          strokeDashoffset: 100 - 100 * progressBetweenRounds,
-                        }}
-                      />
-                    </svg>
-                  )}
-                  {round.games.map((game, j) => {
-                    const gameIndex = roundStart + j;
-                    const progress = progressByGame[gameIndex] ?? 0;
-                    const isActiveGame = progress > 0 && progress < 1;
-                    const score =
-                      teamScoreByGame[gameIndex] ?? makeEmptyTeamScore();
-                    const progressColor = getWinnerColor(score, round.opponent);
-                    const progressBetweenGames =
-                      betweenProgressByGame[gameIndex] ?? 0;
-                    const previousGameScore =
-                      teamScoreByGame[gameIndex - 1] ?? makeEmptyTeamScore();
-                    const previousGameColor = getWinnerColor(
-                      previousGameScore,
-                      round.opponent,
-                    );
-                    const gameSeparatorGradientId = `nav-game-separator-${gameIndex}`;
-                    const isGameNecessary = j < requiredGamesInSeries;
-                    const shouldShowGame =
-                      showAllGames || (isRoundVisible && isGameNecessary);
-
-                    return (
-                      <div
-                        className="w-full flex flex-col items-center duration-300 ease-in-out"
-                        style={{
-                          opacity: shouldShowGame ? 1 : 0,
-                          transform: `translateY(${shouldShowGame ? 0 : 50}px)`,
-                          pointerEvents: shouldShowGame ? "auto" : "none",
-                        }}
-                        key={j}
-                        ref={(el) => {
-                          navGameRefsRef.current[gameIndex] = el;
-                        }}
-                      >
-                        {j > 0 && (
-                          <svg
-                            width="20"
-                            height="16"
-                            viewBox="0 0 20 16"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            preserveAspectRatio="none"
-                          >
-                            <defs>
-                              <linearGradient
-                                id={gameSeparatorGradientId}
-                                x1="10"
-                                y1="0"
-                                x2="10"
-                                y2="16"
-                                gradientUnits="userSpaceOnUse"
-                              >
-                                <stop
-                                  offset="0%"
-                                  stopColor={previousGameColor}
-                                />
-                                <stop offset="100%" stopColor={progressColor} />
-                              </linearGradient>
-                            </defs>
-                            <path
-                              d="M10 0L10 16"
-                              stroke={`url(#${gameSeparatorGradientId})`}
-                              strokeWidth="1.5"
-                              strokeLinecap="round"
-                              vectorEffect="non-scaling-stroke"
-                              style={{
-                                strokeDasharray: 16,
-                                strokeDashoffset:
-                                  16 - 16 * progressBetweenGames,
-                              }}
-                            />
-                          </svg>
-                        )}
-                        <div
-                          className="w-full"
-                          style={{
-                            opacity: shouldShowGame ? 1 : 0,
-                            transform: `translateY(${shouldShowGame ? 0 : 50}px)`,
-                            pointerEvents: shouldShowGame ? "auto" : "none",
-                          }}
-                        >
-                          <NavGameCard
-                            scrollToGameStart={scrollToGameStart}
-                            gameIndex={gameIndex}
-                            isActiveGame={isActiveGame}
-                            progressByGame={progressByGame}
-                            score={score}
-                            gameClock={gameClock}
-                            gameQuarter={gameQuarter}
-                            round={round}
-                            game={game}
-                            isInsideSplash={isInsideSplash}
-                            splashTransition={splashTransition}
-                            progressColor={progressColor}
-                          />
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              );
-            })}
-          </div>
-          <div className="relative w-full py-4 bg-(--background) flex flex-col items-stretch gap-4.5">
-            <div className="flex items-center justify-between gap-4">
-              <small>Show all games</small>
-              <div
-                className="w-10 h-5 rounded-[10px] border border-(--stroke) p-0.5 cursor-pointer duration-200 ease-in-out"
-                style={{
-                  borderColor: showAllGames ? "var(--nyk)" : "var(--stroke)",
-                  backgroundColor: showAllGames ? "var(--nyk)" : "transparent",
-                }}
-                onClick={toggleFutureSeries}
-              >
-                <div
-                  className="h-full aspect-square rounded-full duration-200 ease-in-out"
-                  style={{
-                    backgroundColor: showAllGames
-                      ? "var(--background)"
-                      : "var(--stroke)",
-                    transform: showAllGames
-                      ? "translateX(20px)"
-                      : "translateX(0%)",
-                  }}
-                ></div>
-              </div>
-            </div>
-            <div
-              className="border border-(--stroke) w-full"
-              style={{ height: courtHeight + topLipHeight - 18 }}
-            />
-          </div>
-        </div>
-      </div>
-      {/* plays / stationary */}
-      <div className="fixed z-100 top-0 right-0 w-62.5 h-full">
-        <div className="absolute inset-[0_16px_0_0] flex flex-col items-stretch justify-end overflow-hidden">
-          <div
-            className="relative duration-300 ease-out flex flex-col items-stretch gap-2"
-            style={{
-              transform: `translateY(${(activeGameHighlights.length - 1) * 150 - activeHighlightIndex * 150 - 16}px)`,
-            }}
-          >
-            {activeGameHighlights.map((highlight, i) => (
-              <div
-                style={{ opacity: activeHighlightIndex === i ? 1 : 0.25 }}
-                key={`${highlight.quarter}-${highlight.time}-${i}`}
-              >
-                <Highlight info={highlight} />
-              </div>
-            ))}
-          </div>
-        </div>
+        <div className="relative w-full h-full grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 border border-(--stroke)"></div>
       </div>
       {/* main / per round */}
       <div className="relative">
         {/* loop the div below for each round */}
         <div className="relative grid grid-cols-[250px_1fr_250px]">
-          <div
-            className="relative z-4 pointer-events-none"
-            // style={{
-            //   transition: splashTransition,
-            //   inset: `-${isInsideSplash ? 116 : topLipHeight}px 0 0 0`,
-            // }}
-          ></div>
+          {/* nav / stationary */}
+          <div className="sticky z-100 top-0 left-0 w-62.5 h-screen">
+            <div
+              className="absolute inset-[0_0_0_16px] h-full flex flex-col"
+              style={
+                {
+                  // transition: splashTransition,
+                  // gridTemplateColumns: isInsideSplash
+                  //   ? "1fr 1fr 1fr 1fr 1fr 1fr 0.5fr"
+                  //   : "repeat(7, 1fr)",
+                  // maxWidth: isInsideSplash ? "100%" : "975px",
+                  // height: isInsideSplash ? 100 : topLipHeight - 17,
+                  // opacity: isInsideSplash ? 0 : 1,
+                  // maxHeight: hasReachedBottom ? "none" : "",
+                }
+              }
+            >
+              <div
+                className="flex-1 relative flex flex-col pt-4 overflow-scroll pointer-events-auto"
+                ref={navScrollRef}
+              >
+                {rounds.map((round, i) => {
+                  const roundStart = roundStartIndexes[i] ?? 0;
+                  const progressBetweenRounds =
+                    betweenProgressByGame[roundStart] ?? 0;
+                  const isRoundVisible =
+                    showAllGames || i === 0 || progressBetweenRounds > 0;
+                  const roundSeparatorGradientId = `nav-round-separator-${i}`;
+
+                  const currentRoundFirstScore =
+                    teamScoreByGame[roundStart] ?? makeEmptyTeamScore();
+                  const currentRoundFirstColor = getWinnerColor(
+                    currentRoundFirstScore,
+                    round.opponent,
+                  );
+
+                  let previousRoundLastColor = currentRoundFirstColor;
+                  if (i > 0) {
+                    const previousRound = rounds[i - 1];
+                    const previousRoundStart = roundStartIndexes[i - 1] ?? 0;
+                    const previousRoundLastGameIndex =
+                      previousRoundStart + previousRound.games.length - 1;
+                    const previousRoundLastScore =
+                      teamScoreByGame[previousRoundLastGameIndex] ??
+                      makeEmptyTeamScore();
+                    previousRoundLastColor = getWinnerColor(
+                      previousRoundLastScore,
+                      previousRound.opponent,
+                    );
+                  }
+
+                  let completedNYKWins = 0;
+                  let completedOPPWins = 0;
+                  round.games.forEach((_, gameOffset) => {
+                    const gameIndex = roundStart + gameOffset;
+                    const gameProgress = progressByGame[gameIndex] ?? 0;
+                    if (gameProgress < 1) return;
+
+                    const score =
+                      teamScoreByGame[gameIndex] ?? makeEmptyTeamScore();
+                    if (score.NYK > score.OPP) completedNYKWins += 1;
+                    else if (score.OPP > score.NYK) completedOPPWins += 1;
+                  });
+
+                  const requiredGamesInSeries = Math.min(
+                    7,
+                    4 + Math.min(completedNYKWins, completedOPPWins),
+                  );
+
+                  return (
+                    <div className="w-full flex flex-col items-center" key={i}>
+                      {i > 0 && (
+                        <svg
+                          width="20"
+                          height="100"
+                          viewBox="0 0 20 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          preserveAspectRatio="none"
+                        >
+                          <defs>
+                            <linearGradient
+                              id={roundSeparatorGradientId}
+                              x1="10"
+                              y1="0"
+                              x2="10"
+                              y2="16"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop
+                                offset="0%"
+                                stopColor={previousRoundLastColor}
+                              />
+                              <stop
+                                offset="100%"
+                                stopColor={currentRoundFirstColor}
+                              />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            d="M10 0L10 16"
+                            stroke={`url(#${roundSeparatorGradientId})`}
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            vectorEffect="non-scaling-stroke"
+                            style={{
+                              strokeDasharray: 100,
+                              strokeDashoffset:
+                                100 - 100 * progressBetweenRounds,
+                            }}
+                          />
+                        </svg>
+                      )}
+                      {round.games.map((game, j) => {
+                        const gameIndex = roundStart + j;
+                        const progress = progressByGame[gameIndex] ?? 0;
+                        const isActiveGame = progress > 0 && progress < 1;
+                        const score =
+                          teamScoreByGame[gameIndex] ?? makeEmptyTeamScore();
+                        const progressColor = getWinnerColor(
+                          score,
+                          round.opponent,
+                        );
+                        const progressBetweenGames =
+                          betweenProgressByGame[gameIndex] ?? 0;
+                        const previousGameScore =
+                          teamScoreByGame[gameIndex - 1] ??
+                          makeEmptyTeamScore();
+                        const previousGameColor = getWinnerColor(
+                          previousGameScore,
+                          round.opponent,
+                        );
+                        const gameSeparatorGradientId = `nav-game-separator-${gameIndex}`;
+                        const isGameNecessary = j < requiredGamesInSeries;
+                        const shouldShowGame =
+                          showAllGames || (isRoundVisible && isGameNecessary);
+
+                        return (
+                          <div
+                            className="w-full flex flex-col items-center duration-300 ease-in-out"
+                            style={{
+                              opacity: shouldShowGame ? 1 : 0,
+                              transform: `translateY(${shouldShowGame ? 0 : 50}px)`,
+                              pointerEvents: shouldShowGame ? "auto" : "none",
+                            }}
+                            key={j}
+                            ref={(el) => {
+                              navGameRefsRef.current[gameIndex] = el;
+                            }}
+                          >
+                            {j > 0 && (
+                              <svg
+                                width="20"
+                                height="16"
+                                viewBox="0 0 20 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="none"
+                              >
+                                <defs>
+                                  <linearGradient
+                                    id={gameSeparatorGradientId}
+                                    x1="10"
+                                    y1="0"
+                                    x2="10"
+                                    y2="16"
+                                    gradientUnits="userSpaceOnUse"
+                                  >
+                                    <stop
+                                      offset="0%"
+                                      stopColor={previousGameColor}
+                                    />
+                                    <stop
+                                      offset="100%"
+                                      stopColor={progressColor}
+                                    />
+                                  </linearGradient>
+                                </defs>
+                                <path
+                                  d="M10 0L10 16"
+                                  stroke={`url(#${gameSeparatorGradientId})`}
+                                  strokeWidth="1.5"
+                                  strokeLinecap="round"
+                                  vectorEffect="non-scaling-stroke"
+                                  style={{
+                                    strokeDasharray: 16,
+                                    strokeDashoffset:
+                                      16 - 16 * progressBetweenGames,
+                                  }}
+                                />
+                              </svg>
+                            )}
+                            <div
+                              className="w-full"
+                              style={{
+                                opacity: shouldShowGame ? 1 : 0,
+                                transform: `translateY(${shouldShowGame ? 0 : 50}px)`,
+                                pointerEvents: shouldShowGame ? "auto" : "none",
+                              }}
+                            >
+                              <NavGameCard
+                                scrollToGameStart={scrollToGameStart}
+                                gameIndex={gameIndex}
+                                isActiveGame={isActiveGame}
+                                progressByGame={progressByGame}
+                                score={score}
+                                gameClock={gameClock}
+                                gameQuarter={gameQuarter}
+                                round={round}
+                                game={game}
+                                isInsideSplash={isInsideSplash}
+                                splashTransition={splashTransition}
+                                progressColor={progressColor}
+                              />
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="relative w-full py-4 bg-(--background) flex flex-col items-stretch gap-4.5">
+                <div className="flex items-center justify-between gap-4">
+                  <small>Show all games</small>
+                  <div
+                    className="w-10 h-5 rounded-[10px] border border-(--stroke) p-0.5 cursor-pointer duration-200 ease-in-out"
+                    style={{
+                      borderColor: showAllGames
+                        ? "var(--nyk)"
+                        : "var(--stroke)",
+                      backgroundColor: showAllGames
+                        ? "var(--nyk)"
+                        : "transparent",
+                    }}
+                    onClick={toggleFutureSeries}
+                  >
+                    <div
+                      className="h-full aspect-square rounded-full duration-200 ease-in-out"
+                      style={{
+                        backgroundColor: showAllGames
+                          ? "var(--background)"
+                          : "var(--stroke)",
+                        transform: showAllGames
+                          ? "translateX(20px)"
+                          : "translateX(0%)",
+                      }}
+                    ></div>
+                  </div>
+                </div>
+                <div
+                  className="border border-(--stroke) w-full"
+                  style={{ height: courtHeight + topLipHeight - 18 }}
+                />
+              </div>
+            </div>
+          </div>
+          {/* content / scrollable */}
           <div className="relative">
             {/* info */}
             <div className="absolute z-3 inset-0 pointer-events-none">
@@ -1725,7 +1601,7 @@ export default function Home() {
                   const roundStart = roundStartIndexes[roundIndex] ?? 0;
                   return (
                     <React.Fragment key={round.id}>
-                      <SeriesCard isInsideSticky={true} series={round.label} />
+                      <SeriesCard isInsideSticky={true} seriesInfo={round} />
                       {round.games.map((game, g) => {
                         const gameIndex = roundStart + g;
                         return (
@@ -1927,7 +1803,7 @@ export default function Home() {
 
                 return (
                   <React.Fragment key={round.id}>
-                    <SeriesCard isInsideSticky={false} series={round.label} />
+                    <SeriesCard isInsideSticky={false} seriesInfo={round} />
                     {round.games.map((game, g) => {
                       const gameIndex = roundStart + g;
                       const gameVisual =
@@ -2032,7 +1908,26 @@ export default function Home() {
               ></div>
             </div>
           </div>
-          <div></div>
+          {/* plays / stationary */}
+          <div className="sticky z-100 top-0 right-0 w-62.5 h-screen">
+            <div className="absolute inset-[0_16px_0_0] flex flex-col items-stretch justify-end overflow-hidden">
+              <div
+                className="relative duration-300 ease-out flex flex-col items-stretch gap-2"
+                style={{
+                  transform: `translateY(${(activeGameHighlights.length - 1) * 150 - activeHighlightIndex * 150 - 16}px)`,
+                }}
+              >
+                {activeGameHighlights.map((highlight, i) => (
+                  <div
+                    style={{ opacity: activeHighlightIndex === i ? 1 : 0.25 }}
+                    key={`${highlight.quarter}-${highlight.time}-${i}`}
+                  >
+                    <Highlight info={highlight} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <footer
