@@ -23,10 +23,13 @@ import FGame3_SAS from "./graphics/finals/game3/Game3_SAS";
 import FGame3_NYK from "./graphics/finals/game3/Game3_NYK";
 import FGame4_SAS from "./graphics/finals/game4/Game4_SAS";
 import FGame4_NYK from "./graphics/finals/game4/Game4_NYK";
+import FGame5_SAS from "./graphics/finals/game5/Game5_SAS";
+import FGame5_NYK from "./graphics/finals/game5/Game5_NYK";
 import FGame1Spread from "./graphics/finals/game1/Game1Spread";
 import FGame2Spread from "./graphics/finals/game2/Game2Spread";
 import FGame3Spread from "./graphics/finals/game3/Game3Spread";
 import FGame4Spread from "./graphics/finals/game4/Game4Spread";
+import FGame5Spread from "./graphics/finals/game5/Game5Spread";
 import R1Game1_ATL from "./graphics/round1/game1/Game1_ATL";
 import R1Game1_NYK from "./graphics/round1/game1/Game1_NYK";
 import R1Game1Spread from "./graphics/round1/game1/Game1Spread";
@@ -110,6 +113,7 @@ const roundVisuals: Record<
     { sasCourt: FGame2_SAS, nykCourt: FGame2_NYK, spread: FGame2Spread },
     { sasCourt: FGame3_SAS, nykCourt: FGame3_NYK, spread: FGame3Spread },
     { sasCourt: FGame4_SAS, nykCourt: FGame4_NYK, spread: FGame4Spread },
+    { sasCourt: FGame5_SAS, nykCourt: FGame5_NYK, spread: FGame5Spread },
   ],
 };
 
@@ -149,6 +153,7 @@ type TeamScore = { NYK: number; OPP: number };
 
 type HighlightInfo = {
   team: "NYK" | "OPP";
+  teamLabel: string;
   player: {
     name: string;
     position: string;
@@ -409,6 +414,7 @@ const knicksPlayersByName = new Map(
 
 const fallbackHighlight: HighlightInfo = {
   team: "NYK",
+  teamLabel: "NYK",
   player: {
     name: "No Highlight",
     position: "-",
@@ -518,8 +524,8 @@ const toHighlightInfo = (
   gameIndex: number,
 ): HighlightInfo => {
   const { entry } = play;
-  const resolvedName = resolveRosterName(entry.team, entry.player, gameIndex);
   const opponentCode = getOpponentCodeForGame(gameIndex);
+  const resolvedName = resolveRosterName(entry.team, entry.player, gameIndex);
   const teamLookup =
     entry.team === "NYK"
       ? knicksPlayersByName
@@ -534,6 +540,7 @@ const toHighlightInfo = (
 
   return {
     team: entry.team,
+    teamLabel: entry.team === "NYK" ? "NYK" : opponentCode,
     player: {
       name: resolvedName ?? entry.player ?? rosterPlayer.name,
       position: rosterPlayer.position,

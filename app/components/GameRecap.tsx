@@ -1,5 +1,6 @@
 import type { GameMeta } from "../info/games";
 import PlayerCard from "./PlayerCard";
+import Image from "next/image";
 
 type props = {
   isInsideSticky: boolean;
@@ -11,7 +12,7 @@ export default function GameRecap({ isInsideSticky, height, game }: props) {
   const gameInfo = game.info;
   return (
     <div
-      className="relative w-full lg:grid lg:grid-cols-[275px_1fr_275px] border-b border-(--stroke)"
+      className="relative w-full lg:grid lg:grid-cols-[275px_1fr_275px] border-b border-[color-mix(in_srgb,var(--stroke)_20%,var(--background)_80%)]"
       style={{
         height: `${height}px`,
         opacity: isInsideSticky ? 0 : 1,
@@ -24,20 +25,20 @@ export default function GameRecap({ isInsideSticky, height, game }: props) {
             <PlayerCard info={gameInfo.nykPlayer} />
           </div>
           <div className="[grid-area:1/2/1/6] lg:[grid-area:1/2/1/3] flex justify-center">
-            <div className="w-full max-w-37.5 lg:max-w-none h-full border border-(--stroke) rounded-xs flex flex-col items-stretch gap-1 overflow-hidden">
-              <div
-                className="flex-1 border-b border-(--stroke)"
-                style={{
-                  backgroundImage: `url(${gameInfo.headline.imageUrl})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              ></div>
-              <div className="lg:min-h-11 flex items-center justify-center">
-                <h3 className="text-center text-pretty">
-                  {gameInfo.headline.print}
-                </h3>
-              </div>
+            <div className="relative w-full max-w-37.5 lg:max-w-none h-full p-4 border border-[color-mix(in_srgb,var(--stroke)_20%,var(--background)_80%)] rounded-xs flex flex-col items-center justify-start">
+              <h3
+                className="text-center text-pretty"
+                style={{ color: "var(--nyk)" }}
+              >
+                {gameInfo.headline.print}
+              </h3>
+              <Image
+                className="absolute inset-[auto_0_0_0]"
+                src="/city-bg.png"
+                alt="City background"
+                width={300}
+                height={100}
+              />
             </div>
           </div>
           <div className="[grid-area:2/4/2/7] lg:[grid-area:1/3/1/4]">

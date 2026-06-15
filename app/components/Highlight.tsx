@@ -3,6 +3,7 @@ import Image from "next/image";
 type props = {
   info: {
     team: "NYK" | "OPP";
+    teamLabel: string;
     player: {
       name: string;
       position: string;
@@ -36,21 +37,33 @@ export default function Highlight({ info }: props) {
   }
 
   return (
-    <div className="w-full h-35.5 grid grid-cols-[auto_1fr] gap-2 p-1 border border-(--stroke) rounded-xs overflow-hidden pointer-events-auto">
+    <div className="w-full h-35.5 grid grid-cols-[0.9fr_1fr] gap-2 p-1 border border-(--stroke) rounded-xs overflow-hidden pointer-events-auto">
       <div className="flex flex-col items-stretch">
-        <Image
-          className="flex-1 pt-2 border border-(--stroke) rounded-xs object-cover"
-          src={info.player.imageUrl || "/placeholder-player.png"}
-          alt={info.player.name}
-          width={100}
-          height={100}
-        />
+        <div className="flex-1 border border-(--stroke) rounded-xs overflow-hidden">
+          <Image
+            className="w-[150%] h-[130%] object-cover"
+            style={{
+              backgroundColor: `var(--${info.teamLabel.toLowerCase()})`,
+            }}
+            src={info.player.imageUrl || "/placeholder-player.png"}
+            alt={info.player.name}
+            width={100}
+            height={100}
+          />
+        </div>
         <div className="p-1 flex flex-col gap-0.5">
           <p className="smaller">
-            {info.player.name[0]}. {info.player.name.split(" ")[1]}
+            {info.player.name[0]}.{" "}
+            {
+              info.player.name.split(" ")[
+                info.player.name.split(" ").length - 1
+              ]
+            }
           </p>
-          <small>
-            #{info.player.number} - {info.player.position}
+          <small className="flex items-center gap-1">
+            <span className="opacity-60">{info.teamLabel}</span>
+            <span className="opacity-40">|</span>#{info.player.number} -{" "}
+            {info.player.position}
           </small>
         </div>
       </div>

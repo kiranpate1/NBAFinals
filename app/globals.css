@@ -63,7 +63,8 @@ h2 {
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 40px;
+  line-height: 90%;
 }
 
 @media (max-width: 1023px) {
