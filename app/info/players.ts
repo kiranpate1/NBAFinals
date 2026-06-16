@@ -51,7 +51,7 @@ export const knicksPlayers = [
     name: "Mitchell Robinson",
     position: "Center",
     number: 23,
-    imageUrl: "https://cdn.nba.com/headshots/nba/latest/260x190/1641717.png",
+    imageUrl: "/players/nyk/mitch.png",
   },
   {
     name: "Jordan Clarkson",

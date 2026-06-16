@@ -20,7 +20,7 @@ export default function GameGrid({ isInsideSticky, ot }: props) {
         <div className="w-0 h-full border-l border-(--stroke-light) border-dotted"></div>
         <div className="w-0 h-full border-l border-(--stroke-light) border-dotted"></div>
         <div className="w-0 h-full border-l border-(--stroke-light) border-dotted"></div>
-        <div className="w-px h-full"></div>
+        <div className="w-px h-full bg-(--stroke-light)"></div>
         <div className="w-0 h-full border-r border-(--stroke-light) border-dotted"></div>
         <div className="w-0 h-full border-r border-(--stroke-light) border-dotted"></div>
         <div className="w-0 h-full border-r border-(--stroke-light) border-dotted"></div>

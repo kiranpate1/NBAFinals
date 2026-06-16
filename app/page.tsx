@@ -1626,6 +1626,7 @@ export default function Home() {
                               isInsideSticky={true}
                               height={courtHeight + topLipHeight}
                               game={game}
+                              round={rounds[roundIndex]}
                             />
 
                             <div
@@ -1824,7 +1825,6 @@ export default function Home() {
                             isInsideSticky={false}
                             height={courtHeight + topLipHeight}
                             game={game}
-                            scrollProgress={firstSeventhGameProgress}
                           />
                           <div
                             className="relative flex flex-col h-full items-center justify-between"
@@ -1872,6 +1872,7 @@ export default function Home() {
                             isInsideSticky={false}
                             height={courtHeight + topLipHeight}
                             game={game}
+                            round={rounds[roundIndex]}
                           />
                           <div
                             className="scoreboard absolute left-0 right-0 flex items-stretch flex-col"

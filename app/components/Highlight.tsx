@@ -68,15 +68,13 @@ export default function Highlight({ info }: props) {
       </div>
       <div className="flex flex-col justify-between gap-1 p-0">
         <div className="flex flex-col gap-1">
-          <div className="flex items-center gap-1">
-            <h4 className="text-sm! bg-gray-600 px-1 pt-px rounded-sm">
+          <div className="flex items-center gap-1 text-(--stroke)">
+            <h4 className="text-sm! bg-gray-700 px-1 pt-px rounded-sm">
               {info.time}
             </h4>
             <small>{info.quarter}</small>
           </div>
-          <p className="text-(--stroke) leading-[120%] text-pretty">
-            {description}
-          </p>
+          <p className="leading-[120%] text-pretty">{description}</p>
         </div>
         <div className="flex flex-col gap-1">
           <p className="smaller opacity-70">
