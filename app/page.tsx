@@ -8,6 +8,7 @@ import SeriesCard from "./components/SeriesCard";
 import GameCard from "./components/GameCard";
 import GameRecap from "./components/GameRecap";
 import GameScoreboard from "./components/GameScoreboard";
+import Footer from "./components/Footer";
 import {
   knicksPlayers,
   spursPlayers,
@@ -83,37 +84,37 @@ type SpreadGraphicComponent = React.ComponentType<{ spread: number }>;
 const roundVisuals: Record<
   RoundMeta["id"],
   Array<{
-    sasCourt: CourtGraphicComponent;
+    oppCourt: CourtGraphicComponent;
     nykCourt: CourtGraphicComponent;
     spread: SpreadGraphicComponent;
   }>
 > = {
   round1: [
-    { sasCourt: R1Game1_ATL, nykCourt: R1Game1_NYK, spread: R1Game1Spread },
-    { sasCourt: R1Game2_ATL, nykCourt: R1Game2_NYK, spread: R1Game2Spread },
-    { sasCourt: R1Game3_ATL, nykCourt: R1Game3_NYK, spread: R1Game3Spread },
-    { sasCourt: R1Game4_ATL, nykCourt: R1Game4_NYK, spread: R1Game4Spread },
-    { sasCourt: R1Game5_ATL, nykCourt: R1Game5_NYK, spread: R1Game5Spread },
-    { sasCourt: R1Game6_ATL, nykCourt: R1Game6_NYK, spread: R1Game6Spread },
+    { oppCourt: R1Game1_ATL, nykCourt: R1Game1_NYK, spread: R1Game1Spread },
+    { oppCourt: R1Game2_ATL, nykCourt: R1Game2_NYK, spread: R1Game2Spread },
+    { oppCourt: R1Game3_ATL, nykCourt: R1Game3_NYK, spread: R1Game3Spread },
+    { oppCourt: R1Game4_ATL, nykCourt: R1Game4_NYK, spread: R1Game4Spread },
+    { oppCourt: R1Game5_ATL, nykCourt: R1Game5_NYK, spread: R1Game5Spread },
+    { oppCourt: R1Game6_ATL, nykCourt: R1Game6_NYK, spread: R1Game6Spread },
   ],
   round2: [
-    { sasCourt: R2Game1_PHI, nykCourt: R2Game1_NYK, spread: R2Game1Spread },
-    { sasCourt: R2Game2_PHI, nykCourt: R2Game2_NYK, spread: R2Game2Spread },
-    { sasCourt: R2Game3_PHI, nykCourt: R2Game3_NYK, spread: R2Game3Spread },
-    { sasCourt: R2Game4_PHI, nykCourt: R2Game4_NYK, spread: R2Game4Spread },
+    { oppCourt: R2Game1_PHI, nykCourt: R2Game1_NYK, spread: R2Game1Spread },
+    { oppCourt: R2Game2_PHI, nykCourt: R2Game2_NYK, spread: R2Game2Spread },
+    { oppCourt: R2Game3_PHI, nykCourt: R2Game3_NYK, spread: R2Game3Spread },
+    { oppCourt: R2Game4_PHI, nykCourt: R2Game4_NYK, spread: R2Game4Spread },
   ],
   round3: [
-    { sasCourt: R3Game1_CLE, nykCourt: R3Game1_NYK, spread: R3Game1Spread },
-    { sasCourt: R3Game2_CLE, nykCourt: R3Game2_NYK, spread: R3Game2Spread },
-    { sasCourt: R3Game3_CLE, nykCourt: R3Game3_NYK, spread: R3Game3Spread },
-    { sasCourt: R3Game4_CLE, nykCourt: R3Game4_NYK, spread: R3Game4Spread },
+    { oppCourt: R3Game1_CLE, nykCourt: R3Game1_NYK, spread: R3Game1Spread },
+    { oppCourt: R3Game2_CLE, nykCourt: R3Game2_NYK, spread: R3Game2Spread },
+    { oppCourt: R3Game3_CLE, nykCourt: R3Game3_NYK, spread: R3Game3Spread },
+    { oppCourt: R3Game4_CLE, nykCourt: R3Game4_NYK, spread: R3Game4Spread },
   ],
   finals: [
-    { sasCourt: FGame1_SAS, nykCourt: FGame1_NYK, spread: FGame1Spread },
-    { sasCourt: FGame2_SAS, nykCourt: FGame2_NYK, spread: FGame2Spread },
-    { sasCourt: FGame3_SAS, nykCourt: FGame3_NYK, spread: FGame3Spread },
-    { sasCourt: FGame4_SAS, nykCourt: FGame4_NYK, spread: FGame4Spread },
-    { sasCourt: FGame5_SAS, nykCourt: FGame5_NYK, spread: FGame5Spread },
+    { oppCourt: FGame1_SAS, nykCourt: FGame1_NYK, spread: FGame1Spread },
+    { oppCourt: FGame2_SAS, nykCourt: FGame2_NYK, spread: FGame2Spread },
+    { oppCourt: FGame3_SAS, nykCourt: FGame3_NYK, spread: FGame3Spread },
+    { oppCourt: FGame4_SAS, nykCourt: FGame4_NYK, spread: FGame4Spread },
+    { oppCourt: FGame5_SAS, nykCourt: FGame5_NYK, spread: FGame5Spread },
   ],
 };
 
@@ -605,18 +606,15 @@ const getHighlightsForGame = (
 
 export default function Home() {
   const courtHeight = 160;
-  const gameScroll = 300; // in vh, regulation 48 minutes
+  const gameScroll = 250; // in vh, regulation 48 minutes
   const topLipHeight = 80;
   const splashRef = useRef<HTMLDivElement | null>(null);
   const playBoundaryRef = useRef<HTMLDivElement | null>(null);
   const NYKPlayRef = useRef<HTMLDivElement | null>(null);
   const SASPlayRef = useRef<HTMLDivElement | null>(null);
   const gameScrollElsRef = useRef<Array<HTMLDivElement | null>>([]);
-  const footerRef = useRef<HTMLElement | null>(null);
   const courtHeightDynamicRef = useRef<HTMLDivElement | null>(null);
-  // const animationFrameRef = useRef<number | null>(null);
-  // const footerMetricsRef = useRef({ top: 0, bottom: 0 });
-  const sasCourtRef = useRef<HTMLDivElement | null>(null);
+  const oppCourtRef = useRef<HTMLDivElement | null>(null);
   const nykCourtRef = useRef<HTMLDivElement | null>(null);
   const navScrollRef = useRef<HTMLDivElement | null>(null);
   const navGameRefsRef = useRef<Array<HTMLDivElement | null>>([]);
@@ -658,7 +656,7 @@ export default function Home() {
     gameScrollElsRef.current[index] = el;
   };
   const activeGameVisual = gameVisuals[activeGameIndex] ?? gameVisuals[0];
-  const ActiveSASCourt = activeGameVisual.sasCourt;
+  const ActiveoppCourt = activeGameVisual.oppCourt;
   const ActiveNYKCourt = activeGameVisual.nykCourt;
 
   useEffect(() => {
@@ -760,7 +758,7 @@ export default function Home() {
     let lastGameIndex = -1;
 
     const resetShotStyles = () => {
-      [sasCourtRef, nykCourtRef].forEach((ref) => {
+      [oppCourtRef, nykCourtRef].forEach((ref) => {
         ref.current?.querySelectorAll<SVGGElement>("g.shot").forEach((g) => {
           g.style.opacity = "1";
           g.style.transform = "scale(1)";
@@ -905,7 +903,7 @@ export default function Home() {
         }
       };
 
-      highlightShot(sasCourtRef, sasPlay);
+      highlightShot(oppCourtRef, sasPlay);
       highlightShot(nykCourtRef, nykPlay);
     };
 
@@ -1186,67 +1184,6 @@ export default function Home() {
     }
   }, [activeGameIndex]);
 
-  // useEffect(() => {
-  //   const footerElement = footerRef.current;
-  //   const courtElement = courtHeightDynamicRef.current;
-
-  //   if (!footerElement || !courtElement) {
-  //     return;
-  //   }
-
-  //   const maxCourtHeight = 520;
-
-  //   const measureFooter = () => {
-  //     const footerRect = footerElement.getBoundingClientRect();
-  //     footerMetricsRef.current = {
-  //       top: footerRect.top + window.scrollY,
-  //       bottom: footerRect.bottom + window.scrollY,
-  //     };
-  //   };
-
-  //   const loop = () => {
-  //     const { top: footerTop, bottom: footerBottom } = footerMetricsRef.current;
-  //     const footerHeight = footerBottom - footerTop;
-
-  //     if (footerHeight > 0) {
-  //       const viewportBottom = window.scrollY + window.innerHeight;
-  //       const progress = (viewportBottom - footerTop) / footerHeight;
-  //       const clampedProgress = Math.min(1, Math.max(0, progress));
-  //       const nextHeight =
-  //         courtHeight + (maxCourtHeight - courtHeight) * clampedProgress;
-  //       courtElement.style.height = `${nextHeight}px`;
-  //     }
-
-  //     animationFrameRef.current = window.requestAnimationFrame(loop);
-  //   };
-
-  //   const onResize = () => {
-  //     measureFooter();
-  //   };
-
-  //   measureFooter();
-  //   animationFrameRef.current = window.requestAnimationFrame(loop);
-
-  //   window.addEventListener("resize", onResize);
-
-  //   const resizeObserver =
-  //     typeof ResizeObserver !== "undefined"
-  //       ? new ResizeObserver(onResize)
-  //       : null;
-
-  //   resizeObserver?.observe(footerElement);
-
-  //   return () => {
-  //     window.removeEventListener("resize", onResize);
-  //     resizeObserver?.disconnect();
-
-  //     if (animationFrameRef.current !== null) {
-  //       window.cancelAnimationFrame(animationFrameRef.current);
-  //       animationFrameRef.current = null;
-  //     }
-  //   };
-  // }, [courtHeight]);
-
   // current highlight logic
   const splashTransition = "0.2s ease-in-out";
   const highlightsByGame = useMemo(
@@ -1466,9 +1403,9 @@ export default function Home() {
                             }}
                           >
                             <h4 className="text-sm!">
-                              <b className=" text-(--nyk)">NYK</b>
-                              <span className="text-(--stroke) opacity-70">
-                                {" vs "}
+                              <b className="text-(--nyk)">NYK</b>
+                              <span className="text-(--stroke) bg-(--background) opacity-80">
+                                {" v "}
                               </span>
                               <b
                                 className=""
@@ -1591,7 +1528,7 @@ export default function Home() {
                   );
                 })}
               </div>
-              <div className="relative w-full py-4 bg-(--background) flex flex-col items-stretch gap-4.5">
+              <div className="relative w-full py-4 bg-(--background) flex flex-col items-stretch gap-4">
                 <div className="flex items-center justify-between gap-4">
                   <small>Show all games</small>
                   <div
@@ -1620,8 +1557,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div
-                  className="border border-(--stroke) w-full flex items-center justify-center"
-                  style={{ height: courtHeight + topLipHeight - 18 }}
+                  className="border border-(--stroke-light) w-full flex items-center justify-center"
+                  style={{ height: courtHeight + topLipHeight }}
                 ></div>
               </div>
             </div>
@@ -1720,7 +1657,7 @@ export default function Home() {
                   <div className="absolute z-10 inset-[0_0_auto_0] h-4 bg-(--background)"></div>
                   <div className="absolute z-10 inset-[auto_0_0_0] h-4 bg-(--background)"></div>
                   <div
-                    className="absolute top-9.5 xl:top-4 left-4 w-[calc(50dvw-15px)] xl:w-102 h-[calc(22dvh)] border border-(--stroke) bg-(--background) duration-200 pointer-events-auto"
+                    className="absolute top-9.5 xl:top-4 left-4 w-[calc(50%-15px)] h-[calc(22dvh)] border border-(--stroke) bg-(--background) duration-200 pointer-events-auto"
                     style={
                       {
                         // opacity: hasReachedBottom ? 0 : 1,
@@ -1735,7 +1672,7 @@ export default function Home() {
                     />
                   </div>
                   <div
-                    className="absolute top-9.5 xl:top-4 right-4 w-[calc(50dvw-15px)] xl:w-102 h-[calc(22dvh)] border border-(--stroke) bg-(--background) duration-200 pointer-events-auto"
+                    className="absolute top-9.5 xl:top-4 right-4 w-[calc(50%-15px)] h-[calc(22dvh)] border border-(--stroke) bg-(--background) duration-200 pointer-events-auto"
                     style={
                       {
                         // opacity: hasReachedBottom ? 0 : 1,
@@ -1758,7 +1695,7 @@ export default function Home() {
                       style={{ paddingTop: topLipHeight }}
                     >
                       <div
-                        className="absolute inset-[0_0_auto_0] border-b border-(--stroke) bg-(--background) grid grid-cols-2 gap-2 py-1 pointer-events-auto"
+                        className="absolute inset-[0_0_auto_0] grid grid-cols-2 gap-2 py-1 pointer-events-auto"
                         ref={playBoundaryRef}
                       >
                         <small
@@ -1774,14 +1711,14 @@ export default function Home() {
                           Example of OPP play
                         </small>
                       </div>
-                      <div className="absolute z-1 top-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-(--stroke) pointer-events-auto">
+                      <div className="absolute z-1 top-7 left-1/2 -translate-x-1/2 flex flex-col items-center text-(--stroke) pointer-events-auto">
                         <h3 className="gameclock">{gameClock}</h3>
                         <small className="bg-(--background)">
                           {gameQuarter}
                         </small>
                       </div>
                       <div
-                        className="absolute top-0 left-1/2 -translate-x-1/2 w-px bg-(--stroke) opacity-50"
+                        className="absolute top-0 left-1/2 -translate-x-1/2 w-px bg-(--stroke-light) opacity-50"
                         style={{ height: topLipHeight }}
                       ></div>
                       <div
@@ -1796,16 +1733,16 @@ export default function Home() {
                               transformOrigin: "bottom right",
                               transform: "rotate(90deg) translate(100%)",
                             }}
-                            ref={sasCourtRef}
+                            ref={oppCourtRef}
                           >
                             {/* add other game cards here eventually */}
                             {hasReachedBottom ? (
                               gameVisuals.map((visual, index) => {
-                                const SASCourt = visual.sasCourt;
-                                return <SASCourt key={`sas-series-${index}`} />;
+                                const OppCourt = visual.oppCourt;
+                                return <OppCourt key={`opp-series-${index}`} />;
                               })
                             ) : (
-                              <ActiveSASCourt />
+                              <ActiveoppCourt />
                             )}
                           </div>
                           <div
@@ -1880,7 +1817,7 @@ export default function Home() {
                             ref={(el) => setGameScrollRef(gameIndex, el)}
                           >
                             <div
-                              className="sticky z-5 w-full h-0 grid grid-cols-12 pointer-events-auto opacity-70"
+                              className="sticky z-5 w-full h-0 grid grid-cols-12 pointer-events-auto text-(--stroke-light) brightness-115"
                               style={{
                                 top: `calc(100dvh - ${topLipHeight + courtHeight + 17}px)`,
                               }}
@@ -1976,8 +1913,8 @@ export default function Home() {
                 </div>
               </div>
               <div
-                className="border border-(--stroke) w-full mb-4 flex items-center justify-center"
-                style={{ minHeight: courtHeight + topLipHeight - 18 }}
+                className="border border-(--stroke-light) w-full mb-4 flex items-center justify-center"
+                style={{ minHeight: courtHeight + topLipHeight }}
               >
                 <div className="relative w-30 h-30">
                   <Image
@@ -2016,79 +1953,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer
-        ref={footerRef}
-        className="relative z-6 w-full min-h-screen lg:min-h-137.5"
-        style={{ height: `calc(100vh - ${courtHeight + topLipHeight + 14}px)` }}
-      >
-        {/* <div className="absolute inset-[calc(53vw+140px)_0_auto_0] sm:inset-[calc(50vw-160px)_0_auto_0] lg:inset-[-254px_0_auto_0] flex items-center justify-between">
-          <div className="flex flex-col xl:flex-row items-center gap-0 xl:gap-8 p-[16px_32px_0_32px] lg:p-2 xl:p-[32px_40px] pointer-events-auto">
-            <h2 className="opacity-50">NYK</h2>
-            <h2 className="text-(--nyk) text-right">3</h2>
-          </div>
-          <div className="flex flex-col-reverse xl:flex-row items-center gap-0 xl:gap-8 p-[16px_32px_0_32px] lg:p-2 xl:p-[32px_40px] pointer-events-auto">
-            <h2 className="text-(--sas) text-left">4</h2>
-            <h2 className="opacity-50">SAS</h2>
-          </div>
-        </div>
-        <div className="absolute top-[calc(53vw-160px)] md:top-50 left-1/2 -translate-x-1/2 w-[calc(100dvw-32px)] sm:w-75 h-75">
-          <div className="w-full h-full border border-(--stroke) rounded-xs flex flex-col items-stretch justify-start gap-1 overflow-hidden">
-            <div
-              className="h-full flex-1 border-b border-(--stroke)"
-              style={{
-                backgroundImage: `url(/mvp.png)`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            ></div>
-            <div className="flex flex-col items-start gap-1 px-2 pb-1.5">
-              <h4>Most Valuable Player</h4>
-              <p className="smaller text-pretty">
-                V. Wembanyama &ensp;
-                <span className="opacity-60">
-                  27.3 PTS, 10.9 REB, 3.1 AST, 1.4 STL, 2.7 BLK, 48.1 FG%
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="absolute inset-[calc(53vw-175px)_16px_16px_16px] md:inset-[-16px_16px_16px_16px] border-l border-r border-b border-(--stroke)">
-          <div className="absolute inset-[auto_0_0_0] p-4 flex items-center justify-between">
-            <small>
-              by{" "}
-              <a
-                className="opacity-50 hover:opacity-100 hover:underline cursor-pointer"
-                href="https://kiranpa.tel/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Kiran Patel
-              </a>
-            </small>
-            <small>
-              <a
-                className="opacity-50 hover:opacity-100 hover:underline cursor-pointer"
-                href="https://www.nba.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                NBA 2026
-              </a>
-            </small>
-            <small>
-              art from{" "}
-              <a
-                className="opacity-50 hover:opacity-100 hover:underline cursor-pointer"
-                href="https://www.statmuse.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Stat Muse
-              </a>
-            </small>
-          </div>
-        </div> */}
-      </footer>
+      <Footer />
     </main>
   );
 }
