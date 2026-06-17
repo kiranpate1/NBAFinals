@@ -2,6 +2,7 @@
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
+import Splash from "./components/Splash";
 import Court from "./components/Court";
 import GameGrid from "./components/GameGrid";
 import SeriesCard from "./components/SeriesCard";
@@ -608,7 +609,6 @@ export default function Home() {
   const courtHeight = 160;
   const gameScroll = 250; // in vh, regulation 48 minutes
   const topLipHeight = 80;
-  const splashRef = useRef<HTMLDivElement | null>(null);
   const playBoundaryRef = useRef<HTMLDivElement | null>(null);
   const NYKPlayRef = useRef<HTMLDivElement | null>(null);
   const SASPlayRef = useRef<HTMLDivElement | null>(null);
@@ -641,7 +641,6 @@ export default function Home() {
   const [gameClock, setGameClock] = useState("12:00");
   const [gameQuarter, setGameQuarter] = useState("Q1");
   const [isInsideSplash, setIsInsideSplash] = useState(true);
-  const [hasReachedBottom, setHasReachedBottom] = useState(false);
   const [scrollDirection, setScrollDirection] =
     useState<ScrollDirection>("neutral");
   const [activeCourtUrl, setActiveCourtUrl] = useState<string | null>(null);
@@ -1021,14 +1020,9 @@ export default function Home() {
       const scrollEl = activeEntry.el;
       const rect = scrollEl.getBoundingClientRect();
       const scrolledPx = boundaryTop - rect.top;
-      const splashBottom = splashRef.current?.getBoundingClientRect().bottom;
-      const isInsideSplashNow =
-        typeof splashBottom === "number" && splashBottom > boundaryTop;
       const totalSeconds =
         gameSecondsByGame[activeIndex] ??
         getDefaultGameSeconds(games[activeIndex]?.ot ?? 0);
-      const isSeriesBottom =
-        activeIndex === games.length - 1 && scrolledPx >= rect.height;
 
       if (activeIndex !== lastGameIndex) {
         lastZone = null;
@@ -1037,12 +1031,6 @@ export default function Home() {
       }
 
       setActiveGameIndex((prev) => (prev === activeIndex ? prev : activeIndex));
-      setIsInsideSplash((prev) =>
-        prev === isInsideSplashNow ? prev : isInsideSplashNow,
-      );
-      setHasReachedBottom((prev) =>
-        prev === isSeriesBottom ? prev : isSeriesBottom,
-      );
       setActiveCourtUrl(
         isInsideAnyScroll ? (games[activeIndex]?.courtImageUrl ?? null) : null,
       );
@@ -1109,7 +1097,6 @@ export default function Home() {
         if (lastZone === "below" && lastRenderedSecond === finalSecond) return;
 
         renderAtSecond(finalSecond, activeIndex);
-        if (isSeriesBottom) resetShotStyles();
         lastZone = "below";
         lastRenderedSecond = finalSecond;
         return;
@@ -1277,24 +1264,17 @@ export default function Home() {
         </div>
       </div>
       {/* splash */}
-      <div
-        className="relative z-4 w-full bg-(--background) p-4 transition-[padding] duration-300 ease-in-out"
-        style={{
-          height: `100dvh`,
-        }}
-        ref={splashRef}
-      >
-        <div className="relative w-full h-full grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 border border-(--stroke)"></div>
-      </div>
+      <Splash />
       {/* main / per round */}
       <div className="relative">
+        <div className="absolute z-101 top-4 left-1/2 -translate-x-1/2 h-px w-screen bg-(--stroke)"></div>
         {/* loop the div below for each round */}
         <div className="relative grid grid-cols-[250px_1fr_250px]">
           {/* nav / stationary */}
-          <div className="sticky z-100 top-0 left-0 w-62.5 h-screen">
-            <div className="absolute inset-[0_0_0_16px] h-full flex flex-col">
+          <div className="sticky z-100 -top-4 left-0 w-62.5 h-screen">
+            <div className="absolute inset-[16px_0_0_16px] h-full flex flex-col">
               <div
-                className="flex-1 relative flex flex-col pt-4 overflow-scroll pointer-events-auto"
+                className="flex-1 relative flex flex-col mb-4 overflow-scroll pointer-events-auto"
                 ref={navScrollRef}
               >
                 {rounds.map((round, i) => {
@@ -1347,11 +1327,11 @@ export default function Home() {
 
                   return (
                     <div className="w-full flex flex-col items-stretch" key={i}>
-                      <div
-                        className="relative w-full flex flex-col items-center"
-                        style={{ height: i > 0 ? 100 : "auto" }}
-                      >
-                        {i > 0 && (
+                      {i > 0 && (
+                        <div
+                          className="relative w-full flex flex-col items-center -mb-6"
+                          style={{ height: i > 0 ? 100 : "auto" }}
+                        >
                           <svg
                             width="20"
                             height="100%"
@@ -1392,33 +1372,8 @@ export default function Home() {
                               }}
                             />
                           </svg>
-                        )}
-
-                        {round.label && (
-                          <div
-                            className="bottom-0 left-0 w-full px-2 py-1.5 text-center"
-                            style={{
-                              position: i > 0 ? "absolute" : "relative",
-                              opacity: isRoundVisible ? 1 : 0,
-                            }}
-                          >
-                            <h4 className="text-sm!">
-                              <b className="text-(--nyk)">NYK</b>
-                              <span className="text-(--stroke) bg-(--background) opacity-80">
-                                {" v "}
-                              </span>
-                              <b
-                                className=""
-                                style={{
-                                  color: `var(--${round.opponent.toLowerCase()})`,
-                                }}
-                              >
-                                {round.opponent}
-                              </b>
-                            </h4>
-                          </div>
-                        )}
-                      </div>
+                        </div>
+                      )}
                       {round.games.map((game, j) => {
                         const gameIndex = roundStart + j;
                         const progress = progressByGame[gameIndex] ?? 0;
@@ -1501,11 +1456,36 @@ export default function Home() {
                             <div
                               className="w-full"
                               style={{
+                                paddingTop: j === 0 ? (i === 0 ? 40 : 24) : 0,
                                 opacity: shouldShowGame ? 1 : 0,
                                 transform: `translateY(${shouldShowGame ? 0 : 50}px)`,
                                 pointerEvents: shouldShowGame ? "auto" : "none",
                               }}
                             >
+                              {j === 0 && round.label && (
+                                <div
+                                  className="absolute top-0 left-0 w-full text-center"
+                                  style={{
+                                    top: i === 0 ? 16 : 0,
+                                    opacity: isRoundVisible ? 1 : 0,
+                                  }}
+                                >
+                                  <h4 className="text-sm!">
+                                    <b className="text-(--nyk)">NYK</b>
+                                    <span className="text-(--stroke) bg-(--background) opacity-80">
+                                      {" v "}
+                                    </span>
+                                    <b
+                                      className=""
+                                      style={{
+                                        color: `var(--${round.opponent.toLowerCase()})`,
+                                      }}
+                                    >
+                                      {round.opponent}
+                                    </b>
+                                  </h4>
+                                </div>
+                              )}
                               <NavGameCard
                                 scrollToGameStart={scrollToGameStart}
                                 gameIndex={gameIndex}
@@ -1516,7 +1496,6 @@ export default function Home() {
                                 gameQuarter={gameQuarter}
                                 round={round}
                                 game={game}
-                                isInsideSplash={isInsideSplash}
                                 splashTransition={splashTransition}
                                 progressColor={progressColor}
                               />
@@ -1528,7 +1507,7 @@ export default function Home() {
                   );
                 })}
               </div>
-              <div className="relative w-full py-4 bg-(--background) flex flex-col items-stretch gap-4">
+              <div className="relative w-full pb-4 bg-(--background) flex flex-col items-stretch gap-4">
                 <div className="flex items-center justify-between gap-4">
                   <small>Show all games</small>
                   <div
@@ -1557,7 +1536,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div
-                  className="border border-(--stroke-light) w-full flex items-center justify-center"
+                  className="border border-(--stroke-light) w-full flex items-center justify-center rounded-2xl"
                   style={{ height: courtHeight + topLipHeight }}
                 ></div>
               </div>
@@ -1572,7 +1551,7 @@ export default function Home() {
                 <div className="relative w-full h-screen p-4">
                   <div className="absolute inset-[auto_0_0_0] px-4 pb-4 bg-(--background)">
                     <div
-                      className="relative border-t border-(--stroke) flex flex-col items-center justify-end"
+                      className="relative flex flex-col items-center justify-end border-t border-(--stroke)"
                       style={{ paddingTop: topLipHeight }}
                     >
                       <div style={{ height: courtHeight }}></div>
@@ -1649,15 +1628,17 @@ export default function Home() {
               </div>
               {/* top lip */}
               <div className="sticky z-1 top-0 w-full h-4 px-4 bg-(--background) flex flex-col items-stretch justify-end">
-                <div className="translate-y-px border-b border-(--stroke)"></div>
+                <div className="translate-y-px"></div>
               </div>
               {/* court, play-by-play, boxscores */}
               <div className="sticky top-[100dvh] w-full h-0 flex items-end justify-stretch pointer-events-none">
                 <div className="relative w-full h-dvh p-4">
                   <div className="absolute z-10 inset-[0_0_auto_0] h-4 bg-(--background)"></div>
                   <div className="absolute z-10 inset-[auto_0_0_0] h-4 bg-(--background)"></div>
+
+                  <div className="absolute inset-[0_0_auto_0] w-full h-8 bg-(--background)"></div>
                   <div
-                    className="absolute top-9.5 xl:top-4 left-4 w-[calc(50%-15px)] h-[calc(22dvh)] border border-(--stroke) bg-(--background) duration-200 pointer-events-auto"
+                    className="absolute top-9.5 xl:top-4 left-4 w-[calc(50%-15px)] h-[calc(22dvh)] bg-(--background) border border-(--stroke) rounded-tl-xl overflow-hidden duration-200 pointer-events-auto"
                     style={
                       {
                         // opacity: hasReachedBottom ? 0 : 1,
@@ -1672,7 +1653,7 @@ export default function Home() {
                     />
                   </div>
                   <div
-                    className="absolute top-9.5 xl:top-4 right-4 w-[calc(50%-15px)] h-[calc(22dvh)] border border-(--stroke) bg-(--background) duration-200 pointer-events-auto"
+                    className="absolute top-9.5 xl:top-4 right-4 w-[calc(50%-15px)] h-[calc(22dvh)] bg-(--background) border border-(--stroke) rounded-tr-xl overflow-hidden duration-200 pointer-events-auto"
                     style={
                       {
                         // opacity: hasReachedBottom ? 0 : 1,
@@ -1699,13 +1680,13 @@ export default function Home() {
                         ref={playBoundaryRef}
                       >
                         <small
-                          className="text-right overflow-hidden whitespace-nowrap text-ellipsis"
+                          className="text-right overflow-hidden whitespace-nowrap text-ellipsis text-(--stroke)"
                           ref={NYKPlayRef}
                         >
                           Example of NYK play
                         </small>
                         <small
-                          className="text-left overflow-hidden whitespace-nowrap text-ellipsis"
+                          className="text-left overflow-hidden whitespace-nowrap text-ellipsis text-(--stroke)"
                           ref={SASPlayRef}
                         >
                           Example of OPP play
@@ -1736,14 +1717,7 @@ export default function Home() {
                             ref={oppCourtRef}
                           >
                             {/* add other game cards here eventually */}
-                            {hasReachedBottom ? (
-                              gameVisuals.map((visual, index) => {
-                                const OppCourt = visual.oppCourt;
-                                return <OppCourt key={`opp-series-${index}`} />;
-                              })
-                            ) : (
-                              <ActiveoppCourt />
-                            )}
+                            <ActiveoppCourt />
                           </div>
                           <div
                             className="nyk_courts absolute top-0 left-0 w-50/94 flex justify-center"
@@ -1754,14 +1728,7 @@ export default function Home() {
                             ref={nykCourtRef}
                           >
                             {/* add other game cards here eventually */}
-                            {hasReachedBottom ? (
-                              gameVisuals.map((visual, index) => {
-                                const NYKCourt = visual.nykCourt;
-                                return <NYKCourt key={`nyk-series-${index}`} />;
-                              })
-                            ) : (
-                              <ActiveNYKCourt />
-                            )}
+                            <ActiveNYKCourt />
                           </div>
                         </div>
                         <Court
@@ -1771,17 +1738,12 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="absolute inset-4 border-l border-r border-b border-(--stroke)"></div>
+                  <div className="absolute inset-4 border-l border-r border-b border-(--stroke) rounded-xl"></div>
                 </div>
               </div>
             </div>
             {/* games content */}
-            <div
-              className="relative z-1 w-full p-4 flex flex-col items-stretch"
-              style={{}}
-            >
-              {/* insert games loop here eventually */}
-
+            <div className="relative z-1 w-full p-4 flex flex-col items-stretch">
               {rounds.map((round, roundIndex) => {
                 const roundStart = roundStartIndexes[roundIndex] ?? 0;
 
@@ -1913,7 +1875,7 @@ export default function Home() {
                 </div>
               </div>
               <div
-                className="border border-(--stroke-light) w-full mb-4 flex items-center justify-center"
+                className="w-full mb-4 flex items-center justify-center border border-(--stroke-light) rounded-sm"
                 style={{ minHeight: courtHeight + topLipHeight }}
               >
                 <div className="relative w-30 h-30">

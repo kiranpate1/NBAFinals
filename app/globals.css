@@ -100,7 +100,8 @@ p {
   font-family: var(--font-sans, "Geist Sans"), sans-serif;
   font-size: 14px;
 }
-p.smaller {
+p.smaller,
+h4.smaller {
   font-size: 12px;
 }
 
@@ -189,15 +190,76 @@ small {
   }
 }
 
-.splashcourt path {
-  stroke-dasharray: 1500px;
-  stroke-dashoffset: 1500px;
-  animation: draw 2s ease-out 1s forwards;
+.splashsection > div > img:nth-child(2) {
+  animation: pulse 3s ease-in-out infinite;
 }
 
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0px;
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    filter: brightness(100%);
+  }
+  50% {
+    opacity: 0;
+    filter: brightness(50%);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(100%);
+  }
+}
+
+.splashsection > div > img:nth-child(3) {
+  filter: brightness(150%);
+  animation: digital-pulse 2s linear infinite;
+}
+
+@keyframes digital-pulse {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0.5;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  16% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  31% {
+    opacity: 0.5;
+  }
+  45% {
+    opacity: 0.5;
+  }
+  46% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.splashsection h3 {
+  animation: flash 1s linear infinite;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

@@ -49,31 +49,31 @@ function BoxScore({ team, players, boxStats }: props) {
                 <span style={{ opacity: 0.5 }}>{player.position[0]}</span>
               )}
             </p>
-            <p className="smaller place-self-center">
+            <h4 className="smaller place-self-center">
               {boxStats[team][player.name]?.pts ?? 0}
-            </p>
-            <p className="smaller place-self-center">
+            </h4>
+            <h4 className="smaller place-self-center">
               {(boxStats[team][player.name]?.fgMade ?? 0) +
                 "-" +
                 (boxStats[team][player.name]?.fgAtt ?? 0)}
-            </p>
-            <p className="smaller place-self-center">
+            </h4>
+            <h4 className="smaller place-self-center">
               {boxStats[team][player.name]?.reb ?? 0}
-            </p>
-            <p className="smaller place-self-center">
+            </h4>
+            <h4 className="smaller place-self-center">
               {boxStats[team][player.name]?.ast ?? 0}
-            </p>
-            <p className="smaller place-self-center">
+            </h4>
+            <h4 className="smaller place-self-center">
               {(boxStats[team][player.name]?.threePtMade ?? 0) +
                 "-" +
                 (boxStats[team][player.name]?.threePtAtt ?? 0)}
-            </p>
-            <p className="smaller place-self-center">
+            </h4>
+            <h4 className="smaller place-self-center">
               {boxStats[team][player.name]?.stl ?? 0}
-            </p>
-            <p className="smaller place-self-center">
+            </h4>
+            <h4 className="smaller place-self-center">
               {boxStats[team][player.name]?.blk ?? 0}
-            </p>
+            </h4>
           </div>
         ))}
       </div>

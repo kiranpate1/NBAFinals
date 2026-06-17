@@ -11,7 +11,6 @@ type props = {
   gameQuarter: string;
   round: { opponent: string };
   game: { game: number; ot?: number };
-  isInsideSplash: boolean;
   splashTransition: string;
   progressColor?: string;
 };
@@ -26,8 +25,6 @@ export default function NavGameCard({
   gameQuarter,
   round,
   game,
-  isInsideSplash,
-  splashTransition,
   progressColor = "var(--stroke)",
 }: props) {
   return (
@@ -91,21 +88,6 @@ export default function NavGameCard({
           }}
         />
       </svg>
-
-      {/* <div className="h-2 xl:h-3 overflow-hidden p-0 xl:p-0.5">
-        <div
-          className="h-full"
-          style={{
-            width: "100%",
-            transformOrigin: "left center",
-            transform: `scaleX(${Math.min(
-              1,
-              Math.max(0, progressByGame[gameIndex] ?? 0),
-            )})`,
-            backgroundColor: progressColor,
-          }}
-        ></div>
-      </div> */}
       <div className="relative flex-1 grid grid-cols-[1fr_68px_1fr] items-center px-7">
         <div
           className="flex items-center justify-start gap-1"
@@ -142,15 +124,6 @@ export default function NavGameCard({
             </small>
           </div>
         )}
-        {/* <h3
-          className="text-(--stroke) opacity-25"
-          style={{
-            transition: splashTransition,
-            transform: isInsideSplash ? "scale(0.8)" : "scale(1.25)",
-          }}
-        >
-          G{isInsideSplash ? "7pm" : game.game}
-        </h3> */}
         <div
           className="flex items-center justify-end gap-1"
           style={{
