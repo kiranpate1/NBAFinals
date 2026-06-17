@@ -18,7 +18,7 @@ export default function GameRecap({
   const gameInfo = game.info;
   return (
     <div
-      className="relative w-full flex flex-col items-center pb-6 pt-4 border-b border-(--stroke-light)"
+      className="relative w-full flex flex-col items-center gap-1 pb-6 pt-4 border-b border-(--stroke-light)"
       style={{
         height: height + 40,
         opacity: isInsideSticky ? 0 : 1,

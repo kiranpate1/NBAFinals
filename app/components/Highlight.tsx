@@ -37,9 +37,9 @@ export default function Highlight({ info }: props) {
   }
 
   return (
-    <div className="w-full h-35.5 grid grid-cols-[0.9fr_1fr] gap-2 p-1 border border-(--stroke) rounded-xs overflow-hidden pointer-events-auto">
+    <div className="w-full h-35.5 grid grid-cols-[0.9fr_1fr] gap-2 p-1 border border-(--stroke-light) rounded-2xl overflow-hidden pointer-events-auto">
       <div className="flex flex-col items-stretch">
-        <div className="flex-1 border border-(--stroke) rounded-xs overflow-hidden">
+        <div className="flex-1 rounded-xl overflow-hidden">
           <Image
             className="w-[150%] h-[130%] object-cover"
             style={{

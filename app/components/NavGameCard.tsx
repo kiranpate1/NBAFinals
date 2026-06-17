@@ -70,10 +70,10 @@ export default function NavGameCard({
           strokeLinecap="round"
           style={{
             stroke: progressColor,
-            strokeDasharray: 306,
+            strokeDasharray: 300,
             strokeDashoffset:
-              306 -
-              Math.min(1, Math.max(0, progressByGame[gameIndex] ?? 0)) * 306,
+              300 -
+              Math.min(1, Math.max(0, progressByGame[gameIndex] ?? 0)) * 300,
             // filter: "saturate(1.5)",
           }}
         />
@@ -83,10 +83,10 @@ export default function NavGameCard({
           strokeLinecap="round"
           style={{
             stroke: progressColor,
-            strokeDasharray: 306,
+            strokeDasharray: 300,
             strokeDashoffset:
-              306 -
-              Math.min(1, Math.max(0, progressByGame[gameIndex] ?? 0)) * 306,
+              300 -
+              Math.min(1, Math.max(0, progressByGame[gameIndex] ?? 0)) * 300,
             // filter: "saturate(1.5)",
           }}
         />

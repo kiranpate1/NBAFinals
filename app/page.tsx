@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import Court from "./components/Court";
 import GameGrid from "./components/GameGrid";
 import SeriesCard from "./components/SeriesCard";
@@ -174,6 +175,7 @@ type TeamRosterPlayer = {
 };
 
 type TeamKey = "NYK" | "OPP";
+type ScrollDirection = "up" | "down" | "neutral";
 
 type ScoredPlay = {
   entry: PlayEntry;
@@ -642,12 +644,16 @@ export default function Home() {
   const [gameQuarter, setGameQuarter] = useState("Q1");
   const [isInsideSplash, setIsInsideSplash] = useState(true);
   const [hasReachedBottom, setHasReachedBottom] = useState(false);
+  const [scrollDirection, setScrollDirection] =
+    useState<ScrollDirection>("neutral");
   const [activeCourtUrl, setActiveCourtUrl] = useState<string | null>(null);
   const [displayedCourtUrl, setDisplayedCourtUrl] = useState<string | null>(
     null,
   );
   const [isCourtVisible, setIsCourtVisible] = useState(false);
   const courtTransitionRef = useRef<number | null>(null);
+  const lastScrollYRef = useRef(0);
+  const scrollDirectionResetRef = useRef<number | null>(null);
   const setGameScrollRef = (index: number, el: HTMLDivElement | null) => {
     gameScrollElsRef.current[index] = el;
   };
@@ -1122,8 +1128,30 @@ export default function Home() {
     };
 
     let scrollRafId: number | null = null;
+    lastScrollYRef.current = window.scrollY;
 
     const onScroll = () => {
+      const nextScrollY = window.scrollY;
+      const deltaY = nextScrollY - lastScrollYRef.current;
+      const nextDirection: ScrollDirection =
+        deltaY > 0 ? "down" : deltaY < 0 ? "up" : "neutral";
+      lastScrollYRef.current = nextScrollY;
+
+      setScrollDirection((prev) =>
+        prev === nextDirection ? prev : nextDirection,
+      );
+
+      if (scrollDirectionResetRef.current !== null) {
+        window.clearTimeout(scrollDirectionResetRef.current);
+      }
+
+      if (nextDirection !== "neutral") {
+        scrollDirectionResetRef.current = window.setTimeout(() => {
+          setScrollDirection((prev) => (prev === "neutral" ? prev : "neutral"));
+          scrollDirectionResetRef.current = null;
+        }, 140);
+      }
+
       if (scrollRafId !== null) return;
       scrollRafId = window.requestAnimationFrame(() => {
         scrollRafId = null;
@@ -1138,6 +1166,10 @@ export default function Home() {
       window.removeEventListener("scroll", onScroll);
       if (scrollRafId !== null) {
         window.cancelAnimationFrame(scrollRafId);
+      }
+      if (scrollDirectionResetRef.current !== null) {
+        window.clearTimeout(scrollDirectionResetRef.current);
+        scrollDirectionResetRef.current = null;
       }
     };
   }, [playsByGame, gameSecondsByGame]);
@@ -1280,7 +1312,7 @@ export default function Home() {
   };
 
   return (
-    <main>
+    <main data-scroll-direction={scrollDirection}>
       {/* loader */}
       <div
         id="loader"
@@ -1323,21 +1355,7 @@ export default function Home() {
         <div className="relative grid grid-cols-[250px_1fr_250px]">
           {/* nav / stationary */}
           <div className="sticky z-100 top-0 left-0 w-62.5 h-screen">
-            <div
-              className="absolute inset-[0_0_0_16px] h-full flex flex-col"
-              style={
-                {
-                  // transition: splashTransition,
-                  // gridTemplateColumns: isInsideSplash
-                  //   ? "1fr 1fr 1fr 1fr 1fr 1fr 0.5fr"
-                  //   : "repeat(7, 1fr)",
-                  // maxWidth: isInsideSplash ? "100%" : "975px",
-                  // height: isInsideSplash ? 100 : topLipHeight - 17,
-                  // opacity: isInsideSplash ? 0 : 1,
-                  // maxHeight: hasReachedBottom ? "none" : "",
-                }
-              }
-            >
+            <div className="absolute inset-[0_0_0_16px] h-full flex flex-col">
               <div
                 className="flex-1 relative flex flex-col pt-4 overflow-scroll pointer-events-auto"
                 ref={navScrollRef}
@@ -1391,49 +1409,79 @@ export default function Home() {
                   );
 
                   return (
-                    <div className="w-full flex flex-col items-center" key={i}>
-                      {i > 0 && (
-                        <svg
-                          width="20"
-                          height="100"
-                          viewBox="0 0 20 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          preserveAspectRatio="none"
-                        >
-                          <defs>
-                            <linearGradient
-                              id={roundSeparatorGradientId}
-                              x1="10"
-                              y1="0"
-                              x2="10"
-                              y2="16"
-                              gradientUnits="userSpaceOnUse"
-                            >
-                              <stop
-                                offset="0%"
-                                stopColor={previousRoundLastColor}
-                              />
-                              <stop
-                                offset="100%"
-                                stopColor={currentRoundFirstColor}
-                              />
-                            </linearGradient>
-                          </defs>
-                          <path
-                            d="M10 0L10 16"
-                            stroke={`url(#${roundSeparatorGradientId})`}
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            vectorEffect="non-scaling-stroke"
+                    <div className="w-full flex flex-col items-stretch" key={i}>
+                      <div
+                        className="relative w-full flex flex-col items-center"
+                        style={{ height: i > 0 ? 100 : "auto" }}
+                      >
+                        {i > 0 && (
+                          <svg
+                            width="20"
+                            height="100%"
+                            viewBox="0 0 20 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="none"
+                          >
+                            <defs>
+                              <linearGradient
+                                id={roundSeparatorGradientId}
+                                x1="10"
+                                y1="0"
+                                x2="10"
+                                y2="16"
+                                gradientUnits="userSpaceOnUse"
+                              >
+                                <stop
+                                  offset="0%"
+                                  stopColor={previousRoundLastColor}
+                                />
+                                <stop
+                                  offset="100%"
+                                  stopColor={currentRoundFirstColor}
+                                />
+                              </linearGradient>
+                            </defs>
+                            <path
+                              d="M10 0L10 16"
+                              stroke={`url(#${roundSeparatorGradientId})`}
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                              vectorEffect="non-scaling-stroke"
+                              style={{
+                                strokeDasharray: 100,
+                                strokeDashoffset:
+                                  100 - 100 * progressBetweenRounds,
+                              }}
+                            />
+                          </svg>
+                        )}
+
+                        {round.label && (
+                          <div
+                            className="bottom-0 left-0 w-full px-2 py-1.5 text-center"
                             style={{
-                              strokeDasharray: 100,
-                              strokeDashoffset:
-                                100 - 100 * progressBetweenRounds,
+                              position: i > 0 ? "absolute" : "relative",
+                              opacity: isRoundVisible ? 1 : 0,
                             }}
-                          />
-                        </svg>
-                      )}
+                          >
+                            <h4 className="text-sm!">
+                              <b className=" text-(--nyk)">NYK</b>
+                              <span className="text-(--stroke) opacity-70">
+                                {" vs "}
+                              </span>
+                              <b
+                                className=""
+                                style={{
+                                  color: `var(--${round.opponent.toLowerCase()})`,
+                                }}
+                              >
+                                {round.opponent}
+                              </b>
+                            </h4>
+                          </div>
+                        )}
+                      </div>
                       {round.games.map((game, j) => {
                         const gameIndex = roundStart + j;
                         const progress = progressByGame[gameIndex] ?? 0;
@@ -1572,9 +1620,9 @@ export default function Home() {
                   </div>
                 </div>
                 <div
-                  className="border border-(--stroke) w-full"
+                  className="border border-(--stroke) w-full flex items-center justify-center"
                   style={{ height: courtHeight + topLipHeight - 18 }}
-                />
+                ></div>
               </div>
             </div>
           </div>
@@ -1726,10 +1774,8 @@ export default function Home() {
                           Example of OPP play
                         </small>
                       </div>
-                      <div className="absolute z-1 top-6 left-1/2 -translate-x-1/2 flex flex-col items-center">
-                        <h3 className="gameclock pointer-events-auto">
-                          {gameClock}
-                        </h3>
+                      <div className="absolute z-1 top-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-(--stroke) pointer-events-auto">
+                        <h3 className="gameclock">{gameClock}</h3>
                         <small className="bg-(--background)">
                           {gameQuarter}
                         </small>
@@ -1911,21 +1957,60 @@ export default function Home() {
           </div>
           {/* plays / stationary */}
           <div className="sticky z-100 top-0 right-0 w-62.5 h-screen">
-            <div className="absolute inset-[0_16px_0_0] flex flex-col items-stretch justify-end overflow-hidden">
+            <div className="absolute inset-[0_16px_0_0] flex flex-col">
+              <div className="flex-1 relative flex flex-col items-stretch justify-end overflow-hidden">
+                <div
+                  className="flex-1 relative duration-300 ease-out flex flex-col items-stretch gap-2"
+                  style={{
+                    transform: `translateY(${(activeGameHighlights.length - 1) * 150 - activeHighlightIndex * 150 - 16}px)`,
+                  }}
+                >
+                  {activeGameHighlights.map((highlight, i) => (
+                    <div
+                      style={{ opacity: activeHighlightIndex === i ? 1 : 0.25 }}
+                      key={`${highlight.quarter}-${highlight.time}-${i}`}
+                    >
+                      <Highlight info={highlight} />
+                    </div>
+                  ))}
+                </div>
+              </div>
               <div
-                className="relative duration-300 ease-out flex flex-col items-stretch gap-2"
-                style={{
-                  transform: `translateY(${(activeGameHighlights.length - 1) * 150 - activeHighlightIndex * 150 - 16}px)`,
-                }}
+                className="border border-(--stroke) w-full mb-4 flex items-center justify-center"
+                style={{ minHeight: courtHeight + topLipHeight - 18 }}
               >
-                {activeGameHighlights.map((highlight, i) => (
-                  <div
-                    style={{ opacity: activeHighlightIndex === i ? 1 : 0.25 }}
-                    key={`${highlight.quarter}-${highlight.time}-${i}`}
-                  >
-                    <Highlight info={highlight} />
-                  </div>
-                ))}
+                <div className="relative w-30 h-30">
+                  <Image
+                    className="absolute inset-0 object-contain"
+                    style={{
+                      display: scrollDirection === "neutral" ? "block" : "none",
+                    }}
+                    src="/controller/neutral.png"
+                    alt="controller"
+                    width={200}
+                    height={200}
+                  />
+                  <Image
+                    className="absolute inset-0 object-contain"
+                    style={{
+                      display: scrollDirection === "up" ? "block" : "none",
+                    }}
+                    src="/controller/up.png"
+                    alt="controller"
+                    width={200}
+                    height={200}
+                  />
+                  <Image
+                    className="absolute inset-0 object-contain"
+                    style={{
+                      display: scrollDirection === "down" ? "block" : "none",
+                    }}
+                    src="/controller/down.png"
+                    alt="controller"
+                    width={200}
+                    height={200}
+                  />
+                </div>
               </div>
             </div>
           </div>

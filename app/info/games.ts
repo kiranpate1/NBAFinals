@@ -310,7 +310,7 @@ export const rounds: RoundMeta[] = [
           headline: {
             print: "NYK LEADS 3-0",
             text: "Knicks dominate Game 3 to take a commanding series lead",
-            imageUrl: "/xfinity.png",
+            imageUrl: "/landmarks/xfinity.png",
           },
           nykPlayer: {
             name: "Jalen Brunson",
@@ -340,7 +340,7 @@ export const rounds: RoundMeta[] = [
           headline: {
             print: "NYK WINS 4-0",
             text: "Knicks sweep the series with a dominant Game 4 performance",
-            imageUrl: "/xfinity.png",
+            imageUrl: "/landmarks/xfinity.png",
           },
           nykPlayer: {
             name: "Miles McBride",
@@ -545,7 +545,7 @@ export const rounds: RoundMeta[] = [
           },
           oppPlayer: {
             name: "Victor Wembanyama",
-            description: "29 PTS, 9 REB, 52% FG",
+            description: "29 PTS, 9 REB",
             imageUrl: "/players/sas/wemby.png",
           },
         },
@@ -626,7 +626,7 @@ export const rounds: RoundMeta[] = [
           headline: {
             print: "NYK WINS",
             text: "Jalen Brunson goes nuclear as Knicks claim first title since 1973",
-            imageUrl: "/g5.png",
+            imageUrl: "/landmarks/frostbank.png",
           },
           nykPlayer: {
             name: "Jalen Brunson",
