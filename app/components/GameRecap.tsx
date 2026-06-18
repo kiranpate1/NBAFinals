@@ -18,18 +18,25 @@ export default function GameRecap({
   const gameInfo = game.info;
   return (
     <div
-      className="relative w-full flex flex-col items-center gap-1 pb-6 pt-4 border-b border-(--stroke-light)"
+      className="relative w-full flex flex-col items-center gap-18 sm:gap-1 pb-6 pt-4 px-6 border-b border-(--stroke-light)"
       style={{
         height: height + 40,
         opacity: isInsideSticky ? 0 : 1,
         pointerEvents: isInsideSticky ? "none" : "auto",
       }}
     >
-      <h3 className="text-center text-pretty" style={{ color: "var(--nyk)" }}>
+      <h3
+        className="text-center text-pretty"
+        style={{
+          color: gameInfo.headline.print.includes("WIN")
+            ? "var(--nyk)"
+            : `var(--${round.opponent.toLowerCase()})`,
+        }}
+      >
         {gameInfo.headline.print}
       </h3>
       <div className="w-full h-full flex justify-center">
-        <div className="w-full max-w-115 h-full grid grid-cols-2 gap-2">
+        <div className="w-full max-w-115 h-full grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 gap-2">
           <div className="">
             <PlayerCard info={gameInfo.nykPlayer} />
           </div>

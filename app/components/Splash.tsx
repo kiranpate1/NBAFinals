@@ -35,8 +35,13 @@ export default function Splash() {
           alt="NYC Top"
           fill
         />
-        <div className="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-4 h-2/5 aspect-[1397/885]">
-          <Image className="h-full" src="/nyk-pose.png" alt="NYK Pose" fill />
+        <div className="absolute left-1/2 bottom-0 -translate-x-1/2 h-2/5 max-w-full aspect-1397/885">
+          <Image
+            className="w-full h-full object-contain object-bottom"
+            src="/nyk-pose.png"
+            alt="NYK Pose"
+            fill
+          />
         </div>
       </div>
       <h3>– Scroll to continue –</h3>

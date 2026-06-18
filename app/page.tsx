@@ -1690,7 +1690,7 @@ export default function Home() {
 
                   <div className="absolute inset-[0_0_auto_0] w-full h-8 bg-(--background)"></div>
                   <div
-                    className="absolute top-9.5 xl:top-4 left-4 w-[calc(50%-15px)] h-[calc(22dvh)] bg-(--background) border border-(--stroke) rounded-tl-xl overflow-hidden duration-200 pointer-events-auto"
+                    className="absolute top-4 left-4 w-[calc(50%-15px)] h-[calc(22dvh)] bg-(--background) border border-(--stroke) rounded-tl-xl overflow-hidden duration-200 pointer-events-auto"
                     style={
                       {
                         // opacity: hasReachedBottom ? 0 : 1,
@@ -1705,7 +1705,7 @@ export default function Home() {
                     />
                   </div>
                   <div
-                    className="absolute top-9.5 xl:top-4 right-4 w-[calc(50%-15px)] h-[calc(22dvh)] bg-(--background) border border-(--stroke) rounded-tr-xl overflow-hidden duration-200 pointer-events-auto"
+                    className="absolute top-4 right-4 w-[calc(50%-15px)] h-[calc(22dvh)] bg-(--background) border border-(--stroke) rounded-tr-xl overflow-hidden duration-200 pointer-events-auto"
                     style={
                       {
                         // opacity: hasReachedBottom ? 0 : 1,

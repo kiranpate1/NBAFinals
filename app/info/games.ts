@@ -60,7 +60,7 @@ export const rounds: RoundMeta[] = [
         spread: 20,
         info: {
           headline: {
-            print: "NYK LEADS 1-0",
+            print: "WIN, NYK LEADS 1-0",
             text: "Knicks take a commanding 3-2 series lead with a strong performance in Game 5",
             imageUrl: "/landmarks/esb.png",
           },
@@ -90,7 +90,7 @@ export const rounds: RoundMeta[] = [
         spread: 15,
         info: {
           headline: {
-            print: "SERIES TIED 1-1",
+            print: "LOSS, SERIES TIED 1-1",
             text: "Hawks take a 2-1 series lead with a strong performance in Game 2",
             imageUrl: "/landmarks/br_bridge.png",
           },
@@ -120,7 +120,7 @@ export const rounds: RoundMeta[] = [
         spread: 20,
         info: {
           headline: {
-            print: "ATL LEADS 2-1",
+            print: "LOSS, ATL LEADS 2-1",
             text: "Hawks take a 2-1 series lead with a strong performance in Game 3",
             imageUrl: "/landmarks/statefarm.png",
           },
@@ -150,7 +150,7 @@ export const rounds: RoundMeta[] = [
         spread: 25,
         info: {
           headline: {
-            print: "SERIES TIED 2-2",
+            print: "WIN, SERIES TIED 2-2",
             text: "Knicks take a commanding 3-2 series lead with a strong performance in Game 5",
             imageUrl: "/landmarks/statefarm.png",
           },
@@ -180,7 +180,7 @@ export const rounds: RoundMeta[] = [
         spread: 35,
         info: {
           headline: {
-            print: "NYK LEADS 3-2",
+            print: "WIN, NYK LEADS 3-2",
             text: "Knicks take a commanding 3-2 series lead with a strong performance in Game 5",
             imageUrl: "/landmarks/rockefeller.png",
           },
@@ -210,7 +210,7 @@ export const rounds: RoundMeta[] = [
         spread: 65,
         info: {
           headline: {
-            print: "NYK WINS 4-2",
+            print: "WIN, NYK WINS 4-2",
             text: "Knicks advance to the next round with a strong performance in Game 6",
             imageUrl: "/landmarks/statefarm.png",
           },
@@ -248,7 +248,7 @@ export const rounds: RoundMeta[] = [
         spread: 40,
         info: {
           headline: {
-            print: "NYK LEADS 1-0",
+            print: "WIN, NYK LEADS 1-0",
             text: "Knicks take the first game of the series with a strong performance",
             imageUrl: "/landmarks/wtc.png",
           },
@@ -278,7 +278,7 @@ export const rounds: RoundMeta[] = [
         spread: 10,
         info: {
           headline: {
-            print: "NYK LEADS 2-0",
+            print: "WIN, NYK LEADS 2-0",
             text: "Knicks dominate Game 2 to take a 2-0 series lead",
             imageUrl: "/landmarks/times_square.png",
           },
@@ -308,7 +308,7 @@ export const rounds: RoundMeta[] = [
         spread: 20,
         info: {
           headline: {
-            print: "NYK LEADS 3-0",
+            print: "WIN, NYK LEADS 3-0",
             text: "Knicks dominate Game 3 to take a commanding series lead",
             imageUrl: "/landmarks/xfinity.png",
           },
@@ -338,7 +338,7 @@ export const rounds: RoundMeta[] = [
         spread: 45,
         info: {
           headline: {
-            print: "NYK WINS 4-0",
+            print: "WIN, NYK WINS 4-0",
             text: "Knicks sweep the series with a dominant Game 4 performance",
             imageUrl: "/landmarks/xfinity.png",
           },
@@ -376,7 +376,7 @@ export const rounds: RoundMeta[] = [
         spread: 25,
         info: {
           headline: {
-            print: "NYK LEADS 1-0",
+            print: "WIN, NYK LEADS 1-0",
             text: "Knicks take the first game of the series",
             imageUrl: "/landmarks/liberty.png",
           },
@@ -406,7 +406,7 @@ export const rounds: RoundMeta[] = [
         spread: 20,
         info: {
           headline: {
-            print: "NYK LEADS 2-0",
+            print: "WIN, NYK LEADS 2-0",
             text: "Knicks dominate Game 2 to take a 2-0 series lead",
             imageUrl: "/landmarks/central_park.png",
           },
@@ -436,7 +436,7 @@ export const rounds: RoundMeta[] = [
         spread: 20,
         info: {
           headline: {
-            print: "NYK LEADS 3-0",
+            print: "WIN, NYK LEADS 3-0",
             text: "Knicks dominate Game 3 to take a 3-0 series lead",
             imageUrl: "/landmarks/rocket.png",
           },
@@ -466,7 +466,7 @@ export const rounds: RoundMeta[] = [
         spread: 45,
         info: {
           headline: {
-            print: "NYK WINS 4-0",
+            print: "WIN, NYK WINS 4-0",
             text: "Knicks sweep the series with a dominant Game 4 performance",
             imageUrl: "/landmarks/rocket.png",
           },
@@ -504,7 +504,7 @@ export const rounds: RoundMeta[] = [
         spread: 15,
         info: {
           headline: {
-            print: "NYK LEADS 1-0",
+            print: "WIN, NYK LEADS 1-0",
             text: "Knicks stifle Spurs with dominant win in Game 1",
             imageUrl: "/landmarks/frostbank.png",
           },
@@ -534,7 +534,7 @@ export const rounds: RoundMeta[] = [
         spread: 15,
         info: {
           headline: {
-            print: "NYK LEADS 2-0",
+            print: "WIN, NYK LEADS 2-0",
             text: "Knicks hang on in hard-fought Game 2",
             imageUrl: "/landmarks/frostbank.png",
           },
@@ -564,7 +564,7 @@ export const rounds: RoundMeta[] = [
         spread: 15,
         info: {
           headline: {
-            print: "NYK LEADS 2-1",
+            print: "LOSS, NYK LEADS 2-1",
             text: "Spurs claw back into series with gritty Game 3 win at MSG",
             imageUrl: "/landmarks/subway.png",
           },
@@ -594,7 +594,7 @@ export const rounds: RoundMeta[] = [
         spread: 30,
         info: {
           headline: {
-            print: "NYK LEADS 3-1",
+            print: "WIN, NYK LEADS 3-1",
             text: "Knicks one win away from title after historic comeback",
             imageUrl: "/landmarks/msg.png",
           },
@@ -624,7 +624,7 @@ export const rounds: RoundMeta[] = [
         spread: 20,
         info: {
           headline: {
-            print: "NYK WINS",
+            print: "WIN, NYK WINS 4-1",
             text: "Jalen Brunson goes nuclear as Knicks claim first title since 1973",
             imageUrl: "/landmarks/frostbank.png",
           },
