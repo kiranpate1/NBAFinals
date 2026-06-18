@@ -19,10 +19,14 @@ export default function Footer() {
           />
         </div>
         <h2>Victory!</h2>
-        <h3 className="text-(--nyk)">NYK | 2026 NBA Champions</h3>
+        <h3 className="text-(--nyk)">Your 2026 NBA Champions</h3>
       </div>
       <div className="py-16 flex flex-col items-center gap-20">
-        <h2>The 2026 New York Knicks</h2>
+        <h2>The New York Knicks</h2>
+
+        <div className="relative w-3/5 aspect-[1397/885]">
+          <Image className="w-full" src="/nyk-pose.png" alt="NYK Pose" fill />
+        </div>
         <div className="grid grid-cols-[auto_8px_1fr] gap-x-4">
           <h3>Head coach</h3>
           <h3>:</h3>

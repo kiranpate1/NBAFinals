@@ -872,12 +872,8 @@ export default function Home() {
               : ""
         : "";
 
-      nykEl.innerHTML = nykPlay
-        ? `${nykPlay.player[0]}. ${nykPlay.player.split(" ")[1] ?? ""} – ${nykPlay.play} ${nykResult}`
-        : "&ensp;";
-      sasEl.innerHTML = sasPlay
-        ? `${sasResult} ${sasPlay.player[0]}. ${sasPlay.player.split(" ")[1] ?? ""} – ${sasPlay.play}`
-        : "&ensp;";
+      nykEl.innerHTML = nykPlay ? `${nykPlay.play} ${nykResult}` : "&ensp;";
+      sasEl.innerHTML = sasPlay ? `${sasResult} ${sasPlay.play}` : "&ensp;";
 
       const highlightShot = (
         containerRef: React.RefObject<HTMLDivElement | null>,
@@ -1228,6 +1224,18 @@ export default function Home() {
     setshowAllGames((prev) => !prev);
   };
 
+  const completedNYKWins = useMemo(
+    () =>
+      games.reduce((wins, _game, gameIndex) => {
+        const gameProgress = progressByGame[gameIndex] ?? 0;
+        if (gameProgress < 1) return wins;
+
+        const score = teamScoreByGame[gameIndex] ?? makeEmptyTeamScore();
+        return score.NYK > score.OPP ? wins + 1 : wins;
+      }, 0),
+    [progressByGame, teamScoreByGame],
+  );
+
   const getWinnerColor = (score: TeamScore, opponent: string) => {
     const opponentColorVar = `var(--${opponent.toLowerCase()})`;
     if (score.NYK > score.OPP) return "var(--nyk)";
@@ -1269,9 +1277,9 @@ export default function Home() {
       <div className="relative">
         <div className="absolute z-101 top-4 left-1/2 -translate-x-1/2 h-px w-screen bg-(--stroke)"></div>
         {/* loop the div below for each round */}
-        <div className="relative grid grid-cols-[250px_1fr_250px]">
+        <div className="relative lg:grid lg:grid-cols-[250px_1fr_250px]">
           {/* nav / stationary */}
-          <div className="sticky z-100 -top-4 left-0 w-62.5 h-screen">
+          <div className="hidden lg:block sticky z-100 -top-4 left-0 w-62.5 h-screen">
             <div className="absolute inset-[16px_0_0_16px] h-full flex flex-col">
               <div
                 className="flex-1 relative flex flex-col mb-4 overflow-scroll pointer-events-auto"
@@ -1536,9 +1544,53 @@ export default function Home() {
                   </div>
                 </div>
                 <div
-                  className="border border-(--stroke-light) w-full flex items-center justify-center rounded-2xl"
+                  className="relative border border-(--stroke-light) w-full p-16 grid grid-cols-4 grid-rows-4 gap-1 rounded-xl"
                   style={{ height: courtHeight + topLipHeight }}
-                ></div>
+                >
+                  <div className="absolute [grid-area:1/1/1/1] w-full h-full -translate-x-full flex items-center justify-end pr-1">
+                    <small className="text-(--stroke-light)">EQF</small>
+                  </div>
+                  <div className="absolute [grid-area:2/1/2/1] w-full h-full -translate-x-full flex items-center justify-end pr-1">
+                    <small className="text-(--stroke-light)">ESF</small>
+                  </div>
+                  <div className="absolute [grid-area:3/1/3/1] w-full h-full -translate-x-full flex items-center justify-end pr-1">
+                    <small className="text-(--stroke-light)">EF</small>
+                  </div>
+                  <div className="absolute [grid-area:4/1/4/1] w-full h-full -translate-x-full flex items-center justify-end pr-1">
+                    <small className="text-(--stroke-light)">F</small>
+                  </div>
+                  <div className="absolute [grid-area:1/1/1/1] w-full h-full -translate-y-full flex items-end justify-center pb-1">
+                    <small className="text-(--stroke-light)">1</small>
+                  </div>
+                  <div className="absolute [grid-area:1/2/1/2] w-full h-full -translate-y-full flex items-end justify-center pb-1">
+                    <small className="text-(--stroke-light)">2</small>
+                  </div>
+                  <div className="absolute [grid-area:1/3/1/3] w-full h-full -translate-y-full flex items-end justify-center pb-1">
+                    <small className="text-(--stroke-light)">3</small>
+                  </div>
+                  <div className="absolute [grid-area:1/4/1/4] w-full h-full -translate-y-full flex items-end justify-center pb-1">
+                    <small className="text-(--stroke-light)">4</small>
+                  </div>
+                  {Array.from({ length: 16 }).map((_, i) => (
+                    <div
+                      key={i}
+                      className="w-full h-full rounded-sm pointer-events-none flex items-center justify-center"
+                    >
+                      <Image
+                        src="/bball.png"
+                        style={{
+                          filter:
+                            i < completedNYKWins
+                              ? "grayscale(0%) brightness(100%)"
+                              : "grayscale(100%) brightness(50%)",
+                        }}
+                        alt=""
+                        width={16}
+                        height={16}
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -1676,7 +1728,7 @@ export default function Home() {
                       style={{ paddingTop: topLipHeight }}
                     >
                       <div
-                        className="absolute inset-[0_0_auto_0] grid grid-cols-2 gap-2 py-1 pointer-events-auto"
+                        className="absolute inset-[0_0_auto_0] grid grid-cols-2 gap-2 py-1 px-1.5 pointer-events-auto"
                         ref={playBoundaryRef}
                       >
                         <small
@@ -1855,7 +1907,7 @@ export default function Home() {
             </div>
           </div>
           {/* plays / stationary */}
-          <div className="sticky z-100 top-0 right-0 w-62.5 h-screen">
+          <div className="hidden lg:block sticky z-100 top-0 right-0 w-62.5 h-screen">
             <div className="absolute inset-[0_16px_0_0] flex flex-col">
               <div className="flex-1 relative flex flex-col items-stretch justify-end overflow-hidden">
                 <div
@@ -1875,7 +1927,7 @@ export default function Home() {
                 </div>
               </div>
               <div
-                className="w-full mb-4 flex items-center justify-center border border-(--stroke-light) rounded-sm"
+                className="w-full mb-4 flex items-center justify-center border border-(--stroke-light) rounded-xl"
                 style={{ minHeight: courtHeight + topLipHeight }}
               >
                 <div className="relative w-30 h-30">

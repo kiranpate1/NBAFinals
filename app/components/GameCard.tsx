@@ -32,10 +32,45 @@ export default function GameCard({ isInsideSticky, height, game }: props) {
               />
             </div>
             <div className="w-px bg-(--stroke-light)"></div>
-            <div className="flex-1 relative"></div>
+            <div className="flex-1 relative flex items-center justify-center overflow-hidden">
+              <div
+                className="absolute aspect-1536/1024 w-[420%]"
+                style={{
+                  width:
+                    game.homeTeam === "NYK"
+                      ? "420%"
+                      : game.homeTeam === "ATL"
+                        ? "300%"
+                        : game.homeTeam === "PHI"
+                          ? "400%"
+                          : game.homeTeam === "CLE"
+                            ? "300%"
+                            : "250%",
+                  transform:
+                    game.homeTeam === "NYK"
+                      ? "translate(-38%, 14%)"
+                      : game.homeTeam === "ATL"
+                        ? "translate(-24%, -14%)"
+                        : game.homeTeam === "PHI"
+                          ? "translate(-35.5%, 11%)"
+                          : game.homeTeam === "CLE"
+                            ? "translate(-25%, 14%)"
+                            : "translate(4%, -24%)",
+                }}
+              >
+                <Image className="w-full" src="/usa.png" alt="USA" fill />
+              </div>
+              <Image
+                src="/pin.png"
+                alt="Pin"
+                width={40}
+                height={40}
+                className="relative object-contain hue-rotate-200 brightness-85"
+              />
+            </div>
           </div>
           <h3 className="relative text-shadow-[0_5px_0_var(--background)]">
-            Game {game.game}
+            Game #{game.game}
           </h3>
           {/* <small>{game.arena}</small> */}
         </div>
