@@ -1544,7 +1544,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div
-                  className="relative border border-(--stroke-light) w-full p-16 grid grid-cols-4 grid-rows-4 gap-1 rounded-xl"
+                  className="relative border border-(--stroke-light) w-full pt-17 pr-15 pb-15 pl-17 grid grid-cols-4 grid-rows-4 gap-1 rounded-xl"
                   style={{ height: courtHeight + topLipHeight }}
                 >
                   <div className="absolute [grid-area:1/1/1/1] w-full h-full -translate-x-full flex items-center justify-end pr-1">
