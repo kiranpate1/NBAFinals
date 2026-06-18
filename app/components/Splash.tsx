@@ -3,12 +3,12 @@ import Image from "next/image";
 export default function Splash() {
   return (
     <div
-      className="splashsection relative z-4 w-full bg-(--background) p-8 transition-[padding] duration-300 ease-in-out flex flex-col items-center gap-4"
+      className="splashsection relative z-4 w-full bg-(--background) p-4 sm:p-8 transition-[padding] duration-300 ease-in-out flex flex-col items-center gap-4"
       style={{
         height: `100dvh`,
       }}
     >
-      <div className="absolute z-1 inset-[56px_48px_auto_48px] flex flex-col items-center gap-2">
+      <div className="absolute z-1 inset-[48px_32px_auto_32px] sm:inset-[56px_48px_auto_48px] flex flex-col items-center gap-2">
         <h1 className="text-(--nyk) text-center text-shadow-[0_5px_0_var(--background)]">
           NY KNICKS
         </h1>

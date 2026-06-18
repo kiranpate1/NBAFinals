@@ -1756,7 +1756,7 @@ export default function Home() {
                           Example of OPP play
                         </small>
                       </div>
-                      <div className="absolute z-1 top-7 left-1/2 -translate-x-1/2 flex flex-col items-center text-(--stroke) pointer-events-auto">
+                      <div className="absolute z-1 top-9 sm:top-7 left-1/2 -translate-x-1/2 flex flex-col items-center text-(--stroke) pointer-events-auto">
                         <h3 className="gameclock">{gameClock}</h3>
                         <small className="bg-(--background)">
                           {gameQuarter}

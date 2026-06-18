@@ -68,6 +68,19 @@ h3 {
   line-height: 90%;
 }
 
+h3.gameclock {
+  font-family: var(--font-mono, "Geist Mono"), monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+h4 {
+  font-family: var(--font-mono, "Geist Mono"), monospace;
+  font-size: 18px;
+  letter-spacing: -0.05em;
+}
+
 @media (max-width: 1023px) {
   h1 {
     font-size: 80px;
@@ -81,19 +94,9 @@ h3 {
   .scoreboard {
     bottom: 24px !important;
   }
-}
-
-h3.gameclock {
-  font-family: var(--font-mono, "Geist Mono"), monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-size: 28px;
-}
-
-h4 {
-  font-family: var(--font-mono, "Geist Mono"), monospace;
-  font-size: 18px;
-  letter-spacing: -0.05em;
+  h3.gameclock {
+    font-size: 20px;
+  }
 }
 
 p {
