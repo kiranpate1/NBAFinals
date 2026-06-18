@@ -58,13 +58,21 @@ const jersey10 = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://bykiranpa.tel/"),
   title: {
-    default: "NYK vs SAS",
-    template: "NYK vs SAS | %s",
+    default: "Knicks 2026 Playoffs",
+    template: "Knicks 2026 Playoffs | %s",
   },
-  description:
-    "Oklahoma City Thunder vs. San Antonio Spurs prototype built by Kiran Patel",
-  applicationName: "NYKvsSAS Prototype",
-  keywords: ["NYK", "SAS", "NBA", "prototype"],
+  description: "Relive the New York Knicks historic 2026 playoffs journey",
+  applicationName: "Knicks 2026 Playoffs",
+  keywords: [
+    "NYK",
+    "Knicks",
+    "NBA",
+    "New York",
+    "playoffs",
+    "finals",
+    "2026",
+    "Championship",
+  ],
   authors: [{ name: "Kiran Patel" }],
   creator: "Kiran Patel",
   publisher: "Kiran Patel",
@@ -86,24 +94,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "/",
-    siteName: "NYKvsSAS Prototype",
-    title: "NYKvsSAS Prototype",
-    description:
-      "Oklahoma City Thunder vs. San Antonio Spurs prototype built by Kiran Patel",
+    siteName: "Knicks 2026 Playoffs",
+    title: "Knicks 2026 Playoffs",
+    description: "Relive the New York Knicks historic 2026 playoffs journey",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "NYKvsSAS Prototype site preview image",
+        alt: "Knicks 2026 Playoffs site preview image",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NYK vs SAS",
-    description:
-      "Oklahoma City Thunder vs. San Antonio Spurs prototype built by Kiran Patel",
+    title: "Knicks 2026 Playoffs",
+    description: "Relive the New York Knicks historic 2026 playoffs journey",
     images: ["/og-image.jpg"],
     creator: "@pate1kiran",
   },
