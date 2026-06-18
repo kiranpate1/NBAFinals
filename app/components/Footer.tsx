@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="relative z-6 w-full flex flex-col items-center">
       <div className="relative flex flex-col items-center py-2">
-        <div className="trophy relative w-full max-w-30 h-80">
+        <div className="trophy relative w-full max-w-20 lg:max-w-30 h-40 sm:h-80">
           <Image
             className="object-contain blur-[20px] brightness-100"
             src="/larry.png"
@@ -19,12 +19,12 @@ export default function Footer() {
           />
         </div>
         <h2>Victory!</h2>
-        <h3 className="text-(--nyk)">Your 2026 NBA Champions</h3>
+        <h3 className="text-(--nyk) text-center">Your 2026 NBA Champions...</h3>
       </div>
-      <div className="py-16 flex flex-col items-center gap-20">
-        <h2>The New York Knicks</h2>
+      <div className="py-16 px-4 flex flex-col items-center gap-12 sm:gap-20">
+        <h1 className="text-(--nyk) text-center">The New York Knicks</h1>
 
-        <div className="relative w-3/5 aspect-[1397/885]">
+        <div className="relative w-full max-w-160 aspect-[1397/885]">
           <Image className="w-full" src="/nyk-pose.png" alt="NYK Pose" fill />
         </div>
         <div className="grid grid-cols-[auto_8px_1fr] gap-x-4">
@@ -144,15 +144,18 @@ export default function Footer() {
           <h3 className="text-rose-400 [grid-area:48/3/48/4]">Mike Breen</h3>
           <h3 className="text-rose-400 [grid-area:49/3/49/4]">Walt Frazier</h3>
           <h3 className="[grid-area:50/3/50/4]">And many more...!</h3>
-          <h3 className="text-(--stroke) [grid-area:51/1/53/2] mt-50">
+          <div className="bg-(--stroke) [grid-area:51/1/51/4] h-px w-full mt-9 sm:mt-20" />
+          <h3 className="text-(--stroke) [grid-area:52/1/54/2] mt-9 sm:mt-20">
             Direction,
             <br />
             design, art, &
             <br />
             development
           </h3>
-          <h3 className="text-(--stroke) [grid-area:51/2/51/3] mt-50">:</h3>
-          <h3 className="text-(--stroke) [grid-area:51/3/51/4] mt-50">
+          <h3 className="text-(--stroke) [grid-area:52/2/52/3] mt-9 sm:mt-20">
+            :
+          </h3>
+          <h3 className="text-(--stroke) [grid-area:52/3/52/4] mt-9 sm:mt-20">
             <a
               className="underline hover:text-(--stroke-light)"
               href="https://www.kiranpa.tel/"

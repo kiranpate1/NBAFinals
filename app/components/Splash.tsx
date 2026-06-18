@@ -44,7 +44,22 @@ export default function Splash() {
           />
         </div>
       </div>
+      <p className="hidden sm:block text-(--stroke) absolute bottom-8 left-8">
+        A{" "}
+        <a
+          className="underline hover:text-(--stroke-light)"
+          href="https://www.kiranpa.tel/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Kiran Patel
+        </a>{" "}
+        Production
+      </p>
       <h3>– Scroll to continue –</h3>
+      <p className="hidden sm:block text-(--stroke) absolute bottom-8 right-8">
+        2026
+      </p>
     </div>
   );
 }
