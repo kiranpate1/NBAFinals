@@ -1160,10 +1160,22 @@ export default function Home() {
     const activeGameEl = navGameRefsRef.current[activeGameIndex];
 
     if (scrollContainer && activeGameEl) {
-      activeGameEl.scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
-      });
+      const containerRect = scrollContainer.getBoundingClientRect();
+      const itemRect = activeGameEl.getBoundingClientRect();
+
+      const isAbove = itemRect.top < containerRect.top;
+      const isBelow = itemRect.bottom > containerRect.bottom;
+
+      if (isAbove || isBelow) {
+        const delta = isAbove
+          ? itemRect.top - containerRect.top
+          : itemRect.bottom - containerRect.bottom;
+
+        scrollContainer.scrollTo({
+          top: scrollContainer.scrollTop + delta,
+          behavior: "smooth",
+        });
+      }
     }
   }, [activeGameIndex]);
 
