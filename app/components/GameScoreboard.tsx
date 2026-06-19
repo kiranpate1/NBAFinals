@@ -15,7 +15,7 @@ export default function GameScoreboard({
   opponent,
 }: props) {
   return (
-    <div className="flex justify-between items-center -translate-y-32 sm:-translate-y-8 lg:translate-y-0">
+    <div className="flex justify-between items-center -translate-y-32 sm:-translate-y-8 lg:-translate-y-5">
       <div className="w-auto lg:w-25 xl:w-auto flex flex-row sm:flex-col xl:flex-row items-center gap-2 sm:gap-0 xl:gap-2 p-2 2xl:p-4 pointer-events-auto">
         <div className="h-12 xl:h-30 w-12 xl:w-30 flex items-center justify-center">
           <Image

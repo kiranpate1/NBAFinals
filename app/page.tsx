@@ -703,7 +703,7 @@ export default function Home() {
       window.scrollY -
       topLipHeight * 2 -
       courtHeight -
-      0;
+      170;
     window.scrollTo({ top, behavior: "smooth" });
   };
 
