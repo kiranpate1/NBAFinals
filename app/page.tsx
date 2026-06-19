@@ -660,6 +660,7 @@ export default function Home() {
   const controllerPointerYRef = useRef<number | null>(null);
   const controllerScrollRafRef = useRef<number | null>(null);
   const controllerScrollStepRef = useRef<(() => void) | null>(null);
+  const suppressScrollDirectionUntilRef = useRef(0);
   const setGameScrollRef = (index: number, el: HTMLDivElement | null) => {
     gameScrollElsRef.current[index] = el;
   };
@@ -1125,7 +1126,10 @@ export default function Home() {
       const deltaY = nextScrollY - lastScrollYRef.current;
       lastScrollYRef.current = nextScrollY;
 
-      if (!isControllerDraggingRef.current) {
+      if (
+        !isControllerDraggingRef.current &&
+        Date.now() >= suppressScrollDirectionUntilRef.current
+      ) {
         const nextDirection: ScrollDirection =
           deltaY > 0 ? "down" : deltaY < 0 ? "up" : "neutral";
 
@@ -1297,13 +1301,30 @@ export default function Home() {
     const onMouseUp = () => {
       if (!isControllerDraggingRef.current) return;
 
+      const controllerElm = document.querySelector(
+        ".controllerElm",
+      ) as HTMLDivElement | null;
+      if (controllerElm) {
+        controllerElm.style.cursor = "grab";
+      }
+
       isControllerDraggingRef.current = false;
       controllerCenterYRef.current = null;
       controllerPointerYRef.current = null;
+      suppressScrollDirectionUntilRef.current = Date.now() + 180;
+      if (controllerTransitionRef.current !== null) {
+        window.clearTimeout(controllerTransitionRef.current);
+        controllerTransitionRef.current = null;
+      }
+      if (scrollDirectionResetRef.current !== null) {
+        window.clearTimeout(scrollDirectionResetRef.current);
+        scrollDirectionResetRef.current = null;
+      }
       if (controllerScrollRafRef.current !== null) {
         window.cancelAnimationFrame(controllerScrollRafRef.current);
         controllerScrollRafRef.current = null;
       }
+      setDisplayedScrollDirection("neutral");
       setScrollDirection("neutral");
     };
 
@@ -1326,6 +1347,7 @@ export default function Home() {
     event.preventDefault();
 
     const rect = event.currentTarget.getBoundingClientRect();
+    event.currentTarget.style.cursor = "grabbing";
 
     isControllerDraggingRef.current = true;
     controllerCenterYRef.current = rect.top + rect.height / 2;
@@ -2081,7 +2103,7 @@ export default function Home() {
                 style={{ minHeight: courtHeight + topLipHeight }}
               >
                 <div
-                  className="relative w-30 h-30 cursor-ns-resize"
+                  className="controllerElm relative w-30 h-30 cursor-grab"
                   onMouseDown={startControllerDrag}
                 >
                   <Image
