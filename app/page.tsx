@@ -2,6 +2,7 @@
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
+import Loader from "./components/Loader";
 import Splash from "./components/Splash";
 import Court from "./components/Court";
 import GameGrid from "./components/GameGrid";
@@ -643,6 +644,8 @@ export default function Home() {
   const [isInsideSplash, setIsInsideSplash] = useState(true);
   const [scrollDirection, setScrollDirection] =
     useState<ScrollDirection>("neutral");
+  const [displayedScrollDirection, setDisplayedScrollDirection] =
+    useState<ScrollDirection>("neutral");
   const [activeCourtUrl, setActiveCourtUrl] = useState<string | null>(null);
   const [displayedCourtUrl, setDisplayedCourtUrl] = useState<string | null>(
     null,
@@ -651,6 +654,12 @@ export default function Home() {
   const courtTransitionRef = useRef<number | null>(null);
   const lastScrollYRef = useRef(0);
   const scrollDirectionResetRef = useRef<number | null>(null);
+  const controllerTransitionRef = useRef<number | null>(null);
+  const isControllerDraggingRef = useRef(false);
+  const controllerCenterYRef = useRef<number | null>(null);
+  const controllerPointerYRef = useRef<number | null>(null);
+  const controllerScrollRafRef = useRef<number | null>(null);
+  const controllerScrollStepRef = useRef<(() => void) | null>(null);
   const setGameScrollRef = (index: number, el: HTMLDivElement | null) => {
     gameScrollElsRef.current[index] = el;
   };
@@ -1114,23 +1123,28 @@ export default function Home() {
     const onScroll = () => {
       const nextScrollY = window.scrollY;
       const deltaY = nextScrollY - lastScrollYRef.current;
-      const nextDirection: ScrollDirection =
-        deltaY > 0 ? "down" : deltaY < 0 ? "up" : "neutral";
       lastScrollYRef.current = nextScrollY;
 
-      setScrollDirection((prev) =>
-        prev === nextDirection ? prev : nextDirection,
-      );
+      if (!isControllerDraggingRef.current) {
+        const nextDirection: ScrollDirection =
+          deltaY > 0 ? "down" : deltaY < 0 ? "up" : "neutral";
 
-      if (scrollDirectionResetRef.current !== null) {
-        window.clearTimeout(scrollDirectionResetRef.current);
-      }
+        setScrollDirection((prev) =>
+          prev === nextDirection ? prev : nextDirection,
+        );
 
-      if (nextDirection !== "neutral") {
-        scrollDirectionResetRef.current = window.setTimeout(() => {
-          setScrollDirection((prev) => (prev === "neutral" ? prev : "neutral"));
-          scrollDirectionResetRef.current = null;
-        }, 140);
+        if (scrollDirectionResetRef.current !== null) {
+          window.clearTimeout(scrollDirectionResetRef.current);
+        }
+
+        if (nextDirection !== "neutral") {
+          scrollDirectionResetRef.current = window.setTimeout(() => {
+            setScrollDirection((prev) =>
+              prev === "neutral" ? prev : "neutral",
+            );
+            scrollDirectionResetRef.current = null;
+          }, 140);
+        }
       }
 
       if (scrollRafId !== null) return;
@@ -1178,6 +1192,154 @@ export default function Home() {
       }
     }
   }, [activeGameIndex]);
+
+  useEffect(() => {
+    if (isControllerDraggingRef.current) {
+      setDisplayedScrollDirection(scrollDirection);
+      return;
+    }
+
+    if (controllerTransitionRef.current !== null) {
+      window.clearTimeout(controllerTransitionRef.current);
+      controllerTransitionRef.current = null;
+    }
+
+    if (scrollDirection === "neutral") {
+      setDisplayedScrollDirection("neutral");
+      return;
+    }
+
+    setDisplayedScrollDirection((prevDisplayed) => {
+      const isOppositeDirectionFlip =
+        (prevDisplayed === "up" && scrollDirection === "down") ||
+        (prevDisplayed === "down" && scrollDirection === "up");
+
+      if (!isOppositeDirectionFlip) {
+        return scrollDirection;
+      }
+
+      controllerTransitionRef.current = window.setTimeout(() => {
+        setDisplayedScrollDirection(scrollDirection);
+        controllerTransitionRef.current = null;
+      }, 110);
+
+      return "neutral";
+    });
+  }, [scrollDirection]);
+
+  useEffect(
+    () => () => {
+      if (controllerTransitionRef.current !== null) {
+        window.clearTimeout(controllerTransitionRef.current);
+        controllerTransitionRef.current = null;
+      }
+      if (controllerScrollRafRef.current !== null) {
+        window.cancelAnimationFrame(controllerScrollRafRef.current);
+        controllerScrollRafRef.current = null;
+      }
+    },
+    [],
+  );
+
+  useEffect(() => {
+    const deadZonePx = 10;
+    const scrollFactor = 0.3;
+    const maxScrollPerFrame = 28;
+
+    const stepControllerScroll = () => {
+      if (!isControllerDraggingRef.current) {
+        controllerScrollRafRef.current = null;
+        return;
+      }
+
+      const centerY = controllerCenterYRef.current;
+      const pointerY = controllerPointerYRef.current;
+
+      if (centerY !== null && pointerY !== null) {
+        const deltaFromCenter = pointerY - centerY;
+
+        const nextDirection: ScrollDirection =
+          deltaFromCenter < -deadZonePx
+            ? "up"
+            : deltaFromCenter > deadZonePx
+              ? "down"
+              : "neutral";
+
+        setScrollDirection((prev) =>
+          prev === nextDirection ? prev : nextDirection,
+        );
+
+        if (Math.abs(deltaFromCenter) > deadZonePx) {
+          const adjustedDelta =
+            deltaFromCenter > 0
+              ? deltaFromCenter - deadZonePx
+              : deltaFromCenter + deadZonePx;
+          const nextScrollBy = Math.max(
+            -maxScrollPerFrame,
+            Math.min(maxScrollPerFrame, adjustedDelta * scrollFactor),
+          );
+
+          window.scrollBy({ top: nextScrollBy, behavior: "auto" });
+        }
+      }
+
+      controllerScrollRafRef.current =
+        window.requestAnimationFrame(stepControllerScroll);
+    };
+
+    controllerScrollStepRef.current = stepControllerScroll;
+
+    const onMouseMove = (event: MouseEvent) => {
+      if (!isControllerDraggingRef.current) return;
+      controllerPointerYRef.current = event.clientY;
+    };
+
+    const onMouseUp = () => {
+      if (!isControllerDraggingRef.current) return;
+
+      isControllerDraggingRef.current = false;
+      controllerCenterYRef.current = null;
+      controllerPointerYRef.current = null;
+      if (controllerScrollRafRef.current !== null) {
+        window.cancelAnimationFrame(controllerScrollRafRef.current);
+        controllerScrollRafRef.current = null;
+      }
+      setScrollDirection("neutral");
+    };
+
+    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("mouseup", onMouseUp);
+
+    return () => {
+      window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("mouseup", onMouseUp);
+      if (controllerScrollRafRef.current !== null) {
+        window.cancelAnimationFrame(controllerScrollRafRef.current);
+        controllerScrollRafRef.current = null;
+      }
+      controllerScrollStepRef.current = null;
+    };
+  }, []);
+
+  const startControllerDrag = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (event.button !== 0) return;
+    event.preventDefault();
+
+    const rect = event.currentTarget.getBoundingClientRect();
+
+    isControllerDraggingRef.current = true;
+    controllerCenterYRef.current = rect.top + rect.height / 2;
+    controllerPointerYRef.current = event.clientY;
+
+    if (
+      controllerScrollRafRef.current === null &&
+      controllerScrollStepRef.current !== null
+    ) {
+      controllerScrollRafRef.current = window.requestAnimationFrame(
+        controllerScrollStepRef.current,
+      );
+    }
+  };
 
   // current highlight logic
   const splashTransition = "0.2s ease-in-out";
@@ -1258,31 +1420,7 @@ export default function Home() {
   return (
     <main data-scroll-direction={scrollDirection}>
       {/* loader */}
-      <div
-        id="loader"
-        className="fixed z-200 inset-0 p-6 xl:p-[63px_63px_163px_63px] pointer-events-none duration-300 ease-in-out"
-      >
-        <div className="w-full h-full flex lg:flex-col items-center justify-center">
-          <div className="w-15/50 lg:w-auto lg:h-15/50">
-            <svg
-              height="100%"
-              viewBox="0 0 160 160"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="80"
-                cy="80"
-                r="59.5"
-                transform="rotate(-90 80 80)"
-                strokeWidth="10"
-                stroke="var(--sas)"
-                // vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
+      <Loader />
       {/* splash */}
       <Splash />
       {/* main / per round */}
@@ -1942,36 +2080,47 @@ export default function Home() {
                 className="w-full mb-4 flex items-center justify-center border border-(--stroke-light) rounded-xl"
                 style={{ minHeight: courtHeight + topLipHeight }}
               >
-                <div className="relative w-30 h-30">
+                <div
+                  className="relative w-30 h-30 cursor-ns-resize"
+                  onMouseDown={startControllerDrag}
+                >
                   <Image
                     className="absolute inset-0 object-contain"
                     style={{
-                      display: scrollDirection === "neutral" ? "block" : "none",
+                      display:
+                        displayedScrollDirection === "neutral"
+                          ? "block"
+                          : "none",
                     }}
                     src="/controller/neutral.png"
                     alt="controller"
                     width={200}
                     height={200}
+                    draggable={false}
                   />
                   <Image
                     className="absolute inset-0 object-contain"
                     style={{
-                      display: scrollDirection === "up" ? "block" : "none",
+                      display:
+                        displayedScrollDirection === "up" ? "block" : "none",
                     }}
                     src="/controller/up.png"
                     alt="controller"
                     width={200}
                     height={200}
+                    draggable={false}
                   />
                   <Image
                     className="absolute inset-0 object-contain"
                     style={{
-                      display: scrollDirection === "down" ? "block" : "none",
+                      display:
+                        displayedScrollDirection === "down" ? "block" : "none",
                     }}
                     src="/controller/down.png"
                     alt="controller"
                     width={200}
                     height={200}
+                    draggable={false}
                   />
                 </div>
               </div>

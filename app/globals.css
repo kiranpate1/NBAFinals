@@ -156,43 +156,6 @@ small {
   fill: rgba(0, 0, 0, 0.75);
 }
 
-#loader {
-  background: var(--background);
-  animation: fadeOut 0.5s ease-in-out 0.5s forwards;
-}
-
-@keyframes fadeOut {
-  to {
-    background: transparent;
-  }
-}
-
-#loader svg circle {
-  opacity: 1;
-  stroke-dasharray: 375px;
-  stroke-dashoffset: 375px;
-  stroke: var(--sas);
-  animation: dash 1.5s ease-in-out forwards;
-}
-
-@keyframes dash {
-  0% {
-    opacity: 1;
-    stroke-dashoffset: 375px;
-    stroke: var(--sas);
-  }
-  80% {
-    opacity: 1;
-    stroke-dashoffset: 0px;
-    stroke: var(--nyk);
-  }
-  100% {
-    opacity: 0;
-    stroke-dashoffset: 0px;
-    stroke: var(--nyk);
-  }
-}
-
 .splashsection > div > img:nth-child(2) {
   animation: dsfsd 3s linear infinite;
 }
@@ -292,5 +255,32 @@ small {
   }
   50% {
     transform: translateY(5px);
+  }
+}
+
+#loader {
+  opacity: 1;
+  animation: digital-fade-out 0.5s ease-in-out 0.75s forwards;
+}
+
+@keyframes digital-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#loader .bar {
+  animation: grow 0.75s steps(10, end) forwards;
+}
+
+@keyframes grow {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 75px;
   }
 }
