@@ -3,6 +3,14 @@ import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "http://localhost:3000");
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -56,7 +64,7 @@ const jersey10 = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bykiranpa.tel/"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Knicks 2026 Playoffs",
     template: "Knicks 2026 Playoffs | %s",
