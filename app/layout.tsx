@@ -99,7 +99,7 @@ export const metadata: Metadata = {
     description: "Relive the New York Knicks historic 2026 playoffs journey",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Knicks 2026 Playoffs site preview image",
@@ -110,7 +110,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Knicks 2026 Playoffs",
     description: "Relive the New York Knicks historic 2026 playoffs journey",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
     creator: "@pate1kiran",
   },
 };
